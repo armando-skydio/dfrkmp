@@ -30,11 +30,11 @@ import com.skydio.ui.components.widget.text.SkydioText
 import com.skydio.ui.designsystem.getAppTheme
 
 @Composable
-fun LoginEmailUi(
+fun LoginCodeUi(
     state: LoginState,
     vm: LoginViewModel = viewModel { LoginViewModel() },
 ) {
-    var email by remember { mutableStateOf("") }
+    var code by remember { mutableStateOf("") }
 
     Box(
         modifier = Modifier
@@ -56,16 +56,17 @@ fun LoginEmailUi(
             Spacer(modifier = Modifier.size(32.dp))
 
             OutlinedTextField(
-                value = email,
-                onValueChange = { email = it },
-                label = { Text("E-mail") },
+                value = code,
+                onValueChange = { code = it },
+                label = { Text("Login code") },
                 singleLine = true,
                 maxLines = 1,
                 keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Email,
+                    keyboardType = KeyboardType.Number,
                     imeAction = ImeAction.Done
                 )
             )
+
 
             if (state == LoginState.ErrorEmail) {
                 Spacer(modifier = Modifier.size(32.dp))
@@ -80,14 +81,14 @@ fun LoginEmailUi(
 
             Button(
                 onClick = {
-                    if (state != LoginState.LoadingEmail) {
-                        vm.requestLoginCode(email)
+                    if (state != LoginState.LoadingCode) {
+                        vm.verifyLoginCode(code)
                     }
                 }
             ) {
-                if (state !== LoginState.LoadingEmail) {
+                if (state !== LoginState.LoadingCode) {
                     SkydioText(
-                        text = "Get login code",
+                        text = "Login",
                         style = TextStyle.Default.copy(fontSize = 14.sp),
                         color = Color.White,
                     )

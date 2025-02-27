@@ -8,7 +8,7 @@ import io.ktor.client.request.headers
 import io.ktor.client.request.post
 import io.ktor.client.request.setBody
 import io.ktor.client.statement.HttpResponse
-import io.ktor.client.utils.EmptyContent.contentType
+import io.ktor.client.statement.bodyAsText
 import io.ktor.http.ContentType
 import io.ktor.http.URLProtocol
 import io.ktor.http.contentType
@@ -45,12 +45,12 @@ class API {
             contentType(ContentType.Application.Json)
             setBody(CALoginRequest(email, clientKey))
         })
-        println(response.status)
+        println(response.bodyAsText())
         return response
     }
 
-    suspend fun authenticate(request: CAAuthRequest) {
-        client.post({
+    suspend fun authenticate(request: CAAuthRequest): HttpResponse {
+        val response: HttpResponse = client.post({
             url {
                 protocol = URLProtocol.HTTPS
                 host = "api.skydio.com"
@@ -59,7 +59,10 @@ class API {
             headers {
                 append("X-Endpoint-Flag", "no-auth")
             }
+            contentType(ContentType.Application.Json)
             setBody(request)
         })
+        println(response.bodyAsText())
+        return response
     }
 }

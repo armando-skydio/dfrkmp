@@ -13,5 +13,5 @@ sealed interface LoginState {
     object ErrorEmail : LoginState
     object LoadingEmail : LoginState
     object LoadingCode : LoginState
-    object Success : LoginState
+    class Success(val token: String) : LoginState
 }
