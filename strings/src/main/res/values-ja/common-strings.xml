@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Skydio Common</string>
+    <string name="never_synced">同期しない</string>
+    <string name="time_seconds">%1$d秒前</string>
+    <string name="time_minutes">%1$d分前</string>
+    <string name="time_hours">%1$d時間前</string>
+    <string name="time_days">%1$d日前</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="exit">終了</string>
+
+    <!-- actions -->
+    <string name="actionMenu_delete">[削除] を選択します</string>
+    <string name="actionMenu_save">保存</string>
+    <string name="actionMenu_select">[選択] をタップして</string>
+    <string name="actionMenu_export">エクスポート</string>
+    <string name="actionMenu_sync">同期</string>
+    <string name="actionMenu_reset">リセット</string>
+    <string name="actionMenu_search">検索</string>
+    <string name="actionMenu_searchWithEllipsis">検索…</string>
+
+    <!-- Notification Channel/Category names and descriptions -->
+    <string name="notificationChannel_flightHealth_name">フライト通知</string>
+    <string name="notificationChannel_flightHealth_description">飛行中のドローンからのアラート。</string>
+    <string name="notificationChannel_connectionStatus_name">接続状況</string>
+    <string name="notificationChannel_connectionStatus_description">接続ステータスに関するドローンからのアラート。</string>
+</resources>

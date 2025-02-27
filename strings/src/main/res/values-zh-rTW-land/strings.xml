@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="logSync_step_FMT_current_total_HTML">%1$d/%2$d</string>
+</resources>

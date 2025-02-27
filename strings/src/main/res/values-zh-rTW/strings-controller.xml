@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="toolbar_controller_title">控制器更新</string>
+    <string name="title_update_available">有更新可用</string>
+    <string name="title_no_update_available">無更新可用</string>
+    <string name="subtitle_update_available">更新可從外部磁碟機取得。更新可能需要幾分鐘。</string>
+    <string name="subtitle_update_online_available">更新控制器可能需要數分鐘的時間。</string>
+    <string name="subtitle_no_update_available_drive">外部磁碟機上的更新與現有版本相符</string>
+    <string name="subtitle_no_update_available_cloud">您已更新至最新版本</string>
+
+    <string name="title_current_version">目前版本</string>
+    <string name="subtitle_current_version">插入外部磁碟機以檢查更新。</string>
+
+    <string name="title_drive_not_detected">未偵測到外接磁碟機</string>
+    <string name="subtitle_preview_video_not_detected">插入快閃磁碟機以傳輸飛行資料。</string>
+    <string name="title_controller_offline">控制器離線</string>
+    <string name="subtitle_connect_to_internet">連線至網際網路以檢查是否有可用的更新。</string>
+
+    <string name="title_on_current_version">目前版本的裝置</string>
+    <string name="subtitle_on_current_version">外部磁碟機上的檔案與現有裝置版本相符。請將新的更新檔案添加至外部磁碟機以更新裝置。</string>
+
+    <string name="title_on_lower_version">外部磁碟機包含較低版本</string>
+    <string name="subtitle_on_lower_version">外部磁碟機上的檔案版本低於裝置版本。請將新的更新檔案添加至外部磁碟機以更新裝置。</string>
+    <string name="update">更新</string>
+    <string name="check_for_update">檢查更新</string>
+    <string name="update_complete">更新完成</string>
+    <string name="select_update">選取更新</string>
+    <string name="wifi_settings">WiFi 設定</string>
+    <string name="verifying_files">正在驗證檔案</string>
+    <string name="downloading_files">正在下載檔案</string>
+    <string name="downloading_update">正在下載更新</string>
+    <string name="downloading_update_subtitle">正在下載...</string>
+    <string name="updating_controller_software">正在更新控制器軟體</string>
+    <string name="restarting_apps">正在重新啟動應用程式</string>
+    <string name="updating_controller_hardware">正在更新控制器硬體</string>
+
+    <!-- Operating System Update -->
+    <string name="os_update_release_date">發行日期</string>
+    <string name="os_update_version">版本</string>
+    <string name="os_security_patch_level">安全性修補程式等級</string>
+
+    <!-- Messages -->
+    <string name="ota_controller_manifest_title">雲端版本資訊</string>
+    <string name="ota_controller_manifest_info">QGC %1$s\nSkysticks %2$s\nEnterprise %3$s\\</string>
+
+    <!-- Errors -->
+    <!-- Messages -->
+    <string name="ota_low_battery_error_title">電量不足</string>
+    <string name="ota_low_battery_error_message">控制器電量必須高於 20% 才能更新。</string>
+    <string name="ota_error_opening_file">無法開啟檔案。</string>
+    <string name="ota_error_updating_apps">更新應用程式時發生錯誤</string>
+    <string name="ota_error_untar_file">開啟 tar 檔案時發生錯誤</string>
+    <string name="ota_error_sha1_validation">驗證檔案時發生錯誤</string>
+    <string name="ota_error_request_failed">無法連線至 Skydio。請檢查網際網路連線</string>
+
+    <!-- Preview Video -->
+    <string name="mediaPreview_listToolbarTitle">檢視飛行資料</string>
+    <string name="mediaPreview_errorTitle">匯出錯誤</string>
+    <string name="export_header">正在匯出影片</string>
+    <string name="export_complete_header">匯出完成</string>
+    <string name="export_failed_header">檔案複製失敗</string>
+    <string name="export_warning">請勿離開此頁面或關閉無人機電源。</string>
+    <string name="preview_select_directory">請選取儲存影片的資料夾</string>
+
+    <!-- Cloud Media -->
+    <string name="cloudMedia_title">雲端媒體</string>
+    <string name="cloudScans_title">雲端掃描</string>
+
+    <!-- Organization -->
+    <string name="default_organization_name">您的組織。</string>
+
+    <!-- Settings -->
+    <string name="serial_number">序號</string>
+
+</resources>

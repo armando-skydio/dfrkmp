@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- SDKs -->
+    <string name="com.zendesk.sdk.url" translatable="false">https://skydio.zendesk.com</string>
+    <string name="com.zendesk.sdk.identifier" translatable="false">f469520b5ea4946672c72b5b4044fa2861d5fd1f87a01f6f</string>
+    <string name="com.zendesk.sdk.clientIdentifier" translatable="false">mobile_sdk_client_e6f8f60821c98aa4577d</string>
+
+    <string name="vehicleConfig_circle_value" translatable="false">2</string>
+
+    <string name="cloud_config_card_toggle_text" translatable="false">i</string>
+    <string name="cloud_config_text" translatable="false">1</string>
+
+    <string name="cockpit_streaming_settings_viewer_count" translatable="false">2</string>
+    <string name="cockpit_streaming_settings_elapsed_time_minutes" translatable="false">02</string>
+    <string name="cockpit_streaming_settings_time_separator" translatable="false">:</string>
+    <string name="cockpit_streaming_settings_elapsed_time_seconds" translatable="false">93</string>
+
+    <string name="dev_vehicle_open_browser" translatable="false">OPEN http://vehicle.local:80/</string>
+    <string name="dev_vehicle_access_level" translatable="false">Auth: UNKNOWN</string>
+
+    <string name="item_clip_film_reticle_time" translatable="false">0:00</string>
+
+    <string name="app_version_value_default" translatable="false">1.0.0</string>
+    <string name="app_version_firmware_value_default" translatable="false">1.0.0</string>
+    <string name="app_version_qgc_value_default" translatable="false">1.0.0</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="englishDesc" translatable="false" />
+    <string name="german" translatable="false">Deutsch</string>
+    <string name="germanDesc" translatable="false" />
+    <string name="ukrainian" translatable="false">Yкраїнська</string>
+    <string name="ukrainianDesc" translatable="false" />
+    <string name="hindi" translatable="false">हिंदी</string>
+    <string name="hindiDesc" translatable="false" />
+
+    <!-- NOTE(troy): Needed to use Mapbox MapView -->
+    <string name="mapbox_access_token"  translatable="false">pk.eyJ1Ijoic2t5ZGlvLXRlYW0iLCJhIjoiY2tlOTJweTlwMG5kMDJ5azAwbm1obnNuNyJ9.Nm-wDK6GsXaZxN_xcfROuQ</string>
+</resources>

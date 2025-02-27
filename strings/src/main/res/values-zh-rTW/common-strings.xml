@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Skydio 常見</string>
+    <string name="never_synced">從未同步過</string>
+    <string name="time_seconds">%1$d 秒前</string>
+    <string name="time_minutes">%1$d 分鐘前</string>
+    <string name="time_hours">%1$d 小時前</string>
+    <string name="time_days">%1$d 天前</string>
+
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="exit">結束</string>
+
+    <!-- actions -->
+    <string name="actionMenu_delete">刪除</string>
+    <string name="actionMenu_save">儲存</string>
+    <string name="actionMenu_select">選取</string>
+    <string name="actionMenu_export">匯出</string>
+    <string name="actionMenu_sync">同步</string>
+    <string name="actionMenu_reset">重設</string>
+    <string name="actionMenu_search">搜尋</string>
+    <string name="actionMenu_searchWithEllipsis">搜尋……</string>
+
+    <!-- Notification Channel/Category names and descriptions -->
+    <string name="notificationChannel_flightHealth_name">飛行通知</string>
+    <string name="notificationChannel_flightHealth_description">無人機在飛行時發出警示。</string>
+    <string name="notificationChannel_connectionStatus_name">連線狀態</string>
+    <string name="notificationChannel_connectionStatus_description">無人機發出與連線狀態相關的警示。</string>
+</resources>

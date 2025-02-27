@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="toolbar_controller_title">Actualización del controlador</string>
+    <string name="title_update_available">Actualización disponible</string>
+    <string name="title_no_update_available">No hay actualización disponible.</string>
+    <string name="subtitle_update_available">Hay una actualización disponible en un disco externo. La actualización puede tardar unos minutos.</string>
+    <string name="subtitle_update_online_available">La actualización del control puede tardar varios minutos.</string>
+    <string name="subtitle_no_update_available_drive">La actualización de la unidad externa coincide con la versión actual.</string>
+    <string name="subtitle_no_update_available_cloud">Está al día con la última versión.</string>
+
+    <string name="title_current_version">Versión actual</string>
+    <string name="subtitle_current_version">Inserte la unidad externa para buscar actualizaciones.</string>
+
+    <string name="title_drive_not_detected">No se detectó una unidad externa.</string>
+    <string name="subtitle_preview_video_not_detected">Inserte una unidad flash para transferir los datos de vuelo.</string>
+    <string name="title_controller_offline">Controlador sin conexión</string>
+    <string name="subtitle_connect_to_internet">Conéctese a Internet para buscar actualizaciones disponibles.</string>
+
+    <string name="title_on_current_version">Dispositivo en la versión actual</string>
+    <string name="subtitle_on_current_version">Los archivos de la unidad externa coinciden con la versión existente del dispositivo. Agregue nuevos archivos de actualización a la unidad externa para actualizar el dispositivo.</string>
+
+    <string name="title_on_lower_version">La unidad externa contiene una versión anterior.</string>
+    <string name="subtitle_on_lower_version">Los archivos de la unidad externa son una versión anterior a la del dispositivo. Agregue nuevos archivos de actualización a la unidad externa para actualizar el dispositivo.</string>
+    <string name="update">Actualización</string>
+    <string name="check_for_update">Buscar actualizaciones</string>
+    <string name="update_complete">Actualización completada</string>
+    <string name="select_update">Seleccione Actualizar.</string>
+    <string name="wifi_settings">Configuración de Wifi</string>
+    <string name="verifying_files">Verificación de archivos</string>
+    <string name="downloading_files">Descargando archivos</string>
+    <string name="downloading_update">Descargando actualizaciones</string>
+    <string name="downloading_update_subtitle">Descargando…</string>
+    <string name="updating_controller_software">Actualización del software del controlador</string>
+    <string name="restarting_apps">Reinicio de aplicaciones</string>
+    <string name="updating_controller_hardware">Actualización del hardware del controlador</string>
+
+    <!-- Operating System Update -->
+    <string name="os_update_release_date">Fecha de lanzamiento</string>
+    <string name="os_update_version">Versión</string>
+    <string name="os_security_patch_level">Nivel de parche de seguridad</string>
+
+    <!-- Messages -->
+    <string name="ota_controller_manifest_title">Información de la versión en la nube</string>
+    <string name="ota_controller_manifest_info">QGC %1$s\nSkysticks %2$s\nEnterprise %3$s\\</string>
+
+    <!-- Errors -->
+    <!-- Messages -->
+    <string name="ota_low_battery_error_title">Batería baja</string>
+    <string name="ota_low_battery_error_message">La batería del controlador debe estar por encima del 20 % para actualizarse.</string>
+    <string name="ota_error_opening_file">Se produjo un error al abrir el archivo.</string>
+    <string name="ota_error_updating_apps">Se produjo un error al actualizar las aplicaciones.</string>
+    <string name="ota_error_untar_file">Se produjo un error al abrir el archivo .tar.</string>
+    <string name="ota_error_sha1_validation">Se produjo un error al validar el archivo.</string>
+    <string name="ota_error_request_failed">No se puede llegar a Skydio. Revise su conexión a Internet.</string>
+
+    <!-- Preview Video -->
+    <string name="mediaPreview_listToolbarTitle">Ver vuelos</string>
+    <string name="mediaPreview_errorTitle">Se produjo un error de exportación.</string>
+    <string name="export_header">Exportando video</string>
+    <string name="export_complete_header">Exportación finalizada</string>
+    <string name="export_failed_header">Se produjo un error en la copia del archivo.</string>
+    <string name="export_warning">No abandone esta página ni apague su dron.</string>
+    <string name="preview_select_directory">Seleccione la carpeta para guardar el video.</string>
+
+    <!-- Cloud Media -->
+    <string name="cloudMedia_title">Contenido multimedia en la nube</string>
+    <string name="cloudScans_title">Escaneos en la nube</string>
+
+    <!-- Organization -->
+    <string name="default_organization_name">su organización.</string>
+
+    <!-- Settings -->
+    <string name="serial_number">Número de serie</string>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="toolbar_controller_title">Controller Update</string>
+    <string name="title_update_available">Update Available</string>
+    <string name="title_no_update_available">No Update Available</string>
+    <string name="subtitle_update_available">An update is available from external drive. The update may take a few minutes.</string>
+    <string name="subtitle_update_online_available">Updating your controller may take several minutes.</string>
+    <string name="subtitle_no_update_available_drive">The update on the external drive matches the existing version</string>
+    <string name="subtitle_no_update_available_cloud">You are up to date with latest version</string>
+
+    <string name="title_current_version">Current Version</string>
+    <string name="subtitle_current_version">Insert External Drive to check for updates.</string>
+
+    <string name="title_drive_not_detected">External Drive Not Detected</string>
+    <string name="subtitle_preview_video_not_detected">Insert a flash drive to transfer flight data.</string>
+    <string name="title_controller_offline">Controller Offline</string>
+    <string name="subtitle_connect_to_internet">Connect to the internet to check for available updates.</string>
+
+    <string name="title_on_current_version">Device on Current Version</string>
+    <string name="subtitle_on_current_version">The files on external drive match the existing device version. Please add new update files to external drive in order to update device.</string>
+
+    <string name="title_on_lower_version">External Drive Contains Lower Version</string>
+    <string name="subtitle_on_lower_version">The files on the external drive are a lower version than the device. Please add new update files to external drive in order to update device.</string>
+    <string name="update">Update</string>
+    <string name="check_for_update">Check for Update</string>
+    <string name="update_complete">Update Complete</string>
+    <string name="select_update">Select Update</string>
+    <string name="wifi_settings">Wifi Settings</string>
+    <string name="verifying_files">Verifying Files</string>
+    <string name="downloading_files">Downloading Files</string>
+    <string name="downloading_update">Downloading Updates</string>
+    <string name="downloading_update_subtitle">Downloading...</string>
+    <string name="updating_controller_software">Updating Controller Software</string>
+    <string name="restarting_apps">Restarting apps</string>
+    <string name="updating_controller_hardware">Updating Controller Hardware</string>
+
+    <!-- Operating System Update -->
+    <string name="os_update_release_date">Release Date</string>
+    <string name="os_update_version">Version</string>
+    <string name="os_security_patch_level">Security Patch Level</string>
+
+    <!-- Messages -->
+    <string name="ota_controller_manifest_title">Cloud Version Info</string>
+    <string name="ota_controller_manifest_info">QGC %1$s\nSkysticks %2$s\nEnterprise %3$s\\</string>
+
+    <!-- Errors -->
+    <!-- Messages -->
+    <string name="ota_low_battery_error_title">Low Battery</string>
+    <string name="ota_low_battery_error_message">The Controller battery must be above 20% to update.</string>
+    <string name="ota_error_opening_file">Failed opening file.</string>
+    <string name="ota_error_updating_apps">Error updating apps</string>
+    <string name="ota_error_untar_file">Error opening tar file</string>
+    <string name="ota_error_sha1_validation">Error validating file</string>
+    <string name="ota_error_request_failed">Cannot reach Skydio. Check your internet connection</string>
+
+    <!-- Preview Video -->
+    <string name="mediaPreview_listToolbarTitle">View Flights</string>
+    <string name="mediaPreview_errorTitle">Export Error</string>
+    <string name="export_header">Exporting Video</string>
+    <string name="export_complete_header">Export Complete</string>
+    <string name="export_failed_header">File Copy Failed</string>
+    <string name="export_warning">Do not leave this page or power off your drone.</string>
+    <string name="preview_select_directory">Select Folder to save video</string>
+
+    <!-- Cloud Media -->
+    <string name="cloudMedia_title">Cloud Media</string>
+    <string name="cloudScans_title">Cloud Scans</string>
+
+    <!-- Organization -->
+    <string name="default_organization_name">your organization.</string>
+
+    <!-- Settings -->
+    <string name="serial_number">Serial Number</string>
+
+</resources>

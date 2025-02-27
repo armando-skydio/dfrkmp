@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="toolbar_controller_title">Оновлення контролера</string>
+    <string name="title_update_available">Доступне оновлення</string>
+    <string name="title_no_update_available">Оновлення відсутні</string>
+    <string name="subtitle_update_available">Доступне оновлення із зовнішнього диска. Оновлення може зайняти декілька хвилин.</string>
+    <string name="subtitle_update_online_available">Оновлення контролера може зайняти декілька хвилин.</string>
+    <string name="subtitle_no_update_available_drive">Оновлення на зовнішньому диску відповідає поточній версії</string>
+    <string name="subtitle_no_update_available_cloud">У вас встановлена остання версія</string>
+
+    <string name="title_current_version">Поточна версія</string>
+    <string name="subtitle_current_version">Вставте зовнішній диск для перевірки наявності оновлень.</string>
+
+    <string name="title_drive_not_detected">Зовнішній диск не виявлено</string>
+    <string name="subtitle_preview_video_not_detected">Вставте флеш-накопичувач для передачі даних польоту.</string>
+    <string name="title_controller_offline">Контролер не підключений до мережі</string>
+    <string name="subtitle_connect_to_internet">Підключіться до Інтернету, щоб перевірити наявність оновлень.</string>
+
+    <string name="title_on_current_version">На пристрої встановлена поточна версія</string>
+    <string name="subtitle_on_current_version">Файли на зовнішньому диску відповідають існуючій версії пристрою. Додайте нові файли оновлення на зовнішній диск, щоб виконати оновлення пристрою.</string>
+
+    <string name="title_on_lower_version">Зовнішній диск містить більш ранню версію</string>
+    <string name="subtitle_on_lower_version">Файли на зовнішньому диску належать до більш ранньої версії, ніж на пристрої. Додайте нові файли оновлення на зовнішній диск, щоб виконати оновлення пристрою.</string>
+    <string name="update">Оновлення</string>
+    <string name="check_for_update">Перевірити оновлення</string>
+    <string name="update_complete">Оновлення завершено</string>
+    <string name="select_update">Виберіть оновлення</string>
+    <string name="wifi_settings">Налаштування Wi-Fi</string>
+    <string name="verifying_files">Перевірка файлів</string>
+    <string name="downloading_files">Завантаження файлів</string>
+    <string name="downloading_update">Завантаження оновлень</string>
+    <string name="downloading_update_subtitle">Завантаження...</string>
+    <string name="updating_controller_software">Оновлення програмного забезпечення контролера</string>
+    <string name="restarting_apps">Перезапуск додатків</string>
+    <string name="updating_controller_hardware">Оновлення апаратного забезпечення контролера</string>
+
+    <!-- Operating System Update -->
+    <string name="os_update_release_date">Дата випуску</string>
+    <string name="os_update_version">Версія</string>
+    <string name="os_security_patch_level">Рівень оновлення системи безпеки</string>
+
+    <!-- Messages -->
+    <string name="ota_controller_manifest_title">Інформація про хмарну версію</string>
+    <string name="ota_controller_manifest_info">QGC %1$s\nSkysticks %2$s\nEnterprise %3$s\\</string>
+
+    <!-- Errors -->
+    <!-- Messages -->
+    <string name="ota_low_battery_error_title">Низький заряд</string>
+    <string name="ota_low_battery_error_message">Для оновлення заряд акумулятора контролера повинен бути вище 20%.</string>
+    <string name="ota_error_opening_file">Не вдалося відкрити файл.</string>
+    <string name="ota_error_updating_apps">Помилка оновлення додатків</string>
+    <string name="ota_error_untar_file">Помилка відкриття tar-файлу</string>
+    <string name="ota_error_sha1_validation">Помилка перевірки файлу</string>
+    <string name="ota_error_request_failed">Не вдається підключитися до Skydio. Перевірте підключення до Інтернету.</string>
+
+    <!-- Preview Video -->
+    <string name="mediaPreview_listToolbarTitle">Переглянути польоти</string>
+    <string name="mediaPreview_errorTitle">Помилка експорту</string>
+    <string name="export_header">Експорт відео</string>
+    <string name="export_complete_header">Експорт завершено</string>
+    <string name="export_failed_header">Помилка копіювання файлу</string>
+    <string name="export_warning">Не залишайте цю сторінку та не вимикайте живлення дрона.</string>
+    <string name="preview_select_directory">Виберіть папку, щоб зберегти відео</string>
+
+    <!-- Cloud Media -->
+    <string name="cloudMedia_title">Хмарні медіа</string>
+    <string name="cloudScans_title">Хмарне сканування</string>
+
+    <!-- Organization -->
+    <string name="default_organization_name">ваша організація.</string>
+
+    <!-- Settings -->
+    <string name="serial_number">Серійний номер</string>
+
+</resources>

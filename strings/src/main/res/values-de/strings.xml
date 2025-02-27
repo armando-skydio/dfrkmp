@@ -1,0 +1,1772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="skydio_appName">Skydio DEV</string>
+    <string name="skydio_toWifiSettingsButton">WiFi-Einstellungen</string>
+    <string name="skydio_genericMore">More</string>
+    <string name="skydio_genericConnectButton">Verbindung einstellen</string>
+    <string name="skydio_genericReconnectButton">Erneut verbinden</string>
+    <string name="skydio_genericDirectConnectButton">Mit WLAN verbinden</string>
+    <string name="skydio_connectToSkydio2Button">Mit Drohne verbinden</string>
+    <string name="skydio__intAsPercent_FMT_percent">%1$d%%</string>
+    <string name="skydio__defaultDroneName">Ihre Drohne</string>
+
+    <!-- Skills -->
+    <string name="skill_controls">Controls</string>
+    <string name="skill_settings">Settings</string>
+    <string name="skill_selector_header">Skill:</string>
+    <string name="skill_selector_settings">Settings</string>
+
+    <!-- OOBE strings -->
+    <string name="oobe_code_resend"><b>Code erneut senden</b></string>
+    <string name="oobe_help"><u>HILFE</u></string>
+    <string name="oobe_enter_code_sent_to_email">Geben Sie den Code ein, den Sie erhalten haben hier</string>
+    <string name="oobe_enter_code_sent_to_email_hint">Code eingeben</string>
+    <string name="oobe_email_bouncedError_FMT_email">Die von Ihnen eingegebene Email-Adresse wurde vom Server abgelehnt:%1$s. Unsere E-Mails wurden von dieser Adresse zurückgeschickt.</string>
+    <string name="oobe_email_complainedError_FMT_email">Die von Ihnen eingegebene Email-Adresse wurde vom Server abgelehnt:%1$s. Unsere E-Mails an diese Adresse wurden als Spam markiert.</string>
+    <string name="oobe_error_invalidEmailAddress">Ungültige E-Mail Adresse</string>
+    <string name="oobe_codeSend_networkErrorTitle">Kein Internet</string>
+    <string name="oobe_codeSend_networkErrorMessage">Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
+    <string name="oobe_codeSend_cloudErrorTitle">Fehler beim Senden des Codes</string>
+    <string name="oobe_codeSend_cloudErrorMessage">Beim Senden einer E-Mail ist ein unbekannter Fehler aufgetreten. Kontaktieren Sie den Skydio-Support.</string>
+    <string name="oobe_codeSend_invalidEmailToast">Ungültige E-Mail-Adresse</string>
+    <string name="oobe_codeSend_emailSentTitle">Neuer Code gesendet</string>
+    <string name="oobe_codeSend_emailSentBody_FMT_email">Überprüfen Sie Ihre E-Mail-Adresse unter %1$s um den Code zu finden.</string>
+    <string name="oobe_codeSend_invalidCodeTitle">Ungültiger Code</string>
+    <string name="oobe_codeSend_invalidCodeBody_FMT_email">Stellen Sie sicher, dass Sie den an %1$s gesendeten Code verwenden und dass er noch nicht verwendet wurde.</string>
+    <string name="oobe_codeSend_unknownErrorTitle">Fehler bei der Überprüfung des Codes</string>
+    <string name="oobe_cloudconfig_errorTitle">Error retrieving configuration</string>
+    <string name="oobe_codeSend_unknownErrorBody">Bei der Überprüfung des Codes ist ein unbekannter Fehler aufgetreten. Wenden Sie sich an den Support und wir werden Ihnen helfen.</string>
+    <string name="oobe_cloudconfig_errorBody">An unknown error occurred when retrieving your account configuration; contact support and we\'ll help you out.</string>
+    <string name="oobe_batteryInsert_title">Schließen Sie die Batterie an.</string>
+    <string name="oobe_done">Erledigt</string>
+    <string name="oobe_droneOn_title">Drücken Sie die Einschalttaste für 3 Sekunden.</string>
+    <string name="oobe_email_title">Drohne aktivieren</string>
+    <string name="oobe_email_text">Geben Sie Ihre E-Mail-Adresse ein, um Ihr Konto zu bestätigen.</string>
+    <string name="oobe_email_textEntryLabel">E-Mail Adresse</string>
+    <string name="oobe_email_textEntryHint">email@beispiel.com</string>
+    <string name="oobe_getStarted_button">Beginnen wir</string>
+    <string name="oobe_legal_header">Nutzungsbedingungen</string>
+    <string name="oobe_legal_button">Einreichen</string>
+    <string name="oobe_next">Weiter</string>
+    <string name="oobe_agree">Agree</string>
+    <string name="oobe_permissions_title">Skydio benötigt einige Flugberechtigungen.</string>
+    <string name="oobe_permissions_gps_subtitle">Standort:</string>
+    <string name="oobe_permissions_gps_text">Ermöglicht es Ihrer Drohne, zu Ihrer aktuellen GPS-Position zurückzukehren und Ihren Standort auf einer Karte anzuzeigen.</string>
+    <string name="oobe_permissions_microphone_subtitle">Mikrofon</string>
+    <string name="oobe_permissions_microphone_text">Mit Ihrem Mikrofon kann Skydio während Ihres Fluges Audioaufnahmen machen.</string>
+    <string name="oobe_permissions_button">Services aktivieren</string>
+    <string name="oobe_skip">Überspringen</string>
+    <string name="oobe_wifi_title">Fügen Sie die WLAN-Informationen für Ihre Drohne hinzu.</string>
+    <string name="oobe_wifi_wifiInput_label">WLAN</string>
+    <string name="oobe_wifi_wifiInput_hint">SSID</string>
+    <string name="oobe_wifi_passwordInput_label">Passwort</string>
+    <string name="oobe_wifi_passwordInput_hint">ABCD1234</string>
+    <string name="oobe_wifiIntro_connectTitle">Tippen Sie auf Verbinden, wenn die Lichter an Ihrer Drohne blau leuchten.</string>
+    <string name="oobe_wifiIntro_disconnectedTitle">Verbindung fehlgeschlagen</string>
+    <string name="oobe_wifiIntro_disconnectedText">Stellen Sie sicher, dass Ihre WLAN-Informationen richtig sind.</string>
+    <string name="oobe_wifiConnected_connectedTitle">Mit Drohne verbunden</string>
+    <string name="oobe_wifiIntro_connectButton">Verbindung einstellen</string>
+    <string name="oobe_wifiIntro_editButton">WLAN bearbeiten</string>
+    <string name="oobe_wrongAppTitle_aefNotFound">Zusätzliche Software erforderlich</string>
+    <string name="oobe_wrongAppMessage_aefNotFound">Für die Nutzung dieser App ist ein Geschäftskonto mit einer Skydio Autonomy Enterprise Foundation-Lizenz erforderlich.</string>
+    <string name="oobe_enable_internet">Internet freigeben</string>
+    <string name="oobe_enable_internet_description">Schalten Sie das Internet ein, um mit der Aktivierung des Geräts fortzufahren.</string>
+    <string name="oobe_setup_pass_description">Dieser Schritt ist fakultativ.</string>
+    <string name="oobe_set_pass">Passwort einstellen</string>
+    <string name="oobe_setup_pass_title">Möchten Sie ein Passwort für Ihr Gerät festlegen?</string>
+    <string name="oobe_set_password_title_required">Erstellen Sie ein Passwort, um den Skydio Controller zu verwenden</string>
+    <string name="oobe_message_action_wheel_beta">Action Wheel\n[BETA]</string>
+    <string name="oobe_message_use_the_d_pad_to_select_an_action">Use the D-pad to select an action.</string>
+    <!-- TODO(neil/anil): Clean up unused strings once designs finalised -->
+    <string name="oobe_advanced_section_label">Advanced</string>
+    <string name="oobe_cloud_url_textEntryLabel">Cloud Url</string>
+    <string name="oobe_cloud_url_textEntryHint">https://cloud.company.com</string>
+    <string name="oobe_cloud_url_button_label_verify">Verify</string>
+    <string name="oobe_cloud_url_button_label_clear">Clear</string>
+    <string name="oobe_cloud_url_verify_message_url_invalid">Url is invalid.</string>
+    <string name="oobe_cloud_url_verify_message_initial">Url is unverified.</string>
+    <string name="oobe_cloud_url_verify_message_processing">Url is being verified...</string>
+    <string name="oobe_cloud_url_verify_message_success">Url verification success!</string>
+    <string name="oobe_cloud_url_verify_message_failed">Url verification failed!</string>
+    <string name="oobe_cloud_url_verify_message_restarting">Verified url! Restarting...</string>
+
+    <!-- Safety Guide Scroll strings -->
+    <string name="safetyGuideScroll_header">Skydio Safety and Operating Guide</string>
+    <string name="safetyGuideScroll_checkbox">Ich habe die Sicherheits- und Betriebsrichtlinien gelesen und verstanden.</string>
+
+    <!-- hand carry dev menu -->
+    <string name="handCarry_title">Handtrageoptionen</string>
+    <string name="handCarry_takeoff">Start (Abflug)</string>
+    <string name="handCarry_land">Beenden (Landung)</string>
+
+    <!-- OTA strings -->
+    <string name="ota_updateAvailableBadgeText">Update</string>
+    <string name="ota_abortDialogTitle">Update abbrechen</string>
+    <string name="ota_abortDialogBody">Dadurch wird die laufende Aktualisierung gestoppt. Sie müssen von vorne anfangen.</string>
+    <string name="ota_abortDialogYes">Update abbrechen</string>
+    <string name="ota_abortDialogNo">Update fortsetzen</string>
+    <string name="ota_abortDialogRestart">Restart</string>
+    <string name="ota_updateTitle_FMT_name">Update %1$s</string>
+    <string name="ota_info_done">Update starten</string>
+    <string name="ota_info_detailsTitle">Extra Details</string>
+    <string name="ota_info_detailsBody_FMT_releaseKey_fileKey">Software-ID: %1$s\nDateischlüssel: %2$s</string>
+    <string name="ota_info_header_FMT_version">Software Update %1$s</string>
+    <string name="ota_info_subHeader_FMT_version_size">Neuerungen in %1$sUpdate-Größe: %2$s</string>
+    <string name="ota_doNotLeaveApp">Verlassen Sie die App nicht.</string>
+    <string name="ota_doNotLeaveOrPowerOff">Verlassen Sie die App nicht und schalten Sie Ihre Drohne nicht aus.</string>
+    <string name="ota_doNotPowerOff">Schalten Sie Ihre Drohne nicht aus.</string>
+    <string name="ota_cancel">@string/logSync_cancel</string>
+    <string name="ota_requirements_header">Zum Update wenden Sie sich bitte an:</string>
+    <string name="ota_requirements_grantPermissions">Berechtigungen erteilen</string>
+    <string name="ota_requirements_next">Update starten</string>
+    <string name="ota_requirements_batteryMinimumTitle">Batterie der Drohne </string>
+    <string name="ota_requirements_batteryMinimum_FMT_percent">Laden Sie die Batterie auf mindestens %1$d%% auf. </string>
+    <string name="ota_requirements_grantPhonePermissionsTitle">Telefonberechtigungen erteilen</string>
+    <string name="ota_requirements_grantPhonePermissionsText">Geben Sie der Skydio-App die Erlaubnis, den Speicher Ihres Telefons zu nutzen.</string>
+    <string name="ota_requirements_storageSpaceTitle">Freier Speicherplatz auf dem Telefon</string>
+    <string name="ota_requirements_storageErrorTitle">Storage Error</string>
+    <string name="ota_requirements_storageErrorDescription">Skydio cannot access storage. Please clear up space and try again</string>
+    <string name="ota_requirements_storageSpace_FMT_size">Kostenlos %1$s auf diesem mobilen Gerät.</string>
+    <string name="ota_requirements_internetTitle">Mit Internet verbinden</string>
+    <string name="ota_requirements_wifiOrNetwork">Stellen Sie eine Verbindung zu einem Mobilfunk- oder WLAN-Netzwerk her, um das Update herunterzuladen.</string>
+    <string name="ota_requirements_wifiOnly">Stellen Sie eine Verbindung zu einem WiFi-Netzwerk her, um das Update herunterzuladen.</string>
+    <string name="ota_useComputerMode_HTML"><u>MIT COMPUTER INSTALLIEREN</u></string>
+    <string name="ota_backNotAllowed">Das Update muss abgeschlossen sein.</string>
+    <string name="ota_error_downloading">Fehler beim Herunterladen. Bitte versuchen Sie es erneut.</string>
+
+    <string name="ota_step1computer_nextButton">Datei wird gespeichert</string>
+    <string name="ota_step1computer_error_noInternet">Stellen Sie eine Internetverbindung her, damit wir Ihnen eine E-Mail schicken können.</string>
+    <string name="ota_step1computer_error_notFound">Die Freigabe konnte nicht gefunden werden.\n\nBitte kontaktieren Sie den Skydio-Support.</string>
+    <string name="ota_step1computer_error_permissions">Die Freigabe konnte nicht gefunden werden.\n\nBitte kontaktieren Sie den Skydio-Support.</string>
+    <string name="ota_step1computer_error_unknown">Ich konnte keine E-Mail für die Freigabe senden.\n\nBitte kontaktieren Sie den Skydio-Support.</string>
+    <string name="ota_step1computer_sendingEmail">Senden einer Nachricht mit einem Link zum Update an Ihre registrierte E-Mail-Adresse:</string>
+    <string name="ota_step1computer_sentAnEmail">Eine Nachricht mit einem Link zum Update wurde gerade an Ihre registrierte E-Mail-Adresse gesendet:</string>
+    <string name="ota_step1computer_saveToComputer">Klicken Sie auf den Link auf Ihrem Computer, um die Datei zu speichern.</string>
+
+    <string name="ota_step1phone_nextButton">Weiter</string>
+    <string name="ota_step1phone_downloadButton">Herunterladen</string>
+    <string name="ota_step1phone_downloadStatusPending">Download steht aus\n\nStellen Sie sicher, dass Sie mit einem WLAN-Netzwerk mit Internetzugang verbunden sind.</string>
+    <string name="ota_step1phone_downloadStatusPendingConnectedToDrone">Download steht aus\n\nTrennen Sie die Verbindung mit dem WiFi-Netzwerk Ihrer Drohne, um fortzufahren.</string>
+    <string name="ota_step1phone_downloadStatusPaused">Download unterbrochen\n\nStellen Sie sicher, dass Sie Internetzugang haben, dann sollte es automatisch weitergehen.</string>
+    <string name="ota_step1phone_downloadStatusPausedQueuedForWifi">Download unterbrochen\n\nStellen Sie sicher, dass Sie mit einem WiFi-Netzwerk mit Internetzugang verbunden sind.</string>
+    <string name="ota_step1phone_downloadStatusPausedWaitForNetwork">Download unterbrochen\n\nStellen Sie sicher, dass Sie mit dem Internet verbunden sind.</string>
+    <string name="ota_step1phone_downloadStatusPausedWaitToRetry">Download unterbrochen\n\nWarten Sie einen Moment, bevor Sie fortfahren.</string>
+    <string name="ota_step1phone_downloadStatusPausedConnectedToDrone">Download unterbrochen \n\nTrennen Sie die Verbindung mit dem WiFi-Netzwerk Ihrer Drohne, um fortzufahren.</string>
+    <string name="ota_step1phone_downloadStatusRunning">Herunterladen von neuer Software</string>
+    <string name="ota_step1phone_downloadStatusSuccessful">Download abgeschlossen</string>
+    <string name="ota_step1phone_downloadStatusFailed">Download fehlgeschlagen</string>
+    <string name="ota_step1phone_downloadStatusFailedLowDiskSpace">Download fehlgeschlagen\n\nAuf Ihrem Handy ist nicht genügend Speicherplatz vorhanden. Machen Sie etwas Platz und versuchen Sie es erneut.</string>
+    <string name="ota_step1phone_downloadStatusFailed_FMT_reason">Download fehlgeschlagen\nFehlercode %1$d </string>
+    <string name="ota_step1phone_downloadStatusSha1Mismatch">Download fehlgeschlagen\nPrüfsumme stimmt nicht überein </string>
+    <string name="ota_step1phone_downloadStatusCancelled">Download abgebrochen </string>
+    <string name="ota_step1phone_downloadStatusUnknown">Download-Status unbekannt </string>
+    <string name="ota_step1phone_downloadFileTitle_FMT_version">Drohnensoftware %1$s </string>
+    <string name="ota_step1phone_verifyingDownloadedFile">Heruntergeladene Datei wird überprüft </string>
+    <string name="ota_step1phone_checkingForExistingDownload">Überprüfen auf vorhandenen Download </string>
+    <string name="ota_step1phone_downloadAvailable">Download verfügbar </string>
+
+    <string name="ota_step2_disconnectBeacon_status">Signal trennen </string>
+    <string name="ota_step2_disconnectBeacon_detail">Schalten Sie Ihr Signalgerät aus und verbinden Sie es direkt mit Ihrer Drohne, um fortzufahren. </string>
+    <string name="ota_step2_disconnectJoysticks_status">Controller abtrennen </string>
+    <string name="ota_step2_disconnectJoysticks_detail">Schalten Sie Ihr Signalgerät aus und verbinden Sie es direkt mit Ihrer Drohne, um fortzufahren.</string>
+    <string name="ota_step2_contacting_FMT_name">Kontaktaufnahme %1$s</string>
+    <string name="ota_step2_releaseMismatch_status">Nicht übereinstimmende Freigabe</string>
+    <string name="ota_step2_releaseMismatch_detail">Starten Sie die Anwendung neu und versuchen Sie es erneut.</string>
+    <string name="ota_step2_waitingFor_FMT_name">Warten auf %1$s</string>
+    <string name="ota_step2_switchingWifi_status">WiFi umschalten</string>
+    <string name="ota_step2_switchingWifi_detail_FMT_ssid">Verbinden mit %1$s</string>
+    <string name="ota_step2_reconnect">Erneut verbinden</string>
+    <string name="ota_step2_connectTo_FMT_name">Schalten Sie %1$s ein und stellen Sie eine WiFi-Verbindung her.</string>
+    <string name="ota_step2_verifying">Software-Update wird überprüft</string>
+    <string name="ota_step2_uploadButton">Hochladen</string>
+    <string name="ota_step2_cannotUploadToast">Es konnte keine Verbindung mit deiner Drohne hergestellt werden.</string>
+    <string name="ota_step2_startingUpload">Upload wird gestartet</string>
+    <string name="ota_step2_uploadingToVehicle">Neue Software hochladen</string>
+    <string name="ota_step2_uploadFailed_status">Upload fehlgeschlagen</string>
+    <string name="ota_step2_uploadFailed_detail">Beim Hochladen der Datei ist ein Fehler aufgetreten.</string>
+    <string name="ota_step2_readyToUpload">Bereit zum Hochladen</string>
+    <string name="ota_step2_verifyFailed_status">Verifizierung fehlgeschlagen</string>
+    <string name="ota_step2_verifyFailed_detail">Das Software-Update war ungültig. Bitte versuchen Sie es erneut.</string>
+
+    <string name="ota_step3_applyButton">Installieren</string>
+    <string name="ota_step3_batteryLow_status">Schwache Batterie</string>
+    <string name="ota_step3_batteryLow_detail">Lade den Akku deiner Drohne vor der Aktualisierung auf.</string>
+    <string name="ota_step3_verified_status">Geprüft</string>
+    <string name="ota_step3_verified_detail">Tippen Sie auf Installieren, um fortzufahren.</string>
+    <string name="ota_step3_applying">Installation wird durchgeführt</string>
+    <string name="ota_step3_applyFailed_status">Software-Update fehlgeschlagen</string>
+    <string name="ota_step3_applyFailed_detail_FMT_errorCode">Starten Sie Ihre Drohne neu. \n\nFehlercode: %1$d</string>
+
+    <string name="ota_step4_rebootTitle">Neustart in Bearbeitung</string>
+    <string name="ota_step4_rebooting">Neustart wird durchgeführt</string>
+    <string name="ota_step4_reconnectedAfterReboot">Drohne startet neu</string>
+    <string name="ota_step4_waitingToReconnect">Neustart wird durchgeführt</string>
+    <string name="ota_step4_switchingWifi_FMT_ssid">WiFi auf %1$s umschalten</string>
+    <string name="ota_step4_manuallyReconnect_status">Neustart wird durchgeführt</string>
+    <string name="ota_step4_manuallyReconnect_detail_FMT_ssid">Ihre Drohne wird neu gestartet. Sich erneut verbinden mit %1$s.</string>
+
+    <string name="ota_step5_finalizing_status">Update wird fertiggestellt</string>
+    <string name="ota_step5_finalizing_detail">Die Lichter können sich während des Prozesses ausschalten und einschalten.</string>
+    <string name="ota_step5_finalizingSubsequentAttempt_FMT_attempt">\nVersuch %1$d.</string>
+    <string name="ota_step5_reconnecting_status">Wiederherstellung der Verbindung </string>
+    <string name="ota_step5_reconnecting_detail">Die Verbindung wurde während der Beendigung des Software-Updates unterbrochen.  Ihre Drohne stellt die Verbindung wieder her. </string>
+    <string name="ota_step5_disconnected_status">Getrennt </string>
+    <string name="ota_step5_disconnected_detail_FMT_ssid">%1$s wird möglicher Weise neu gestartet Die Verbindung wieder herstellen, wenn das WLAN-Netzwerk verfügbar ist.</string>
+    <string name="ota_step5_fallbackDetected_status">Wurde nicht aktualisiert</string>
+    <string name="ota_step5_fallbackDetected_detail">Starten Sie Ihre Drohne erneut und starten Sie das Update neu.</string>
+
+    <string name="ota_finished_complete_status">Aktualisiert</string>
+    <string name="ota_finished_complete_detail_r47">Your drone has been updated. It will reboot and reconnect shortly.</string>
+    <string name="ota_finished_complete_detail">Ihre Drohne wurde aktualisiert.</string>
+    <string name="ota_finished_finishedButton">Erledigt</string>
+
+    <!-- gate screen strings, other than those coming from the C++ -->
+    <string name="gate_commandeerPrompt_title">Kontrolle übernehmen</string>
+    <string name="gate_commandeerPrompt_message">Sie werden die Kontrolle über diese Drohne übernehmen.</string>
+    <string name="gate_commandeerPrompt_yes">Kontrolle übernehmen</string>
+    <string name="gate_commandeerFailed_title">Konnte nicht die Kontrolle übernehmen</string>
+    <string name="gate_commandeerFailed_message">Sie haben keine Kontrolle über diese Drohne.</string>
+    <string name="gate_sdCardStatus_emptyTitle">----------</string>
+    <string name="gate_flyAnywayPrompt_title">Sind Sie sicher, dass Sie fliegen möchten?</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardUnformatted">Die Medien werden nicht aufgezeichnet, solange die SD-Karte nicht formatiert ist.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardSpaceLow">Ihre SD-Karte hat nicht genug Platz, um einen vollständigen Flug aufzuzeichnen.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardMissing">Die Medien werden nicht aufgezeichnet, solange die SD-Karte nicht formatiert ist.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardCorrupted">Auf Ihrer SD-Karte befinden sich möglicherweise Dateien, die aufgrund einer Beschädigung unlesbar sind.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardSlow">Ihre SD-Karte ist möglicherweise nicht in der Lage, Medien schnell genug zu beschreiben, was zu Bildausfällen führt.</string>
+    <string name="gate_flyAnywayPrompt_message_beaconBatteryLow">Die Batterie Ihres Signalgeräts reicht möglicherweise nicht für einen ganzen Flug.</string>
+    <string name="gate_flyAnywayPrompt_message_joysticksBatteryLow">Die Batterie Ihres Steuergeräts hält möglicherweise nicht für einen vollständigen Flug.</string>
+    <string name="gate_flyAnywayPrompt_message_phoneBatteryLow">Die Batterie Ihres Telefons reicht möglicherweise nicht für einen ganzen Flug.</string>
+    <string name="gate_flyAnywayPrompt_message_tooDarkForVision">Die Hindernisvermeidung wird deaktiviert.</string>
+    <string name="gate_flyAnywayPrompt_yes">Fliegen</string>
+    <string name="gate_flyAnywayPrompt_no">Abbrechen</string>
+    <string name="gate_helpButton"><u>HILFE</u></string>
+    <string name="gate_safetyButton"><u>SICHERHEIT</u></string>
+    <string name="gate_action_beginFlight">Fly Now</string>
+    <string name="gate_action_viewLivestream">View Live Stream</string>
+    <string name="gate_action_resume">Flug fortsetzen</string>
+    <string name="gate_action_updateLater">Später</string>
+    <string name="gate_action_updatePhoneNow">Zu Google Play</string>
+    <string name="gate_action_updateSkysticksNow">Update</string>
+    <string name="gate_action_updateVehicleNow">Update</string>
+    <string name="gate_action_commandeer">Kontrolle übernehmen</string>
+    <string name="gate_action_showSafetyGuide">Leitfaden anzeigen</string>
+    <string name="gate_action_permissionSettings">Einstellungen der Berechtigungen</string>
+    <string name="gate_action_locationSettings">Einstellungen der Standorte</string>
+    <string name="gate_action_manageMedia">Medien verwalten</string>
+    <string name="gate_action_sdCardSettings">Einstellungen der Karten</string>
+    <string name="gate_action_findVehicle">Karte anschauen</string>
+    <string name="gate_tabTitle">Fliegen</string>
+    <string name="gate_mediaSpaceRemaining_FMT_minutes">%1$d M</string>
+    <string name="gate_mediaSpaceRemaining_FMT_hours_minutes">%1$dStd %2$dM</string>
+    <string name="gate_phoneSpaceLowWarning_title_FMT_minSpace">Der Speicherplatz auf diesem Telefon ist kleiner als %1$s.</string>
+    <string name="gate_phoneSpaceLowWarning_message_FMT_spaceToFree">Geben Sie %1$s Speicherplatz frei, bevor Sie fortfahren.</string>
+    <string name="gate_phoneSpaceLowWarning_confirm">OK</string>
+    <string name="gate_action_invalidApp">Zum Shop gehen</string>
+    <string name="gate_action_authenticateUser">Anmeldung</string>
+    <string name="gate_action_showTOS">Bedingungen und Konditionen ansehen</string>
+    <string name="gate_action_customizeCredentials">WiFi anpassen</string>
+    <string name="gate_action_rebootVehicle">Neustart</string>
+    <string name="gate_action_genericOkay">OK</string>
+    <string name="gate_action_learnMore">Learn More</string>
+    <string name="gate_action_genericDismiss">Dismiss</string>
+    <string name="gate_action_switch_mode">Switch Mode</string>
+    <string name="gate_action_use_skills_prompt_title">Drohne muss neu starten</string>
+    <string name="gate_action_use_skills_prompt_msg_skills">Dies ist für die Verwendung von Skills (Fähigkeiten) erforderlich.</string>
+    <string name="gate_action_use_skills_prompt_msg_3dscan">Dies ist für die Verwendung von 3D Scan erforderlich</string>
+    <string name="gate_action_use_skills">Skills (Fähigkeiten) verwenden</string>
+    <string name="gate_action_use_3dscan">Use 3D Scan</string>
+    <string name="gate_action_use_manual">Use Attitude Mode</string>
+    <string name="gate_action_showUploadFilesQueue">View Files</string>
+    <string name="gate_action_switch_to_gps_night">Switch</string>
+    <string name="gate_switch_to_gps_night_prompt_action">Enable</string>
+    <string name="gate_switch_to_gps_night_prompt_title">Enable GPS Night Flight?</string>
+    <string name="gate_switch_to_gps_night_prompt_message">@string/night_flight_toggle_descrption</string>
+    <string name="gate_action_register">Register</string>
+    <string name="gate_action_help">Help</string>
+    <string name="gate_connectionType_direct">2.4/5 GHz Radio</string>
+    <string name="gate_connectionType_cellular">Connect 5G</string>
+    <string name="gate_networkDrones">Network Drones</string>
+    <string name="gate_error_title_flight_modes_not_available">Flight Modes Not Available</string>
+    <string name="gate_error_subtitle_change_flight_mode">Switch to Direct Connection to change flight mode.</string>
+    <string name="gate_error_title_cellular_not_available">Cellular Not Available</string>
+    <string name="gate_error_subtitle_cellular_not_available">Switch to Skills Mode to use Cellular.</string>
+    <string name="gate_mode_title_flight_mode">Flight Mode</string>
+
+    <!-- flight screen strings, other than those coming from C++ -->
+    <string name="cockpit_exitTitle">Exit Flight Deck</string>
+    <string name="flight_menuItem_setHomePoint">Startpunkt festlegen</string>
+    <string name="flight_menuItem_removeHomePoint">Startpunkt entfernen</string>
+    <string name="flight_menuItem_stopSelectingArea">Auswahlbereich stoppen</string>
+    <string name="flight_menuItem_flyHereNow">Jetzt hierhin fliegen</string>
+    <string name="flight_menuItem_selectArea">Bereich auswählen</string>
+    <string name="flight_menuItem_addWaypoint">Wegpunkt (Waypoint) hinzufügen</string>
+    <string name="cockpit_launchButton_topText">HALTEN AN</string>
+    <string name="cockpit_launchButton_bottomText">LANZIEREN</string>
+    <string name="cockpit_landButton_topText">HALTEN AN</string>
+    <string name="cockpit_landButton_bottomText">LANDEN</string>
+    <string name="cockpit_heightControl">HÖHE</string>
+    <string name="cockpit_rangeControl">BEREICH</string>
+    <string name="cockpit_shutterInterval_FMT_seconds">%1$dsek.</string>
+    <string name="cockpit_launchSlider_action">Slide to Launch</string>
+    <string name="cockpit_landSlider_action">Slide to Land in Place</string>
+    <string name="cockpit_preparingToLaunch">Preparing</string>
+    <string name="cockpit_actionLaunch">Launch</string>
+    <string name="cockpit_actionLandReturn">Return or Land</string>
+    <string name="cockpit_actionLaunchInstructions">Select a launch method.</string>
+    <string name="cockpit_actionLandReturnInstructions">Return Drone To</string>
+    <string name="cockpit_launchFailedTitle">Unable to launch.</string>
+    <string name="cockpit_launchFailedMessage">Move closer to your drone and try again.</string>
+
+    <string name="cockpit_runmodeChangeAlert_title">Neustart erforderlich</string>
+    <string name="cockpit_runmodeChangeAlert_msg">Drohne muss neu gestartet werden, um %1$s zu verwenden</string>
+    <string name="cockpit_runmodeChangeAlert_confirm_btn">Neustart</string>
+
+    <string name="cockpit_stop_at_structure_label">STOP AT STRUCTURE ENABLED</string>
+
+    <string name="cockpit_stream_source_eo">Color</string>
+    <string name="cockpit_stream_source_ir">Thermal</string>
+    <string name="cockpit_stream_source_map">Map</string>
+
+    <string name="telemetry_defaultValue_noHeadingLock">Finding Heading</string>
+    <string name="telemetry_defaultValue_noUnit">N/A</string>
+    <string name="telemetry_defaultStringState">Unknown</string>
+    <string name="telemetry_defaultValue_feet">0 Ft</string>
+    <string name="telemetry_defaultValue_meters">0 M</string>
+    <string name="telemetry_defaultValue_mph">0 Mph</string>
+    <string name="telemetry_defaultValue_mps">0 M/s</string>
+    <string name="telemetry_altitude_menu_item">Altitude</string>
+    <string name="telemetry_distance_from_launch_menu_item">Distance From Launch</string>
+    <string name="telemetry_distance_from_controller_menu_item">Distance From Controller</string>
+    <string name="telemetry_heading_menu_item">Heading</string>
+    <string name="telemetry_ground_speed_menu_item">Ground Speed</string>
+    <string name="telemetry_gimbal_pitch_menu_item">Gimbal Pitch</string>
+    <string name="telemetry_gps_satellites_menu_item">Drone GPS Satellites</string>
+    <string name="telemetry_obstacle_avoidance_menu_item">Obstacle Avoidance</string>
+    <string name="telemetry_vio_health_menu_item">Vio Health</string>
+    <string name="telemetry_controller_signal_strength">Controller Signal Strength</string>
+    <string name="telemetry_drone_connection">Drone Connection</string>
+    <string name="telemetry_description_background">Background</string>
+    <string name="telemetry_description_charging">Charging</string>
+    <string name="telemetry_description_warning">Warning</string>
+    <string name="telemetry_value_unknown">Unknown</string>
+
+    <string name="notifications_header">"Notifications"</string>
+
+    <string name="terminating_flight_title">TERMINATING FLIGHT</string>
+    <string name="terminating_flight_detail">%1$s will crash in a few seconds</string>
+
+    <!-- Skill refresh strings -->
+    <string name="skillRefresh_complete">Auffrischen abgeschlossen.</string>
+    <string name="skillRefresh_invalidCloudConfig">Der Download der neuesten Skills ist nicht möglich. Überprüfen Sie Ihre Internetverbindung.</string>
+    <string name="skillRefresh_noChange">Keine Änderung.</string>
+    <string name="skillRefresh_unknownError">Fähigkeiten können nicht aufgefrischt werden.</string>
+    <string name="skillRefresh_refreshFailed">Die neuesten Fähigkeiten können nicht geladen werden. Überprüfen Sie Ihre Verbindung.</string>
+    <string name="skillRefresh_vehiclePushFailed">Die neuesten Fähigkeiten können nicht übertragen werden. Überprüfen Sie Ihre Verbindung.</string>
+
+    <!-- re-authenticate screen -->
+    <string name="reauthenticate_enter_code_sent_to_email">Login has Expired\nEnter the code you received at</string>
+    <string name="reauthenticate_enter_code_placeholder">Enter your code</string>
+    <string name="reauthenticate_resend">@string/oobe_code_resend</string>
+    <string name="reauthenticate_logout">Log Out</string>
+    <string name="reauthenticate_go_back">Go Back</string>
+    <string name="reauthenticate_next">Next</string>
+    <string name="reauthenticate_confirm_log_out">Logging out will delete all data from your device.\nAre you sure you want to continue?</string>
+    <string name="reauthenticate_errorTitle">Kein Internet</string>
+    <string name="reauthenticate_errorMessage">Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
+    <string name="reauthenticate_cloudErrorTitle">Fehler beim Senden des Codes</string>
+    <string name="reauthenticate_cloudErrorMessage">Beim Senden einer E-Mail ist ein unbekannter Fehler aufgetreten. Kontaktieren Sie den Skydio-Support.</string>
+    <string name="reauthenticate_emailSentTitle">Neuer Code gesendet</string>
+    <string name="reauthenticate_emailSentBody_FMT_email">Überprüfen Sie Ihre E-Mail-Adresse unter %1$s um den Code zu finden.</string>
+    <string name="reauthenticate_invalidCodeTitle">Ungültiger Code</string>
+    <string name="reauthenticate_invalidCodeBody_FMT_email">Stellen Sie sicher, dass Sie den an %1$s gesendeten Code verwenden und dass er noch nicht verwendet wurde.</string>
+    <string name="reauthenticate_unknownErrorTitle">Fehler bei der Überprüfung des Codes</string>
+    <string name="reauthenticate_unknownErrorBody">Bei der Überprüfung des Codes ist ein unbekannter Fehler aufgetreten. Wenden Sie sich an den Support und wir werden Ihnen helfen.</string>
+    <string name="reauthenticate_emailBouncedError_FMT_email">Die von Ihnen eingegebene Email-Adresse wurde vom Server abgelehnt:%1$s. Unsere E-Mails wurden von dieser Adresse zurückgeschickt.</string>
+    <string name="reauthenticate_emailComplainedError_FMT_email">Die von Ihnen eingegebene Email-Adresse wurde vom Server abgelehnt:%1$s. Unsere E-Mails an diese Adresse wurden als Spam markiert.</string>
+    <string name="reauthenticate_error_invalidEmailAddress">Ungültige E-Mail Adresse</string>
+    <string name="api_compatibility_error">"App is unable to communicate with the server:\n%1$s\nVersion: ANDROID/%2$s"</string>
+    <!-- settings -->
+    <string name="settings_tabTitle">Information</string>
+    <string name="settings_group_skydio_2">Drohnen</string>
+    <string name="settings_group_resources">Ressourcen</string>
+    <string name="settings_gettingStarted">Beginnen wir</string>
+    <string name="settings_batteryGuide">Batterie-Leitfaden</string>
+    <string name="settings_handWaveGuide">Hand Wave Calibration Guide</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_datetime">Date &amp; Time</string>
+    <string name="settings_readSafetyGuide">Sicherheitsleitfaden</string>
+    <string name="settings_readSafetyGuideAgreement">Skydio Safety and Operating Guide</string>
+    <string name="settings_skills">Fähigkeiten</string>
+    <string name="settings_skills_switch_skill">Change</string>
+    <string name="settings_flight_skills">Flight Skills</string>
+    <string name="settings_faq">FAQ.</string>
+    <string name="settings_group_devices">Geräte</string>
+    <string name="settings_addNewVehicle">+ Add Vehicle</string>
+    <string name="settings_group_settings">Einstellungen</string>
+    <string name="settings_group_support">Support</string>
+    <string name="settings_group_account">Konto</string>
+    <string name="settings_group_maps">Karten</string>
+    <string name="settings_device_settings">Einstellungen des Gerätes</string>
+    <string name="settings_apps_header">Applikationen</string>
+    <string name="settings_qgc">Skydio QGC starten</string>
+    <string name="settings_controller_update">Controller-Update</string>
+    <string name="settings_controller_speedcheck">Controller Speed Check</string>
+    <string name="settings_selectedSimulator">Ausgewählter Simulator</string>
+    <string name="settings_3DScanModelViewer">Modell-Betrachter 3DScan</string>
+    <string name="settings_selectedIotVehicle">Cloud Fahrzeug</string>
+    <string name="settings_staticAddress">Statische Adresse</string>
+    <string name="settings_simulatorSelectTitle">Simulator auswählen</string>
+    <string name="settings_helpCenter">Help Center</string>
+    <string name="settings_flightLogs">Skydio Support Logs</string>
+    <string name="settings_controllerLogs">Controller Logs</string>
+    <string name="settings_support">Skydio Support</string>
+    <string name="settings_termsOfUse">Nutzungsbedingungen</string>
+    <string name="settings_whatsNew">Was gibt es Neues?</string>
+    <string name="settings_email">E-Mail</string>
+    <string name="settings_organization_name">Name der Organisation</string>
+    <string name="settings_organization">Organisation</string>
+    <string name="settings_reset_controller">Controller zurücksetzen</string>
+    <string name="settings_appVersion">Version der App</string>
+    <string name="settings_audioPermissionRequired">Audio-Genehmigung erforderlich</string>
+    <string name="settings_aboutDialogTitle">Über die Skydio App</string>
+    <string name="settings_userDialogTitle">Konto-Details</string>
+    <string name="settings_qgc_3ds_warningTitle">Fahrzeugmodus ändern</string>
+    <string name="settings_qgc_3ds_warningDescription">Um Skydio QGroundControl zu verwenden, wechseln Sie in den Fahrzeugmodus \"Fähigkeiten\" (Skills).</string>
+    <string name="settings_aboutDialogBody_FMT_appId_version_code_caClient_fdClient_fdMin_build_server_phoneId">Paket: %1$s\nVersion: %2$s (%3$d)\nCA Kunden-Version: %4$s\nFD Kunden-Version: %5$s\nFD Min Server Version: %6$s\nBauart: %7$s\nServer: %8$s\nTelefon-ID: %9$s</string>
+    <string name="settings_helpCenterRequiresInternet">Das Help Center funktioniert möglicherweise nicht richtig, weil Sie nicht mit dem Internet verbunden sind.</string>
+    <string name="settings_viewMap">Karte anschauen</string>
+    <string name="basicMap_title">Karte</string>
+    <string name="settings_advanced">Fortgeschritten</string>
+    <string name="advancedSettings_tabTitle">Fortgeschritten</string>
+    <string name="advancedSettings_reset">Zurücksetzen</string>
+    <string name="settings_sdcard_overwrite">Medien überschreiben</string>
+    <string name="settings_sdcard_overwrite_on">Älteste Medien löschen</string>
+    <string name="settings_sdcard_overwrite_on_description">Älteste Medien werden automatisch gelöscht, um Speicherplatz freizugeben.</string>
+    <string name="settings_sdcard_overwrite_on_warning">Automatisch gelöschte Medien können nicht wiederhergestellt werden.</string>
+    <string name="settings_sdcard_overwrite_on_warning_confirm">Bestätigen</string>
+    <string name="settings_sdcard_overwrite_off">Medien nicht überschreiben</string>
+    <string name="settings_sdcard_overwrite_off_description">Die ältesten Medien werden nicht automatisch gelöscht.</string>
+    <string name="settings_high_power_on_warning_title">Confirm High Power Mode</string>
+    <string name="settings_high_power_on_warning">By altering the default power setting, your usage will no longer be compliant with the standard radio spectrum regulations in the EU and UK. Usage of this mode is at the pilot\'s own risk.</string>
+    <string name="settings_high_power_on_warning_confirm">I Agree</string>
+    <string name="settings_high_power_on_warning_disagree">Do Not Agree</string>
+    <string name="settings_channel_connection_title">Connection Status</string>
+    <string name="settings_channel_connecting">Attempting to connect on %1$s</string>
+    <string name="settings_channel_connected">Connected on %1$s</string>
+    <string name="settings_band0_warning">Due to GPS interference, vehicle altitude is limited to 10 m above launch when operating in the M1 band</string>
+    <string name="settings_radio_next_btn">Next</string>
+    <string name="settings_radio_finish_btn">Finish</string>
+    <string name="settings_radio_channel_updating">Updating Radio Settings</string>
+    <string name="settings_radio_channel_updated">Configuring Radio</string>
+    <string name="settings_radio_channel_update_message">Vehicle Will Briefly Disconnect</string>
+    <string name="settings_radio_channel_error">There was an error processing your request</string>
+    <string name="settings_radio_selection_error">Need to select an option before proceeding</string>
+    <string name="settings_message_port_must_be_a_number">Port must be a number.</string>
+    <string name="settings_message_set_static_drone_hostname">Set Static Drone Hostname</string>
+    <string name="uconSummary_fileQueue">File Queue</string>
+    <string name="uconSummary_uploadHistory">Upload History</string>
+    <string name="uconSummary_settings">Settings</string>
+    <string name="uconSummary_vehicleToPhone">Drone to Controller</string>
+    <string name="uconSummary_phoneToCloud">Controller to Cloud</string>
+    <string name="uconSummary_pausedState">Paused: %1$d\\%%</string>
+    <string name="uconSummary_downloadingState">Downloading: %1$d\\%%</string>
+    <string name="uconSummary_uploadingState">Uploading: %1$d\\%%</string>
+    <string name="uconSummary_completeState">Complete</string>
+    <string name="uconSummary_downloadingSize">%1$.2f MB / %2$.2f MB</string>
+    <string name="uconSummary_downloadingCount">%1$d / %2$d Files</string>
+    <string name="uconSummary_fileCount">%1$d Files</string>
+    <string name="uconSettings_filesToPhone">Push Files to Phone</string>
+    <string name="uconSettings_filesToCloud">Push Files to Cloud</string>
+    <string name="uconSettings_useLte">Use LTE</string>
+    <string name="uconSettings_skippedFiles">Show Skipped Files</string>
+    <string name="uconSettings_forceRefresh">Force Refresh of Files</string>
+    <string name="ucon_empty">No Files to sync</string>
+    <string name="cacheMapTiles_title">Kacheln für Cache-Karten</string>
+    <string name="cacheMapTiles_detail">Merken: Umgebungs-Kachel-Cache löschen</string>
+    <string name="cacheCenter_title">Cache-Centerpunkt umschalten</string>
+    <string name="cacheCenter_detail">Merken: Bestimmte Koordinate festlegen</string>
+    <string name="showOfflineRegions_title">Offline-Regionen einsehen</string>
+    <string name="showOfflineRegions_detail">Merken: Letzte Region löschen</string>
+
+    <!-- downloadable maps -->
+    <string name="downloadableMap_titleAdd">Neue Karten hinzufügen</string>
+    <string name="downloadableMap_titleDownloading">Herunterladen</string>
+    <string name="downloadableMap_downloadAction">Karte herunterladen</string>
+    <string name="downloadableMap_errorTooManyTiles">Kartenbox Kachelanzahlgrenze überschritten: %1$d</string>
+    <string name="downloadableMap_downloadingTitle">Karte herunterladen</string>
+    <string name="downloadableMap_downloadProgress">%1$s\\%% heruntergeladen</string>
+    <string name="downloadableMap_downloadErrorTitle">Fehler beim Herunterladen</string>
+    <string name="downloadableMap_errorUnknown">Beim Herunterladen dieser Kartenregion ist ein Problem aufgetreten.</string>
+    <string name="downloadableMap_noInternetErrorTitle">Internet erforderlich</string>
+    <string name="downloadableMap_noInternetErrorMessage">Zum Herunterladen neuer Karten ist eine Internetverbindung erforderlich.</string>
+    <string name="downloadableMap_dailyLimitErrorTitle">Tagesgrenzwert erreicht</string>
+    <string name="downloadableMap_dailyLimitErrorMessage">Sie haben den Grenzwert von 10 heruntergeladenen Karten pro Tag erreicht. Bitte warten Sie bis morgen, bevor Sie weitere Karten herunterladen.</string>
+    <string name="downloadableMap_totalLimitErrorTitle">Kartengrenze erreicht</string>
+    <string name="downloadableMap_totalLimitErrorMessage">Sie haben das Limit von 10 gespeicherten Maps erreicht. Löschen Sie vorhandene Karten, bevor Sie neue Karten herunterladen.</string>
+
+    <!-- about -->
+    <string name="about_title">About</string>
+    <string name="tutorials_title">Tutorials</string>
+    <string name="account_title">Account</string>
+    <string name="logout_action">Abmelden</string>
+    <string name="about_syncconfig_action">Sync</string>
+    <string name="logout_action_confirm">Sind Sie sicher, dass Sie sich abmelden wollen?</string>
+
+    <string name="erase_controller_data">Alle Controller-Daten löschen</string>
+    <string name="erase_controller_dlg_title">Alle Controller-Daten löschen?</string>
+    <string name="erase_controller_dlg_msg">Dadurch werden alle Daten von Ihrem Controller entfernt.</string>
+    <string name="erase_controller_dlg_msg_with_pass">Dadurch werden alle Daten von Ihrem Steuergerät entfernt und das Passwort gelöscht.</string>
+    <string name="erase_controller_dlg_erase">Löschen</string>
+
+    <!-- vehicle settings -->
+    <string name="vehicleSettings_update">Update</string>
+    <string name="vehicleSettings_vehicleSpeedTest">Speed Test</string>
+    <string name="vehicleSettings_checkForUpdate">Nach Update suchen</string>
+    <string name="vehicleSettings_checkNowNoInternetMessage">Sie müssen eine Internetverbindung herstellen, um nach Updates zu suchen.</string>
+    <string name="vehicleSettings_findVehicle_FMT_name">Drohne finden</string>
+    <string name="vehicleSettings_findVehicle_FMT_name_skysticks">Suchen %1$s</string>
+    <string name="vehicleSettings_forget">Vergessen</string>
+    <string name="vehicleSettings_reset">Daten verwalten</string>
+    <string name="vehicleSettings_vehicleSerial">Seriennummer</string>
+    <string name="vehicleSettings_wifi_name">Wi-Fi Name</string>
+    <string name="vehicleSettings_uav_name">UAV Name</string>
+    <string name="vehicleSettings_vehicleSerialAnsi">ANSI Serial Number</string>
+    <string name="vehicleSettings_registrationId">Registration ID</string>
+    <string name="vehicleSettings_registrationIdNotSet">Not Set</string>
+    <string name="vehicleSettings_usbLogSync">Synchronisierung von USB-Protokollen</string>
+    <string name="vehicleSettings_usbDriveDetected">USB-Laufwerk erkannt</string>
+    <string name="vehicleSettings_state_connected">Verbunden</string>
+    <string name="vehicleSettings_state_disconnected">Getrennt</string>
+    <string name="vehicleSettings_state_disconnected_message">Löschen Sie vorhandene Karten, bevor Sie neue Karten herunterladen.</string>
+    <string name="vehicleSettings_state_updateAvailable">Software-Update verfügbar</string>
+    <string name="vehicleSettings_state_checkingForUpdate">Prüfung auf Updates</string>
+    <string name="vehicleSettings_versionUnknown">Version Unbekannt</string>
+    <string name="vehicleSettings_softwareDetailsBody_FMT_version_desc">Version (%1$s)\n%2$s\n</string>
+    <string name="vehicleSettings_softwareDetailsBody_FD_version_desc">FD Server-Version %1$s\nFD Min Kunden-Version %2$s\n</string>
+    <string name="vehicleSettings_softwareDetailsBody_FMT_diffBase">Diff von: %1$s</string>
+    <string name="vehicleSettings_softwareDetailsBody_noDiffBase">Diff nicht möglich</string>
+    <string name="vehicleSettings_softwareDetailsTitle">Aktuelle Software</string>
+    <string name="vehicleSettings_forgetTitle_FMT_name">%1$svergessen?</string>
+    <string name="vehicleSettings_beaconWifiWarningTitle">Mit Drohne verbinden</string>
+    <string name="vehicleSettings_beaconWifiWarningDescription">Sie müssen direkt mit dem Wifi-Netzwerk Ihrer Drohne verbunden sein, um das Passwort zu aktualisieren.</string>
+    <string name="vehicleSettings_missingInfo">Informationen zum fehlenden Fahrzeug</string>
+    <string name="vehicleSettings_missingUpdateInfo">Fahrzeug-Update-Info nicht gefunden</string>
+    <string name="vehicleSettings_forgetCancel">Abbrechen</string>
+    <string name="vehicleSettings_forgetConfirm">Vergessen</string>
+    <string name="vehicleSettings_forgetMessage">Sind Sie sicher, dass Sie diese Drohne vergessen wollen?</string>
+    <string name="vehicleSettings_updateCheck_serverError">Fehler bei der Prüfung auf Update.</string>
+    <string name="vehicleSettings_updateCheck_unknownError">Skydio kann nicht erreicht werden, um nach Updates zu suchen.</string>
+    <string name="vehicleSettings_updateCheck_none">Diese Drohne ist auf dem neuesten Stand.</string>
+    <string name="vehicleSettings_updateCheck_found">Ein Update ist verfügbar.</string>
+    <string name="vehicleSettings_radio">Radio</string>
+    <string name="vehicleSettings_radio_not_connected">Nicht mit dem Fahrzeug verbunden, kann die Einstellungen nicht bearbeiten</string>
+    <string name="vehicleSettings_encryption">Verschlüsselung</string>
+    <string name="vehicleSettings_encryption_dlg_title">Are you sure?</string>
+    <string name="vehicleSettings_encryption_dlg_msg">If you change encryption settings while a 3D Scan is in progress you will be unable to resume.</string>
+    <string name="vehicleSettings_viewLastFlights">Letzte Flüge anzeigen</string>
+    <string name="vehicleSettings_cloudConfiguration">Cloud Settings</string>
+    <string name="vehicleSettings_uploadFiles">Upload Files</string>
+    <string name="vehicleSettings_frequency">Antiflimmern</string>
+    <string name="vehicleSettings_wifiChannel">Auswahl des Kanals</string>
+    <string name="vehicleSettings_flightHistory">Flugverlaufsdatei</string>
+    <string name="vehicleSettings_rfHighPower">High Power Mode</string>
+
+    <!-- simulator selection -->
+    <string name="simulatorSelection_noSimulatorText">Sie haben Ihrem Konto keinen Simulator zugewiesen. Fordern Sie einen Simulator über die Registerkarte Simulatoren in der Skydio-Entwicklerkonsole an.</string>
+    <string name="simulatorSelection_checkNow">Jetzt prüfen</string>
+
+    <!-- iot vehicles -->
+    <string name="iotVehicles_title">Cloud-zugängliche Fahrzeuge</string>
+    <string name="iotVehicles_noIotVehiclesText">Keine Online-Fahrzeuge für Ihre Organisation.</string>
+    <string name="iotVehicles_checkNow">Jetzt prüfen</string>
+    <string name="iotVehicles_network_drones_title">Network Drones</string>
+    <string name="iotVehicles_network_drones_connect">Connect</string>
+    <string name="iotVehicles_network_drones_disconnect">Disconnect</string>
+    <string name="iotVehicles_network_drones_prepareForFlight">Prepare for Flight</string>
+    <string name="iotVehicles_network_drones_viewStream">View Stream</string>
+    <string name="iotVehicles_no_online_drones_title">No Online Drones</string>
+    <string name="iotVehicles_no_online_drones_msg">Your organization has no drones available for remote flight.</string>
+    <string name="iotVehicles_no_online_drones">No Online Drones</string>
+    <string name="iotVehicles_ensure_drone_connected">Make sure a Skydio Drone is connected to the Internet via LTE or WiFi</string>
+    <string name="iotVehicles_no_internet_connection">No Internet Connection</string>
+    <string name="iotVehicles_connect_your_controller_to_the_internet">Connect your Controller to the Internet via WiFi or LTE</string>
+    <string name="iotVehicles_label_disconnect_from_x">Disconnect from %1$s</string>
+    <string name="iotVehicles_label_connect_to_x">Connect to %1$s</string>
+
+    <!-- vehicle reset -->
+    <string name="vehicleResetChoice_title_FMT_name">Zurücksetzen %1$s</string>
+    <string name="vehicleResetChoice_mediaReset">Medienkarte formatieren</string>
+    <string name="vehicleResetChoice_logsReset">Formatieren der Protokollkarte</string>
+    <string name="vehicleResetChoice_hardReset">Zurücksetzen auf Werkseinstellungen</string>
+    <string name="vehicleReset_mediaResetTitle">Medienkarte formatieren</string>
+    <string name="vehicleReset_mediaResetHeader_FMT_name">Alle Videos und Schnappschüsse von %1$s löschen</string>
+    <string name="vehicleReset_mediaResetText">Wenn Sie einzelne Elemente löschen möchten, können Sie sie auf der Registerkarte Medien löschen.</string>
+    <string name="vehicleReset_mediaResetCompleteText_FMT_name">Alle Medien wurden aus %1$s gelöscht.</string>
+    <string name="vehicleReset_mediaResetProgress">Alle Medien löschen</string>
+    <string name="vehicleReset_logsResetTitle">Formatieren der Protokollkarte</string>
+    <string name="vehicleReset_logsResetHeader_FMT_name">Alle Protokolle löschen von %1$s</string>
+    <string name="vehicleReset_logsResetText">Dadurch werden alle Daten auf deiner Logs-SD-Karte gelöscht. Die Medien werden dadurch nicht gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.</string>
+    <string name="vehicleReset_logsResetCompleteText_FMT_name">Alle Protokolle wurden von %1$s gelöscht.</string>
+    <string name="vehicleReset_logsResetProgress">Alle Protokolle löschen</string>
+    <string name="vehicleReset_hardResetTitle">Zurücksetzen auf Werkseinstellungen</string>
+    <string name="vehicleReset_hardResetHeader">Alle Daten löschen</string>
+    <string name="vehicleReset_hardResetText_FMT_name">Dadurch wird die SD-Karte formatiert, alle Protokolle werden gelöscht, das werkseitige WiFi-Passwort wird wiederhergestellt und %1$s zurückgesetzt.</string>
+    <string name="vehicleReset_hardResetCompleteText_FMT_name">Alle gespeicherten Daten wurden gelöscht und %1$s wurde auf seine Standardeinstellungen zurückgesetzt. Stellen Sie die Verbindung zu Ihrer Drohne wieder her, sobald diese den Neustart abgeschlossen hat.</string>
+    <string name="vehicleReset_hardResetProgress">Löschung aller Daten</string>
+    <string name="vehicleReset_deleteComplete">Vollständig löschen</string>
+    <string name="vehicleReset_formatButtonText">Löschen</string>
+    <string name="vehicleReset_noClientError_FMT_name">Verbindung zu %1$s verloren.\n\nEs wurden keine Daten entfernt.</string>
+    <string name="vehicleReset_failedUsbCTitle">USB-Kabel angeschlossen</string>
+    <string name="vehicleReset_failedUsbCMessage">Bitte entfernen Sie das angeschlossene Kabel und versuchen Sie es erneut.</string>
+    <string name="vehicleReset_failedTitle_FMT_name">Konnte nicht zurückgesetzt werden %1$s</string>
+    <string name="vehicleReset_timeoutTitle_FMT_name">Could not reset %1$s due to timeout.</string>
+    <string name="vehicleReset_failedMessage_FMT_name">%1$s konnte derzeit nicht zurückgesetzt werden.</string>
+    <string name="vehicleReset_failedButWillRebootMessage_FMT_name">%1$sdie Zurücksetzung konnte nicht abgeschlossen werden, muss aber neu gestartet werden, damit Sie die Verbindung wiederherstellen können.</string>
+    <string name="vehicleReset_failedToFormat_FMT_name">%1$s failed to format the SD card.</string>
+    <string name="vehicleReset_backNotAllowed">Zurücksetzen erfolgt.</string>
+    <string name="vehicle_error_network_test_unavailable">Network test unavailable</string>
+
+    <!-- specific flight settings -->
+    <string name="downloadMaps_title">Karten herunterladen</string>
+    <string name="naturalDragging_title">Kamera zieht</string>
+    <string name="naturalDragging_onTitle">Normal</string>
+    <string name="naturalDragging_onDesc">Bild folgt der Fingerbewegung</string>
+    <string name="naturalDragging_offTitle">Invertieren</string>
+    <string name="naturalDragging_offDesc">Die Kamera folgt der Fingerbewegung</string>
+    <string name="invertGamepad_title">Gamepad-Steuerung</string>
+    <string name="invertGamepad_offTitle">Normale Y-Achsen</string>
+    <string name="invertGamepad_offDesc">Standardmäßige Steuerknüppel</string>
+    <string name="invertGamepad_ofTitle">Y-Achsen umkehren</string>
+    <string name="invertGamepad_onDesc">Steuerelemente mit invertierten Y-Achsen</string>
+    <string name="recordPhoneAudio_title">Audio aufzeichnen</string>
+    <string name="recordPhoneAudio_onTitle">Aufzeichnen</string>
+    <string name="recordPhoneAudio_onDesc">Die Videoclips werden mit Ton aufgenommen.</string>
+    <string name="recordPhoneAudio_offTitle">Nicht aufzeichnen</string>
+    <string name="recordPhoneAudio_offDesc">Die Videoclips enthalten keinen Ton.</string>
+    <string name="displayUnits_title">Einheiten</string>
+    <string name="language_title">Sprache</string>
+    <string name="displayUnits_imperialTitle">Imperial</string>
+    <string name="displayUnits_imperialDesc"></string>
+    <string name="displayUnits_internationalTitle">Metrisch</string>
+    <string name="displayUnits_internationalDesc"></string>
+    <!-- Device radio settings -->
+    <string name="radioBand_title">Band Selection</string>
+    <string name="radioBand_item">Band %1$.1f GHz</string>
+    <string name="radioPower_title">Power Level Selection</string>
+    <string name="radioBandwidth_title">Bandbreite</string>
+    <string name="radioBandwidth_item">%1$d MHz</string>
+    <string name="radioBandwidth_Desc"></string>
+    <string name="radioChannel_title">Frequency</string>
+    <string name="radioChannel_item">%1$d MHz</string>
+    <string name="radioPowerSelect_title">Power</string>
+    <string name="radioPower_item_mh1624">Power %1$s</string>
+
+    <!-- other specific settings -->
+    <string name="cellularDownloadRule_title">Aktualisierungen auf Mobilgeräten</string>
+    <string name="cellularDownloadRule_alwaysName">Mobiltelefon oder WiFi</string>
+    <string name="cellularDownloadRule_alwaysDesc">Verwenden Sie für Updates immer eine Mobilfunkverbindung.</string>
+    <string name="cellularDownloadRule_smallOnlyName">Unter 150 MB</string>
+    <string name="cellularDownloadRule_smallOnlyDesc">Kleinere Updates werden über jedes verfügbare Netzwerk heruntergeladen.</string>
+    <string name="cellularDownloadRule_neverName">Ausschließlich WLAN</string>
+    <string name="cellularDownloadRule_neverDesc">Verwenden Sie niemals Mobilfunkgeräte, um Updates herunterzuladen.</string>
+    <!-- Controls preference strings -->
+    <string name="controlsPreference_title">Steuerelemente Bevorzugung</string>
+    <string name="controlsPreference_defaultName">Standard</string>
+    <string name="controlsPreference_defaultDescription">Rollen mit Stab,\ndrehen mit Tasten</string>
+    <string name="controlsPreference_steeringName">Lenkung</string>
+    <string name="controlsPreference_steeringDescription">Mit Stab drehen,\nmit Knöpfen rollen</string>
+    <string name="controlsPreference_mode2SticksName">Joysticks</string>
+    <string name="controlsPreference_mode2SticksDescription">mit Knöpfen rollen</string>
+
+    <!-- USB log sync (advanced user-facing feature) -->
+    <string name="usbLogSync_title">Synchronisierung von USB-Protokollen</string>
+    <string name="usbLogSync_start">Start</string>
+    <string name="usbLogSync_abort">Abbrechen</string>
+    <string name="usbLogSync_includeLogs">Synchronisierung mit vollständigen Flugprotokollen zusätzlich zu HD-Videos.</string>
+    <string name="usbLogSync_connectUsbDrive">Anschließen eines USB-Laufwerks</string>
+    <string name="usbLogSync_noHostVehicle">Mit deiner Drohne verbinden</string>
+    <string name="usbLogSync_noHostVehicle_FMT_name">Verbinden mit %1$s</string>
+    <string name="usbLogSync_preparing">Vorbereitung erfolgt</string>
+    <string name="usbLogSync_ready">Bereit</string>
+    <string name="usbLogSync_connectionError">Kann keine Verbindung zur Drohne herstellen</string>
+    <string name="usbLogSync_loading">Wird geladen</string>
+    <string name="usbLogSync_success_FMT_size">Letzte Synchronisierung von %1$s erfolgreich</string>
+    <string name="usbLogSync_failed_FMT_size">Letzte Synchronisierung von %1$s fehlgeschlagen</string>
+
+    <!-- media viewer -->
+    <string name="flightList_tabTitle">Medien</string>
+    <string name="flightList_skysticksTabTitle">Media</string>
+    <string name="media_loading_title">Synchronisierung erfolgt</string>
+    <string name="media_loading_waiting">Warten, dass %1$s antwortet</string>
+    <string name="media_loading_mounting">Montage Lagerung</string>
+
+    <string name="media_loading_processing">Medien werden verarbeitet</string>
+    <string name="media_noMedia_title">Keine Medien</string>
+    <string name="media_noMedia_subtitle">Sie haben keine Fotos oder Videos.</string>
+    <string name="media_disconnected_title">Getrennt</string>
+    <string name="media_disconnected_subtitle">Fotos und Videos werden nur angezeigt, wenn Sie mit Ihrer Drohne verbunden sind.</string>
+    <string name="media_preview_empty">Es gibt keinen Stream für den vorherigen Flug</string>
+    <string name="media_disconnectBeacon_title">Signal trennen</string>
+    <string name="media_disconnectBeacon_subtitle">Fotos und Videos werden nur angezeigt, wenn Sie direkt mit Ihrer Drohne ohne Beacon verbunden sind.</string>
+    <string name="media_disconnectJoysticks_title">Controller abtrennen</string>
+    <string name="media_disconnectJoysticks_subtitle">Fotos und Videos werden nur angezeigt, wenn Sie direkt mit Ihrer Drohne verbunden sind, ohne einen Controller.</string>
+    <string name="media_selectButton">Auswählen</string>
+    <string name="media_cancelButton">Abbrechen</string>
+    <string name="media_videosLabel">Videos</string>
+    <string name="media_photosLabel">Fotos</string>
+    <string name="media_panoramasLabel">Panoramas</string>
+    <string name="media_scansLabel">Scans</string>
+    <string name="media_selectAllButton">Alle auswählen</string>
+    <string name="media_deselectButton">Auswahl aufheben</string>
+    <string name="media_selectionMenu_saveToPhone">Save to Phone</string>
+    <string name="media_selectionMenu_export">Exportieren</string>
+    <string name="media_saving_title">Speichern von Medien auf Ihrem mobilen Gerät.</string>
+    <string name="media_saving_downloadingTitle">Herunterladen %1$s</string>
+    <string name="media_saving_progressBytes">%1$s / %2$s</string>
+    <string name="media_saving_progressSpeed">%1$s/s</string>
+    <string name="media_saving_subtitle">Schalten Sie Ihre Drohne oder Ihr Telefon nicht ab.</string>
+    <string name="media_saving_progressDescription_FMT_current_total">Datei %1$d von %2$d wird gespeichert</string>
+    <string name="media_lowPerformanceAlert_title">Speichern</string>
+    <string name="media_lowPerformanceAlert_message">Dieses 4K-Video wird auf diesem Telefon aufgrund der Leistungsanforderungen möglicherweise nicht korrekt wiedergegeben.</string>
+    <string name="media_lowPerformanceAlert_neverAskAgain">Nicht erneut anzeigen</string>
+    <string name="media_lowPerformanceAlert_button">OK</string>
+    <string name="media_largeDownloadAlert_title">Großer Download</string>
+    <string name="media_largeDownloadAlert_message">Sie sind dabei, %1$s Inhalte auf Ihrem Handy zu speichern.</string>
+    <string name="media_largeDownloadAlert_save">Speichern</string>
+    <string name="media_dialogAction_open">Öffnen</string>
+    <string name="media_successDialog_title">Erfolgreich gespeichert</string>
+    <string name="media_successDialog_message">Ihr Medium wurde zu Ihrer Galerie hinzugefügt.</string>
+    <string name="media_wait_for_download">Bitte warten Sie, bis der Download abgeschlossen ist.</string>
+    <string name="media_download_failed_disconnected">Download fehlgeschlagen, Fahrzeug getrennt.</string>
+    <string name="media_download_failed_for">Download für %1$s fehlgeschlagen</string>
+    <string name="media_vehicle_disconnected">Fahrzeug abgetrennt</string>
+    <string name="media_encryption_hidden">Verschlüsselte Medien versteckt</string>
+    <string name="media_encryption_inserted">Sicherheitsschlüssel eingesteckt</string>
+    <string name="media_delete_confirmTitle">Medien löschen</string>
+    <string name="media_delete_confirmMessage">Die ausgewählten Medien werden aus %1$s gelöscht.</string>
+    <string name="media_delete_failed">Ausgewählte Elemente konnten nicht gelöscht werden</string>
+    <string name="media_delete_success">Gelöschte %1$d Elemente</string>
+    <string name="media_deleteVideo_confirmGenericMessage">Dieses Video wird von deiner Drohne gelöscht.</string>
+    <string name="media_deletePhoto_confirmGenericMessage">Dieses Foto wird von deiner Drohne gelöscht.</string>
+    <string name="media_exportOptionsTitle">Export Options</string>
+    <string name="media_exportOptions16x9Title">Original (16:9)</string>
+    <string name="media_exportOptions16x9Desc">Maintain original 16:9 aspect ratio</string>
+    <string name="media_exportOptions9x16Title">Vertical (9:16)</string>
+    <string name="media_exportOptions9x16Desc">Crop to 9:16 aspect ratio with subject in frame</string>
+    <string name="media_exportOptions1x1Title">Square (1:1)</string>
+    <string name="media_exportOptions1x1Desc">Crop to 1:1 aspect ratio with subject in frame</string>
+    <string name="media_exportButton">Export</string>
+    <string name="media_review_scan">@string/review_scan</string>
+    <string name="media_create_model">Create Model</string>
+    <string name="media_message_vehicle_disconnected_could_not_load_image_preview">Vehicle disconnected, could not load image preview.</string>
+    <string name="media_message_vehicle_disconnected">Vehicle disconnected.</string>
+    <string name="media_message_deleted_photo">Deleted photo.</string>
+    <string name="media_message_failed_to_delete_photo">"Failed to delete photo: "</string>
+    <string name="media_duration_value_incomplete">Incomplete</string>
+    <string name="media_photoviewer_title_photo_x">Photo %1$d of %2$d</string>
+    <string name="media_message_downloaded_percent">Downloaded %1$d%%</string>
+    <string name="media_message_video_not_found">Video not found</string>
+
+    <string name="process_edge_model">Process Onboard Model?</string>
+    <string name="process_edge_model_details">Create a textured model of your scan.</string>
+    <string name="processing_edge_model">Processing Onboard Model</string>
+    <string name="processing_edge_model_details">Please leave the drone on.</string>
+
+    <string name="model_created">Model Created</string>
+    <string name="model_created_details">You can now see your textured model in the viewer.</string>
+
+    <string name="stats_photos">PHOTOS</string>
+    <string name="stats_distance">DISTANCE</string>
+    <string name="stats_overlap">OVERLAP</string>
+    <string name="stats_scan_time">SCAN TIME</string>
+    <string name="stats_gsd">GSD</string>
+    <string name="stats_sidelap">SIDELAP</string>
+
+    <string name="button_no">No</string>
+    <string name="button_yes">Yes</string>
+
+    <!-- permissions -->
+    <string name="permissions_openSettingsAction">Einstellungen öffnen</string>
+    <string name="mediaPermissions_title">Speicherberechtigungen erforderlich</string>
+    <string name="mediaPermissions_message">Die Applikation muss die Berechtigung haben, auf den externen Medienspeicher zuzugreifen, bevor sie fortfahren kann.</string>
+
+    <!-- log dest selection -->
+    <string name="logSync_destSelectHeader">Send Support Logs</string>
+    <string name="logSync_destSelectText">You are about to share information with Skydio support to validate your warranty claim. The information includes video, audio, images, email address, and performance telemetry. Skydio will retain this information indefinitely. Visit the Skydio Privacy Policy, available at skydio.com/legal, for detailed information.</string>
+    <string name="logSync_encryptionDisclaimer">If your logs are encrypted, insert your security key now.</string>
+    <string name="logSync_encryptionDisclaimer_insert_key">Your vehicle was provisioned with a yubikey, and your logs may be encrypted. Turn on your vehicle and insert your yubikey to decrypt your logs for Skydio Support. If your vehicle is lost, you will not be able to export logs to your flash drive.</string>
+    <string name="logSync_destSelectCloud">Next</string>
+    <string name="logSync_destSelectCloud_c78">Upload to Skydio Support</string>
+    <string name="logSync_notConnectedToWifi">Connect Controller to Wifi to Continue</string>
+    <string name="logSync_destSelectDrive">Auf Drive exportieren</string>
+
+    <!-- log sync strings -->
+    <string name="logSync_modeSelectToolbarTitle">Skydio Support Logs</string>
+    <string name="logSync_modeSelectHeaderUpload">Hochladeart auswählen</string>
+    <string name="logSync_modeSelectTextUpload">You may upload a single flight log or controller logs. Flight logs provide greater detail and are preferred, but you must connect to your drone to upload.</string>
+    <string name="logSync_modeSelectHeaderExport">Flugprotokolle exportieren</string>
+    <string name="logSync_modeSelectTextExport">Sie können einen einzelnen Flug oder alle Flugdaten exportieren.</string>
+    <string name="logSync_modeSelectUploadOneButton">Send Single Flight Log</string>
+    <string name="logSync_modeSelectUploadAllButton">Send Controller Logs</string>
+    <string name="logSync_modeSelectUploadPhoneAllButton">Send Phone Logs</string>
+    <string name="logSync_logListToolbarTitle">Skydio Support Logs</string>
+    <string name="logSync_logListNoFlights">Keine Flüge gefunden</string>
+    <string name="logSync_step_FMT_current_total_HTML"><![CDATA[SCHRITT <b>%1$d</b> von <b>%2$d</b>]]></string>
+    <string name="logSync_doNotLeave">Verlassen Sie diese App nicht.</string>
+    <string name="logSync_doNotLeaveOrPowerOffVehicle">Verlassen Sie diese App nicht und schalten Sie Ihre Drohne nicht aus.</string>
+    <string name="logSync_doNotLeaveOrPowerOffBeacon">Verlassen Sie diese Applikation nicht und schalten Sie Ihren Beacon nicht aus.</string>
+    <string name="logSync_cancel"><u>Abbrechen</u></string>
+    <string name="logSync_loading">Wird geladen</string>
+    <string name="logSync_logDownloadToolbarTitle">Skydio Support Logs</string>
+    <string name="logSync_downloading">Herunterladen von Protokolldateien</string>
+    <string name="logSync_connectToDevice_FMT_name">Connect to %1$s via 2.4/5GHz to fetch log data for this flight.</string>
+    <string name="logSync_downloadFailedBeacon">There was a problem downloading flight data.</string>
+    <string name="logSync_downloadFailedConnection">There was a problem downloading flight data. Check the connection to your drone.</string>
+    <string name="logSync_downloadFailedFetching">There was a problem finding flight data. Error %1$d</string>
+    <string name="logSync_downloadFailedDownloading">There was a problem downloading flight data. Error %1$d</string>
+    <string name="logSync_download">Herunterladen</string>
+    <string name="logSync_cantAccessVehicle">Ich kann nicht auf diese Drohne zugreifen</string>
+    <string name="logSync_cantAccessBeacon">Ich kann nicht auf dieses Beacon zugreifen</string>
+    <string name="logSync_logUploadToolbarTitle">Skydio Support Logs</string>
+    <string name="logSync_uploadOverCellular">Über Mobilfunknetz hochladen</string>
+    <string name="logSync_uploadOverWifi">Über WLAN hochladen</string>
+    <string name="logSync_connectToWifiButton">Mit WLAN verbinden</string>
+    <string name="logSync_connectToBeacon">Mit Beacon verbinden</string>
+    <string name="logSync_uploading">Hochladen von Protokolldateien</string>
+    <string name="logSync_connectToInternet">Bitte stellen Sie eine Internetverbindung her, damit wir Daten für diesen Flug hochladen können.</string>
+    <string name="logSync_uploadFinishedHeader">Upload abgeschlossen</string>
+    <string name="logSync_uploadFinishedText">Ihre Protokolle wurden in Skydio hochgeladen.</string>
+    <string name="logSync_uploadFailed">There was a problem uploading your flight data.\nCloud Error: %1$d</string>
+    <string name="logSync_uploadPartiallyFailed">Log upload completed. Some of your log files failed to upload to Skydio.</string>
+    <string name="logSync_exporting">Exportieren von Protokolldateien erfolgt</string>
+    <string name="logSync_exportFinishedHeader">Export abgeschlossen</string>
+    <string name="logSync_exportFinishedText">Ihre Protokolle wurden auf einen Wechseldatenträger exportiert.</string>
+    <string name="logSync_exportFailed">There was a problem exporting your flight data. Please check your USB device and try again.\nExport Error: %1$d</string>
+    <string name="logSync_exportPartiallyFailed">Log export completed. Some of your log files failed to copy to your USB device.</string>
+    <string name="logSync_finished">Abgeschlossen</string>
+    <string name="logSync_preparing_media">Preparing Local Media</string>
+
+    <!-- clip screen -->
+    <string name="makeClip_connectionPromptTitle">Mit Drohne verbinden</string>
+    <string name="makeClip_connectionPromptMessageClips">Sie müssen eine Verbindung zu Ihrer Drohne herstellen, um Clips von diesem Flug zu erstellen.</string>
+    <string name="makeClip_connectionPromptMessageClips_FMT_name">Sie müssen eine Verbindung mit %1$s herstellen, um Clips von diesem Flug zu erstellen.</string>
+    <string name="makeClip_connectionPromptMessageStills">Sie müssen eine Verbindung zu Ihrer Drohne herstellen, um Standbilder von diesem Flug zu erstellen.</string>
+    <string name="makeClip_connectionPromptMessageStills_FMT_name">Sie müssen eine Verbindung zu %1$s herstellen, um Standbilder von diesem Flug zu erstellen.</string>
+    <string name="makeClip_connectionPrompt_cancel">Abbrechen</string>
+    <string name="makeClip_connectionPrompt_connect">Verbindung einstellen</string>
+    <string name="makeClip_blockingTitleClips">Clips nicht verfügbar</string>
+    <string name="makeClip_blockingTitleStills">Standbilder nicht verfügbar</string>
+    <string name="makeClip_blockingMessage_noFlight">Die Flugaufzeichnung kann nicht geladen werden.</string>
+    <string name="makeClip_blockingMessageClips_unknown">Überprüfen mit Ihrer Drohne, ob Clips gemacht werden können.</string>
+    <string name="makeClip_blockingMessageStills_unknown">Überprüfen mit Ihrer Drohne, ob Standbilder gemacht werden können.</string>
+    <string name="makeClip_blockingMessage_error">Es ist nicht möglich, mit Ihrer Drohne zu kommunizieren.</string>
+    <string name="makeClip_blockingMessage_flightNotFound">Ihre Drohne hat keine Aufzeichnungen mehr über diesen Flug.</string>
+    <string name="makeClip_blockingMessage_vehicleFlying">Diese Drohne fliegt gerade oder hat gerade einen Flug beendet.</string>
+    <string name="makeClip_blockingMessage_waitingForFullResVideo">Ihre Drohne sammelt noch immer die HD-Videodateien des Fluges.</string>
+    <string name="makeClip_blockingMessage_impossibleNoFullResVideo">Das während dieses Fluges aufgenommene HD-Video wurde von Ihrer Drohne entfernt.</string>
+    <string name="makeClip_blockingMessageClips_waitingForAudioUpload">Es gibt Telefonaufnahmen, die hochgeladen werden müssen, bevor Clips erstellt werden können.</string>
+    <string name="makeClip_blockingMessageStills_waitingForAudioUpload">Es gibt Telefondaten, die hochgeladen werden müssen, bevor Standbilder erstellt werden können.</string>
+    <string name="makeClip_blockingMessageClips_waitingToAlignAudio">Ihre Drohne wartet darauf, den Ton mit dem HD-Video abzustimmen.</string>
+    <string name="makeClip_blockingMessageStills_waitingToAlignAudio">Ihre Drohne wartet darauf, das HD-Video abzustimmen.</string>
+    <string name="makeClip_blockingMessageClips_aligningAudio">Ihre Drohne stimmt den Ton mit dem HD-Video ab.</string>
+    <string name="makeClip_blockingMessageStills_aligningAudio">Ihre Drohne stimmt das HD-Video ab.</string>
+    <string name="makeClip_blockingMessageClips_waitingForTranscodeReadiness">Ihre Drohne macht sich bereit, Clips zu drehen.</string>
+    <string name="makeClip_blockingMessageStills_waitingForTranscodeReadiness">Ihre Drohne bereitet sich auf die Aufnahme von Standbildern vor.</string>
+    <string name="makeClip_createButton">Clip erstellen</string>
+    <string name="makeClip_deleteButton">Löschen</string>
+    <string name="makeClip_cancelButton">Abbrechen</string>
+    <string name="makeClip_saveButton">Speichern</string>
+    <string name="makeClip_nextButton">Next</string>
+    <string name="makeClip_createClip">Clip erstellen</string>
+    <string name="makeClip_setStart">Start einstellen</string>
+    <string name="makeClip_setEnd">Ende einstellen</string>
+    <string name="makeClip_startHint">START</string>
+    <string name="makeClip_endHint">ENDE</string>
+    <string name="makeClip_disconnectedAlert_title">Getrennt</string>
+    <string name="makeClip_disconnectedAlert_message">Ihre Drohne ist nicht mehr verbunden.</string>
+    <string name="makeClip_disconnectedAlert_button">OK</string>
+    <string name="makeClip_noVideoNotConnected">Kein Video heruntergeladen. Verbinden Sie sich mit Ihrer Drohne.</string>
+    <string name="makeClip_syncingPreviewTitle">Flug synchronisieren</string>
+    <string name="makeClip_queuedPreviewTitle">Warten auf die Synchronisierung</string>
+    <string name="makeClip_queuedPreviewSubtitle">Die Synchronisierung dieses Mediums stoppt andere Downloads.</string>
+    <string name="makeClip_queuedPreviewSyncNow">Dieses Medium synchronisieren</string>
+    <string name="makeClip_preparingToSyncSubtitle">Mediensynchronisation wird vorbereitet.</string>
+    <string name="makeClip_noRemoteVideoTitle">Video ist nicht verfügbar</string>
+    <string name="makeClip_noRemoteVideoSubtitle">Es gibt kein Vorschauvideo, das Sie von Ihrer Drohne herunterladen können.</string>
+    <string name="makeClip_fetchingVideoTitle">Video wird abgerufen</string>
+    <string name="makeClip_fetchingVideoSubtitle">Vorschau wird erstellt</string>
+    <string name="makeClip_videoNotDeliveredTitle">Video ist nicht verfügbar</string>
+    <string name="makeClip_videoNotDeliveredSubtitle">Es gibt kein Vorschauvideo mehr auf Ihrer Drohne.</string>
+    <string name="makeClip_videoNotAvailableTitle">Video ist nicht verfügbar</string>
+    <string name="makeClip_videoNotAvailableSubtitle">Das Video ist nicht zugänglich.</string>
+    <string name="makeClip_message_failed_to_delete_video">"Failed to delete video: "</string>
+    <string name="makeClip_message_deleted_video">Deleted video.</string>
+    <string name="makeClip_connect_to_your_vehicle">Connect to your vehicle</string>
+    <string name="makeClip_message_video_not_loaded">Video Not Loaded</string>
+    <string name="makeClip_message_connection_to_vehicle_lost">Connection to Vehicle lost!</string>
+    <string name="makeClip_message_switching_to_higher_quality_preview_video">Switching to higher quality preview video.</string>
+
+    <!-- photo viewer -->
+    <string name="photoViewer_saveToPhone">Auf Telefon speichern</string>
+    <string name="photoViewer_delete">Löschen</string>
+
+    <!-- interval photo viewer -->
+    <string name="intervalPhotoViewer_saveToPhone">Auf Telefon speichern</string>
+    <string name="intervalPhotoViewer_delete">Löschen</string>
+
+    <!-- clip/still download dialog -->
+    <string name="mediaRequestDialog_still_title">Snapshot wird erstellt</string>
+    <string name="mediaRequestDialog_still_notConnectedToVehicle">Snapshot kann nicht erstellt werden. Nicht mit Ihrer Drohne verbunden.</string>
+    <string name="mediaRequestDialog_still_creating">Ein Foto wird erstellt</string>
+    <string name="mediaRequestDialog_still_downloading">Herunterladen</string>
+    <string name="mediaRequestDialog_still_remoteError">Fehler auf Drohne aufgetreten</string>
+    <string name="mediaRequestDialog_still_successTitle">Foto gespeichert</string>
+    <string name="mediaRequestDialog_still_successMessage">Ihr Foto wurde zu Ihrer Galerie hinzugefügt.</string>
+    <string name="mediaRequestDialog_clip_requestFailedTitle">Clip-Fehler</string>
+    <string name="mediaRequestDialog_clip_requestFailedMessage">Ihre Drohne war nicht in der Lage, den angeforderten Clip zu erstellen. Wenn das Problem weiterhin besteht, wenden Sie sich an den Kundensupport.</string>
+    <string name="mediaRequestDialog_clip_contactingTitle">Ein Clip wird angefordert</string>
+    <string name="mediaRequestDialog_clip_contactingText">Schalten Sie Ihr Telefon oder Ihre Drohne nicht aus.</string>
+    <string name="mediaRequestDialog_clip_preparingTitle">Clip wird erstellt</string>
+    <string name="mediaRequestDialog_clip_preparingText">Schalten Sie Ihr Telefon oder Ihre Drohne nicht aus.</string>
+    <string name="mediaRequestDialog_clip_creatingTitle">Clip wird erstellt</string>
+    <string name="mediaRequestDialog_clip_creatingText">Schalten Sie Ihr Telefon oder Ihre Drohne nicht aus.</string>
+    <string name="mediaRequestDialog_clip_notConnectedTitle">Getrennt</string>
+    <string name="mediaRequestDialog_clip_notConnectedText">Stellen Sie die Verbindung zu Ihrer Drohne wieder her und versuchen Sie es erneut.</string>
+    <string name="mediaRequestDialog_clip_downloadingTitle">Ihr Clip wird heruntergeladen</string>
+    <string name="mediaRequestDialog_clip_downloadingText">Schalten Sie Ihr Telefon oder Ihre Drohne nicht aus.</string>
+    <string name="mediaRequestDialog_clip_connectionLostTitle">Getrennt</string>
+    <string name="mediaRequestDialog_clip_connectionLostText">Verbinden Sie sich erneut mit Ihrer Drohne, um fortzufahren.</string>
+    <string name="mediaRequestDialog_clip_vehicleErrorTitle">Drohne reagiert nicht</string>
+    <string name="mediaRequestDialog_clip_vehicleErrorText">Der Clip-Status Ihrer Drohne kann nicht abgerufen werden.</string>
+    <string name="mediaRequestDialog_clip_successTitle">Clip gespeichert</string>
+    <string name="mediaRequestDialog_clip_successMessage">Ihr Clip wurde zu Ihrer Galerie hinzugefügt.</string>
+    <string name="mediaRequestDialog_clip_failedTitle">Clip-Fehler</string>
+    <string name="mediaRequestDialog_clip_failedMessage">Ihre Drohne hat versucht, den angeforderten Clip zu erstellen und ist dabei gescheitert.</string>
+    <string name="mediaRequestDialog_clip_downloadFailedTitle">Fehler beim Herunterladen</string>
+    <string name="mediaRequestDialog_clip_downloadFailedMessage">Beim Herunterladen des Videos von Ihrer Drohne ist ein Problem aufgetreten.</string>
+    <string name="mediaRequestDialog_clip_downloadFailedRetry">Erneut versuchen</string>
+    <string name="mediaRequestDialog_clip_downloadStatsString">%1$s / %2$s bei %3$s/s</string>
+    <string name="mediaRequestDialog_clip_finishingUp">Wird fertiggestellt</string>
+
+    <!--3d scan model viewer-->
+    <string name="scan_download_image">Bild herunterladen</string>
+    <string name="scan_download_image_btn">Herunterladen</string>
+    <string name="scan_download_image_question">Möchten Sie %1$s auf Ihr Handy herunterladen?</string>
+    <string name="scan_download_image_question_filename">dieses Bild</string>
+    <string name="scan_download_image_success">Das Bild wurde auf Ihrem Handy gespeichert</string>
+    <string name="scan_download_image_failed_title">Fehler beim Herunterladen</string>
+    <string name="scan_download_image_failed_msg">Beim Herunterladen des Bildes ist ein Problem aufgetreten</string>
+
+    <!-- clip/still share -->
+    <string name="mediaRequestDialog_share">Teilen</string>
+    <string name="mediaRequestDialog_open">Öffnen</string>
+    <string name="mediaRequestDialog_shareStill_subject">Skydio Schnappschuss </string>
+    <string name="mediaRequestDialog_shareStill_text">Autonome Aufnahme auf Skydio</string>
+    <string name="mediaRequestDialog_shareStill_chooserTitle">Teilen:</string>
+    <string name="mediaRequestDialog_shareClip_subject">Skydio Clip</string>
+    <string name="mediaRequestDialog_shareClip_text">Autonome Aufnahme auf Skydio</string>
+    <string name="mediaRequestDialog_shareClip_chooserTitle">Teilen:</string>
+    <!-- clip preset -->
+    <string name="clipPreset_onlyVideoTitle">Normal</string>
+    <string name="clipPreset_onlyVideoSubtitle">Originalvideo ohne jegliche Effekte.</string>
+    <string name="clipPreset_stabilizeTitle">Stabilisieren</string>
+    <string name="clipPreset_stabilizeSubtitle">Fischauge entfernen und stabilisieren</string>
+    <string name="clipPreset_stabilizeAndZoomTitle">Zoomen + Stabilisieren</string>
+    <string name="clipPreset_stabilizeAndZoomSubtitle">Entfernen Sie das Fischauge, zoomen Sie an das Motiv heran und stabilisieren Sie.</string>
+    <string name="clipPreset_workoutTitle">Workout</string>
+    <string name="clipPreset_workoutSubtitle">Zeigt die Geschwindigkeit des Objekts als Tachometer an.</string>
+    <string name="clipPreset_frameBlendingTitle">Hyperlapse</string>
+    <string name="clipPreset_frameBlendingSubtitle">Stabilisierter Zeitraffer mit überblendeten Bildern.</string>
+    <string name="clipPreset_voxelsTitle">Voxel</string>
+    <string name="clipPreset_voxelsSubtitle">3D-Voxel-Visualisierung der Szene wird dem Bild hinzugefügt.</string>
+    <string name="clipPreset_title">Videoeffekte auswählen</string>
+    <string name="clipPreset_make">Speichern</string>
+
+    <!-- Whats New -->
+    <string name="whatsNew_skip">Überspringen</string>
+    <string name="whatsNew_next">Weiter</string>
+    <string name="whatsNew_finish">ERLEDIGT</string>
+    <string name="whatsNew_title">Neue Funktionen</string>
+    <string name="whatsNew_subtitle">Dezember 2018 Freigabe</string>
+    <string name="whatsNew_1_newBattery_title">Willkommen!</string>
+    <string name="whatsNew_1_newBattery_description">Das Batteriesymbol hat einen neuen Look</string>
+    <string name="whatsNew_2_newBattery_title">Hier ist die Aufschlüsselung</string>
+    <string name="whatsNew_2_newBattery_description">Grün ist die nominale Flugzeit⏎Orange ist die Zeit, die für eine sichere Rückkehr benötigt wird⏎Rot ist die Zeit vor einer Auto-Landung.</string>
+    <string name="whatsNew_3_newBattery_title">Der Countdown</string>
+    <string name="whatsNew_3_newBattery_description">Wenn das Batteriesymbol rot leuchtet, haben Sie noch zwei Minuten Batteriekapazität bis zur Notlandung.</string>
+    <string name="whatsNew_4_newBattery_title">Die Warnung</string>
+    <string name="whatsNew_4_newBattery_description">Sobald deine Drohne aufgrund der niedrigen Batterieladung landet, sehen Sie dieses Warnsymbol. Sie können eine Landung nicht abbrechen, wenn die Batterie fast leer ist.</string>
+
+    <!-- Local notification strings -->
+    <string name="notification_connectionStatus_genericTitle">Your Drone is Connected</string>
+    <string name="notification_connectionStatus_title">Connected to %1$s</string>
+    <string name="notification_health_flyingTitle">Ihre Drohne fliegt.</string>
+    <string name="notification_health_flyingText">Tippen Sie hier, um Ihre Drohne zu steuern.</string>
+    <string name="notification_health_landingTitle">Landen</string>
+    <string name="notification_health_landingText">Tippen Sie hier, um Ihre Drohne zu steuern.</string>
+    <string name="notification_health_faultTitle">Problem beim Fliegen</string>
+    <string name="notification_health_faultText">Tippen Sie hier, um mehr zu sehen und Ihre Drohne zu steuern.</string>
+    <string name="notification_health_emergencyLandingTitle">Ihre Drohne ist notgelandet</string>
+    <string name="notification_health_emergencyLandingText">Tippen Sie hier, um mehr zu sehen</string>
+    <string name="notification_health_connectionLostTitle">Verbindung zur Drohne verloren</string>
+    <string name="notification_health_connectionLostText">Tippen Sie auf , um die Verbindung zu Ihrer Drohne wiederherzustellen.</string>
+    <string name="notification_health_connectionLostDismissButton">Verwerfen</string>
+    <string name="notification_health_lostPilotTitle">Die Kontrolle über Ihre Drohne wurde entwendet.</string>
+    <string name="notification_health_lostPilotText">Tippen Sie auf , um diese Drohne zu kommandieren.</string>
+    <string name="notification_batteryLowTitle">Batterie der Drohne ist fast leer</string>
+    <string name="notification_batteryLowText">Tippen Sie hier, um einen sicheren Landeplatz für Ihre Drohne zu wählen.</string>
+    <string name="notification_subjectLostTitle">Thema Verloren</string>
+    <string name="notification_subjectLostText">Tippen Sie hier, um ein neues Thema auszuwählen.</string>
+    <string name="notification_syncingFiles">Dateien werden synchronisiert</string>
+    <string name="notification_publishingTelemetry">Publishing telemetry</string>
+
+    <!-- CloudClient update blocker dialog -->
+    <string name="cloudClient_updateDialogDefaultTitle">App ist zu alt</string>
+    <string name="cloudClient_updateDialogDefaultMessage">Aktualisieren Sie die App, um mit dem Skydio-Server in Kontakt zu bleiben.</string>
+    <string name="cloudClient_updateDialogUpdateNow">Jetzt aktualisieren</string>
+    <string name="cloudClient_updateDialogUpdateLater">Später</string>
+
+    <!-- Notification Channel/Category names and descriptions -->
+    <string name="notificationChannel_flightHealth_name">Flugbenachrichtigungen</string>
+    <string name="notificationChannel_flightHealth_description">Warnungen von Ihrer Drohne während des Flugs.</string>
+    <string name="notificationChannel_connectionStatus_name">Status der Verbindung</string>
+    <string name="notificationChannel_connectionStatus_description">Benachrichtigungen von Ihrer Drohne über den Verbindungsstatus.</string>
+
+    <!-- DBFlight stats unknown strings -->
+    <string name="flightStats_sizeUnknown">Unbekannt</string>
+    <string name="flightStats_speedUnknown">Unbekannt</string>
+    <string name="flightStats_distanceUnknown">Unbekannt</string>
+
+    <!-- AlertUtil / TextUtil -->
+    <string name="alertUtil_errorDialogTitle">Fehler</string>
+    <string name="util_dataSize_FMT_intBytes">%1$d Bytes</string>
+    <string name="util_dataSize_FMT_floatKilobytes">%1$.3g kB</string>
+    <string name="util_dataSize_FMT_floatMegabytes">%1$.3g MB</string>
+    <string name="util_dataSize_FMT_floatGigabytes">%1$.3g GB</string>
+    <string name="util_shortDuration_FMT_minutes_seconds">%1$d:%2$02d</string>
+    <string name="util_longDuration_FMT_minutes_seconds">%1$dM %2$dS</string>
+    <string name="util_longDuration_FMT_seconds">%1$dS</string>
+    <string name="util_distance_FMT_intMeters">%1$d Meter</string>
+    <string name="util_distance_FMT_floatMiles">%1$.2f Meilen</string>
+    <string name="util_speed_FMT_floatMetersPerSecond">%1$.1f M/S</string>
+    <string name="util_speed_FMT_floatMilesPerHour">%1$.1f mph</string>
+
+    <!-- Map -->
+    <string name="map_settings_header">Map Settings</string>
+    <string name="map_settings_info">Information</string>
+    <string name="map_settings_styles">Layers</string>
+    <string name="map_settings_coordinate_system">Coordinate System</string>
+    <string name="map_settings_dted_files">DTED Files</string>
+    <string name="dted_description_crosshair">DTED Crosshair</string>
+    <string name="map_beyondVehicleLimit_message">Der gewählte Ort liegt außerhalb der Reichweite des Fahrzeugs.</string>
+    <string name="map_tooLongFlight_title">Hierhin kann man nicht fliegen</string>
+    <string name="map_tooLongFlight_message_metric">Sie können nicht weiter als 5 Kilometer entfernt fliegen.</string>
+    <string name="map_tooLongFlight_message_imperial">Sie können nicht mehr als 3 Meilen fliegen.</string>
+    <string name="map_tooLongFlight_accept">OK</string>
+    <string name="map_longFlightWarning_title">Vorsicht</string>
+    <string name="map_longFlightWarning_message">Die Batterie reicht nicht aus, um von diesem Ort zurückzukehren.</string>
+    <string name="map_longFlightWarning_proceed">Fliegen zum Punkt</string>
+    <string name="map_longFlightWarning_cancel">Abbrechen</string>
+    <string name="map_tooDistantHome_title">Startpunkt kann nicht gesetzt werden</string>
+    <string name="map_tooDistantHome_message_metric">Sie können keinen Ausgangspunkt festlegen, der weiter als 10 Kilometer entfernt ist.</string>
+    <string name="map_tooDistantHome_message_imperial">Sie können einen Startpunkt nicht mehr als 6 Meilen entfernt festlegen.</string>
+    <string name="map_tooDistantHome_accept">OK</string>
+    <string name="map_distantHomeWarning_title">Vorsicht</string>
+    <string name="map_distantHomeWarning_message">Die Batterie reicht nicht aus, um von diesem Ort zurückzukehren.</string>
+    <string name="map_distantHomeWarning_proceed">Startpunkt festlegen</string>
+    <string name="map_distantHomeWarning_cancel">Abbrechen</string>
+    <string name="map_error_ok">OK</string>
+    <string name="map_waypoint_header">Waypoint</string>
+    <string name="map_waypoint_settings_header">Waypoint Settings</string>
+    <string name="map_deleteWaypointWarning_title">Löschen</string>
+    <string name="map_deleteWaypointWarning_title_view">Wegpunkt (Waypoint) löschen</string>
+    <string name="map_deleteAllWaypoints_title_view">Delete All Waypoints</string>
+    <string name="map_deleteWaypointDeleteAll">Delete All</string>
+    <string name="map_deleteWaypointWarning_message">Sind Sie sicher, dass Sie diesen Wegpunkt löschen wollen?</string>
+    <string name="map_deleteWaypointWarning_proceed">Löschen</string>
+    <string name="map_deleteWaypointWarning_cancel">Abbrechen</string>
+    <string name="map_deleteAllWarning_title">Mission löschen?</string>
+    <string name="map_deleteAllWarning_message">Alle Wegpunkte (Waypoints) löschen und die aktuelle Mission löschen?</string>
+    <string name="map_error_unableToSetHomePoint_title">Ausgangspunkt kann nicht eingestellt werden</string>
+    <string name="map_error_unableToSetHomePoint_message">Der Ausgangspunkt konnte zu diesem Zeitpunkt noch nicht festgelegt werden.</string>
+    <string name="map_error_unableToFlyHereNow_title">Unfähig, zum Punkt zu fliegen</string>
+    <string name="map_error_unableToFlyHereNow_message">Der ausgewählte Punkt konnte zu diesem Zeitpunkt nicht angeflogen werden.</string>
+    <string name="map_error_unableToRemoveHomePoint_title">Ausgangspunkt kann nicht gelöscht werden</string>
+    <string name="map_error_unableToRemoveHomePoint_message">Der Ausgangspunkt konnte zu diesem Zeitpunkt noch nicht entfernt werden.</string>
+    <string name="map_error_unableToSetAreaSelection_title">Bereichsauswahl kann nicht festgelegt werden</string>
+    <string name="map_error_unableToSetAreaSelection_message">Die Gebietsauswahl konnte zu diesem Zeitpunkt nicht aktualisiert werden.</string>
+    <string name="map_error_unknownSearchTerm">Unknown search term</string>
+    <string name="map_error_unknownError">Unknown search error</string>
+    <string name="map_noVehicleName">Ihre Drohne</string>
+    <string name="map_noLocationData_title">Keine Standortdaten</string>
+    <string name="map_noLocationData_message">Wir haben keine Standortdaten gespeichert für %1$s</string>
+    <string name="map_noLocationData_ok">OK</string>
+    <string name="map_vehicleRequiresGps">Die Drohne benötigt eine GPS-Sperre.\nFliegen Sie herum, um GPS zu erwerben.</string>
+    <string name="map_missionTitle">Wegpunkt (Waypoint)-Mission</string>
+    <string name="map_missionPromptTitle">No Waypoints Set</string>
+    <string name="map_missionPromptDetail">Press and hold on the map to set the first waypoint.</string>
+    <string name="map_missionPrompt">Halten Sie die Maustaste gedrückt, um den ersten Wegpunkt festzulegen.</string>
+    <string name="map_unableToParseCoordinatesTitle">Ungültige Koordinate</string>
+    <string name="map_unableToParseCoordinatesMessage">Diese Koordinate wird nicht anerkannt.</string>
+    <string name="map_parseErrorUnrecognizedTitle">Invalid Input</string>
+    <string name="map_parseErrorUnrecognizedMessage">This location is not recognized.</string>
+    <string name="map_parseErrorInternetTitle">No Internet</string>
+    <string name="map_parseErrorInternetMessage">Verify internet connection and try again.</string>
+    <string name="map_parseErrorNetworkTitle">Network Error</string>
+    <string name="map_parseErrorNetworkMessage">Verify the internet connection or select another network and try again.</string>
+    <string name="map_parseErrorUnknownTitle">Unknown Error</string>
+    <string name="map_parseErrorUnknownMessage">Unable to parse location.</string>
+    <string name="map_searchByLocationNoInternet">Internet connection is required to search by location</string>
+    <string name="map_latitude_hint">Breitengrad</string>
+    <string name="map_longitude_hint">Längengrad</string>
+    <string name="map_mgrs_hint">MGRS</string>
+    <string name="map_searchByLocation">Search by Location</string>
+    <string name="map_searchByCoordinate">Search by Coordinate</string>
+    <string name="map_coordinateSystem_lat_lon">Lat/Lon</string>
+    <string name="map_coordinateSystem_mgrs">MGRS</string>
+    <string name="map_coordinateSystem_utm">UTM</string>
+    <string name="map_settings__show_coordinates">Show Coordinates</string>
+    <string name="map_settings__show_crosshairs">Show Crosshairs</string>
+    <string name="map_action_recenter">Recenter</string>
+
+    <!-- Offline Maps -->
+    <string name="download_maps_overview_title">Karten herunterladen</string>
+    <string name="mapbox_sources_title">Kartenbox-Quellen</string>
+
+    <!-- Capture Settings -->
+    <string name="capture_settings_thermal">Thermal Camera</string>
+    <string name="capture_settings_thermal_tools">Tools</string>
+    <string name="capture_settings_thermal_settings">Settings</string>
+    <string name="capture_settings_thermal_params">Parameters</string>
+    <string name="capture_settings_common">Capture</string>
+    <string name="capture_settings_settings">Settings</string>
+    <string name="capture_settings_photo">Photo</string>
+    <string name="capture_settings_video">Video</string>
+    <string name="capture_settings_action_switch_modes">Switch</string>
+    <string name="capture_settings_thermal_spot_metering">Spot Measuring</string>
+    <string name="capture_settings_thermal_stats_roi">Region of Interest</string>
+    <string name="capture_settings_thermal_spot_metering_quick">Spot</string>
+    <string name="capture_settings_thermal_stats_roi_quick">Region</string>
+    <string name="capture_settings_thermal_manual_ffc_quick">Manual FFC</string>
+    <string name="capture_settings_thermal_autonomous_message">Thermal settings have been locked for optimized tracking.</string>
+    <string name="capture_settings_thermal_photos">Thermal Capture</string>
+
+    <string name="captureSettings_reset">Reset</string>
+    <string name="captureSettings_auto">Auto</string>
+    <string name="captureSettings_hdr">HDR</string>
+    <string name="captureSettings_fileType">File Type</string>
+    <string name="captureSettings_interval">Interval</string>
+    <string name="captureSettings_second">Second</string>
+    <string name="captureSettings_seconds">Seconds</string>
+    <string name="captureSettings_Mode">Camera Mode</string>
+    <string name="captureSettings_Resolution">Resolution</string>
+    <string name="captureSettings_CameraMode">Camera Mode</string>
+    <string name="captureSettings_photoMode">Photo Mode</string>
+    <string name="captureSettings_photoMode_std">Standard</string>
+    <string name="captureSettings_photoMode_night">Low Light</string>
+    <string name="captureSettings_photoMode_hiRes">HDR</string>
+    <string name="captureSettings_photoMode_std_detail">64 MP Narrow / 48 MP Telephoto</string>
+    <string name="captureSettings_photoMode_hdr_detail">16 MP Narrow / 12 MP Telephoto</string>
+    <string name="captureSettings_resolution">Resolution</string>
+    <string name="captureSettings_zoom">Zoom</string>
+    <string name="captureSettings_zoom_none">None</string>
+    <string name="captureSettings_zoom_deep">Deep</string>
+    <string name="captureSettings_zoom_deep_full">Deep Full</string>
+    <string name="captureSettings_recordingMethod">Recording Method</string>
+    <string name="captureSettings_frameRate">Frame Rate</string>
+    <string name="captureSettings_shutter">Shutter</string>
+    <string name="captureSettings_exposure">Exposure</string>
+
+    <string name="captureSettings_slider_iso">ISO</string>
+    <string name="captureSettings_slider_exposure">Brightness (EV)</string>
+    <string name="captureSettings_slider_compensation">Entschädigung</string>
+    <string name="captureSettings_slider_whiteBalance">White Balance</string>
+    <string name="capturesettings_unavailable_msg">Nicht verfügbar während der Sendungsverfolgung</string>
+    <string name="capturesettings_unavailableWhileZoomedIn">Die Videoeinstellungen sind bei Vergrößerung nicht verfügbar.</string>
+
+    <string name="captureSettings_settings_hidden">Certain camera settings are not available after scanning begins</string>
+    <string name="captureSettings_minimum_interval">Minimum interval settings of 5 seconds</string>
+    <string name="capture_settings_preview">Preview</string>
+    <string name="captureSettings_x_seconds">%1$d Seconds</string>
+    <string name="captureSettings_disabled">Disabled</string>
+    <string name="captureSettings_auto_start_recording">Auto Start Recording</string>
+    <string name="captureSettings_aspect_ratio">Aspect Ratio</string>
+
+    <!-- Controller Settings -->
+    <string name="joystickSettings_tab">CONTROLLER</string>
+    <string name="joystickSettings_connectToController">Koppeln Sie Ihre Drohne mit dem Controller und verbinden Sie dann den Controller mit Ihrem Telefon.</string>
+    <string name="joystickSettings_connectToDrone">Die Controller-Einstellungen sind verfügbar, wenn Sie mit Ihrer Drohne verbunden sind.</string>
+    <string name="joystickSettings_controllerDisconnected">Controller abgekoppelt</string>
+    <string name="joystickSettings_flightSensitivity">Flug-Empfindlichkeit</string>
+    <string name="joystickSettings_gimbalSensitivity">Kardanische Empfindlichkeit</string>
+    <string name="joystickSettings_sensitivityOption_default">STANDARD</string>
+    <string name="joystickSettings_sensitivityOption_custom">CUSTOM</string>
+    <string name="joystickSettings_rollSensitivity">Rolle</string>
+    <string name="joystickSettings_pitchSensitivity">Stellplatz</string>
+    <string name="joystickSettings_yawSensitivity">Yaw</string>
+    <string name="joystickSettings_throttleSensitivity">Drosselklappe</string>
+
+    <!-- Drone Settings -->
+    <string name="droneSettings_tab">DROHNE</string>
+    <string name="droneSettings_connect">Verbinden Sie sich mit Ihrer Drohne, um auf die Drohneneinstellungen zuzugreifen.</string>
+    <string name="droneSettings_safetyHeight">Höhe des Fußbodens</string>
+    <string name="droneSettings_safetyHeight_on_FMT_heightAndUnits">Ihre Drohne wird versuchen, während der Verfolgung mindestens %1$s über dem Boden zu bleiben, um die Sicherheit von Personen und Objekten in der Nähe zu gewährleisten. Dies kann die Verfolgungsleistung beeinträchtigen.</string>
+    <string name="droneSettings_safetyHeight_on_heightAndUnits_imperial">8 Fuß</string>
+    <string name="droneSettings_safetyHeight_on_heightAndUnits_metric">2.5 m</string>
+    <string name="droneSettings_safetyHeight_off">Ihre Drohne kann während der Verfolgung dicht über dem Boden fliegen. Achten Sie immer auf Personen und Objekte in der Nähe.</string>
+    <string name="droneSettings_heightCeiling">Deckenhöhe</string>
+    <string name="droneSettings_heightCeiling_on">Die maximale Flughöhe beträgt m.</string>
+    <string name="droneSettings_heightCeiling_off">Die maximale Flughöhe beträgt m.\nSie sind dafür verantwortlich, dass alle Gesetze und Vorschriften eingehalten werden.</string>
+    <string name="droneSettings_heightCeilingPrompt_title">Nutzungsbedingungen</string>
+    <string name="droneSettings_heightCeilingPrompt_message">Sie bestätigen, dass Sie die örtlichen Vorschriften kennen, die Erlaubnis haben, über 100  m zu fliegen, vorsichtig vorgehen und die Verbindung und Akkulaufzeit sorgfältig verwalten.</string>
+    <string name="droneSettings_heightCeilingPrompt_accept">Akzeptieren</string>
+    <string name="droneSettings_heightCeilingPrompt_cancel">Abbrechen</string>
+    <string name="droneSettings_obstacleAvoidance">Hindernisvermeidung</string>
+    <string name="droneSettings_obstacleAvoidance_on">Ihre Drohne hält 0,9 Meter Abstand zu Hindernissen.</string>
+    <string name="droneSettings_obstacleAvoidance_off">Ihre Drohne bleibt 0,45 Meter von Hindernissen entfernt.</string>
+    <string name="droneSettings_visibleStrobe">Stroboskoplicht</string>
+    <string name="droneSettings_visibleStrobe_on">Ihre Drohne blitzt regelmäßig mit einem Stroboskoplicht im sichtbaren Spektrum.</string>
+    <string name="droneSettings_visibleStrobe_off">Ihre Drohne wird ihr Stroboskoplicht im sichtbaren Spektrum nicht verwenden.</string>
+    <string name="droneSettings_infraredStrobe">Infrarotlicht-Stroboskop</string>
+    <string name="droneSettings_infraredStrobe_on">Ihre Drohne blitzt regelmäßig mit einem Infrarot-Spektrum-Stroboskoplicht.</string>
+    <string name="droneSettings_infraredStrobe_off">Ihre Drohne wird ihr Infrarot-Spektrum-Stroboskoplicht nicht verwenden.</string>
+
+
+    <!-- Beacon Settings -->
+    <string name="beaconSettings_tab">BEACON</string>
+    <string name="beaconSettings_addBeacon">Koppeln Sie einen Beacon mit dieser Drohne, indem Sie sie für einige Sekunden mit einem USB-C-Kabel verbinden.</string>
+    <string name="beaconSettings_addBeacon_button">Signal (Beacon) hinzufügen</string>
+    <string name="beaconSettings_beaconDisconnected">Beacon abgeschaltet</string>
+
+    <!-- Phone Settings -->
+    <string name="phoneSettings_tab">TELEFON</string>
+    <string name="phoneSettings_flightTelemetry">Telemetrie für Flüge</string>
+
+    <!-- Cloud Settings -->
+    <string name="cloudSettings_tab">CLOUD</string>
+    <string name="cloudSettings_title">Entwickler-Fähigkeiten</string>
+    <string name="cloudSettings_sync">Sync</string>
+    <string name="cloudSettings_ok">OK</string>
+    <string name="cloudSettings_retry">Erneut versuchen</string>
+    <string name="cloudConfig_screen_title">Cloud Settings</string>
+    <string name="cloudConfig_title">Cloud to Device Sync</string>
+    <string name="cloudConfig_syncText">Download Settings from Cloud</string>
+    <string name="cloudConfig_connectInternet">Connect to Internet</string>
+    <string name="cloudConfig_downloadError_title">Download Error</string>
+    <string name="cloudConfig_downloadError_message">There was an issue downloading the cloud configuration to your device</string>
+    <string name="vehicleConfig_title">Device to Drone Sync</string>
+    <string name="vehicleConfig_syncText">Sync Settings to Drone</string>
+    <string name="vehicleConfig_connect">Connect to Drone</string>
+    <string name="vehicleConfig_uploadError_title">Upload Error</string>
+    <string name="vehicleConfig_uploadError_message">There was an issue updating the vehicle\'s configuration</string>
+    <string name="vehicleConfig_wifiNetworks">Wifi Networks</string>
+    <string name="vehicleConfig_licenses">Licenses</string>
+    <string name="vehicleConfig_licenses_empty">No Licenses</string>
+
+    <!-- Generic Map Import -->
+    <string name="mapImport_toolbarTitle">Karten importieren</string>
+    <string name="mapImport_noDeviceTitle">Drive wird nicht erkannt</string>
+    <string name="mapImport_noDeviceMessage">Schließen Sie ein externes Laufwerk an, um Karten auf Ihren Controller zu importieren.</string>
+    <string name="mapImport_readyTitle">Karten aus verbundenem Laufwerk importieren</string>
+    <string name="mapImport_readyMessage">Wählen Sie Karten aus dem verbundenen Laufwerk aus, das importiert werden soll.</string>
+    <string name="mapImport_readyAction">Karten auswählen</string>
+    <string name="mapImport_noMapsTitle">Karten nicht gefunden</string>
+    <string name="mapImport_noMapsAction">OK</string>
+    <string name="mapImport_importingTitle">Importieren von Karten</string>
+    <string name="mapImport_finishingDetail">Processing</string>
+    <string name="mapImport_importingDetail">%1$d%%</string>
+    <string name="mapImport_completeTitle">Kartenimport abgeschlossen</string>
+    <string name="mapImport_failureTitle">Kartenimport fehlgeschlagen</string>
+    <string name="mapImport_failureTotalMessage">Die ausgewählte Karte konnte nicht importiert werden.</string>
+    <string name="mapImport_failurePartialMessage">Einige der ausgewählten Karten konnten nicht importiert werden.</string>
+    <string name="mapImport_failurePrimaryAction">Erneut versuchen</string>
+    <string name="mapImport_failureTotalSecondaryAction">@android:string/cancel</string>
+
+    <!-- Map Import -->
+    <string name="mbImport_completeMessage">Importierte Karten sind in der Kartenbibliothek verfügbar.</string>
+    <string name="mbImport_completeAction">Karten-Bibliothek einsehen</string>
+    <string name="mbImport_openQgcAction">Open Skydio QGC</string>
+    <string name="mbImport_failurePartialSecondaryAction">Bibliothek einsehen</string>
+    <string name="mbImport_failureVectorsMessage">Vektorkarten werden derzeit nicht unterstützt.</string>
+    <string name="mbImport_noMapsMessage">Map data files were not selected. Map data must be in the MBTile or QGCTILEDB file format.</string>
+
+    <!-- Mapbox Library -->
+    <string name="mbLibrary_title">Bibliothek der Karte</string>
+    <string name="mbLibrary_noMapsHeader">Keine Karten</string>
+    <string name="mbLibrary_noMapsDetail">Import mbtiles or qgctiledb files from an external drive to add maps.</string>
+    <string name="mbLibrary_deleteTitle">Karte löschen</string>
+    <string name="mbLibrary_deleteMessage">Möchten Sie diese Karte wirklich löschen?</string>
+    <string name="mbLibrary_deleteAction">Android:string/yes</string>
+    <string name="mbLibrary_unsupportedInSkydio">Unsupported in Skydio Enterprise</string>
+    <string name="mbLibrary_mapType">%1$s Maps</string>
+
+    <!-- Legal -->
+    <string name="legal_title">Legal</string>
+    <string name="legal_agree_to">"Ich stimme Skydio's %1$szu"</string>
+    <string name="legal_terms_of_use_title">Skydio Terms of Use</string>
+    <string name="legal_privacy_policy_title">Skydio Privacy Policy</string>
+    <string name="legal_terms_and_conditions_title">Bedingungen und Richtlinien</string>
+    <string name="open_source_title">Skydio Open Source Software Notice</string>
+    <string name="legal_warranty_title">Garantie</string>
+    <string name="legal_eula_title">Endbenutzer-Lizenzvertrag</string>
+    <string name="legal_return_policy_title">Richtlinien für Rücksendungen</string>
+
+    <string name="legal_agree_to_all_agree">Ich habe die Skydio-Bedingungen und Richtlinien gelesen und stimme ihnen zu.</string>
+    <string name="legal_agree_to_all">Kaufbedingungen</string>
+    <string name="legal_agree_label"><![CDATA[ By clicking the \"Agree\" button below, you accept Skydio\'s <b><a href=\"https://www.skydio.com/legal/privacy-policy\">Privacy Policy</a></b> and <b><a href=\"https://www.skydio.com/legal/terms-of-use\">Terms of Use</a></b> which contain a mandatory arbitration provision. ]]></string>
+    <string name="legal_agree_label_c78">By clicking the \"Agree\" button below, you accept Skydio’s Enterprise Terms of Use found at www.skydio.com/legal/terms-of-use-enterprise, as well as Skydio\'s Privacy Policy found at www.skydio.com/legal/privacy-policy.</string>
+
+    <!-- WiFi Connection -->
+    <string name="wifi_userInputHeader">Fügen Sie die WLAN-Informationen für Ihre Drohne hinzu.</string>
+    <string name="wifi_connectingTo">Verbinden mit %1$s</string>
+    <string name="wifi_unableToConnectTo">Unable to connect to %1$s.</string>
+    <string name="wifi_unableToConnectTo_openSettings">Unable to connect to %1$s.\nRetry using your system settings.</string>
+    <string name="wifi_connectedTo">Mit %1$s erfolgreich verbunden</string>
+    <string name="wifi_wifiNotEnabled">Für die Verbindung mit einer Drohne muss WiFi aktiviert sein.</string>
+    <string name="wifi_actionTryAgain">Erneut versuchen</string>
+    <string name="wifi_actionSettings">Settings</string>
+    <string name="wifi_actionEnableWifi">WiFi einschalten</string>
+    <string name="wifi_actionConnect">Verbindung einstellen</string>
+    <string name="wifi_actionSave">Speichern</string>
+    <string name="wifi_actionSkip">Überspringen</string>
+    <string name="wifi_actionCancel">Abbrechen</string>
+    <string name="wifi_actionDone">Erledigt</string>
+
+    <!-- WiFi Credentials -->
+    <string name="wifi_editWifiPassword">WLAN-Passwort bearbeiten</string>
+    <string name="wifi_customizeWifiPassword">WLAN-Passwort anpassen</string>
+    <string name="wifi_ssidLabel">SSID</string>
+    <string name="wifi_ssidHint">SSID</string>
+    <string name="wifi_passwordLabel">Passwort</string>
+    <string name="wifi_passwordUpdated">Passwort aktualisiert</string>
+    <string name="wifi_passwordUpdatedExisting">Bestehendes Passwort beibehalten</string>
+    <string name="wifi_passwordHint">Passwort</string>
+    <string name="wifi_generatePassword">Automatisch generieren</string>
+    <string name="wifi_passwordLength">Länge des Passworts</string>
+    <string name="wifi_confirmSettings">Akzeptieren</string>
+    <string name="wifi_updateFailedTitle">Update fehlgeschlagen</string>
+    <string name="wifi_updateFailedMessage">Die Aktualisierung der WiFi-Anmeldeinformationen der Drohne war nicht erfolgreich. Die WiFi-Einstellungen wurden nicht geändert.</string>
+    <string name="wifi_updateDisconnectedTitle">Verbindung verloren</string>
+    <string name="wifi_updateDisconnectedMessage">Bitte verbinden Sie sich erneut mit Ihrem Fahrzeug und versuchen Sie es erneut.</string>
+    <string name="wifi_repairWarning">Skydio Beacons und Controller müssen nach der Änderung des WiFi-Passworts erneut mit einem USB-C-Kabel gekoppelt werden.</string>
+    <!-- Empty string - any strings after this one are probably unsorted. -->
+    <string name="empty" tools:keep="@string/empty"></string>
+    <string name="camera_zoom_widget_max">max</string>
+    <string name="camera_zoom_widget_min">min</string>
+    <string name="mapList_deleted">Gelöscht</string>
+    <string name="mapList_failed">Fehlgeschlagen</string>
+
+    <string name="settings_update_device">Gerät aktualisieren</string>
+    <string name="settings_select_update">Wählen Sie Datei-Update</string>
+    <string name="gate_action_calibrate_magnetometer">Kalibrieren</string>
+    <string name="mag_cal_title">Drehen Sie das Fahrzeug entsprechend dem Diagramm, bis jeder Schritt abgeschlossen ist.</string>
+    <string name="mag_cal_title_complete">Kalibrierung abgeschlossen</string>
+    <string name="mag_cal_rotate">Drehen</string>
+    <string name="mag_cal_failed_title">Calibration Failed</string>
+    <string name="mag_cal_failed_msg">Please retry the magnetometer calibration.</string>
+    <string name="settings_create_password">Passwort erstellen</string>
+    <string name="settings_change_password">Passwort ändern</string>
+    <string name="settings_cloud_media">Cloud Media</string>
+    <string name="settings_edit_media">Cloud Scans</string>
+
+    <!-- Ota -->
+    <string name="done">Erledigt</string>
+
+    <!-- Workflow String -->
+    <string name="gimbal">Gimbal</string>
+    <string name="altitude">Alt</string>
+    <string name="review_scan">Review Scan</string>
+    <string name="workflow_steps_status">%1$s of %2$s</string>
+
+    <!-- Video Preview -->
+    <string name="preview_video_incomplete">Unvollständig</string>
+
+    <!-- Guide -->
+    <string name="skip">Überspringen</string>
+
+    <!-- Connectivity -->
+    <string name="generic_reachability_message">Cloud service not reachable. Please check internet connection.</string>
+
+    <!-- Main drawer menu titles-->
+    <string name="flight_navtitle">Flight Controls</string>
+    <string name="sensing_navtitle">Sensing</string>
+    <string name="return_navtitle">Return</string>
+    <string name="lights_navtitle">Lighting</string>
+    <string name="radio_navtitle">Radio</string>
+    <string name="connection_navtitle">Connection</string>
+    <string name="display_navtitle">Display</string>
+    <string name="system_status_navtitle">System Status</string>
+    <string name="streaming_navtitle">Connection</string>
+    <string name="live_streaming_navtitle">Live Streaming</string>
+    <string name="dev_settings_navtitle">Dev Settings</string>
+
+    <!-- Live Streaming -->
+    <string name="live_streaming_title">Live Stream</string>
+    <string name="live_streaming_check_internet">Checking Connectivity</string>
+    <string name="live_streaming_action_in_progress">Action in Progress</string>
+    <string name="live_streaming_start_live_stream">Start Stream</string>
+    <string name="live_streaming_restart_live_stream">Restart Stream</string>
+    <string name="live_streaming_stop_live_stream">End Stream</string>
+    <string name="live_streaming_quality_preference">Quality Preference</string>
+    <string name="live_streaming_viewer">Viewer</string>
+    <string name="live_streaming_pilot">Pilot</string>
+
+    <string name="live_streaming_warning_title"></string>
+    <string name="live_streaming_warning">To optimize your Live Streaming experience connect to a 2.4 GHz wireless network\n 5 GHz wireless networks are not recommended for Live Streaming</string>
+    <string name="live_streaming_no_network_title">Check your internet connection</string>
+    <string name="live_streaming_no_network_info">You can still fly the vehicle while your internet connection is down but live streaming will not work. </string>
+
+    <!-- ATAK -->
+    <string name="tak_config_generic_state_enabled">Enabled</string>
+    <string name="tak_config_generic_state_disabled">Disabled</string>
+    <string name="atak_unknown_navigation_error">An unknown error has occurred</string>
+    <string name="tak_config_input_server_name_hint">Server Name</string>
+    <string name="tak_config_input_ip_address_hint">IP Address</string>
+    <string name="tak_config_input_port_hint">Port</string>
+    <string name="tak_config_button_add_server">Add Server</string>
+    <string name="tak_config_add_server_title">Add a Server</string>
+    <string name="tak_config_root_title">ATAK</string>
+    <string name="tak_config_root_button_start">Start ATAK App</string>
+    <string name="tak_config_link_network_connections_label">Network Connections</string>
+    <string name="tak_config_ssl_configure_trust_store">Configure Trust Store</string>
+    <string name="tak_config_ssl_configure_client_certificate">Configure Client Certificate</string>
+    <string name="tak_config_link_network_connections_detail">Connect to an existing server or create a new one.</string>
+    <string name="tak_config_link_publish_telemetry_label">Publish Telemetry</string>
+    <string name="tak_config_network_connections_title">Network Connections</string>
+    <string name="tak_config_link_add_server_label">+ Add a Server</string>
+    <string name="tak_config_label_known_servers">Known ATAK Servers</string>
+    <string name="tak_config_toggle_enable_server">Enable Connection</string>
+    <string name="tak_config_label_ip_address">IP Address</string>
+    <string name="tak_config_label_protocol">Protocol</string>
+    <string name="tak_config_label_port">Server Port</string>
+    <string name="tak_config_button_delete_server">Delete Server</string>
+    <string name="tak_config_alert_delete_server_message">Permanently remove this server?</string>
+    <string name="tak_config_alert_delete_server_title">Delete %1$s</string>
+    <string name="tak_config_alert_delete_server_action">Delete</string>
+    <string name="tak_config_telemetry_config_title">Publish Telemetry</string>
+    <string name="tak_config_toggle_telemetry_enabled_label">Publish Telemetry</string>
+    <string name="tak_config_toggle_telemetry_enabled_detail">Publish controller and vehicle telemetry to connected TAK servers.</string>
+    <string name="tak_config_input_vehicle_call_sign_hint">Vehicle Call Sign</string>
+    <string name="tak_config_input_operator_call_sign_hint">Operator Call Sign</string>
+    <string name="tak_config_link_advanced_options_label">Advanced Options</string>
+    <string name="tak_config_link_authentication_label">Authentication</string>
+    <string name="tak_config_input_username_hint">Username</string>
+    <string name="tak_config_input_password_hint">Password</string>
+    <string name="tak_config_toggle_auth_enabled_label">Enabled</string>
+    <string name="tak_client_certificate_name_label">Name:</string>
+    <string name="tak_client_certificate_password_hint">Password</string>
+    <string name="tak_trust_store_name_label">Name:</string>
+    <string name="tak_trust_store_password_hint">Password</string>
+    <string name="tak_server_not_connected">No ATAK Server Connection</string>
+    <string name="tak_server_connected">"ATAK Server"</string>
+    <string name="tak_server_status">Name: %1$s\nIP Address: %2$s:%3$s\nProtocol: %4$s</string>
+    <string name="tak_import_cert_failed">Importing Certificate Failed! Please retry again.</string>
+    <string name="tak_server_no_connection">No Connection</string>
+    <string name="tak_server_disconnected">Disconnected</string>
+    <string name="tak_server_good_connection">Good</string>
+
+    <!-- RTSP -->
+    <string name="rtsp_config_root_title">RTSP Streaming</string>
+    <string name="rtsp_label">RTSP</string>
+    <string name="rtsp_config_toggle_stream_enabled_label">Stream Enabled</string>
+    <string name="rtsp_config_input_stream_name_hint">Stream Name</string>
+    <string name="rtsp_config_input_ip_address_hint">IP Address</string>
+    <string name="rtsp_config_input_ip_protocol_label">Protocol</string>
+    <string name="rtsp_config_input_port_hint">Port</string>
+    <string name="rtsp_not_connected">No Streaming Connection</string>
+    <string name="rtsp_live_streaming_label">Live Streaming</string>
+    <string name="rtsp_streaming_status_live">Live</string>
+    <string name="rtsp_streaming_status_uptime">Uptime</string>
+    <string name="rtsp_streaming_status_no_connection">No Connection</string>
+
+    <!-- Remote Id -->
+    <string name="rid_reg_title">Enter Registration Info</string>
+    <string name="rid_reg_rid_label">Registration ID</string>
+    <string name="rid_reg_uid_label">User ID</string>
+    <string name="rid_reg_password_label">Password</string>
+    <string name="rid_reg_label_hint">ABCD1234</string>
+    <string name="rid_submit">Next</string>
+
+    <!-- Remote Id Remote Pilot -->
+    <string name="rid_title">Remote ID</string>
+    <string name="operator_location">Operator Location</string>
+    <string name="rid_return_to_cloud">"You can return to cloud to continue flying"</string>
+    <string name="rid_sharing">Sharing</string>
+    <string name="rid_enabled">Enabled</string>
+    <string name="rid_not_enabled">Not Enabled</string>
+    <string name="flight_phase_preflight">Pre Flight</string>
+    <string name="flight_phase_inflight">Flying</string>
+    <string name="flight_phase_landing">Landing</string>
+    <string name="flight_phase_postflight">Post Flight</string>
+    <string name="flight_phase_unknown">Unknown</string>
+    <string name="rpic_flight_request_title">Flight Needs Approval</string>
+    <string name="rpic_flight_request_text">"Verify you are the operator of this flight and approve the location request to continue."</string>
+    <string name="rpic_approve_flight_request">Approve</string>
+    <string name="rpic_deny_flight_request">Deny</string>
+    <string name="rpic_close">Close</string>
+    <string name="rid_exit_title">Exit Remote ID</string>
+    <string name="rid_exit_text">Upon exit, you will no longer be providing operator location for Remote ID compliance.</string>
+    <string name="rid_exit">Exit</string>
+    <string name="rid_inoperative_alert_title">Remote ID Inoperative</string>
+    <string name="rid_inoperative_alert_preflight_text">This is required for the drone to start it’s current mission.</string>
+    <string name="rid_inoperative_alert_inflight_text">This will not prevent the drone from completing its current mission, but the Remote ID broadcast is required for Remote ID compliance.</string>
+    <string name="rid_permissions_alert_title">Location Required</string>
+    <string name="rid_permissions_alert_text">Skydio requires your location to enable Remote ID features.</string>
+    <string name="rid_edit_pemissions_button">Edit Permissions</string>
+    <string name="rid_commandeer_alert_title">Drone was Commandeered</string>
+    <string name="rpic_header">Remote Flight</string>
+    <string name="rpic_leave_phone_on_alert">Leave the device on with the app open for the duration of the flight</string>
+    <string name="rpic_return_and_land">Return &amp; Land</string>
+    <string name="rpic_return_and_land_warning">This will stop the mission the drone is currently performing.</string>
+    <string name="rpic_accept_return_and_land">Accept</string>
+    <string name="rpic_cancel">Cancel</string>
+
+    <!-- Scan Library -->
+    <string name="scan_library_title">Scan Library</string>
+    <string name="scan_library_list_title">Scans</string>
+    <string name="scan_library_import">Import Scan from File</string>
+    <string name="scan_details_title">Scan Details</string>
+    <string name="scan_library_2d_gps">Map Capture</string>
+    <string name="scan_library_details_warning">These estimates are from a previous flight. Time, GSD, and photo count may vary between flights depending on your drone type.</string>
+    <string name="scan_library_import_error_title">Invalid Scan File</string>
+    <string name="scan_library_import_error_message">The imported file is not recognized. This may be happen if the file type is unsupported or the file is corrupted. Please choose a file with the extension .mission, or try exporting your file again from the original device.</string>
+    <string name="scan_library_begin">Begin Scan</string>
+    <string name="scan_library_not_ready">Drone Not Ready</string>
+    <string name="scan_library_connect_drone">Connect Drone to Begin Scan</string>
+    <string name="scan_library_switch_mode">Switch to 3D Scan to Begin</string>
+
+    <string name="disconnected_title">Disconnected</string>
+    <string name="disconnected_message">Turn on your paired vehicle.</string>
+
+    <string name="rid_sync_requesting_title">Requesting Key</string>
+    <string name="rid_sync_received_title">Key Received</string>
+    <string name="rid_sync_request_title">Requesting Key</string>
+    <string name="rid_sync_received_message">Connect back to the drone to continue</string>
+    <string name="rid_sync_received_message_connect">To continue reconnect to your drone</string>
+    <string name="rid_sync_warning">Don\'t turn off your drone</string>
+    <string name="rid_sync_connect">Connect</string>
+    <string name="rid_failed_title">Key Request Failed</string>\
+    <string name="rid_failed_registration_title">Registration Failed</string>
+    <string name="rid_post_failed_registration_title">Save to Server Failed</string>
+    <string name="rid_failed_request_message">There was an error retrieving your registration information</string>
+    <string name="rid_failed_registration_message">The controlling device failed to write the registration information to the drone</string>
+    <string name="rid_post_failed_message">The controlling device failed to write the registration information to the server</string>
+    <string name="rid_complete_title">Registration Complete</string>
+    <string name="rid_complete_message">Your registration info will be on the drone info screen.</string>
+    <string name="rid_complete_button">Complete</string>
+    <string name="rid_connect_button">Connect</string>
+    <string name="rid_complete_retry">Retry</string>
+
+    <!-- Wifi Connectivity-->
+    <string name="wifi_connectivity_title">To register, please address:</string>
+    <string name="wifi_connectivity_error_title">Internet connection</string>
+    <string name="wifi_connectivity_error_desc">Connect to a Wifi-Network to complete the registration process</string>
+    <string name="wifi_connectivity_button">Open Wifi Settings</string>
+
+    <!-- Network Info -->
+    <string name="network_connections">Network Connections</string>
+    <string name="network_eth0_info">Eth0 Ready: %1$b</string>
+    <string name="network_eth1_info">Eth1 Ready: %1$b</string>
+    <string name="network_bound_info">Bound network: %1$s</string>
+    <string name="network_flightdeck_info">Flight Deck network: %1$s</string>
+    <string name="network_vehicle_info">Vehicle network: %1$s</string>
+    <string name="network_internet_info">Internet network: %1$s</string>
+
+    <!-- Streaming Quality Preference -->
+    <string name="streaming_mode_description_viewer">Prioritizes the viewer\'s live stream quality over the pilot\'s</string>
+    <string name="streaming_mode_description_pilot">Prioritizes the pilot\'s live stream quality over the viewer\'s</string>
+    <string name="streaming_mode_details_title">Quality Preference</string>
+    <string name="streaming_mode_viewer">Viewer</string>
+    <string name="streaming_mode_pilot">Pilot</string>
+    <string name="streaming_mode_viewer_cap">VIEWER</string>
+    <string name="streaming_mode_pilot_cap">PILOT</string>
+    <string name="streaming_mode_camera_title">Camera</string>
+    <string name="streaming_mode_streaming_title">Streaming</string>
+
+    <!-- Thermal Settings -->
+    <string name="color_palette_title">Color Palette</string>
+    <string name="thermal_temp_range_title">Temp Range</string>
+    <string name="thermal_temp_range_narrow_label">Narrow</string>
+    <string name="thermal_temp_range_narrow_description">-40°C to 150°C</string>
+    <string name="thermal_temp_range_narrow_description_imperial">-40°F to 300°F</string>
+    <string name="thermal_temp_range_wide_label">Wide</string>
+    <string name="thermal_temp_range_wide_description">-40°C to 350°C</string>s
+    <string name="thermal_temp_range_wide_description_imperial">-40°F to 650°F</string>
+    <string name="flat_field_correction_title">Flat Field Correction</string>
+    <string name="flat_field_correction_auto_label">Auto</string>
+    <string name="flat_field_correction_auto_description">Compensates for certain errors that build up during camera operation</string>
+    <string name="flat_field_correction_manual_label">Manual</string>
+    <string name="flat_field_correction_manual_description">Compensates for certain errors that build up during camera operation</string>
+    <string name="thermal_file_title">File Format</string>
+    <string name="thermal_file_jpg_label">JPG</string>
+    <string name="thermal_file_jpg_description">Captures an image with no thermal values</string>
+    <string name="thermal_file_notes_label">JPG/Notes</string>
+    <string name="thermal_file_notes_description">Temperature values are baked onto the final image</string>
+    <string name="thermal_file_rjpg_label">RJPEG</string>
+    <string name="thermal_file_rjpg_description">Temperature values are embedded into the file</string>
+    <string name="isotherm_title">Isotherm</string>
+    <string name="isotherm_description">Isolates the color palette with regions outside the range shown in greyscale</string>
+    <string name="temp_alarm_title">Temperature Alarm</string>
+    <string name="temp_alarm_description">Triggers a notification when the temperature threshold is detected</string>
+    <string name="temp_alarm_input_label">Trigger Temp</string>
+    <string name="temp_alarm_above_label">Above</string>
+    <string name="temp_alarm_below_label">Below</string>
+    <string name="thermal_unit_title">Unit</string>
+    <string name="thermal_unit_celsius_label">Celsius</string>
+    <string name="thermal_unit_fahrenheit_label">Fahrenheit</string>
+    <string name="agc_title">Thermal Mode</string>
+    <string name="agc_low_label">Low</string>
+    <string name="agc_medium_label">Medium</string>
+    <string name="agc_high_label">High</string>
+    <string name="agc_recon_label">Recon</string>
+    <string name="agc_inspect_label">Inspect</string>
+    <string name="agc_custom_label">Custom</string>
+    <string name="agc_edit_custom">Edit Custom</string>
+    <string name="agc_edit_custom_base_mode">Base Mode:</string>
+    <string name="thermal_palette_ironbow">Ironbow</string>
+    <string name="thermal_palette_rainbow">Rainbow</string>
+    <string name="thermal_palette_white_hot">White Hot</string>
+    <string name="thermal_palette_black_hot">Black Hot</string>
+
+    <!-- Radio Strings -->
+    <string name="dfs_warning">Switching to a channel in the DFS band. Connection will be regained in 1-2 minutes.</string>
+
+    <string name="radio_preset_title">Radio</string>
+    <string name="radio_preset_option_title">Preset %1$d</string>
+
+     <string name="actionMenu_delete">Delete</string>
+    <string name="close">Close</string>
+
+    <string name="enum_list_label">Label</string>
+    <string name="enum_list_value">Value</string>
+
+    <string name="calibrate_magnetometer_button_retry">Retry</string>
+
+    <string name="cockpit_streaming_settings_label_org_name">Org Name</string>
+    <string name="cockpit_streaming_settings_button_start_text">Start Live Stream</string>
+    <string name="cockpit_streaming_settings_button_idle_text">Action in Progress</string>
+    <string name="cockpit_streaming_settings_button_end_text">End Live Stream</string>
+    <string name="cockpit_message_screen_locked_hold_back_and_d_pad_to_unlock">Screen Locked. Hold Back and D-pad to unlock.</string>
+    <string name="cockpit_message_screen_unlocked">Screen Unlocked</string>
+    <string name="locktouchscreen_message_unlock_touchscreen">Unlock Touchscreen</string>
+    <string name="locktouchscreen_message_lock_touchscreen">Lock Touchscreen</string>
+
+    <string name="dev_commands_label_cloud_config">Cloud Config</string>
+    <string name="dev_commands_label_dev_flags">(dev flags)</string>
+    <string name="dev_commands_label_build_info">(build info)</string>
+    <string name="dev_commands_label_autonomy_programs">(autonomy programs)</string>
+    <string name="dev_commands_label_current_skill">Current skill</string>
+    <string name="dev_commands_label_set_skill">Set Skill</string>
+    <string name="dev_commands_check_send_flight_inputs">Always Send Flight Inputs</string>
+    <string name="dev_commands_check_use_cockpitx_activity">use CockpitX activity</string>
+    <string name="dev_commands_label_presets_tester">Presets: Tester</string>
+    <string name="dev_commands_label_presets_dev">Presets: Dev</string>
+    <string name="dev_commands_label_refresh_ncloud_data">Refresh\nCloud Data</string>
+    <string name="dev_commands_label_reset_errors">Reset\nErrors</string>
+    <string name="dev_commands_label_calibrate_magnetometer">Calibrate Magnetometer</string>
+    <string name="dev_error_label_filter_level">Filter Level:</string>
+    <string name="dev_logcat_log_text">Hello world</string>
+    <string name="dev_logcat_label_reload">Reload</string>
+    <string name="dev_logcat_hint_tag">Tag</string>
+    <string name="dev_vehicle_deploy_info">[deploy info]</string>
+
+    <string name="settings_selection_submit">Next</string>
+
+    <string name="media_encryption_settings_enabled">Enabled</string>
+    <string name="media_encryption_settings_disabled">Disabled</string>
+
+    <string name="item_media_section_title_button">Select All</string>
+    <string name="item_media_section_title_default">Section Title</string>
+
+    <string name="app_version_label">App Version</string>
+    <string name="app_version_firmware_label">Firmware Version</string>
+    <string name="app_version_qgc_label">Skydio QGC Version</string>
+
+    <string name="abstract_map_toast_not_in_range">Vehicle is not in range of its home point.</string>
+    <string name="app_tab_page_toast_previews_deleted">All previews deleted</string>
+    <string name="app_tab_page_toast_previews_delete_error">Error deleting previews</string>
+    <string name="app_tab_page_toast_thumbnails_deleted">All thumbnails deleted</string>
+    <string name="app_tab_page_toast_thumbnail_delete_error">Error deleting thumbnails</string>
+    <string name="app_tab_delete_previews_success">All previews deleted</string>
+    <string name="app_tab_delete_previews_failure">Error deleting previews</string>
+    <string name="app_tab_delete_thumbnails_success">All thumbnails deleted</string>
+    <string name="app_tab_delete_thumbnails_failure">Error deleting thumbnails</string>
+    <string name="cloud_media_video_not_found">Video not found</string>
+    <string name="cockpit_header_label_live">Live</string>
+    <string name="code_error_too_short">This code is too short.</string>
+    <string name="controller_tester_msg_exit_via_b">Hold \'B\' To Exit</string>
+    <string name="edit_mode_button_confirm">Confirm</string>
+    <string name="edit_mode_button_cancel">Cancel</string>
+    <string name="edit_mode_flight_status_title_default">title</string>
+    <string name="edit_mode_flight_status_detail_default">detail</string>
+    <string name="flight_deck_error_title">Unable to open Flight Deck</string>
+    <string name="flight_deck_error_text_connect_to_drone">You are not connected to a drone.</string>
+    <string name="ucon_file_queue_status_label_unknown_error">Unknown error</string>
+    <string name="ucon_file_queue_status_label_success">Success</string>
+    <string name="ucon_file_queue_status_label_skipped">Skipped</string>
+    <string name="ucon_file_queue_status_label_no_status">No status</string>
+    <string name="interval_photo_view_photo_counter">Photo %1$d of %2$d</string>
+    <string name="interval_photo_view_toast_preview_error_vehicle_disconnected">Vehicle disconnected, could not load image preview.</string>
+    <string name="interval_photo_view_toast_error_vehicle_disconnected">Vehicle disconnected.</string>
+    <string name="interval_photo_view_toast_photo_deleted">Deleted photo.</string>
+    <string name="interval_photo_view_toast_error_photo_delete_failed">"Failed to delete photo: "</string>
+    <string name="logSync_download_view_toast_not_connected">Not Connected!</string>
+    <string name="logSync_download_not_attempted">Not attempted</string>
+    <string name="logSync_flight_not_found_on_vehicle">Flight %1$s was not found on vehicle</string>
+    <string name="logSync_flight_fetch_failed">Failed to fetch flight: %1$s</string>
+    <string name="logSync_no_client">No client</string>
+    <string name="logSync_already_synced">Already synced: local records say uploaded</string>
+    <string name="logSync_already_downloaded">Already downloaded to phone</string>
+    <string name="logSync_status_fail">Fail</string>
+    <string name="logSync_status_success">Success</string>
+    <string name="logSync_status_cancelled">Cancelled</string>
+    <string name="logSync_message_not_connected">Not Connected!</string>
+    <string name="log_list_label_incomplete">Incomplete</string>
+    <string name="ota_error_no_files_found">No files found for update</string>
+    <string name="photo_viewer_error_vehicle_disconnected">Vehicle disconnected.</string>
+    <string name="photo_viewer_deleted_photo">Deleted photo.</string>
+    <string name="photo_viewer_error_delete_photo">"Failed to delete photo: "</string>
+    <string name="platform_clip_error_play_video">Error playing video</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="exit">Vorgang beenden</string>
+    <string name="ok">OK</string>
+    <string name="label_zone">Zone</string>
+    <string name="label_easting">Easting</string>
+    <string name="label_northing">Northing</string>
+    <string name="base_map_removed">%1$s de-selected as base map</string>
+    <string name="base_map_set">%1$s selected as base map</string>
+    <string name="use_as_base_map">Use as base map</string>
+
+    <string name="map_dsm_hint">DSM</string>
+
+    <string name="code_message_this_code_is_too_short">This code is too short.</string>
+    <string name="controller_message_hold_b_to_exit">Hold \'B\' To Exit</string>
+    <string name="controller_log_error_failed_to_download">Failed to download %1$d</string>
+    <string name="actionwheel_message_no_function">No Function</string>
+    <string name="actionwheel_message_assign_functionality_in_the_controller_menu">Assign functionality in the controller menu.</string>
+    <string name="attachment_action_play">Play</string>
+    <string name="attachment_action_pause">Pause</string>
+    <string name="attachment_action_sound_on">Sound On</string>
+    <string name="attachment_action_sound_off">Sound Off</string>
+    <string name="attachment_action_speaker">Speaker</string>
+    <string name="attachment_action_light_on">Light On</string>
+    <string name="attachment_action_light_off">Light Off</string>
+    <string name="attachment_spotlight_mode_unknown">Unknown</string>
+    <string name="attachment_spotlight_mode_strobe">Strobe</string>
+    <string name="attachment_spotlight_mode_solid">Solid</string>
+    <string name="attachment_action_spotlight">Spotlight</string>
+    <string name="shutter_button_content_description">Shutter Button</string>
+    <string name="photo_thermal_capture">Thermal Capture</string>
+    <string name="thermal_settings_distance">Distance</string>
+    <string name="clipView_error_playing_video">Error playing video</string>
+    <string name="rid_commander_alert_text">%1$s is the remote pilot in control of the flight</string>
+    <string name="adapter_labeledenum_label">Label</string>
+    <string name="adapter_labeledenum_value">Value</string>
+    <string name="map_input_hint_address_or_location">Address or Location</string>
+    <string name="label_enabled">Enabled</string>
+    <string name="label_disabled">Disabled</string>
+    <string name="static_input_vehicle_name">Vehicle Name</string>
+    <string name="static_input_ip_address">IP address</string>
+    <string name="static_input_port">Port</string>
+</resources>

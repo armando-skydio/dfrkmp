@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="toolbar_controller_title">コントローラーのアップデート</string>
+    <string name="title_update_available">アップデートが利用可能です</string>
+    <string name="title_no_update_available">利用可能なアップデートはありません</string>
+    <string name="subtitle_update_available">外付けドライブ上のアップデートが利用可能です。アップデートには数分かかる場合があります。</string>
+    <string name="subtitle_update_online_available">コントローラーのアップデートには数分かかる場合があります。</string>
+    <string name="subtitle_no_update_available_drive">外付けドライブ上のアップデートのバージョンは、現在適用されているバージョンと同じです</string>
+    <string name="subtitle_no_update_available_cloud">現在、最新バージョンを利用しています</string>
+
+    <string name="title_current_version">最新バージョン</string>
+    <string name="subtitle_current_version">アップデートを確認するには、外付けドライブを挿入してください。</string>
+
+    <string name="title_drive_not_detected">外付けドライブを検出できません</string>
+    <string name="subtitle_preview_video_not_detected">フライトデータを転送するには、フラッシュドライブを挿入してください。</string>
+    <string name="title_controller_offline">コントローラーがオフラインです</string>
+    <string name="subtitle_connect_to_internet">利用可能なアップデートを確認するには、インターネットに接続してください。</string>
+
+    <string name="title_on_current_version">デバイスは最新バージョンです</string>
+    <string name="subtitle_on_current_version">外付けドライブ上のファイルのバージョンは、現在デバイスに適用されているバージョンと同じです。デバイスをアップデートするには、新しいアップデートファイルを外部ドライブに追加してください。</string>
+
+    <string name="title_on_lower_version">外付けドライブ上のファイルは以前のバージョンのものです</string>
+    <string name="subtitle_on_lower_version">外付けドライブ上のファイルのバージョンは、現在デバイスに適用されているバージョンよりも古いものです。デバイスをアップデートするには、新しいアップデートファイルを外部ドライブに追加してください。</string>
+    <string name="update">更新します</string>
+    <string name="check_for_update">アップデートを確認</string>
+    <string name="update_complete">更新完了</string>
+    <string name="select_update">[更新] を選択します</string>
+    <string name="wifi_settings">Wi-Fi設定</string>
+    <string name="verifying_files">ファイルを検証しています</string>
+    <string name="downloading_files">ファイルをダウンロードしています</string>
+    <string name="downloading_update">アップデートをダウンロードしています</string>
+    <string name="downloading_update_subtitle">ダウンロードしています...</string>
+    <string name="updating_controller_software">コントローラーソフトウェアのアップデート</string>
+    <string name="restarting_apps">アプリを再起動しています</string>
+    <string name="updating_controller_hardware">コントローラーハードウェアをアップデートしています</string>
+
+    <!-- Operating System Update -->
+    <string name="os_update_release_date">リリース日</string>
+    <string name="os_update_version">バージョン</string>
+    <string name="os_security_patch_level">セキュリティパッチレベル</string>
+
+    <!-- Messages -->
+    <string name="ota_controller_manifest_title">クラウドバージョン情報</string>
+    <string name="ota_controller_manifest_info">QGC %1$s\nSkysticks %2$s\nEnterprise %3$s\\</string>
+
+    <!-- Errors -->
+    <!-- Messages -->
+    <string name="ota_low_battery_error_title">低バッテリー</string>
+    <string name="ota_low_battery_error_message">更新するには、コントローラーのバッテリー残量が20%以上である必要があります。</string>
+    <string name="ota_error_opening_file">ファイルを開くことができませんでした。</string>
+    <string name="ota_error_updating_apps">アプリの更新中にエラーが発生しました</string>
+    <string name="ota_error_untar_file">tarファイルを開くときにエラーが発生しました</string>
+    <string name="ota_error_sha1_validation">ファイルの検証中にエラーが発生しました</string>
+    <string name="ota_error_request_failed">Skydioにアクセスできません。インターネット接続を確認してください</string>
+
+    <!-- Preview Video -->
+    <string name="mediaPreview_listToolbarTitle">フライトを表示</string>
+    <string name="mediaPreview_errorTitle">エクスポート中にエラーが発生しました</string>
+    <string name="export_header">動画をエクスポートしています</string>
+    <string name="export_complete_header">エクスポートが完了しました</string>
+    <string name="export_failed_header">ファイルのコピーに失敗しました</string>
+    <string name="export_warning">このページを閉じたり、ドローンの電源を切ったりしないでください。</string>
+    <string name="preview_select_directory">動画を保存するフォルダを選択してください</string>
+
+    <!-- Cloud Media -->
+    <string name="cloudMedia_title">クラウドメディア</string>
+    <string name="cloudScans_title">クラウドスキャン</string>
+
+    <!-- Organization -->
+    <string name="default_organization_name">あなたの組織</string>
+
+    <!-- Settings -->
+    <string name="serial_number">シリアルナンバー</string>
+
+</resources>

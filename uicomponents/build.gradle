@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id "org.jetbrains.kotlin.plugin.compose"
+}
+
+android {
+    namespace 'com.skydio.ui.components'
+    compileSdk = 34
+    defaultConfig {
+        minSdkVersion 33
+        targetSdkVersion 34
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_18.toString()
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.13'
+    }
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    // Android support
+    // Jetpack Compose
+    implementation "androidx.appcompat:appcompat:1.5.1"
+    implementation libs.compose.ui
+    implementation projects.strings
+    implementation libs.compose.ui.tooling.preview
+    implementation libs.compose.material3
+    implementation libs.compose.material
+    implementation libs.compose.material.icons
+    implementation libs.androidx.activity.compose
+    debugImplementation libs.compose.ui.tooling
+}

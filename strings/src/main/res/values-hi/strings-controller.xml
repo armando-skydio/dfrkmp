@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="toolbar_controller_title">कंट्रोलर अपडेट</string>
+    <string name="title_update_available">अपडेट उपलब्ध है</string>
+    <string name="title_no_update_available">कोई अपडेट उपलब्ध नहीं है</string>
+    <string name="subtitle_update_available">एक्सटर्नल ड्राइव में अपडेट उपलब्ध है। अपडेट करने में कुछ मिनट लग सकते हैं।</string>
+    <string name="subtitle_update_online_available">आपके कंट्रोलर को अपडेट करने में कई मिनट लग सकते हैं।</string>
+    <string name="subtitle_no_update_available_drive">एक्सटर्नल ड्राइव पर मौजूद अपडेट, आपके मौजूदा वर्ज़न से मेल खाता है</string>
+    <string name="subtitle_no_update_available_cloud">आपके पास एकदम नया वर्ज़न है</string>
+
+    <string name="title_current_version">मौजूदा वर्ज़न</string>
+    <string name="subtitle_current_version">अपडेट की जांच करने के लिए एक्सटर्नल ड्राइव जोड़ें।</string>
+
+    <string name="title_drive_not_detected">एक्सटर्नल ड्राइव का पता नहीं चला</string>
+    <string name="subtitle_preview_video_not_detected">फ़्लाइट का डेटा ट्रांसफ़र करने के लिए फ़्लैश ड्राइव डालें।</string>
+    <string name="title_controller_offline">कंट्रोलर ऑफ़लाइन है</string>
+    <string name="subtitle_connect_to_internet">उपलब्ध अपडेट देखने के लिए इंटरनेट से कनेक्ट करें।</string>
+
+    <string name="title_on_current_version">डिवाइस सबसे नए वर्ज़न पर काम कर रहा है</string>
+    <string name="subtitle_on_current_version">एक्सटर्नल ड्राइव पर मौजूद फ़ाइलें, डिवाइस के मौजूदा वर्ज़न से मेल खाती हैं। डिवाइस अपडेट करने के लिए, कृपया एक्सटर्नल ड्राइव में अपडेट से जुड़ी नई फ़ाइलें जोड़ें।</string>
+
+    <string name="title_on_lower_version">एक्सटर्नल ड्राइव में मौजूद वर्ज़न पुराना है</string>
+    <string name="subtitle_on_lower_version">एक्सटर्नल ड्राइव पर मौजूद फ़ाइलों का वर्ज़न, डिवाइस में मौजूद फ़ाइलों के वर्ज़न से पुराना है। डिवाइस अपडेट करने के लिए, कृपया एक्सटर्नल ड्राइव में अपडेट से जुड़ी नई फ़ाइलें जोड़ें।</string>
+    <string name="update">अपडेट करें</string>
+    <string name="check_for_update">अपडेट के लिए चेक करें</string>
+    <string name="update_complete">अपडेट पूरा हुआ</string>
+    <string name="select_update">अपडेट चुनें</string>
+    <string name="wifi_settings">वाईफ़ाई सेटिंग्स</string>
+    <string name="verifying_files">फ़ाइलों की जांच की जा रही है</string>
+    <string name="downloading_files">फ़ाइलें डाउनलोड की जा रही हैं</string>
+    <string name="downloading_update">अपडेट डाउनलोड किए जा रहे हैं</string>
+    <string name="downloading_update_subtitle">डाउनलोड किया जा रहा है...</string>
+    <string name="updating_controller_software">कंट्रोलर सॉफ़्टवेयर अपडेट किया जा रहा है</string>
+    <string name="restarting_apps">रीस्टार्ट होने वाले ऐप</string>
+    <string name="updating_controller_hardware">कंट्रोलर हार्डवेयर अपडेट किया जा रहा है</string>
+
+    <!-- Operating System Update -->
+    <string name="os_update_release_date">रिलीज़ की तारीख</string>
+    <string name="os_update_version">वर्ज़न</string>
+    <string name="os_security_patch_level">सुरक्षा पैच का लेवल</string>
+
+    <!-- Messages -->
+    <string name="ota_controller_manifest_title">क्लाउड वर्ज़न की जानकारी</string>
+    <string name="ota_controller_manifest_info">QGC %1$s\nSkysticks %2$s\nएंटरप्राइज़ %3$s\\</string>
+
+    <!-- Errors -->
+    <!-- Messages -->
+    <string name="ota_low_battery_error_title">बैटरी कम है</string>
+    <string name="ota_low_battery_error_message">अपडेट करने के लिए कंट्रोलर बैटरी 20% से ज़्यादा होनी चाहिए।</string>
+    <string name="ota_error_opening_file">फ़ाइल खोली नहीं जा सकी।</string>
+    <string name="ota_error_updating_apps">ऐप अपडेट करने में गड़बड़ी</string>
+    <string name="ota_error_untar_file">tar फ़ाइल खोलने में गड़बड़ी</string>
+    <string name="ota_error_sha1_validation">फ़ाइल सत्यापित करने में गड़बड़ी</string>
+    <string name="ota_error_request_failed">Skydio से संपर्क नहीं हो पा रहा। अपने इंटरनेट कनेक्शन को चेक करें</string>
+
+    <!-- Preview Video -->
+    <string name="mediaPreview_listToolbarTitle">फ़्लाइट देखें</string>
+    <string name="mediaPreview_errorTitle">एक्सपोर्ट करने में गड़बड़ी</string>
+    <string name="export_header">वीडियो एक्सपोर्ट किया जा रहा है</string>
+    <string name="export_complete_header">एक्सपोर्ट पूरा हुआ</string>
+    <string name="export_failed_header">फ़ाइल कॉपी नहीं की जा सकी</string>
+    <string name="export_warning">इस पेज से बाहर न निकलें या अपने ड्रोन को बंद न करें।</string>
+    <string name="preview_select_directory">वीडियो सेव के लिए कोई फ़ोल्डर चुनें</string>
+
+    <!-- Cloud Media -->
+    <string name="cloudMedia_title">क्लाउड मीडिया</string>
+    <string name="cloudScans_title">क्लाउड स्कैन</string>
+
+    <!-- Organization -->
+    <string name="default_organization_name">आपका संगठन।</string>
+
+    <!-- Settings -->
+    <string name="serial_number">सीरियल नंबर</string>
+
+</resources>

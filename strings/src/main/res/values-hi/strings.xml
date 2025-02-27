@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="skydio_toWifiSettingsButton">वाईफ़ाई सेटिंग्स</string>
+    <string name="skydio_genericConnectButton">कनेक्ट करें</string>
+    <string name="skydio_genericReconnectButton">फिर से कनेक्ट करें</string>
+    <string name="skydio_genericDirectConnectButton">वाईफ़ाई से कनेक्ट करें</string>
+    <string name="skydio_connectToSkydio2Button">ड्रोन से कनेक्ट करें</string>
+    <string name="skydio__intAsPercent_FMT_percent">%1$d%%</string>
+    <string name="skydio__defaultDroneName">आपका ड्रोन</string>
+
+    <!-- OOBE strings -->
+    <string name="oobe_code_resend"><b>कोड दोबारा भेजें</b></string>
+    <string name="oobe_help"><u>मदद</u></string>
+    <string name="oobe_enter_code_sent_to_email">पर आपको जो कोड मिला है उसे डालें</string>
+    <string name="oobe_enter_code_sent_to_email_hint">अपना कोड डालें</string>
+    <string name="oobe_email_bouncedError_FMT_email">आपने जो ईमेल एड्रेस डाला उसे सर्वर ने नामंज़ूर कर दिया: %1$s. हमारे ईमेल इस एड्रेस से बाउंस हो गए हैं.</string>
+    <string name="oobe_email_complainedError_FMT_email">आपने जो ईमेल एड्रेस डाला उसे सर्वर ने नामंज़ूर कर दिया: %1$s.  इस एड्रेस पर हमारे ईमेल, स्पैम के तौर पर मार्क किए गए हैं.</string>
+    <string name="oobe_error_invalidEmailAddress">अमान्य ईमेल एड्रेस</string>
+    <string name="oobe_codeSend_networkErrorTitle">कोई इंटरनेट नहीं</string>
+    <string name="oobe_codeSend_networkErrorMessage">अपने इंटरनेट कनेक्शन को चेक करें और दोबारा कोशिश करें.</string>
+    <string name="oobe_codeSend_cloudErrorTitle">कोड भेजने में एरर हुआ</string>
+    <string name="oobe_codeSend_cloudErrorMessage">ईमेल भेजते वक़्त कोई अनजान एरर हुई है. Skydio सहायता टीम से संपर्क करें.</string>
+    <string name="oobe_codeSend_invalidEmailToast">अमान्य ईमेल</string>
+    <string name="oobe_codeSend_emailSentTitle">नया कोड भेजा गया</string>
+    <string name="oobe_codeSend_emailSentBody_FMT_email">कोड ढूंढने के लिए %1$s पर अपना ईमेल चेक करें.</string>
+    <string name="oobe_codeSend_invalidCodeTitle">अमान्य कोड</string>
+    <string name="oobe_codeSend_invalidCodeBody_FMT_email">पक्का करें कि आप %1$s पर भेजे गए कोड का इस्तेमाल करते हैं और इसका अभी तक इस्तेमाल नहीं किया गया है.</string>
+    <string name="oobe_codeSend_unknownErrorTitle">कोड वेरिफ़ाई करने में एरर हुआ</string>
+    <string name="oobe_cloudconfig_errorTitle">कॉन्फ़िगरेशन वापस पाने में एरर हुआ</string>
+    <string name="oobe_codeSend_unknownErrorBody">कोड वेरिफ़ाई करते वक़्त एक अनजान एरर हुआ; सहायता से संपर्क करें और हम आपकी मदद करेंगे.</string>
+    <string name="oobe_cloudconfig_errorBody">आपके अकाउंट कॉन्फ़िगरेशन को वापस पाते वक़्त एक अनजान एरर हुआ; सहायता से संपर्क करें और हम आपकी मदद करेंगे.</string>
+    <string name="oobe_batteryInsert_title">बैटरी कनेक्ट करें.</string>
+    <string name="oobe_done">हो गया</string>
+    <string name="oobe_droneOn_title">3 सेकंड के लिए पावर बटन दबाएं.</string>
+    <string name="oobe_email_title">ड्रोन को एक्टिवेट करें</string>
+    <string name="oobe_email_text">अपने अकाउंट को वेरिफ़ाई करने के लिए अपना ईमेल डालें.</string>
+    <string name="oobe_email_textEntryLabel">ईमेल एड्रेस</string>
+    <string name="oobe_email_textEntryHint">email@example.com</string>
+    <string name="oobe_getStarted_button">शुरू करें</string>
+    <string name="oobe_legal_header">उपयोग की शर्तें</string>
+    <string name="oobe_legal_button">सबमिट करें</string>
+    <string name="oobe_next">अगला</string>
+    <string name="oobe_agree">सहमत हूं</string>
+    <string name="oobe_permissions_title">Skydio को उड़ान भरने के लिए कुछ अनुमतियों की ज़रूरत है.</string>
+    <string name="oobe_permissions_gps_subtitle">लोकेशन</string>
+    <string name="oobe_permissions_gps_text">आपके ड्रोन को आपके मौजूदा GPS लोकेशन पर वापस जाने और मैप पर आपका लोकेशन देखने देता है.</string>
+    <string name="oobe_permissions_microphone_subtitle">माइक्रोफ़ोन</string>
+    <string name="oobe_permissions_microphone_text">आपका माइक्रोफ़ोन Skydio को आपकी उड़ान के दौरान ऑडियो रिकॉर्ड करने देता है.</string>
+    <string name="oobe_permissions_button">सर्विसेज़ एनेबल करें</string>
+    <string name="oobe_skip">छोड़ें</string>
+    <string name="oobe_wifi_title">अपने ड्रोन के लिए वाईफ़ाई की जानकारी जोड़ें.</string>
+    <string name="oobe_wifi_wifiInput_label">वाईफ़ाई</string>
+    <string name="oobe_wifi_wifiInput_hint">SSID</string>
+    <string name="oobe_wifi_passwordInput_label">पासवर्ड</string>
+    <string name="oobe_wifi_passwordInput_hint">ABCD1234</string>
+    <string name="oobe_wifiIntro_connectTitle">अपने ड्रोन की लाइट्स सॉलिड ब्लू होने के बाद कनेक्ट पर टैप करें.</string>
+    <string name="oobe_wifiIntro_disconnectedTitle">कनेक्शन नहीं हो सका</string>
+    <string name="oobe_wifiIntro_disconnectedText">पक्का करें कि आपकी वाईफ़ाई की जानकारी सही है.</string>
+    <string name="oobe_wifiConnected_connectedTitle">ड्रोन से कनेक्ट किया गया</string>
+    <string name="oobe_wifiIntro_connectButton">कनेक्ट करें</string>
+    <string name="oobe_wifiIntro_editButton">वाईफ़ाई में बदलाव करें</string>
+    <string name="oobe_wrongAppTitle_aefNotFound">और ज़्यादा सॉफ़्टवेयर की ज़रूरत है</string>
+    <string name="oobe_wrongAppMessage_aefNotFound">इस ऐप का इस्तेमाल करने के लिए Skydio Autonomy Enterprise Foundation लाइसेंस वाले एक बिज़नेस अकाउंट की ज़रुरत होती है.</string>
+    <string name="oobe_enable_internet">इंटरनेट एनेबल करें</string>
+    <string name="oobe_enable_internet_description">डिवाइस को एक्टिवेट करने में आगे बढ़ने के लिए इंटरनेट चालू करें.</string>
+    <string name="oobe_setup_pass_description">यह एक ऑप्शनल स्टेप है.</string>
+    <string name="oobe_set_pass">पासवर्ड सेट करें</string>
+    <string name="oobe_setup_pass_title">क्या आप अपने डिवाइस के लिए पासवर्ड सेट करना चाहेंगे?</string>
+    <string name="oobe_set_password_title_required">Skydio कंट्रोलर का इस्तेमाल करने के लिए एक पासवर्ड बनाएं</string>
+
+    <!-- Safety Guide Scroll strings -->
+    <string name="safetyGuideScroll_header">सेफ़्टी गाइड एग्रीमेंट</string>
+    <string name="safetyGuideScroll_checkbox">मैंने सेफ़्टी और ऑपरेटिंग गाइडलाइन को पढ़ा और समझा है.</string>
+
+    <!-- hand carry dev menu -->
+    <string name="handCarry_title">हाथ से ले जाने के ऑप्शंस</string>
+    <string name="handCarry_takeoff">शुरू करें (टेकऑफ़ करें)</string>
+    <string name="handCarry_land">पूरा करें (लैंड करें)</string>
+
+    <!-- OTA strings -->
+    <string name="ota_updateAvailableBadgeText">अपडेट करें</string>
+    <string name="ota_abortDialogTitle">अपडेट को अबॉर्ट करें</string>
+    <string name="ota_abortDialogBody">इससे जारी अपडेट रुक जाएगा. आपको फिर से शुरुआत करनी होगी.</string>
+    <string name="ota_abortDialogYes">अपडेट को अबॉर्ट करें</string>
+    <string name="ota_abortDialogNo">अपडेट करना जारी रखें</string>
+    <string name="ota_updateTitle_FMT_name">%1$s अपडेट करें</string>
+    <string name="ota_info_done">अपडेट शुरू करें</string>
+    <string name="ota_info_detailsTitle">ज़्यादा जानकारी</string>
+    <string name="ota_info_detailsBody_FMT_releaseKey_fileKey">सॉफ़्टवेयर ID: %1$s\nफ़ाइल की: %2$s</string>
+    <string name="ota_info_header_FMT_version">सॉफ़्टवेयर अपडेट %1$s</string>
+    <string name="ota_info_subHeader_FMT_version_size">%1$s\nअपडेट साइज़: %2$s में नया क्या है</string>
+    <string name="ota_doNotLeaveApp">ऐप को छोड़ कर न जाएं.</string>
+    <string name="ota_doNotLeaveOrPowerOff">ऐप को छोड़ कर न जाएं या अपने ड्रोन को बंद नहीं करें.</string>
+    <string name="ota_doNotPowerOff">अपने ड्रोन को बंद नहीं करें.</string>
+    <string name="ota_cancel">@string/logSync_cancel</string>
+    <string name="ota_requirements_header">अपडेट करने के लिए, कृपया पता करें:</string>
+    <string name="ota_requirements_grantPermissions">अनुमतियां दें</string>
+    <string name="ota_requirements_next">अपडेट शुरू करें</string>
+    <string name="ota_requirements_batteryMinimumTitle">ड्रोन की बैटरी</string>
+    <string name="ota_requirements_batteryMinimum_FMT_percent">बैटरी को कम से कम %1$d%% तक चार्ज करें.</string>
+    <string name="ota_requirements_grantPhonePermissionsTitle">फ़ोन की अनुमति दें</string>
+    <string name="ota_requirements_grantPhonePermissionsText">अपने फ़ोन के स्टोरेज को इस्तेमाल करने के लिए Skydio ऐप को अनुमति दें.</string>
+    <string name="ota_requirements_storageSpaceTitle">फ़ोन स्टोरेज को फ़्री करें</string>
+    <string name="ota_requirements_storageErrorTitle">स्टोरेज एरर</string>
+    <string name="ota_requirements_storageErrorDescription">Skydio स्टोरेज एक्सेस नहीं कर सकता. कृपया स्पेस क्लियर करें और दोबारा कोशिश करें</string>
+    <string name="ota_requirements_storageSpace_FMT_size">इस मोबाइल डिवाइस पर %1$s फ़्री.</string>
+    <string name="ota_requirements_internetTitle">इंटरनेट से कनेक्ट करें</string>
+    <string name="ota_requirements_wifiOrNetwork">अपडेट डाउनलोड करने के लिए किसी सेल्युलर या वाईफ़ाई नेटवर्क से कनेक्ट करें.</string>
+    <string name="ota_requirements_wifiOnly">अपडेट डाउनलोड करने के लिए किसी वाईफ़ाई नेटवर्क से कनेक्ट करें.</string>
+    <string name="ota_useComputerMode_HTML"><u>कंप्यूटर से इंस्टॉल करें</u></string>
+    <string name="ota_backNotAllowed">अपडेट पूरा हो जाना चाहिए.</string>
+    <string name="ota_error_downloading">डाउनलोड करने में एरर हुआ. कृपया दोबारा कोशिश करें.</string>
+
+    <string name="ota_step1computer_nextButton">फ़ाइल सेव की गई</string>
+    <string name="ota_step1computer_error_noInternet">इंटरनेट से कनेक्ट करें ताकि हम आपको एक ईमेल भेज सकें.</string>
+    <string name="ota_step1computer_error_notFound">रिलीज़ नहीं ढूंढ़ा जा सका.\n\nकृपया Skydio सहायता से संपर्क करें.</string>
+    <string name="ota_step1computer_error_permissions">रिलीज़ अभी तक उपलब्ध नहीं है.\n\nकृपया Skydio सहायता से संपर्क करें.</string>
+    <string name="ota_step1computer_error_unknown">रिलीज़ के लिए ईमेल नहीं भेजा जा सका.\n\nकृपया Skydio सहायता से संपर्क करें.</string>
+    <string name="ota_step1computer_sendingEmail">आपके रजिस्टर्ड ईमेल एड्रेस पर अपडेट के लिंक के साथ एक मेसेज भेजा जा रहा है:</string>
+    <string name="ota_step1computer_sentAnEmail">अपडेट के लिंक के साथ एक मेसेज अभी आपके रजिस्टर्ड ईमेल एड्रेस पर भेजा गया:</string>
+    <string name="ota_step1computer_saveToComputer">फ़ाइल को सेव करने के लिए अपने कंप्यूटर पर लिंक को क्लिक करें.</string>
+
+    <string name="ota_step1phone_nextButton">अगला</string>
+    <string name="ota_step1phone_downloadButton">डाउनलोड करें</string>
+    <string name="ota_step1phone_downloadStatusPending">डाउनलोड पेंडिंग है\n\nपक्का करें कि आप इंटरनेट एक्सेस के साथ किसी वाईफ़ाई नेटवर्क से कनेक्टेड हैं.</string>
+    <string name="ota_step1phone_downloadStatusPendingConnectedToDrone">डाउनलोड पेंडिंग है\n\nआगे बढ़ने के लिए अपने ड्रोन के वाईफ़ाई नेटवर्क से डिस्कनेक्ट करें.</string>
+    <string name="ota_step1phone_downloadStatusPaused">डाउनलोड रोका गया\n\nपक्का करें कि आपके पास इंटरनेट एक्सेस है और यह अपने आप फिर से शुरू हो जाना चाहिए.</string>
+    <string name="ota_step1phone_downloadStatusPausedQueuedForWifi">डाउनलोड रोका गया\n\nपक्का करें कि आप इंटरनेट एक्सेस के साथ किसी वाईफ़ाई नेटवर्क से कनेक्टेड हैं.</string>
+    <string name="ota_step1phone_downloadStatusPausedWaitForNetwork">डाउनलोड रोका गया\n\nपक्का करें कि आप इंटरनेट से कनेक्टेड हैं.</string>
+    <string name="ota_step1phone_downloadStatusPausedWaitToRetry">डाउनलोड रोका गया\n\nदोबारा कोशिश करने से पहले एक पल इंतज़ार किया जा रहा है.</string>
+    <string name="ota_step1phone_downloadStatusPausedConnectedToDrone">डाउनलोड रोका गया\n\nआगे बढ़ने के लिए अपने ड्रोन के वाईफ़ाई नेटवर्क से डिस्कनेक्ट करें.</string>
+    <string name="ota_step1phone_downloadStatusRunning">नया सॉफ़्टवेयर डाउनलोड किया जा रहा है</string>
+    <string name="ota_step1phone_downloadStatusSuccessful">डाउनलोड पूरा हो गया</string>
+    <string name="ota_step1phone_downloadStatusFailed">डाउनलोड नहीं हो सका</string>
+    <string name="ota_step1phone_downloadStatusFailedLowDiskSpace">डाउनलोड नहीं हो सका\n\nआपके फ़ोन पर काफ़ी स्पेस उपलब्ध नहीं है. स्पेस क्लियर करें और दोबारा कोशिश करें.</string>
+    <string name="ota_step1phone_downloadStatusFailed_FMT_reason">डाउनलोड नहीं हो सका\nएरर कोड %1$d</string>
+    <string name="ota_step1phone_downloadStatusSha1Mismatch">डाउनलोड नहीं हो सका\nचेकसम मैच नहीं किया</string>
+    <string name="ota_step1phone_downloadStatusCancelled">डाउनलोड कैंसल किया गया</string>
+    <string name="ota_step1phone_downloadStatusUnknown">डाउनलोड स्टेटस पता नहीं</string>
+    <string name="ota_step1phone_downloadFileTitle_FMT_version">ड्रोन सॉफ़्टवेयर %1$s</string>
+    <string name="ota_step1phone_verifyingDownloadedFile">डाउनलोड की गई फ़ाइल को वेरिफ़ाई किया जा रहा है</string>
+    <string name="ota_step1phone_checkingForExistingDownload">मौजूदा डाउनलोड को चेक किया जा रहा है</string>
+    <string name="ota_step1phone_downloadAvailable">डाउनलोड उपलब्ध है</string>
+
+    <string name="ota_step2_disconnectBeacon_status">बीकन को डिस्कनेक्ट करें</string>
+    <string name="ota_step2_disconnectBeacon_detail">अपने बीकन को बंद करें और जारी रखने के लिए सीधे अपने ड्रोन से कनेक्ट करें.</string>
+    <string name="ota_step2_disconnectJoysticks_status">कंट्रोलर को डिस्कनेक्ट करें</string>
+    <string name="ota_step2_disconnectJoysticks_detail">अपने कंट्रोलर को बंद करें और जारी रखने के लिए सीधे अपने ड्रोन से कनेक्ट करें.</string>
+    <string name="ota_step2_contacting_FMT_name">%1$s से संपर्क किया जा रहा है</string>
+    <string name="ota_step2_releaseMismatch_status">रिलीज़ मैच नहीं किया</string>
+    <string name="ota_step2_releaseMismatch_detail">ऐप को रीस्टार्ट करें और दोबारा कोशिश करें.</string>
+    <string name="ota_step2_waitingFor_FMT_name">%1$s का इंतज़ार किया जा रहा है</string>
+    <string name="ota_step2_switchingWifi_status">वाईफ़ाई बदला जा रहा है</string>
+    <string name="ota_step2_switchingWifi_detail_FMT_ssid">%1$s से कनेक्ट किया जा रहा है</string>
+    <string name="ota_step2_reconnect">फिर से कनेक्ट करें</string>
+    <string name="ota_step2_connectTo_FMT_name">%1$s शुरू करें और इसके वाईफ़ाई से कनेक्ट करें.</string>
+    <string name="ota_step2_verifying">सॉफ़्टवेयर अपडेट वेरिफ़ाई किया जा रहा है</string>
+    <string name="ota_step2_uploadButton">अपलोड करें</string>
+    <string name="ota_step2_cannotUploadToast">आपके ड्रोन से कनेक्ट नहीं किया जा सका.</string>
+    <string name="ota_step2_startingUpload">अपलोड शुरू हो रहा है</string>
+    <string name="ota_step2_uploadingToVehicle">नया सॉफ़्टवेयर अपलोड किया जा रहा है</string>
+    <string name="ota_step2_uploadFailed_status">अपलोड नहीं हो सका</string>
+    <string name="ota_step2_uploadFailed_detail">फ़ाइल अपलोड करते वक़्त एक एरर हुआ.</string>
+    <string name="ota_step2_readyToUpload">अपलोड करने के लिए तैयार</string>
+    <string name="ota_step2_verifyFailed_status">वेरिफ़िकेशन नहीं हो सका</string>
+    <string name="ota_step2_verifyFailed_detail">सॉफ़्टवेयर अपडेट मान्य नहीं था. कृपया अपडेट दोबारा शुरू करें.</string>
+
+    <string name="ota_step3_applyButton">इंस्टॉल करें</string>
+    <string name="ota_step3_batteryLow_status">बैटरी कम है</string>
+    <string name="ota_step3_batteryLow_detail">अपडेट करने से पहले अपने ड्रोन की बैटरी चार्ज करें.</string>
+    <string name="ota_step3_verified_status">वेरिफ़ाई किया गया</string>
+    <string name="ota_step3_verified_detail">जारी रखने के लिए इंस्टॉल पर टैप करें.</string>
+    <string name="ota_step3_applying">इंस्टॉल किया जा रहा है</string>
+    <string name="ota_step3_applyFailed_status">सॉफ़्टवेयर अपडेट नहीं हो सका</string>
+    <string name="ota_step3_applyFailed_detail_FMT_errorCode">अपने ड्रोन को रीस्टार्ट करें. \n\nएरर कोड: %1$d</string>
+
+    <string name="ota_step4_rebootTitle">रीबूट पर काम जारी है</string>
+    <string name="ota_step4_rebooting">रीबूट किया जा रहा है</string>
+    <string name="ota_step4_reconnectedAfterReboot">ड्रोन बूट हो रहा है</string>
+    <string name="ota_step4_waitingToReconnect">रीबूट किया जा रहा है</string>
+    <string name="ota_step4_switchingWifi_FMT_ssid">वाईफ़ाई को %1$sपर स्विच करें</string>
+    <string name="ota_step4_manuallyReconnect_status">रीस्टार्ट हो रहा है</string>
+    <string name="ota_step4_manuallyReconnect_detail_FMT_ssid">आपका ड्रोन रीस्टार्ट हो रहा है. %1$sसे फिर से कनेक्ट करें.</string>
+
+    <string name="ota_step5_finalizing_status">अपडेट ख़त्म किया जा रहा है</string>
+    <string name="ota_step5_finalizing_detail">प्रोसेस के दौरान लाइट्स बंद और चालू हो सकती हैं.</string>
+    <string name="ota_step5_finalizingSubsequentAttempt_FMT_attempt">\n%1$d के लिए कोशिश करें.</string>
+    <string name="ota_step5_reconnecting_status">फिर से कनेक्ट किया जा रहा है</string>
+    <string name="ota_step5_reconnecting_detail">सॉफ़्टवेयर अपडेट ख़त्म करते वक़्त कनेक्शन टूट गया था. आपका ड्रोन फिर से कनेक्ट हो रहा है.</string>
+    <string name="ota_step5_disconnected_status">डिस्कनेक्ट किया गया</string>
+    <string name="ota_step5_disconnected_detail_FMT_ssid">%1$s शायद रीबूट हो रहा है. वाईफ़ाई नेटवर्क उपलब्ध होने पर फिर से कनेक्ट करें.</string>
+    <string name="ota_step5_fallbackDetected_status">अपडेट नहीं किया गया</string>
+    <string name="ota_step5_fallbackDetected_detail">अपने ड्रोन को रीस्टार्ट करें और अपडेट फिर से शुरू करें.</string>
+
+    <string name="ota_finished_complete_status">अपडेट किया गया</string>
+    <string name="ota_finished_complete_detail">आपका ड्रोन अपडेट कर दिया गया है.</string>
+    <string name="ota_finished_finishedButton">हो गया</string>
+
+    <!-- gate screen strings, other than those coming from the C++ -->
+    <string name="gate_commandeerPrompt_title">कंट्रोल लें</string>
+    <string name="gate_commandeerPrompt_message">आप इस ड्रोन का कंट्रोल लेने जा रहे हैं.</string>
+    <string name="gate_commandeerPrompt_yes">कंट्रोल लें</string>
+    <string name="gate_commandeerFailed_title">कंट्रोल नहीं लिया जा सका</string>
+    <string name="gate_commandeerFailed_message">इस ड्रोन पर आपका कंट्रोल नहीं है.</string>
+    <string name="gate_sdCardStatus_emptyTitle">----------</string>
+    <string name="gate_flyAnywayPrompt_title">क्या आप वाकई उड़ान भरना चाहते हैं?</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardUnformatted">जब तक SD कार्ड फ़ॉर्मैट नहीं किया जाता तब तक मीडिया रिकॉर्ड नहीं किया जाएगा.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardSpaceLow">आपके SD कार्ड में पूरी उड़ान रिकॉर्ड करने के लिए काफ़ी जगह नहीं है.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardMissing">जब तक SD कार्ड नहीं डाला जाएगा तब तक मीडिया रिकॉर्ड नहीं किया जा सकता.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardCorrupted">आपके SD कार्ड में ऐसी फ़ाइलें हो सकती हैं जिन्हें ख़राब होने की वजह से नहीं पढ़ा जा सकता.</string>
+    <string name="gate_flyAnywayPrompt_message_sdCardSlow">हो सकता है आपका SD कार्ड मीडिया को तेज़ी से लिख नहीं सके और इसके नतीजे में फ़्रेम ड्रॉप होने लगें.</string>
+    <string name="gate_flyAnywayPrompt_message_beaconBatteryLow">हो सकता है आपकी बीकन बैटरी पूरी उड़ान तक नहीं टिके.</string>
+    <string name="gate_flyAnywayPrompt_message_joysticksBatteryLow">हो सकता है आपकी कंट्रोलर बैटरी पूरी उड़ान तक नहीं टिके.</string>
+    <string name="gate_flyAnywayPrompt_message_phoneBatteryLow">हो सकता है आपके फ़ोन की बैटरी पूरी उड़ान तक नहीं टिके.</string>
+    <string name="gate_flyAnywayPrompt_message_tooDarkForVision">बाधाओं से बचाव को डिसेबल किया जाएगा.</string>
+    <string name="gate_flyAnywayPrompt_yes">उड़ाएं</string>
+    <string name="gate_flyAnywayPrompt_no">कैंसल करें</string>
+    <string name="gate_helpButton"><u>मदद</u></string>
+    <string name="gate_safetyButton"><u>सुरक्षा</u></string>
+    <string name="gate_action_beginFlight">उड़ान भरना शुरू करें</string>
+    <string name="gate_action_resume">उड़ान भरना फिर से शुरू करें</string>
+    <string name="gate_action_updateLater">बाद में</string>
+    <string name="gate_action_updatePhoneNow">Google Play पर जाएं</string>
+    <string name="gate_action_updateSkysticksNow">अपडेट करें</string>
+    <string name="gate_action_updateVehicleNow">अपडेट करें</string>
+    <string name="gate_action_commandeer">कंट्रोल लें</string>
+    <string name="gate_action_showSafetyGuide">गाइड देखें</string>
+    <string name="gate_action_permissionSettings">अनुमति की सेटिंग्स</string>
+    <string name="gate_action_locationSettings">लोकेशन की सेटिंग्स</string>
+    <string name="gate_action_manageMedia">मीडिया मैनेज करें</string>
+    <string name="gate_action_sdCardSettings">कार्ड की सेटिंग्स</string>
+    <string name="gate_action_findVehicle">मैप देखें</string>
+    <string name="gate_tabTitle">उड़ाएं</string>
+    <string name="gate_mediaSpaceRemaining_FMT_minutes">%1$dमिनट</string>
+    <string name="gate_mediaSpaceRemaining_FMT_hours_minutes">%1$dघंटा %2$dमिनट</string>
+    <string name="gate_phoneSpaceLowWarning_title_FMT_minSpace">इस फ़ोन पर स्टोरेज %1$s से कम है.</string>
+    <string name="gate_phoneSpaceLowWarning_message_FMT_spaceToFree">जारी रखने से पहले %1$s तक स्पेस फ़्री करें.</string>
+    <string name="gate_phoneSpaceLowWarning_confirm">ठीक है</string>
+    <string name="gate_action_invalidApp">स्टोर पर जाएं</string>
+    <string name="gate_action_authenticateUser">लॉगिन करें</string>
+    <string name="gate_action_showTOS">नियम और शर्तें देखें</string>
+    <string name="gate_action_customizeCredentials">वाईफ़ाई को कस्टमाइज़ करें</string>
+    <string name="gate_action_rebootVehicle">रीबूट करें</string>
+    <string name="gate_action_genericOkay">ठीक है</string>
+    <string name="gate_action_learnMore">ज़्यादा जानें</string>
+    <string name="gate_action_genericDismiss">खारिज करें</string>
+    <string name="gate_action_switch_mode">मोड बदलें</string>
+    <string name="gate_action_use_skills_prompt_title">ड्रोन को रीबूट करना होगा</string>
+    <string name="gate_action_use_skills_prompt_msg_skills">हुनर का इस्तेमाल करने के लिए यह ज़रूरी है</string>
+    <string name="gate_action_use_skills_prompt_msg_3dscan">3D स्कैन का इस्तेमाल करने के लिए यह ज़रूरी है</string>
+    <string name="gate_action_use_skills">हुनर का इस्तेमाल करें</string>
+    <string name="gate_action_use_3dscan">3D स्कैन इस्तेमाल करें</string>
+    <string name="gate_action_use_manual">एटीट्यूड मोड इस्तेमाल करें</string>
+    <string name="gate_action_showUploadFilesQueue">फ़ाइलें देखें</string>
+    <string name="gate_action_switch_to_gps_night">बदलें</string>
+    <string name="gate_switch_to_gps_night_prompt_action">एनेबल करें</string>
+    <string name="gate_switch_to_gps_night_prompt_title">GPS नाइट फ़्लाइट को एनेबल करें?</string>
+    <string name="gate_switch_to_gps_night_prompt_message">@string/night_flight_toggle_descrption</string>
+    <string name="gate_action_register">रजिस्टर करें</string>
+    <string name="gate_action_help">मदद</string>
+
+    <!-- flight screen strings, other than those coming from C++ -->
+    <string name="flight_menuItem_setHomePoint">होम पॉइंट सेट करें</string>
+    <string name="flight_menuItem_removeHomePoint">होम पॉइंट हटाएं</string>
+    <string name="flight_menuItem_stopSelectingArea">एरिया को चुनना बंद करें</string>
+    <string name="flight_menuItem_flyHereNow">अब यहां उड़ान भरें</string>
+    <string name="flight_menuItem_selectArea">एरिया चुनें</string>
+    <string name="flight_menuItem_addWaypoint">वेपॉइंट जोड़ें</string>
+    <string name="cockpit_launchButton_topText">पर रोकें</string>
+    <string name="cockpit_launchButton_bottomText">लॉन्च करें</string>
+    <string name="cockpit_landButton_topText">पर रोकें</string>
+    <string name="cockpit_landButton_bottomText">लैंड करें</string>
+    <string name="cockpit_heightControl">ऊंचाई</string>
+    <string name="cockpit_rangeControl">रेंज</string>
+    <string name="cockpit_shutterInterval_FMT_seconds">%1$d\nसेकंड.</string>
+
+    <string name="cockpit_preparingToLaunch">तैयार किया जा रहा है</string>
+    <string name="cockpit_actionLaunch">लॉन्च करें</string>
+    <string name="cockpit_actionLandReturn">लैंड और रिटर्न</string>
+    <string name="cockpit_actionLaunchInstructions">लॉन्च करने का तरीका चुनें.</string>
+    <string name="cockpit_actionLandReturnInstructions">अपनी वापसी या लैंडिंग का तरीका चुनें.</string>
+
+    <string name="cockpit_runmodeChangeAlert_title">रीबूट करने की ज़रूरत है</string>
+    <string name="cockpit_runmodeChangeAlert_msg">%1$s का इस्तेमाल करने के लिए ड्रोन को रीबूट करना होगा</string>
+    <string name="cockpit_runmodeChangeAlert_confirm_btn">रीबूट करें</string>
+
+    <string name="telemetry_defaultValue_noUnit">N/A</string>
+    <string name="telemetry_defaultValue_feet">0 फ़ीट</string>
+    <string name="telemetry_defaultValue_mph">0 मील प्रति घंटे</string>
+
+    <string name="terminating_flight_title">चेतावनी: उड़ान समाप्त की जा रही है</string>
+    <string name="terminating_flight_detail">Skydio कुछ ही सेकंड में क्रैश हो जाएगा.</string>
+
+    <!-- Skill refresh strings -->
+    <string name="skillRefresh_complete">रिफ़्रेश पूरा हुआ.</string>
+    <string name="skillRefresh_invalidCloudConfig">लेटेस्ट हुनर डाउनलोड नहीं किए जा सके. इंटरनेट के अपने कनेक्शन को चेक करें.</string>
+    <string name="skillRefresh_noChange">कोई बदलाव नहीं.</string>
+    <string name="skillRefresh_unknownError">हुनर रीफ़्रेश नहीं किए जा सके.</string>
+    <string name="skillRefresh_refreshFailed">लेटेस्ट हुनर लोड नहीं किए जा सके. अपने कनेक्शन को चेक करें.</string>
+    <string name="skillRefresh_vehiclePushFailed">लेटेस्ट हुनर पुश नहीं किए जा सके. अपने कनेक्शन को चेक करें.</string>
+
+    <!-- re-authenticate screen -->
+    <string name="reauthenticate_enter_code_sent_to_email">लॉगिन एक्सपायर हो गया\nपर जो कोड मिला है उसे डालें</string>
+    <string name="reauthenticate_enter_code_placeholder">अपना कोड डालें</string>
+    <string name="reauthenticate_resend">@string/oobe_code_resend</string>
+    <string name="reauthenticate_logout">लॉग आउट करें</string>
+    <string name="reauthenticate_go_back">वापस जाएं</string>
+    <string name="reauthenticate_next">अगला</string>
+    <string name="reauthenticate_confirm_log_out">लॉग आउट करने से आपके डिवाइस का सारा डेटा डिलीट हो जाएगा.\nक्या आप वाकई में जारी रखना चाहते हैं?</string>
+    <string name="reauthenticate_errorTitle">कोई इंटरनेट नहीं</string>
+    <string name="reauthenticate_errorMessage">अपने इंटरनेट कनेक्शन को चेक करें और दोबारा कोशिश करें.</string>
+    <string name="reauthenticate_cloudErrorTitle">कोड भेजने में एरर</string>
+    <string name="reauthenticate_cloudErrorMessage">ईमेल भेजते वक़्त एक अनजान एरर हुआ. Skydio सहायता से संपर्क करें.</string>
+    <string name="reauthenticate_emailSentTitle">नया कोड भेजा गया</string>
+    <string name="reauthenticate_emailSentBody_FMT_email">कोड ढूंढने के लिए %1$s पर अपना ईमेल चेक करें.</string>
+    <string name="reauthenticate_invalidCodeTitle">अमान्य कोड</string>
+    <string name="reauthenticate_invalidCodeBody_FMT_email">पक्का करें कि आप %1$s पर भेजे गए कोड का इस्तेमाल करते हैं और इसका अभी तक इस्तेमाल नहीं किया गया है.</string>
+    <string name="reauthenticate_unknownErrorTitle">कोड वेरिफ़ाई करने में एरर</string>
+    <string name="reauthenticate_unknownErrorBody">कोड वेरिफ़ाई करते वक़्त कोई अनजान एरर हुई; सहायता टीम से संपर्क करें और हम आपकी मदद करेंगे.</string>
+    <string name="reauthenticate_emailBouncedError_FMT_email">आपने जो ईमेल एड्रेस डाला उसे सर्वर ने नामंज़ूर कर दिया: %1$s.  हमारे ईमेल इस एड्रेस से बाउंस हो गए हैं.</string>
+    <string name="reauthenticate_emailComplainedError_FMT_email">आपने जो ईमेल एड्रेस डाला उसे सर्वर ने नामंज़ूर कर दिया: %1$s.  इस एड्रेस पर हमारे ईमेल, स्पैम के तौर पर मार्क किए गए हैं.</string>
+    <string name="reauthenticate_error_invalidEmailAddress">अमान्य ईमेल एड्रेस</string>
+    <string name="api_compatibility_error">"ऐप सर्वर से संचार नहीं कर पा रहा है:\n%1$s\nवर्जन: एंड्रॉइड/%2$s"</string>
+    <!-- settings -->
+    <string name="settings_tabTitle">सेटिंग्स</string>
+    <string name="settings_group_skydio_2">ड्रोन्स</string>
+    <string name="settings_group_resources">रिसोर्सेज़</string>
+    <string name="settings_gettingStarted">शुरू किया जा रहा</string>
+    <string name="settings_batteryGuide">बैटरी की गाइड</string>
+    <string name="settings_handWaveGuide">हैंड वेव कैलिब्रेशन गाइड</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_readSafetyGuide">सेफ़्टी गाइड</string>
+    <string name="settings_readSafetyGuideAgreement">सेफ़्टी गाइड एग्रीमेंट</string>
+    <string name="settings_skills">हुनर</string>
+    <string name="settings_flight_skills">उड़ान भरने के हुनर</string>
+    <string name="settings_faq">अक्सर पूछे जाने वाले सवाल</string>
+    <string name="settings_group_devices">डिवाइस</string>
+    <string name="settings_addNewVehicle">+ वाहन जोड़ें</string>
+    <string name="settings_group_settings">सेटिंग्स</string>
+    <string name="settings_group_support">सहायता</string>
+    <string name="settings_group_account">अकाउंट</string>
+    <string name="settings_group_maps">मैप्स</string>
+    <string name="settings_device_settings">डिवाइस सेटिंग्स</string>
+    <string name="settings_apps_header">ऐप्स</string>
+    <string name="settings_qgc">Skydio QGC लॉन्च करें</string>
+    <string name="settings_controller_update">कंट्रोलर अपडेट</string>
+    <string name="settings_selectedSimulator">चुना गया सिम्युलेटर</string>
+    <string name="settings_3DScanModelViewer">3DScan मॉडल व्यूअर</string>
+    <string name="settings_selectedIotVehicle">क्लाउड वाहन</string>
+    <string name="settings_staticAddress">स्टैटिक एड्रेस</string>
+    <string name="settings_simulatorSelectTitle">एक सिम्युलेटर चुनें</string>
+    <string name="settings_helpCenter">सहायता केंद्र</string>
+    <string name="settings_flightLogs">Skydio के सपोर्ट लॉग्स</string>
+    <string name="settings_support">Skydio सपोर्ट</string>
+    <string name="settings_termsOfUse">उपयोग की शर्तें</string>
+    <string name="settings_whatsNew">नया क्या है</string>
+    <string name="settings_email">ईमेल</string>
+    <string name="settings_organization_name">ऑर्गनाइज़ेशन का नाम</string>
+    <string name="settings_organization">ऑर्गनाइज़ेशन</string>
+    <string name="settings_reset_controller">कंट्रोलर को रीसेट करें</string>
+    <string name="settings_appVersion">ऐप वर्जन</string>
+    <string name="settings_audioPermissionRequired">ऑडियो की अनुमति ज़रूरी है</string>
+    <string name="settings_aboutDialogTitle">Skydio ऐप के बारे में</string>
+    <string name="settings_userDialogTitle">अकाउंट की जानकारी</string>
+    <string name="settings_qgc_3ds_warningTitle">वाहन का मोड बदलें</string>
+    <string name="settings_qgc_3ds_warningDescription">Skydio QGroundControl का इस्तेमाल करने के लिए, \'हुनर\' वाहन मोड पर बदलें.</string>
+    <string name="settings_aboutDialogBody_FMT_appId_version_code_caClient_fdClient_fdMin_build_server_phoneId">पैकेज: %1$s\nवर्जन: %2$s (%3$d)\nCA क्लाइंट वर्जन: %4$s\nFD क्लाइंट वर्जन: %5$s\nFD न्यूनतम सर्वर वर्जन: %6$s\nबिल्ड टाइप: %7$s\nसर्वर: %8$s\nफ़ोन ID: %9$s</string>
+    <string name="settings_helpCenterRequiresInternet">हो सकता है कि सहायता केंद्र सही ढंग से काम न करे क्योंकि आप इंटरनेट से कनेक्टेड नहीं हैं.</string>
+    <string name="settings_viewMap">मैप देखें</string>
+    <string name="basicMap_title">मैप</string>
+    <string name="settings_advanced">एडवांस्ड</string>
+    <string name="advancedSettings_tabTitle">एडवांस्ड</string>
+    <string name="advancedSettings_reset">रीसेट करें</string>
+    <string name="settings_sdcard_overwrite">मीडिया को ओवरराइट करें</string>
+    <string name="settings_sdcard_overwrite_on">सबसे पुराना मीडिया डिलीट करें</string>
+    <string name="settings_sdcard_overwrite_on_description">स्टोरेज स्पेस खाली करने के लिए सबसे पुराना मीडिया अपने आप डिलीट हो जाएगा.</string>
+    <string name="settings_sdcard_overwrite_on_warning">अपने आप डिलीट किया गया मीडिया वापस नहीं पाया जा सकता.</string>
+    <string name="settings_sdcard_overwrite_on_warning_confirm">कंफ़र्म करें</string>
+    <string name="settings_sdcard_overwrite_off">मीडिया को ओवरराइट न करें</string>
+    <string name="settings_sdcard_overwrite_off_description">सबसे पुराना मीडिया अपने आप डिलीट नहीं होगा.</string>
+    <string name="settings_high_power_on_warning_title">हाई पावर मोड को कंफ़र्म करें</string>
+    <string name="settings_high_power_on_warning">डिफ़ॉल्ट पावर सेटिंग में बदलाव करने से, आपका इस्तेमाल अब EU और UK में स्टैंडर्ड रेडियो स्पेक्ट्रम रेग्युलेशंस के हिसाब से कंप्लायंट नहीं होगा. इस मोड का इस्तेमाल पायलट के अपने रिस्क पर है.</string>
+    <string name="settings_high_power_on_warning_confirm">मैं सहमत हूं</string>
+    <string name="settings_high_power_on_warning_disagree">सहमत नहीं हैं</string>
+    <string name="settings_channel_connection_title">कनेक्शन स्टेटस</string>
+    <string name="settings_channel_connecting">%1$s पर कनेक्ट करने की कोशिश की जा रही है</string>
+    <string name="settings_channel_connected">%1$s पर कनेक्ट किया गया</string>
+    <string name="settings_band0_warning">GPS के दख़ल देने की वजह से, M1 बैंड में ऑपरेट करते वक़्त वाहन की ऊंचाई लॉन्च से 10 मीटर ऊपर तक सीमित होती है</string>
+    <string name="settings_radio_next_btn">अगला</string>
+    <string name="settings_radio_finish_btn">ख़त्म करें</string>
+    <string name="settings_radio_channel_updating">रेडियो सेटिंग्स अपडेट की जा रही है</string>
+    <string name="settings_radio_channel_updated">रेडियो कॉन्फ़िगर किया जा रहा है</string>
+    <string name="settings_radio_channel_update_message">वाहन थोड़ी देर के लिए डिस्कनेक्ट हो जाएगा</string>
+    <string name="settings_radio_channel_error">आपके अनुरोध को प्रोसेस करने में एरर हुआ</string>
+    <string name="settings_radio_selection_error">आगे बढ़ने से पहले एक ऑप्शन चुनना होगा</string>
+    <string name="uconSummary_fileQueue">फ़ाइल की कतार</string>
+    <string name="uconSummary_uploadHistory">अपलोड की हिस्ट्री</string>
+    <string name="uconSummary_settings">सेटिंग्स</string>
+    <string name="uconSummary_vehicleToPhone">वाहन से फ़ोन तक</string>
+    <string name="uconSummary_phoneToCloud">फ़ोन से क्लाउड तक</string>
+    <string name="uconSummary_pausedState">रोका गया: %1$d\\%%</string>
+    <string name="uconSummary_downloadingState">डाउनलोड किया जा रहा है: %1$d\\%%</string>
+    <string name="uconSummary_uploadingState">अपलोड किया जा रहा है: %1$d\\%%</string>
+    <string name="uconSummary_completeState">पूरा</string>
+    <string name="uconSummary_downloadingSize">%1$.2f MB / %2$.2f MB</string>
+    <string name="uconSummary_downloadingCount">%1$d / %2$d फ़ाइलें</string>
+    <string name="uconSummary_fileCount">%1$d फ़ाइलें</string>
+    <string name="uconSettings_filesToPhone">फ़ोन पर फ़ाइलें पुश करें</string>
+    <string name="uconSettings_filesToCloud">क्लाउड पर फ़ाइलें पुश करें</string>
+    <string name="uconSettings_useLte">LTE का इस्तेमाल करें</string>
+    <string name="uconSettings_skippedFiles">छोड़ी गई फ़ाइलें दिखाएं</string>
+    <string name="uconSettings_forceRefresh">ज़बरदस्ती फ़ाइलों का रिफ़्रेश किया जाना</string>
+    <string name="ucon_empty">सिंक करने के लिए कोई फ़ाइलें नहीं</string>
+    <string name="cacheMapTiles_title">कैश मैप टाइल्स</string>
+    <string name="cacheMapTiles_detail">होल्ड करें: एम्बिएंट टाइल कैश क्लियर करें</string>
+    <string name="cacheCenter_title">कैश सेंटरपॉइंट टॉगल करें</string>
+    <string name="cacheCenter_detail">होल्ड करें: विशिष्ट कोऑर्डिनेट सेट करें</string>
+    <string name="showOfflineRegions_title">ऑफ़लाइन क्षेत्र दिखाएं</string>
+    <string name="showOfflineRegions_detail">होल्ड करें: लेटेस्ट क्षेत्र डिलीट करें</string>
+
+    <!-- downloadable maps -->
+    <string name="downloadableMap_titleAdd">नए मैप्स जोड़ें</string>
+    <string name="downloadableMap_titleDownloading">डाउनलोड किया जा रहा है</string>
+    <string name="downloadableMap_downloadAction">मैप डाउनलोड करें</string>
+    <string name="downloadableMap_errorTooManyTiles">मैपबॉक्स टाइल काउंट की लिमिट पार हो गई: %1$d</string>
+    <string name="downloadableMap_downloadingTitle">मैप डाउनलोड किया जा रहा है</string>
+    <string name="downloadableMap_downloadProgress">%1$s\\%% डाउनलोड किया गया</string>
+    <string name="downloadableMap_downloadErrorTitle">डाउनलोड एरर</string>
+    <string name="downloadableMap_errorUnknown">इस मैप रीजन को डाउनलोड करने में दिक्कत हुई.</string>
+    <string name="downloadableMap_noInternetErrorTitle">इंटरनेट की ज़रूरत है</string>
+    <string name="downloadableMap_noInternetErrorMessage">नए मैप्स को डाउनलोड करने के लिए इंटरनेट कनेक्शन की ज़रूरत है.</string>
+    <string name="downloadableMap_dailyLimitErrorTitle">रोज़ाना की लिमिट पार हो गई</string>
+    <string name="downloadableMap_dailyLimitErrorMessage">आप हर दिन 10 मैप्स डाउनलोड करने की लिमिट तक पहुंच गए हैं. कृपया और मैप्स डाउनलोड करने से पहले कल तक इंतज़ार करें.</string>
+    <string name="downloadableMap_totalLimitErrorTitle">मैप की लिमिट पार हो गई</string>
+    <string name="downloadableMap_totalLimitErrorMessage">आप 10 सेव किए गए मैप्स की लिमिट तक पहुंच गए हैं. नए मैप्स डाउनलोड करने से पहले मौजूदा मैप्स डिलीट करें.</string>
+
+    <!-- about -->
+    <string name="about_title">ऐप के बारे में</string>
+    <string name="tutorials_title">ट्यूटोरियल्स</string>
+    <string name="account_title">अकाउंट</string>
+    <string name="logout_action">लॉग आउट करें</string>
+    <string name="about_syncconfig_action">सिंक करें</string>
+    <string name="logout_action_confirm">क्या आप वाकई लॉग आउट करना चाहते हैं?</string>
+
+    <string name="erase_controller_data">कंट्रोलर का संपूर्ण डाटा मिटाएं</string>
+    <string name="erase_controller_dlg_title">सभी कंट्रोलर डेटा मिटाएं?</string>
+    <string name="erase_controller_dlg_msg">यह आपके कंट्रोलर से सभी डेटा हटा देगा.</string>
+    <string name="erase_controller_dlg_msg_with_pass">यह आपके कंट्रोलर से सभी डेटा हटा देगा और पासवर्ड क्लियर कर देगा.</string>
+    <string name="erase_controller_dlg_erase">मिटाएं</string>
+
+    <!-- vehicle settings -->
+    <string name="vehicleSettings_update">अपडेट करें</string>
+    <string name="vehicleSettings_checkForUpdate">अपडेट के लिए चेक करें</string>
+    <string name="vehicleSettings_checkNowNoInternetMessage">अपडेट्स को चेक करने के लिए आपको इंटरनेट से कनेक्ट करना होगा.</string>
+    <string name="vehicleSettings_findVehicle_FMT_name">ड्रोन खोजें</string>
+    <string name="vehicleSettings_findVehicle_FMT_name_skysticks">%1$s का पता लगाएं</string>
+    <string name="vehicleSettings_forget">हटाएँ</string>
+    <string name="vehicleSettings_reset">डेटा मैनेज करें</string>
+    <string name="vehicleSettings_vehicleSerial">सीरियल नंबर</string>
+    <string name="vehicleSettings_wifi_name">वाई-फ़ाई का नाम</string>
+    <string name="vehicleSettings_uav_name">UAV का नाम</string>
+    <string name="vehicleSettings_vehicleSerialAnsi">ANSI सीरियल नंबर</string>
+    <string name="vehicleSettings_registrationId">रजिस्ट्रेशन ID</string>
+    <string name="vehicleSettings_registrationIdNotSet">सेट नहीं है</string>
+    <string name="vehicleSettings_usbLogSync">USB लॉग सिंक</string>
+    <string name="vehicleSettings_usbDriveDetected">USB ड्राइव का पता चला</string>
+    <string name="vehicleSettings_state_connected">कनेक्टेड</string>
+    <string name="vehicleSettings_state_disconnected">डिस्कनेक्ट किया गया</string>
+    <string name="vehicleSettings_state_disconnected_message">इस सेटिंग को अपडेट करने के लिए आपको अपने ड्रोन से कनेक्ट करना होगा</string>
+    <string name="vehicleSettings_state_updateAvailable">सॉफ़्टवेयर अपडेट उपलब्ध है</string>
+    <string name="vehicleSettings_state_checkingForUpdate">अपडेट के लिए चेक किया जा रहा है</string>
+    <string name="vehicleSettings_versionUnknown">वर्जन अनजान</string>
+    <string name="vehicleSettings_softwareDetailsBody_FMT_version_desc">वर्जन (%1$s)\n%2$s\n</string>
+    <string name="vehicleSettings_softwareDetailsBody_FD_version_desc">FD सर्वर वर्जन %1$s\nFD मिनिमम क्लाइंट वर्जन %2$s\n</string>
+    <string name="vehicleSettings_softwareDetailsBody_FMT_diffBase">इससे अंतर: %1$s</string>
+    <string name="vehicleSettings_softwareDetailsBody_noDiffBase">अंतर मुमकिन नहीं है</string>
+    <string name="vehicleSettings_softwareDetailsTitle">मौजूदा सॉफ़्टवेयर</string>
+    <string name="vehicleSettings_forgetTitle_FMT_name">%1$s हटाएँ?</string>
+    <string name="vehicleSettings_beaconWifiWarningTitle">ड्रोन से कनेक्ट करें</string>
+    <string name="vehicleSettings_beaconWifiWarningDescription">पासवर्ड अपडेट करने के लिए आपको सीधे अपने ड्रोन के वाईफ़ाई नेटवर्क से कनेक्टेड होना होगा.</string>
+    <string name="vehicleSettings_missingInfo">लापता वाहन की जानकारी</string>
+    <string name="vehicleSettings_missingUpdateInfo">वाहन अपडेट की जानकारी नहीं मिली</string>
+    <string name="vehicleSettings_forgetCancel">कैंसल करें</string>
+    <string name="vehicleSettings_forgetConfirm">हटाएँ</string>
+    <string name="vehicleSettings_forgetMessage">क्या आप वाकई इस ड्रोन को हटाना चाहते हैं?</string>
+    <string name="vehicleSettings_updateCheck_serverError">अपडेट के लिए चेक करने में एरर हुआ.</string>
+    <string name="vehicleSettings_updateCheck_unknownError">अपडेट को चेक करने के लिए Skydio से संपर्क नहीं हो पा रहा है.</string>
+    <string name="vehicleSettings_updateCheck_none">यह ड्रोन अप टू डेट है.</string>
+    <string name="vehicleSettings_updateCheck_found">एक अपडेट उपलब्ध है.</string>
+    <string name="vehicleSettings_radio">रेडियो</string>
+    <string name="vehicleSettings_radio_not_connected">वाहन से कनेक्टेड नहीं है, सेटिंग्स में बदलाव नहीं किया जा सकता</string>
+    <string name="vehicleSettings_encryption">एन्क्रिप्शन</string>
+    <string name="vehicleSettings_encryption_dlg_title">क्या आपको यकीन है?</string>
+    <string name="vehicleSettings_encryption_dlg_msg">अगर आप 3D स्कैन होने के दौरान एन्क्रिप्शन सेटिंग्स बदलते हैं तो आप इसे फिर वहीं से शुरू नहीं कर पाएंगे.</string>
+    <string name="vehicleSettings_viewLastFlights">आख़िरी फ़्लाइट्स को देखें</string>
+    <string name="vehicleSettings_cloudConfiguration">क्लाउड सेटिंग्स</string>
+    <string name="vehicleSettings_uploadFiles">फ़ाइलें अपलोड करें</string>
+    <string name="vehicleSettings_frequency">एंटी-फ़्लिकर</string>
+    <string name="vehicleSettings_wifiChannel">चैनल का सेलेक्शन</string>
+    <string name="vehicleSettings_flightHistory">फ़्लाइट हिस्ट्री की फ़ाइल</string>
+    <string name="vehicleSettings_rfHighPower">हाई पावर मोड</string>
+
+    <!-- simulator selection -->
+    <string name="simulatorSelection_noSimulatorText">आपके अकाउंट के लिए कोई सिम्युलेटर असाइन नहीं किया गया है. Skydio डेवलपर कंसोल में सिम्युलेटर्स टैब से एक सिम्युलेटर के लिए अनुरोध करें.</string>
+    <string name="simulatorSelection_checkNow">अभी चेक करें</string>
+
+    <!-- iot vehicles -->
+    <string name="iotVehicles_title">क्लाउड से एक्सेस करने योग्य वाहन</string>
+    <string name="iotVehicles_noIotVehiclesText">आपके ऑर्गनाइज़ेशन के लिए कोई ऑनलाइन वाहन नहीं हैं.</string>
+    <string name="iotVehicles_checkNow">अभी चेक करें</string>
+
+    <!-- vehicle reset -->
+    <string name="vehicleResetChoice_title_FMT_name">%1$s रीसेट करें</string>
+    <string name="vehicleResetChoice_mediaReset">मीडिया कार्ड को फ़ॉर्मैट करें</string>
+    <string name="vehicleResetChoice_logsReset">लॉग्स कार्ड को फ़ॉर्मैट करें</string>
+    <string name="vehicleResetChoice_hardReset">फ़ैक्टरी रीसेट</string>
+    <string name="vehicleReset_mediaResetTitle">मीडिया कार्ड को फ़ॉर्मैट करें</string>
+    <string name="vehicleReset_mediaResetHeader_FMT_name">%1$s से सभी वीडियो और स्नैपशॉट्स क्लियर करें</string>
+    <string name="vehicleReset_mediaResetText">अगर आप अलग-अलग आइटम डिलीट करना चाहते हैं, तो आप उन्हें मीडिया टैब में डिलीट कर सकते हैं.</string>
+    <string name="vehicleReset_mediaResetCompleteText_FMT_name">सभी मीडिया को %1$s से डिलीट कर दिया गया है.</string>
+    <string name="vehicleReset_mediaResetProgress">सभी मीडिया को डिलीट किया जा रहा है</string>
+    <string name="vehicleReset_logsResetTitle">लॉग्स कार्ड को फ़ॉर्मैट करें</string>
+    <string name="vehicleReset_logsResetHeader_FMT_name">%1$s से सभी लॉग्स क्लियर करें</string>
+    <string name="vehicleReset_logsResetText">इससे आपके लॉग्स SD कार्ड का सभी डेटा डिलीट हो जाएगा. इससे मीडिया डिलीट नहीं होगा. यह एक्शन पहले जैसा नहीं किया जा सकता.</string>
+    <string name="vehicleReset_logsResetCompleteText_FMT_name">%1$s से सभी लॉग्स डिलीट कर दिए गए हैं.</string>
+    <string name="vehicleReset_logsResetProgress">सभी लॉग्स डिलीट किए जा रहे हैं</string>
+    <string name="vehicleReset_hardResetTitle">फ़ैक्टरी रीसेट</string>
+    <string name="vehicleReset_hardResetHeader">सभी डेटा डिलीट करें</string>
+    <string name="vehicleReset_hardResetText_FMT_name">यह SD कार्ड को फ़ॉर्मैट करेगा, सभी लॉग डिलीट कर देगा, फ़ैक्टरी वाईफ़ाई पासवर्ड रिस्टोर करेगा और %1$s रीसेट करेगा.</string>
+    <string name="vehicleReset_hardResetCompleteText_FMT_name">सभी स्टोर किया गया डेटा डिलीट कर दिया गया है और %1$s को उसकी डिफ़ॉल्ट सेटिंग्स पर रीसेट कर दिया गया है. जैसे ही उसकी रीबूटिंग ख़त्म हो जाए आप अपने ड्रोन से दोबारा कनेक्ट करें.</string>
+    <string name="vehicleReset_hardResetProgress">सभी डेटा डिलीट किया जा रहा है</string>
+    <string name="vehicleReset_deleteComplete">डिलीट करना पूरा हुआ</string>
+    <string name="vehicleReset_formatButtonText">डिलीट करें</string>
+    <string name="vehicleReset_noClientError_FMT_name">%1$s से कनेक्शन टूट गया.\n\nकोई डेटा नहीं हटाया गया है.</string>
+    <string name="vehicleReset_failedUsbCTitle">USB केबल कनेक्ट किया गया</string>
+    <string name="vehicleReset_failedUsbCMessage">कृपया अटैच किए गए केबल को हटाएं और दोबारा कोशिश करें.</string>
+    <string name="vehicleReset_failedTitle_FMT_name">%1$s रीसेट नहीं किया जा सका</string>
+    <string name="vehicleReset_failedMessage_FMT_name">इस वक़्त %1$s को रीसेट नहीं किया जा सका.</string>
+    <string name="vehicleReset_failedButWillRebootMessage_FMT_name">%1$s रीसेट को पूरा नहीं किया जा सका, लेकिन रीबूट करना होगा ताकि आप फिर से कनेक्ट कर सकें.</string>
+    <string name="vehicleReset_backNotAllowed">रिसेट पर काम जारी है.</string>
+
+    <!-- specific flight settings -->
+    <string name="downloadMaps_title">मैप्स डाउनलोड करें</string>
+    <string name="naturalDragging_title">कैमरा ड्रैग किया जा रहा है</string>
+    <string name="naturalDragging_onTitle">सामान्य</string>
+    <string name="naturalDragging_onDesc">इमेज फ़िंगर मूवमेंट को फ़ॉलो करती है</string>
+    <string name="naturalDragging_offTitle">इंवर्ट करें</string>
+    <string name="naturalDragging_offDesc">कैमरा फ़िंगर मूवमेंट को फ़ॉलो करता है</string>
+    <string name="invertGamepad_title">गेमपैड कंट्रोल्स</string>
+    <string name="invertGamepad_offTitle">सामान्य Y-एक्सिस</string>
+    <string name="invertGamepad_offDesc">स्टैंडर्ड फ़्लाइट स्टिक कंट्रोल्स</string>
+    <string name="invertGamepad_ofTitle">Y-एक्सिस को इंवर्ट करें</string>
+    <string name="invertGamepad_onDesc">Y-एक्सिस वाले कंट्रोल्स इंवर्ट किए गए</string>
+    <string name="recordPhoneAudio_title">ऑडियो रिकॉर्ड</string>
+    <string name="recordPhoneAudio_onTitle">रिकॉर्ड करें</string>
+    <string name="recordPhoneAudio_onDesc">वीडियो क्लिप्स में रिकॉर्ड किया गया ऑडियो शामिल होगा.</string>
+    <string name="recordPhoneAudio_offTitle">रिकॉर्ड नहीं करें</string>
+    <string name="recordPhoneAudio_offDesc">वीडियो क्लिप्स में ऑडियो शामिल नहीं होगा.</string>
+    <string name="displayUnits_title">यूनिट्स</string>
+    <string name="language_title">भाषा</string>
+    <string name="displayUnits_imperialTitle">इम्पीरियल</string>
+    <string name="displayUnits_imperialDesc"></string>
+    <string name="displayUnits_internationalTitle">मेट्रिक</string>
+    <string name="displayUnits_internationalDesc"></string>
+    <!-- Device radio settings -->
+    <string name="radioBand_title">बैंड का सेलेक्शन</string>
+    <string name="radioBand_item">बैंड %1$.1f गीगाहर्ट्ज़</string>
+    <string name="radioPower_title">पावर लेवल सेलेक्शन</string>
+    <string name="radioBandwidth_title">बैंडविड्थ</string>
+    <string name="radioBandwidth_item">%1$d मेगाहर्ट्ज़</string>
+    <string name="radioBandwidth_Desc"></string>
+    <string name="radioChannel_title">फ़्रिक्वेंसी</string>
+    <string name="radioChannel_item">%1$d MHz</string>
+    <string name="radioPowerSelect_title">पावर</string>
+    <string name="radioPower_item_mh1624">पावर %1$s</string>
+
+    <!-- other specific settings -->
+    <string name="cellularDownloadRule_title">सेल्युलर अपडेट्स</string>
+    <string name="cellularDownloadRule_alwaysName">सेल्युलर या वाईफ़ाई</string>
+    <string name="cellularDownloadRule_alwaysDesc">अपडेट्स के लिए हमेशा सेल्युलर कनेक्शन का इस्तेमाल करें.</string>
+    <string name="cellularDownloadRule_smallOnlyName">150  MB से कम</string>
+    <string name="cellularDownloadRule_smallOnlyDesc">छोटे अपडेट्स किसी भी उपलब्ध नेटवर्क पर डाउनलोड हो सकते हैं.</string>
+    <string name="cellularDownloadRule_neverName">सिर्फ़ वाईफ़ाई</string>
+    <string name="cellularDownloadRule_neverDesc">अपडेट्स डाउनलोड करने के लिए कभी भी सेल्युलर का इस्तेमाल नहीं करें.</string>
+    <!-- Controls preference strings -->
+    <string name="controlsPreference_title">कंट्रोल्स के प्रेफ़रेंस</string>
+    <string name="controlsPreference_defaultName">डिफ़ॉल्ट</string>
+    <string name="controlsPreference_defaultDescription">स्टिक से रोल करें,\n बटन से टर्न करें</string>
+    <string name="controlsPreference_steeringName">स्टीयरिंग</string>
+    <string name="controlsPreference_steeringDescription">स्टिक से टर्न करें,\n बटन से रोल करें</string>
+    <string name="controlsPreference_mode2SticksName">जॉयस्टिक्स</string>
+    <string name="controlsPreference_mode2SticksDescription">ट्रेडिशनल डुअल स्टिक कंट्रोल्स</string>
+
+    <!-- USB log sync (advanced user-facing feature) -->
+    <string name="usbLogSync_title">USB लॉग सिंक</string>
+    <string name="usbLogSync_start">शुरू करें</string>
+    <string name="usbLogSync_abort">अबॉर्ट करें</string>
+    <string name="usbLogSync_includeLogs">HD वीडियो के अलावा पूरे फ़्लाइट लॉग्स के साथ सिंक करें.</string>
+    <string name="usbLogSync_connectUsbDrive">USB ड्राइव कनेक्ट करें</string>
+    <string name="usbLogSync_noHostVehicle">अपने ड्रोन से कनेक्ट करें</string>
+    <string name="usbLogSync_noHostVehicle_FMT_name">%1$s से कनेक्ट करें</string>
+    <string name="usbLogSync_preparing">तैयार किया जा रहा है</string>
+    <string name="usbLogSync_ready">तैयार</string>
+    <string name="usbLogSync_connectionError">ड्रोन से कनेक्ट नहीं किया जा सकता</string>
+    <string name="usbLogSync_loading">लोड किया जा रहा है</string>
+    <string name="usbLogSync_success_FMT_size">%1$s का आख़िरी सिंक सही से हो गया</string>
+    <string name="usbLogSync_failed_FMT_size">%1$s का आख़िरी सिंक नहीं हो सका</string>
+
+    <!-- media viewer -->
+    <string name="flightList_tabTitle">मिडिया</string>
+    <string name="flightList_skysticksTabTitle">रिव्यु</string>
+    <string name="media_loading_title">सिंक किया जा रहा है</string>
+    <string name="media_loading_waiting">%1$s के रेस्पॉन्स का इंतज़ार किया जा रहा है</string>
+    <string name="media_loading_mounting">मॉउंटिंग स्टोरेज</string>
+
+    <string name="media_loading_processing">मीडिया प्रोसेस किया जा रहा है</string>
+    <string name="media_noMedia_title">कोई मीडिया नहीं</string>
+    <string name="media_noMedia_subtitle">आपके पास कोई फ़ोटो या वीडियो नहीं है.</string>
+    <string name="media_disconnected_title">डिस्कनेक्ट किया गया</string>
+    <string name="media_disconnected_subtitle">फ़ोटो और वीडियो सिर्फ़ तभी डिसप्ले होंगे जब आप अपने ड्रोन से कनेक्टेड होंगे.</string>
+    <string name="media_preview_empty">पिछली उड़ान के लिए कोई स्ट्रीम नहीं है</string>
+    <string name="media_disconnectBeacon_title">बीकन को डिस्कनेक्ट करें</string>
+    <string name="media_disconnectBeacon_subtitle">फ़ोटो और वीडियो सिर्फ़ तभी डिसप्ले होंगे जब आप बिना बीकन के सीधे अपने ड्रोन से कनेक्टेड होंगे.</string>
+    <string name="media_disconnectJoysticks_title">कंट्रोलर को डिस्कनेक्ट करें</string>
+    <string name="media_disconnectJoysticks_subtitle">फ़ोटो और वीडियो सिर्फ़ तभी डिसप्ले होंगे जब आप कंट्रोलर के बिना सीधे अपने ड्रोन से कनेक्टेड होंगे.</string>
+    <string name="media_selectButton">चुनें</string>
+    <string name="media_cancelButton">कैंसल करें</string>
+    <string name="media_videosLabel">वीडियो</string>
+    <string name="media_photosLabel">फ़ोटो</string>
+    <string name="media_panoramasLabel">पैनोरामा</string>
+    <string name="media_scansLabel">स्कैन्स</string>
+    <string name="media_selectAllButton">सभी को चुनें</string>
+    <string name="media_deselectButton">चुनें गए से हटाएं</string>
+    <string name="media_selectionMenu_saveToPhone">फ़ोन में सेव करें</string>
+    <string name="media_selectionMenu_export">एक्सपोर्ट करें</string>
+    <string name="media_saving_title">आपके मोबाइल डिवाइस पर मीडिया सेव किया जा रहा है.</string>
+    <string name="media_saving_downloadingTitle">%1$s डाउनलोड किया जा रहा है</string>
+    <string name="media_saving_progressBytes">%1$s / %2$s</string>
+    <string name="media_saving_progressSpeed">%1$s/सेकंड</string>
+    <string name="media_saving_subtitle">अपना ड्रोन या फ़ोन बंद न करें.</string>
+    <string name="media_saving_progressDescription_FMT_current_total">%2$d में से %1$d फ़ाइल सेव की जा रही हैं</string>
+    <string name="media_lowPerformanceAlert_title">सेव किया जा रहा है</string>
+    <string name="media_lowPerformanceAlert_message">परफ़ॉर्मेंस की ज़रूरतों की वजह से हो सकता है यह 4K वीडियो इस फ़ोन पर ठीक से प्ले नहीं किया जा सके.</string>
+    <string name="media_lowPerformanceAlert_neverAskAgain">दोबारा नहीं दिखाएं</string>
+    <string name="media_lowPerformanceAlert_button">ठीक है</string>
+    <string name="media_largeDownloadAlert_title">बड़ा डाउनलोड</string>
+    <string name="media_largeDownloadAlert_message">आप अपने फ़ोन में %1$s कंटेंट सेव करने वाले हैं.</string>
+    <string name="media_largeDownloadAlert_save">सेव करें</string>
+    <string name="media_dialogAction_open">खोलें</string>
+    <string name="media_successDialog_title">सेव हो गया</string>
+    <string name="media_successDialog_message">आपका मीडिया आपकी गैलरी में जोड़ दिया गया है.</string>
+    <string name="media_wait_for_download">कृपया डाउनलोड पूरा होने का इंतज़ार करें.</string>
+    <string name="media_download_failed_disconnected">डाउनलोड नहीं हो सका, वाहन डिस्कनेक्ट हो गया.</string>
+    <string name="media_download_failed_for">%1$s के लिए डाउनलोड नहीं किया जा सका</string>
+    <string name="media_vehicle_disconnected">वाहन डिस्कनेक्ट किया गया</string>
+    <string name="media_encryption_hidden">एन्क्रिप्टेड मीडिया छिपाया गया</string>
+    <string name="media_encryption_inserted">सिक्योरिटी की डाली गई</string>
+    <string name="media_delete_confirmTitle">मीडिया डिलीट करें</string>
+    <string name="media_delete_confirmMessage">चुने गए मीडिया को %1$s से डिलीट कर दिया जाएगा.</string>
+    <string name="media_delete_failed">चुने गए आइटम डिलीट नहीं किए जा सके</string>
+    <string name="media_delete_success">%1$d आइटम डिलीट किए गए</string>
+    <string name="media_deleteVideo_confirmGenericMessage">यह वीडियो आपके ड्रोन से डिलीट कर दिया जाएगा.</string>
+    <string name="media_deletePhoto_confirmGenericMessage">यह फ़ोटो आपके ड्रोन से डिलीट कर दी जाएगी.</string>
+    <string name="media_exportOptionsTitle">एक्सपोर्ट के ऑप्शंस</string>
+    <string name="media_exportOptions16x9Title">ओरिजिनल (16:9)</string>
+    <string name="media_exportOptions16x9Desc">16:9 के ओरिजिनल एस्पेक्ट रेश्यो को बनाए रखें</string>
+    <string name="media_exportOptions9x16Title">वर्टिकल (9:16)</string>
+    <string name="media_exportOptions9x16Desc">फ़्रेम में सब्जेक्ट के साथ 9:16 के एस्पेक्ट रेश्यो पर क्रॉप करें</string>
+    <string name="media_exportOptions1x1Title">स्क्वायर (1:1)</string>
+    <string name="media_exportOptions1x1Desc">फ़्रेम में सब्जेक्ट के साथ 1:1 के एस्पेक्ट रेश्यो पर क्रॉप करें</string>
+    <string name="media_exportButton">एक्सपोर्ट करें</string>
+    <string name="media_review_scan">@string/review_scan</string>
+    <string name="media_create_model">मॉडल बनाएं</string>
+
+    <string name="process_edge_model">एज मॉडल को प्रोसेस करें?</string>
+    <string name="process_edge_model_details">अपने स्कैन का एक टेक्सचर वाला मॉडल बनाएं.</string>
+    <string name="processing_edge_model">एज मॉडल को प्रोसेस किया जा रहा है</string>
+    <string name="processing_edge_model_details">कृपया ड्रोन को चालू रखें.</string>
+
+    <string name="model_created">मॉडल बनाया गया</string>
+    <string name="model_created_details">अब आप व्यूअर में अपना टेक्सचर वाला मॉडल देख सकते हैं.</string>
+
+    <string name="stats_photos">फ़ोटो</string>
+    <string name="stats_distance">दूरी</string>
+    <string name="stats_overlap">ओवरलैप</string>
+    <string name="stats_scan_time">स्कैन करने का वक़्त</string>
+    <string name="stats_gsd">GSD</string>
+    <string name="stats_sidelap">साइडलैप</string>
+
+    <string name="button_no">नहीं</string>
+    <string name="button_yes">हां</string>
+
+    <!-- permissions -->
+    <string name="permissions_openSettingsAction">सेटिंग्स खोलें</string>
+    <string name="mediaPermissions_title">स्टोरेज की अनुमतियों की ज़रूरत है</string>
+    <string name="mediaPermissions_message">जारी रखने से पहले ऐप के पास एक्सटर्नल मीडिया स्टोरेज के एक्सेस की अनुमति होनी चाहिए.</string>
+
+    <!-- log dest selection -->
+    <string name="logSync_destSelectHeader">सपोर्ट लॉग्स भेजें</string>
+    <string name="logSync_destSelectText">आप अपने वारंटी के क्लेम को वैलिडेट करने के लिए Skydio सपोर्ट के साथ जानकारी शेयर करने वाले हैं. जानकारी में वीडियो, ऑडियो, इमेज, ईमेल एड्रेस और परफ़ॉर्मेंस टेलीमेट्री शामिल हैं. Skydio इस जानकारी को हमेशा के लिए रखेगा. ज़्यादा जानकारी के लिए, skydio.com/legal पर उपलब्ध, Skydio की गोपनीयता नीति पर जाएं.</string>
+    <string name="logSync_encryptionDisclaimer">अगर आपके लॉग्स एन्क्रिप्टेड हैं, तो अभी अपनी सिक्योरिटी की डालें.</string>
+    <string name="logSync_encryptionDisclaimer_insert_key">आपके वाहन को एक yubikey के साथ प्रोविजन किया गया था, और आपके लॉग्स एन्क्रिप्ट किए जा सकते हैं. अपने वाहन को चालू करें और Skydio सपोर्ट हेतु अपने लॉग्स को डिक्रिप्ट करने के लिए अपनी yubikey डालें. अगर आपका वाहन खो जाता है, तो आप अपने फ़्लैश ड्राइव में लॉग्स एक्सपोर्ट नहीं कर पाएंगे.</string>
+    <string name="logSync_destSelectCloud">अगला</string>
+    <string name="logSync_destSelectCloud_c78">Skydio सपोर्ट पर अपलोड करें</string>
+    <string name="logSync_destSelectDrive">ड्राइव पर एक्सपोर्ट करें</string>
+
+    <!-- log sync strings -->
+    <string name="logSync_modeSelectToolbarTitle">Skydio के सपोर्ट लॉग्स</string>
+    <string name="logSync_modeSelectHeaderUpload">अपलोड टाइप चुनें</string>
+    <string name="logSync_modeSelectTextUpload">आप सिंगल उड़ान या सभी उड़ान डेटा को अपलोड कर सकते हैं.</string>
+    <string name="logSync_modeSelectHeaderExport">फ़्लाइट लॉग्स एक्सपोर्ट करें</string>
+    <string name="logSync_modeSelectTextExport">आप सिंगल उड़ान या सभी उड़ान डेटा को एक्सपोर्ट कर सकते हैं.</string>
+    <string name="logSync_modeSelectUploadOneButton">सिंगल लॉग भेजें</string>
+    <string name="logSync_modeSelectUploadAllButton">सभी लॉग्स भेजें</string>
+    <string name="logSync_logListToolbarTitle">Skydio के सपोर्ट लॉग्स</string>
+    <string name="logSync_logListNoFlights">कोई फ़्लाइट्स नहीं मिलीं</string>
+    <string name="logSync_step_FMT_current_total_HTML"><![CDATA[स्टेप <b>%2$d</b> में से <b>%1$d</b>]]></string>
+    <string name="logSync_doNotLeave">इस ऐप को नहीं छोड़ें.</string>
+    <string name="logSync_doNotLeaveOrPowerOffVehicle">इस ऐप को न छोड़ें या अपने ड्रोन को बंद न करें.</string>
+    <string name="logSync_doNotLeaveOrPowerOffBeacon">इस ऐप को न छोड़ें या अपने बीकन को बंद न करें.</string>
+    <string name="logSync_cancel"><u>कैंसल करें</u></string>
+    <string name="logSync_loading">लोड किया जा रहा है</string>
+    <string name="logSync_logDownloadToolbarTitle">Skydio के सपोर्ट लॉग्स</string>
+    <string name="logSync_downloading">लॉग फ़ाइलें डाउनलोड की जा रही हैं</string>
+    <string name="logSync_connectToDevice_FMT_name">इस उड़ान के लिए लॉग डेटा ढूंढने के लिए %1$s से कनेक्ट करें.</string>
+    <string name="logSync_downloadFailedBeacon">फ़्लाइट डेटा डाउनलोड करने में समस्या हुई.</string>
+    <string name="logSync_downloadFailedConnection">फ़्लाइट डेटा डाउनलोड करने में समस्या हुई. अपने ड्रोन के कनेक्शन को चेक करें.</string>
+    <string name="logSync_downloadFailedFetching">फ़्लाइट डेटा ढूंढने में समस्या हुई. एरर %1$d</string>
+    <string name="logSync_downloadFailedDownloading">फ़्लाइट डेटा डाउनलोड करने में समस्या हुई. एरर %1$d</string>
+    <string name="logSync_download">डाउनलोड करें</string>
+    <string name="logSync_cantAccessVehicle">मैं इस ड्रोन को एक्सेस नहीं कर सकता</string>
+    <string name="logSync_cantAccessBeacon">मैं इस बीकन को एक्सेस नहीं कर सकता</string>
+    <string name="logSync_logUploadToolbarTitle">Skydio के सपोर्ट लॉग्स</string>
+    <string name="logSync_uploadOverCellular">सेल्युलर के ज़रिए अपलोड करें</string>
+    <string name="logSync_uploadOverWifi">वाईफ़ाई के ज़रिए अपलोड करें</string>
+    <string name="logSync_connectToWifiButton">वाईफ़ाई से कनेक्ट करें</string>
+    <string name="logSync_connectToBeacon">बीकन से कनेक्ट करें</string>
+    <string name="logSync_uploading">लॉग फ़ाइलें अपलोड की जा रही हैं</string>
+    <string name="logSync_connectToInternet">कृपया इंटरनेट से कनेक्ट करें ताकि हम इस उड़ान के लिए डेटा अपलोड कर सकें.</string>
+    <string name="logSync_uploadFinishedHeader">अपलोड पूरा हुआ</string>
+    <string name="logSync_uploadFinishedText">आपके लॉग्स Skydio पर अपलोड कर दिए गए हैं.</string>
+    <string name="logSync_uploadFailed">आपके फ़्लाइट डेटा को अपलोड करने में एक समस्या हुई.\nक्लाउड एरर: %1$d</string>
+    <string name="logSync_uploadPartiallyFailed">लॉग अपलोड पूरा हुआ. आपकी कुछ लॉग फ़ाइलें Skydio पर अपलोड नहीं हो पाईं.</string>
+    <string name="logSync_exporting">लॉग फ़ाइलें एक्सपोर्ट की जा रही हैं</string>
+    <string name="logSync_exportFinishedHeader">एक्सपोर्ट पूरा हुआ</string>
+    <string name="logSync_exportFinishedText">आपके लॉग्स एक हटाए जा सकने वाले ड्राइव पर एक्सपोर्ट कर दिए गए हैं.</string>
+    <string name="logSync_exportFailed">आपके फ़्लाइट डेटा को एक्सपोर्ट करने में कोई समस्या हुई. कृपया अपने USB डिवाइस को चेक करें और दोबारा कोशिश करें.\nएक्सपोर्ट एरर: %1$d</string>
+    <string name="logSync_exportPartiallyFailed">लॉग एक्सपोर्ट पूरा हुआ. आपकी कुछ लॉग फ़ाइलें आपके USB डिवाइस पर कॉपी नहीं हो पाईं.</string>
+    <string name="logSync_finished">ख़त्म हो गया</string>
+    <string name="logSync_preparing_media">लोकल मीडिया तैयार किया जा रहा है</string>
+
+    <!-- clip screen -->
+    <string name="makeClip_connectionPromptTitle">ड्रोन से कनेक्ट करें</string>
+    <string name="makeClip_connectionPromptMessageClips">इस फ़्लाइट से क्लिप्स बनाने के लिए आपको अपने ड्रोन से कनेक्ट करना होगा.</string>
+    <string name="makeClip_connectionPromptMessageClips_FMT_name">इस फ़्लाइट से क्लिप्स बनाने के लिए आपको %1$s से कनेक्ट करना होगा.</string>
+    <string name="makeClip_connectionPromptMessageStills">इस फ़्लाइट से स्टिल्स बनाने के लिए आपको अपने ड्रोन से कनेक्ट करना होगा.</string>
+    <string name="makeClip_connectionPromptMessageStills_FMT_name">इस फ़्लाइट से स्टिल्स बनाने के लिए आपको %1$s से कनेक्ट करना होगा.</string>
+    <string name="makeClip_connectionPrompt_cancel">कैंसल करें</string>
+    <string name="makeClip_connectionPrompt_connect">कनेक्ट करें</string>
+    <string name="makeClip_blockingTitleClips">क्लिप्स उपलब्ध नहीं हैं</string>
+    <string name="makeClip_blockingTitleStills">स्टिल्स उपलब्ध नही हैं</string>
+    <string name="makeClip_blockingMessage_noFlight">फ़्लाइट रिकॉर्ड लोड नहीं किया जा सका.</string>
+    <string name="makeClip_blockingMessageClips_unknown">यह तय करने के लिए आपके ड्रोन से चेक किया जा रहा कि क्या क्लिप्स बनाई जा सकती हैं.</string>
+    <string name="makeClip_blockingMessageStills_unknown">यह तय करने के लिए आपके ड्रोन से चेक किया जा रहा कि क्या स्टिल्स बनाए जा सकते हैं.</string>
+    <string name="makeClip_blockingMessage_error">आपके ड्रोन से संपर्क नहीं किया जा सका.</string>
+    <string name="makeClip_blockingMessage_flightNotFound">आपके ड्रोन के पास अब इस उड़ान का कोई रिकॉर्ड नहीं है.</string>
+    <string name="makeClip_blockingMessage_vehicleFlying">यह ड्रोन फ़िलहाल उड़ान भर रहा है या हाल की उड़ान पूरी कर रहा है.</string>
+    <string name="makeClip_blockingMessage_waitingForFullResVideo">आपका ड्रोन अभी भी फ़्लाइट से HD वीडियो फ़ाइलें कलेक्ट कर रहा है.</string>
+    <string name="makeClip_blockingMessage_impossibleNoFullResVideo">इस उड़ान के दौरान रिकॉर्ड किया गया HD वीडियो आपके ड्रोन से हटा दिया गया है.</string>
+    <string name="makeClip_blockingMessageClips_waitingForAudioUpload">क्लिप्स बनाने से पहले कुछ फ़ोन ऑडियो रिकॉर्डिंग हैं जिन्हें अपलोड करना ज़रूरी है.</string>
+    <string name="makeClip_blockingMessageStills_waitingForAudioUpload">स्टिल्स बनाने से पहले फ़ोन डेटा है जिसे अपलोड करना ज़रूरी है.</string>
+    <string name="makeClip_blockingMessageClips_waitingToAlignAudio">आपका ड्रोन HD वीडियो के साथ ऑडियो को अलाइन करने का इंतज़ार कर रहा है.</string>
+    <string name="makeClip_blockingMessageStills_waitingToAlignAudio">आपका ड्रोन HD वीडियो को अलाइन करने का इंतज़ार कर रहा है.</string>
+    <string name="makeClip_blockingMessageClips_aligningAudio">आपका ड्रोन ऑडियो को HD वीडियो के साथ अलाइन कर रहा है.</string>
+    <string name="makeClip_blockingMessageStills_aligningAudio">आपका ड्रोन HD वीडियो को अलाइन कर रहा है.</string>
+    <string name="makeClip_blockingMessageClips_waitingForTranscodeReadiness">आपका ड्रोन क्लिप्स बनाने के लिए तैयार हो रहा है.</string>
+    <string name="makeClip_blockingMessageStills_waitingForTranscodeReadiness">आपका ड्रोन स्टिल्स बनाने के लिए तैयार हो रहा है.</string>
+    <string name="makeClip_createButton">क्लिप बनाएं</string>
+    <string name="makeClip_deleteButton">डिलीट करें</string>
+    <string name="makeClip_cancelButton">कैंसल करें</string>
+    <string name="makeClip_saveButton">सेव करें</string>
+    <string name="makeClip_nextButton">अगला</string>
+    <string name="makeClip_createClip">क्लिप बनाएं</string>
+    <string name="makeClip_setStart">शुरुआत करना सेट करें</string>
+    <string name="makeClip_setEnd">ख़त्म करना सेट करें</string>
+    <string name="makeClip_startHint">शुरू करें</string>
+    <string name="makeClip_endHint">ख़त्म करें</string>
+    <string name="makeClip_disconnectedAlert_title">डिस्कनेक्ट किया गया</string>
+    <string name="makeClip_disconnectedAlert_message">आपका ड्रोन अब कनेक्टेड नहीं है.</string>
+    <string name="makeClip_disconnectedAlert_button">ठीक है</string>
+    <string name="makeClip_noVideoNotConnected">कोई वीडियो डाउनलोड नहीं किया गया. अपने ड्रोन से कनेक्ट करें.</string>
+    <string name="makeClip_syncingPreviewTitle">फ़्लाइट सिंक की जा रही है</string>
+    <string name="makeClip_queuedPreviewTitle">सिंक होने का इंतज़ार किया जा रहा है</string>
+    <string name="makeClip_queuedPreviewSubtitle">इस मीडिया को सिंक करने से दूसरे डाउनलोड रुक जाएंगे.</string>
+    <string name="makeClip_queuedPreviewSyncNow">इस मीडिया को सिंक करें</string>
+    <string name="makeClip_preparingToSyncSubtitle">मीडिया को सिंक करने की तैयारी की जा रही है.</string>
+    <string name="makeClip_noRemoteVideoTitle">वीडियो उपलब्ध नहीं है</string>
+    <string name="makeClip_noRemoteVideoSubtitle">आपके ड्रोन से डाउनलोड करने के लिए कोई प्रीव्यू वीडियो नहीं है.</string>
+    <string name="makeClip_fetchingVideoTitle">वीडियो ढूंढ़ा जा रहा है</string>
+    <string name="makeClip_fetchingVideoSubtitle">प्रीव्यू बनाया जा रहा है</string>
+    <string name="makeClip_videoNotDeliveredTitle">वीडियो उपलब्ध नहीं है</string>
+    <string name="makeClip_videoNotDeliveredSubtitle">आपके ड्रोन पर अब कोई प्रीव्यू वीडियो नहीं है.</string>
+    <string name="makeClip_videoNotAvailableTitle">वीडियो उपलब्ध नहीं है</string>
+    <string name="makeClip_videoNotAvailableSubtitle">वीडियो एक्सेस नहीं किया जा सकता.</string>
+
+    <!-- photo viewer -->
+    <string name="photoViewer_saveToPhone">फ़ोन में सेव करें</string>
+    <string name="photoViewer_delete">डिलीट करें</string>
+
+    <!-- interval photo viewer -->
+    <string name="intervalPhotoViewer_saveToPhone">फ़ोन में सेव करें</string>
+    <string name="intervalPhotoViewer_delete">डिलीट करें</string>
+
+    <!-- clip/still download dialog -->
+    <string name="mediaRequestDialog_still_title">स्नैपशॉट बनाया जा रहा है</string>
+    <string name="mediaRequestDialog_still_notConnectedToVehicle">स्नैपशॉट नहीं बनाया जा सकता. आपके ड्रोन से कनेक्टेड नहीं है.</string>
+    <string name="mediaRequestDialog_still_creating">फ़ोटो बनाई जा रही है</string>
+    <string name="mediaRequestDialog_still_downloading">डाउनलोड किया जा रहा है</string>
+    <string name="mediaRequestDialog_still_remoteError">ड्रोन पर एरर हुआ</string>
+    <string name="mediaRequestDialog_still_successTitle">फ़ोटो सेव की गई</string>
+    <string name="mediaRequestDialog_still_successMessage">आपकी फ़ोटो आपकी गैलरी में जोड़ दी गई है.</string>
+    <string name="mediaRequestDialog_clip_requestFailedTitle">क्लिप एरर</string>
+    <string name="mediaRequestDialog_clip_requestFailedMessage">आपका ड्रोन अनुरोध की गई क्लिप नहीं बना सका. अगर यह समस्या बनी रहती है, तो ग्राहक सहायता से संपर्क करें.</string>
+    <string name="mediaRequestDialog_clip_contactingTitle">एक क्लिप के लिए अनुरोध किया जा रहा है</string>
+    <string name="mediaRequestDialog_clip_contactingText">अपना फ़ोन या ड्रोन बंद नहीं करें.</string>
+    <string name="mediaRequestDialog_clip_preparingTitle">क्लिप बनाई जा रही है</string>
+    <string name="mediaRequestDialog_clip_preparingText">अपना फ़ोन या ड्रोन बंद नहीं करें.</string>
+    <string name="mediaRequestDialog_clip_creatingTitle">क्लिप बनाई जा रही है</string>
+    <string name="mediaRequestDialog_clip_creatingText">अपना फ़ोन या ड्रोन बंद नहीं करें.</string>
+    <string name="mediaRequestDialog_clip_notConnectedTitle">डिस्कनेक्ट किया गया</string>
+    <string name="mediaRequestDialog_clip_notConnectedText">अपने ड्रोन से फिर से कनेक्ट करें और दोबारा कोशिश करें.</string>
+    <string name="mediaRequestDialog_clip_downloadingTitle">आपकी क्लिप डाउनलोड की जा रही है</string>
+    <string name="mediaRequestDialog_clip_downloadingText">अपना फ़ोन या ड्रोन बंद नहीं करें.</string>
+    <string name="mediaRequestDialog_clip_connectionLostTitle">डिस्कनेक्ट किया गया</string>
+    <string name="mediaRequestDialog_clip_connectionLostText">दोबारा शुरू करने के लिए अपने ड्रोन से फिर कनेक्ट करें.</string>
+    <string name="mediaRequestDialog_clip_vehicleErrorTitle">ड्रोन जवाब नहीं दे रहा</string>
+    <string name="mediaRequestDialog_clip_vehicleErrorText">आपके ड्रोन से क्लिप स्टेटस नहीं मिल सका.</string>
+    <string name="mediaRequestDialog_clip_successTitle">क्लिप सेव की गई</string>
+    <string name="mediaRequestDialog_clip_successMessage">आपकी क्लिप आपकी गैलरी में जोड़ दी गई है.</string>
+    <string name="mediaRequestDialog_clip_failedTitle">क्लिप एरर</string>
+    <string name="mediaRequestDialog_clip_failedMessage">आपके ड्रोन ने अनुरोध की गई क्लिप बनाने की कोशिश की और नाकामयाब रहा.</string>
+    <string name="mediaRequestDialog_clip_downloadFailedTitle">डाउनलोड एरर</string>
+    <string name="mediaRequestDialog_clip_downloadFailedMessage">आपके ड्रोन से वीडियो डाउनलोड करने में एक समस्या हुई.</string>
+    <string name="mediaRequestDialog_clip_downloadFailedRetry">दोबारा कोशिश करें</string>
+    <string name="mediaRequestDialog_clip_downloadStatsString">%3$s/सेकेंड पर %1$s / %2$s</string>
+    <string name="mediaRequestDialog_clip_finishingUp">ख़त्म किया जा रहा है</string>
+
+    <!--3d scan model viewer-->
+    <string name="scan_download_image">इमेज डाउनलोड करें</string>
+    <string name="scan_download_image_btn">डाउनलोड करें</string>
+    <string name="scan_download_image_question">क्या आप %1$s को अपने फ़ोन पर डाउनलोड करना चाहते हैं?</string>
+    <string name="scan_download_image_question_filename">यह इमेज</string>
+    <string name="scan_download_image_success">यह इमेज आपके फ़ोन में सेव की गई</string>
+    <string name="scan_download_image_failed_title">डाउनलोड एरर</string>
+    <string name="scan_download_image_failed_msg">इमेज डाउनलोड करने में समस्या हुई</string>
+
+    <!-- clip/still share -->
+    <string name="mediaRequestDialog_share">शेयर करें</string>
+    <string name="mediaRequestDialog_open">खोलें</string>
+    <string name="mediaRequestDialog_shareStill_subject">Skydio स्नैपशॉट</string>
+    <string name="mediaRequestDialog_shareStill_text">Skydio पर ऑटोनॉमस शॉट</string>
+    <string name="mediaRequestDialog_shareStill_chooserTitle">शेयर करें:</string>
+    <string name="mediaRequestDialog_shareClip_subject">Skydio क्लिप</string>
+    <string name="mediaRequestDialog_shareClip_text">Skydio पर ऑटोनॉमस शॉट</string>
+    <string name="mediaRequestDialog_shareClip_chooserTitle">शेयर करें:</string>
+    <!-- clip preset -->
+    <string name="clipPreset_onlyVideoTitle">सामान्य</string>
+    <string name="clipPreset_onlyVideoSubtitle">बिना किसी इफ़ेक्टस के ओरिजिनल वीडियो.</string>
+    <string name="clipPreset_stabilizeTitle">मज़बूत बनाएं</string>
+    <string name="clipPreset_stabilizeSubtitle">फ़िशआई को हटाएं और मज़बूत बनाएं.</string>
+    <string name="clipPreset_stabilizeAndZoomTitle">ज़ूम करें + मज़बूत बनाएं</string>
+    <string name="clipPreset_stabilizeAndZoomSubtitle">फ़िशआई को हटाएं, सब्जेक्ट पर ज़ूम इन करें और मज़बूत बनाएं.</string>
+    <string name="clipPreset_workoutTitle">वर्कआउट करें</string>
+    <string name="clipPreset_workoutSubtitle">सब्जेक्ट स्पीड को स्पीडोमीटर के तौर पर दिखाएं.</string>
+    <string name="clipPreset_frameBlendingTitle">हाइपरलैप्स</string>
+    <string name="clipPreset_frameBlendingSubtitle">ब्लेंडेड फ़्रेम्स के साथ मज़बूत बनाए गे टाइम लैप्स.</string>
+    <string name="clipPreset_voxelsTitle">वॉक्सेलस</string>
+    <string name="clipPreset_voxelsSubtitle">दृश्य का 3D वॉक्सेल विजुअलाइज़ेशन इमेज में जोड़ा जाएगा.</string>
+    <string name="clipPreset_title">वीडियो इफ़ेक्ट्स चुनें</string>
+    <string name="clipPreset_make">सेव करें</string>
+
+    <!-- Whats New -->
+    <string name="whatsNew_skip">छोड़ें</string>
+    <string name="whatsNew_next">अगला</string>
+    <string name="whatsNew_finish">हो गया</string>
+    <string name="whatsNew_title">नए फ़ीचर्स</string>
+    <string name="whatsNew_subtitle">दिसंबर 2018 की रिलीज़</string>
+    <string name="whatsNew_1_newBattery_title">आपका स्वागत है!</string>
+    <string name="whatsNew_1_newBattery_description">बैटरी आइकन का एक नया लुक है</string>
+    <string name="whatsNew_2_newBattery_title">यह रहा ब्रेकडाउन</string>
+    <string name="whatsNew_2_newBattery_description">हरा मामूली फ़्लाइट टाइम है\nऑरेंज सुरक्षित वापसी के लिए लगने वाला ज़रूरी अमाउंट है \nलाल ऑटो-लैंड से पहले लगने वाला अमाउंट है</string>
+    <string name="whatsNew_3_newBattery_title">काउंटडाउन</string>
+    <string name="whatsNew_3_newBattery_description">जब बैटरी आइकन लाल हो जाता है, तो आपके पास फ़ोर्स्ड लैंडिंग करने के वक़्त तक दो मिनट की बैटरी बची होती है.</string>
+    <string name="whatsNew_4_newBattery_title">चेतावनी</string>
+    <string name="whatsNew_4_newBattery_description">जैसे ही आपका ड्रोन कम बैटरी की वजह से लैंडिंग करना शुरू कर देगा, तो आपको यह चेतावनी आइकन दिखाई देगा. कम बैटरी होने पर आप लैंडिंग कैंसल नहीं कर सकते.</string>
+
+    <!-- Local notification strings -->
+    <string name="notification_connectionStatus_genericTitle">आपका ड्रोन कनेक्टेड है</string>
+    <string name="notification_connectionStatus_title">%1$s से कनेक्ट किया गया</string>
+    <string name="notification_health_flyingTitle">आपका ड्रोन उड़ रहा है</string>
+    <string name="notification_health_flyingText">अपने ड्रोन को कंट्रोल करने के लिए टैप करें.</string>
+    <string name="notification_health_landingTitle">लैंडिंग</string>
+    <string name="notification_health_landingText">अपने ड्रोन को कंट्रोल करने के लिए टैप करें.</string>
+    <string name="notification_health_faultTitle">उड़ान के दौरान समस्या</string>
+    <string name="notification_health_faultText">ज़्यादा देखने और अपने ड्रोन को कंट्रोल करने के लिए टैप करें.</string>
+    <string name="notification_health_emergencyLandingTitle">आपका ड्रोन इमरजेंसी लैंडिंग कर रहा है</string>
+    <string name="notification_health_emergencyLandingText">ज़्यादा देखने के लिए टैप करें</string>
+    <string name="notification_health_connectionLostTitle">ड्रोन से कनेक्शन टूट गया</string>
+    <string name="notification_health_connectionLostText">अपने ड्रोन से दोबारा कनेक्ट करने के लिए टैप करें.</string>
+    <string name="notification_health_connectionLostDismissButton">खारिज करें</string>
+    <string name="notification_health_lostPilotTitle">आपके ड्रोन का कंट्रोल चोरी हो गया था</string>
+    <string name="notification_health_lostPilotText">इस ड्रोन को कमांड करने के लिए टैप करें.</string>
+    <string name="notification_batteryLowTitle">ड्रोन की बैटरी कम है</string>
+    <string name="notification_batteryLowText">अपने ड्रोन के लिए एक सुरक्षित लैंडिंग की जगह चुनने के लिए टैप करें.</string>
+    <string name="notification_subjectLostTitle">सब्जेक्ट खो गया</string>
+    <string name="notification_subjectLostText">नया सब्जेक्ट चुनने के लिए टैप करें.</string>
+    <string name="notification_syncingFiles">फ़ाइलें सिंक की जा रही हैं</string>
+    <string name="notification_publishingTelemetry">टेलीमेट्री को पब्लिश किया जा रहा है</string>
+
+    <!-- CloudClient update blocker dialog -->
+    <string name="cloudClient_updateDialogDefaultTitle">ऐप बहुत पुराना है</string>
+    <string name="cloudClient_updateDialogDefaultMessage">Skydio सर्वर से संपर्क में रहने के लिए ऐप को अपडेट करें.</string>
+    <string name="cloudClient_updateDialogUpdateNow">अभी अपडेट करें</string>
+    <string name="cloudClient_updateDialogUpdateLater">बाद में</string>
+
+    <!-- Notification Channel/Category names and descriptions -->
+    <string name="notificationChannel_flightHealth_name">फ़्लाइट नोटिफ़िकेशंस</string>
+    <string name="notificationChannel_flightHealth_description">उड़ान के दौरान आपके ड्रोन से अलर्ट.</string>
+    <string name="notificationChannel_connectionStatus_name">कनेक्शन स्टेटस</string>
+    <string name="notificationChannel_connectionStatus_description">आपके ड्रोन से कनेक्शन स्टेटस के बारे में अलर्टस.</string>
+
+    <!-- DBFlight stats unknown strings -->
+    <string name="flightStats_sizeUnknown">अनजान</string>
+    <string name="flightStats_speedUnknown">अनजान</string>
+    <string name="flightStats_distanceUnknown">अनजान</string>
+
+    <!-- AlertUtil / TextUtil -->
+    <string name="alertUtil_errorDialogTitle">एरर</string>
+    <string name="util_dataSize_FMT_intBytes">%1$d बाइट्स</string>
+    <string name="util_dataSize_FMT_floatKilobytes">%1$.3g kB</string>
+    <string name="util_dataSize_FMT_floatMegabytes">%1$.3g MB</string>
+    <string name="util_dataSize_FMT_floatGigabytes">%1$.3g GB</string>
+    <string name="util_shortDuration_FMT_minutes_seconds">%1$d:%2$02d</string>
+    <string name="util_longDuration_FMT_minutes_seconds">%1$dमिनट %2$dसेकंड</string>
+    <string name="util_longDuration_FMT_seconds">%1$dसेकंड</string>
+    <string name="util_distance_FMT_intMeters">%1$d मीटर</string>
+    <string name="util_distance_FMT_floatMiles">%1$.2f मील</string>
+    <string name="util_speed_FMT_floatMetersPerSecond">%1$.1f मीटर/सेकंड</string>
+    <string name="util_speed_FMT_floatMilesPerHour">%1$.1f मील प्रति घंटे</string>
+
+    <!-- Map -->
+    <string name="map_beyondVehicleLimit_message">चुना गया लोकेशन वाहन के रेंज के बाहर है.</string>
+    <string name="map_tooLongFlight_title">यहां उड़ान नहीं भर सकते</string>
+    <string name="map_tooLongFlight_message_metric">आप 5 किलोमीटर से ज़्यादा दूर तक उड़ान नहीं भर सकते.</string>
+    <string name="map_tooLongFlight_message_imperial">आप 3 मील से ज़्यादा दूर तक उड़ान नहीं भर सकते.</string>
+    <string name="map_tooLongFlight_accept">ठीक है</string>
+    <string name="map_longFlightWarning_title">सावधानी</string>
+    <string name="map_longFlightWarning_message">इस लोकेशन से लौटने के लिए आपके पास काफ़ी बैटरी नहीं होगी.</string>
+    <string name="map_longFlightWarning_proceed">पॉइंट पर उड़ें</string>
+    <string name="map_longFlightWarning_cancel">कैंसल करें</string>
+    <string name="map_tooDistantHome_title">होम पॉइंट सेट नहीं हो पा रहा</string>
+    <string name="map_tooDistantHome_message_metric">आप होम पॉइंट 10 किलोमीटर से ज़्यादा दूर नहीं रख सकते.</string>
+    <string name="map_tooDistantHome_message_imperial">आप होम पॉइंट 6 मील से ज़्यादा दूर नहीं रख सकते.</string>
+    <string name="map_tooDistantHome_accept">ठीक है</string>
+    <string name="map_distantHomeWarning_title">सावधानी</string>
+    <string name="map_distantHomeWarning_message">इस लोकेशन से लौटने के लिए आपके पास काफ़ी बैटरी नहीं होगी.</string>
+    <string name="map_distantHomeWarning_proceed">होम पॉइंट सेट करें</string>
+    <string name="map_distantHomeWarning_cancel">कैंसल करें</string>
+    <string name="map_error_ok">ठीक है</string>
+    <string name="map_deleteWaypointWarning_title">डिलीट करें</string>
+    <string name="map_deleteWaypointWarning_title_view">वेपॉइंट डिलीट करें</string>
+    <string name="map_deleteWaypointWarning_message">क्या आप वाकई इस वेपॉइंट को डिलीट करना चाहते हैं?</string>
+    <string name="map_deleteWaypointWarning_proceed">डिलीट करें</string>
+    <string name="map_deleteWaypointWarning_cancel">कैंसल करें</string>
+    <string name="map_deleteAllWarning_title">मिशन डिलीट करें?</string>
+    <string name="map_deleteAllWarning_message">सभी वेपॉइंट्स डिलीट करें और मौजूदा मिशन को क्लियर करें?</string>
+    <string name="map_error_unableToSetHomePoint_title">होम पॉइंट सेट नहीं किया जा सका</string>
+    <string name="map_error_unableToSetHomePoint_message">इस वक़्त होम पॉइंट सेट नहीं किया जा सका.</string>
+    <string name="map_error_unableToFlyHereNow_title">पॉइंट तक उड़ान नहीं भरी जा सकी</string>
+    <string name="map_error_unableToFlyHereNow_message">इस वक़्त चुने गए पॉइंट तक उड़ान नहीं भरी जा सकी.</string>
+    <string name="map_error_unableToRemoveHomePoint_title">होम पॉइंट क्लियर नहीं किया जा सका</string>
+    <string name="map_error_unableToRemoveHomePoint_message">इस वक़्त होम पॉइंट को हटाया नहीं जा सका.</string>
+    <string name="map_error_unableToSetAreaSelection_title">एरिया सेलेक्शन सेट नहीं किया जा सका</string>
+    <string name="map_error_unableToSetAreaSelection_message">इस वक़्त एरिया सेलेक्शन को अपडेट नहीं किया जा सका.</string>
+    <string name="map_noVehicleName">आपका ड्रोन</string>
+    <string name="map_noLocationData_title">कोई लोकेशन डेटा नहीं</string>
+    <string name="map_noLocationData_message">हमारे पास %1$s के लिए कोई लोकेशन डेटा स्टोर किया हुआ नहीं है</string>
+    <string name="map_noLocationData_ok">ठीक है</string>
+    <string name="map_vehicleRequiresGps">ड्रोन को GPS लॉक की ज़रूरत होती है.\nGPS हासिल करने के लिए चारों ओर उड़ान भरें.</string>
+    <string name="map_missionTitle">वेपॉइंट मिशन</string>
+    <string name="map_missionPrompt">पहला वेपॉइंट सेट करने के लिए मैप पे प्रेस करके होल्ड करे</string>
+    <string name="map_unableToParseCoordinatesTitle">अमान्य कोऑर्डिनेट</string>
+    <string name="map_unableToParseCoordinatesMessage">इस कोऑर्डिनेट की पहचान नहीं हो पा रही है.</string>
+    <string name="map_parseErrorUnrecognizedTitle">अमान्य इनपुट</string>
+    <string name="map_parseErrorUnrecognizedMessage">इस लोकेशन की पहचान नहीं हो पा रही है.</string>
+    <string name="map_parseErrorInternetTitle">कोई इंटरनेट नहीं</string>
+    <string name="map_parseErrorInternetMessage">इंटरनेट कनेक्शन वेरिफ़ाई करें और दोबारा कोशिश करें.</string>
+    <string name="map_parseErrorNetworkTitle">नेटवर्क एरर</string>
+    <string name="map_parseErrorNetworkMessage">इंटरनेट कनेक्शन वेरिफ़ाई करें या कोई दूसरा नेटवर्क चुनें और दोबारा कोशिश करें.</string>
+    <string name="map_parseErrorUnknownTitle">अनजान एरर</string>
+    <string name="map_parseErrorUnknownMessage">लोकेशन को पार्स नहीं किया जा सका.</string>
+    <string name="map_searchByLocationNoInternet">लोकेशन के ज़रिए खोजने के लिए इंटरनेट कनेक्शन ज़रूरी है</string>
+    <string name="map_latitude_hint">लैटिट्यूड</string>
+    <string name="map_longitude_hint">लौंगिट्यूड</string>
+    <string name="map_mgrs_hint">MGRS</string>
+    <string name="map_dsm_hint">DSM</string>
+    <string name="map_searchByLocation">लोकेशन के ज़रिए सर्च करें</string>
+    <string name="map_searchByCoordinate">कोऑर्डिनेट के ज़रिए सर्च करें</string>
+
+    <!-- Offline Maps -->
+    <string name="download_maps_overview_title">मैप्स डाउनलोड करें</string>
+    <string name="mapbox_sources_title">मेपबॉक्स के सोर्सेज</string>
+
+    <!-- Capture Settings -->
+    <string name="capture_settings_common">कैप्चर सेटिंग्स</string>
+    <string name="capture_settings_photo">फ़ोटो सेटिंग्स</string>
+    <string name="capture_settings_video">वीडियो सेटिंग्स</string>
+
+    <string name="captureSettings_auto">ऑटो</string>
+    <string name="captureSettings_hdr">HDR</string>
+    <string name="captureSettings_fileType">फ़ाइल टाइप</string>
+    <string name="captureSettings_resolution">रिज़ॉल्यूशन</string>
+    <string name="captureSettings_recordingMethod">रिकॉर्डिंग का तरीका</string>
+    <string name="captureSettings_frameRate">फ़्रेम रेट</string>
+    <string name="captureSettings_shutter">शटर</string>
+    <string name="captureSettings_exposure">एक्सपोजर</string>
+
+    <string name="captureSettings_slider_iso">ISO</string>
+    <string name="captureSettings_slider_exposure">शटर स्पीड</string>
+    <string name="captureSettings_slider_compensation">कॉम्पेनसेशन</string>
+    <string name="captureSettings_slider_whiteBalance">वाइट बैलेंस</string>
+    <string name="capturesettings_unavailable_msg">ट्रैकिंग करते वक़्त अनुपलब्ध</string>
+    <string name="capturesettings_unavailableWhileZoomedIn">ज़ूम इन करने पर वीडियो सेटिंग्स अनुपलब्ध होती हैं.</string>
+
+
+    <!-- Controller Settings -->
+    <string name="joystickSettings_tab">कंट्रोलर</string>
+    <string name="joystickSettings_connectToController">अपने ड्रोन को अपने कंट्रोलर से पेयर करें और फिर कंट्रोलर को अपने फ़ोन से कनेक्ट करें.</string>
+    <string name="joystickSettings_connectToDrone">जब आप अपने ड्रोन से कनेक्ट होते हैं तो कंट्रोलर सेटिंग्स उपलब्ध होती हैं.</string>
+    <string name="joystickSettings_controllerDisconnected">कंट्रोलर डिस्कनेक्ट किया गया</string>
+    <string name="joystickSettings_flightSensitivity">फ़्लाइट सेंसिटिविटी</string>
+    <string name="joystickSettings_gimbalSensitivity">जिम्बल सेंसिटिविटी</string>
+    <string name="joystickSettings_sensitivityOption_default">डिफ़ॉल्ट</string>
+    <string name="joystickSettings_sensitivityOption_custom">कस्टम</string>
+    <string name="joystickSettings_rollSensitivity">रोल करें</string>
+    <string name="joystickSettings_pitchSensitivity">पिच करें</string>
+    <string name="joystickSettings_yawSensitivity">रास्ते से हटें</string>
+    <string name="joystickSettings_throttleSensitivity">थ्रॉटल करें</string>
+
+    <!-- Drone Settings -->
+    <string name="droneSettings_tab">ड्रोन</string>
+    <string name="droneSettings_connect">ड्रोन सेटिंग्स एक्सेस करने के लिए अपने ड्रोन से कनेक्ट करें.</string>
+    <string name="droneSettings_safetyHeight">फ़्लोर से ऊंचाई</string>
+    <string name="droneSettings_safetyHeight_on_FMT_heightAndUnits">आस-पास के लोगों और वस्तुओं की सुरक्षा के लिए ट्रैकिंग करते वक़्त आपका ड्रोन ज़मीन से कम से कम %1$s ऊपर रहने की कोशिश करेगा. इससे ट्रैकिंग परफ़ॉर्मेंस ख़राब हो सकती है.</string>
+    <string name="droneSettings_safetyHeight_on_heightAndUnits_imperial">8 फ़ीट</string>
+    <string name="droneSettings_safetyHeight_on_heightAndUnits_metric">2.5 मीटर</string>
+    <string name="droneSettings_safetyHeight_off">ट्रैकिंग के दौरान आपका ड्रोन ज़मीन के करीब उड़ सकता है. हमेशा सावधानी बरतें और आस-पास के लोगों और वस्तुओं के लिए जागरूक रहें.</string>
+    <string name="droneSettings_heightCeiling">सीलिंग (ऊंचाई) की अधिकत्तम सीमा</string>
+    <string name="droneSettings_heightCeiling_on">अधिकतम उड़ान की ऊंचाई 100 मीटर होती है.</string>
+    <string name="droneSettings_heightCeiling_off">अधिकतम उड़ान की ऊंचाई 500 मीटर होती है.\nआप सभी कानून और रेग्युलेशंस का पालन करने के लिए ज़िम्मेदार होते हैं.</string>
+    <string name="droneSettings_heightCeilingPrompt_title">उपयोग की शर्तें</string>
+    <string name="droneSettings_heightCeilingPrompt_message">आप सर्टिफ़ाई करते हैं कि आप लोकल रेग्युलेशंस से अवगत हैं, आपके पास 100 मीटर से ऊपर उड़ान भरने की अनुमति है, सावधानी के साथ आगे बढ़ेंगे और कनेक्शन, और बैटरी लाइफ़ को सावधानीपूर्वक मैनेज करेंगे.</string>
+    <string name="droneSettings_heightCeilingPrompt_accept">स्वीकार करें</string>
+    <string name="droneSettings_heightCeilingPrompt_cancel">कैंसल करें</string>
+    <string name="droneSettings_obstacleAvoidance">बाधाओं से बचाव</string>
+    <string name="droneSettings_obstacleAvoidance_on">आपका ड्रोन बाधाओं से 0.9 मीटर दूर रहेगा.</string>
+    <string name="droneSettings_obstacleAvoidance_off">आपका ड्रोन बाधाओं से 0.45 मीटर दूर रहेगा.</string>
+    <string name="droneSettings_visibleStrobe">लाइट स्ट्रोब</string>
+    <string name="droneSettings_visibleStrobe_on">आपका ड्रोन नियमित तौर से एक दिखाई देने वाली स्पेक्ट्रम स्ट्रोब लाइट फ़्लैश करेगा.</string>
+    <string name="droneSettings_visibleStrobe_off">आपका ड्रोन अपनी दिखाई देने वाली स्पेक्ट्रम स्ट्रोब लाइट इस्तेमाल नहीं करेगा.</string>
+    <string name="droneSettings_infraredStrobe">इंफ़्रारेड लाइट स्ट्रोब</string>
+    <string name="droneSettings_infraredStrobe_on">आपका ड्रोन नियमित तौर से एक इंफ़्रारेड स्पेक्ट्रम स्ट्रोब लाइट फ़्लैश करेगा.</string>
+    <string name="droneSettings_infraredStrobe_off">आपका ड्रोन अपनी इंफ़्रारेड स्पेक्ट्रम स्ट्रोब लाइट इस्तेमाल नहीं करेगा.</string>
+
+
+    <!-- Beacon Settings -->
+    <string name="beaconSettings_tab">बीकन</string>
+    <string name="beaconSettings_addBeacon">इस ड्रोन के साथ एक बीकन को कुछ सेकंड के लिए USB-C केबल से कनेक्ट करके पेयर करें.</string>
+    <string name="beaconSettings_addBeacon_button">बीकन जोड़ें</string>
+    <string name="beaconSettings_beaconDisconnected">बीकन डिस्कनेक्ट किया गया.</string>
+
+    <!-- Phone Settings -->
+    <string name="phoneSettings_tab">फ़ोन</string>
+    <string name="phoneSettings_flightTelemetry">फ़्लाइट टेलीमेट्री</string>
+
+    <!-- Cloud Settings -->
+    <string name="cloudSettings_tab">क्लाउड</string>
+    <string name="cloudSettings_title">डेवलपर स्किल्स</string>
+    <string name="cloudSettings_sync">सिंक करें</string>
+    <string name="cloudSettings_ok">ठीक है</string>
+    <string name="cloudSettings_retry">दोबारा कोशिश करें</string>
+    <string name="cloudConfig_screen_title">क्लाउड सेटिंग्स</string>
+    <string name="cloudConfig_title">क्लाउड से डिवाइस सिंक पर</string>
+    <string name="cloudConfig_syncText">क्लाउड से सेटिंग्स डाउनलोड करें</string>
+    <string name="cloudConfig_connectInternet">इंटरनेट से कनेक्ट करें</string>
+    <string name="cloudConfig_downloadError_title">डाउनलोड एरर</string>
+    <string name="cloudConfig_downloadError_message">आपके डिवाइस पर क्लाउड कॉन्फ़िगरेशन डाउनलोड करने में समस्या हुई</string>
+    <string name="vehicleConfig_title">डिवाइस से ड्रोन सिंक पर</string>
+    <string name="vehicleConfig_syncText">सेटिंग्स को ड्रोन से सिंक करें</string>
+    <string name="vehicleConfig_connect">ड्रोन से कनेक्ट करें</string>
+    <string name="vehicleConfig_uploadError_title">अपलोड एरर</string>
+    <string name="vehicleConfig_uploadError_message">वाहन के कॉन्फ़िगरेशन को अपडेट करने में एक समस्या हुई</string>
+    <string name="vehicleConfig_wifiNetworks">वाईफ़ाई नेटवर्क</string>
+    <string name="vehicleConfig_licenses">लाइसेंस</string>
+    <string name="vehicleConfig_licenses_empty">कोई लाइसेंस नहीं</string>
+
+    <!-- Generic Map Import -->
+    <string name="mapImport_toolbarTitle">मैप्स इम्पोर्ट करें</string>
+    <string name="mapImport_noDeviceTitle">ड्राइव का पता नहीं चला</string>
+    <string name="mapImport_noDeviceMessage">अपने कंट्रोलर में मैप्स इम्पोर्ट करने के लिए एक एक्सटर्नल ड्राइव डालें.</string>
+    <string name="mapImport_readyTitle">कनेक्टेड ड्राइव से मैप्स इम्पोर्ट करें</string>
+    <string name="mapImport_readyMessage">इम्पोर्ट करने के लिए कनेक्टेड ड्राइव से मैप्स चुनें.</string>
+    <string name="mapImport_readyAction">मैप्स चुनें</string>
+    <string name="mapImport_noMapsTitle">मैप्स नहीं मिले</string>
+    <string name="mapImport_noMapsAction">ठीक है</string>
+    <string name="mapImport_importingTitle">मैप्स इम्पोर्ट किए जा रहे हैं</string>
+    <string name="mapImport_finishingDetail">प्रोसेस किया जा रहा है</string>
+    <string name="mapImport_importingDetail">%1$d%%</string>
+    <string name="mapImport_completeTitle">मैप इम्पोर्ट पूरा हुआ</string>
+    <string name="mapImport_failureTitle">मैप इम्पोर्ट नहीं हो सका</string>
+    <string name="mapImport_failureTotalMessage">चुना गया मैप इम्पोर्ट नहीं किया जा सका.</string>
+    <string name="mapImport_failurePartialMessage">कुछ चुने गए मैप्स इम्पोर्ट नहीं किए जा सके.</string>
+    <string name="mapImport_failurePrimaryAction">दोबारा कोशिश करें</string>
+
+    <!-- Map Import -->
+    <string name="mbImport_completeMessage">मैप लाइब्रेरी में इम्पोर्ट किए गए मैप्स उपलब्ध हैं.</string>
+    <string name="mbImport_completeAction">मैप लाइब्रेरी देखें</string>
+    <string name="mbImport_openQgcAction">Skydio QGC खोलें</string>
+    <string name="mbImport_failurePartialSecondaryAction">लाइब्रेरी देखें</string>
+    <string name="mbImport_failureVectorsMessage">वेक्टर मैप्स फ़िलहाल सपोर्ट नहीं किए जाते हैं.</string>
+    <string name="mbImport_noMapsMessage">मैप की डेटा फ़ाइलें चुनी नहीं गईं थीं. मैप का डेटा MBTile, QGCTILEDB या TIFF फ़ाइल फ़ॉर्मैट में होना चाहिए</string>
+
+    <!-- Mapbox Library -->
+    <string name="mbLibrary_title">मैप लाइब्रेरी</string>
+    <string name="mbLibrary_noMapsHeader">कोई मैप्स नहीं</string>
+    <string name="mbLibrary_noMapsDetail">मैप्स जोड़ने के लिए एक्सटर्नल ड्राइव से mbtiles, qgctiledb या tiff फ़ाइलें इम्पोर्ट करें.</string>
+    <string name="mbLibrary_deleteTitle">मैप डिलीट करें</string>
+    <string name="mbLibrary_deleteMessage">क्या आप वाकई इस मैप को डिलीट करना चाहते हैं?</string>
+    <string name="mbLibrary_unsupportedInSkydio">Skydio Enterprise में सपोर्ट नहीं किया जाता है</string>
+    <string name="mbLibrary_mapType">%1$s मैप्स</string>
+
+    <!-- Legal -->
+    <string name="legal_title">लीगल</string>
+    <string name="legal_agree_to">"मैं Skydio के %1$s से सहमत हूं"</string>
+    <string name="legal_terms_of_use_title">Skydio के उपयोग की शर्तें</string>
+    <string name="legal_privacy_policy_title">Skydio की प्राइवेसी पॉलिसी</string>
+    <string name="legal_terms_and_conditions_title">नियम और शर्तें</string>
+    <string name="open_source_title">Skydio का ओपन सोर्स सॉफ़्टवेयर नोटिस</string>
+    <string name="legal_warranty_title">वॉरंटी</string>
+    <string name="legal_eula_title">एंड यूज़र लाइसेंस एग्रीमेंट</string>
+    <string name="legal_return_policy_title">रिटर्न पॉलिसी</string>
+
+    <string name="legal_agree_to_all_agree">मैंने Skydio की शर्तें पढ़ ली हैं और उनसे सहमत हूं</string>
+    <string name="legal_agree_to_all">ख़रीदने की शर्तें</string>
+    <string name="legal_agree_label"><![CDATA[ नीचे दिए गए \"सहमत\" बटन पर क्लिक करके, आप Skydio की <b><a href=\"https://www.skydio.com/legal/privacy-policy\">गोपनीयता नीति</a></b> और <b><a href=\"https://www.skydio.com/legal/terms-of-use\">उपयोग की शर्तें</a></b> स्वीकार करते हैं जिसमें एक अनिवार्य आर्बिट्रेशन प्रोविजन होता है. ]]></string>
+    <string name="legal_agree_label_c78">नीचे दिए गए \"सहमत\" बटन पर क्लिक करके, आप www.skydio.com/legal/terms-of-use-enterprise पर मौजूद Skydio के एंटरप्राइज़ की उपयोग की शर्तें स्वीकार करते हैं, साथ ही www.skydio.com/legal/privacy-policy पर मौजूद Skydio की गोपनीयता नीति को भी स्वीकार करते हैं.</string>
+
+    <!-- WiFi Connection -->
+    <string name="wifi_userInputHeader">अपने ड्रोन के लिए वाईफ़ाई की जानकारी जोड़ें.</string>
+    <string name="wifi_connectingTo">%1$s से कनेक्ट किया जा रहा है</string>
+    <string name="wifi_unableToConnectTo">%1$s से कनेक्ट नहीं किया जा सका.</string>
+    <string name="wifi_unableToConnectTo_openSettings">%1$s से कनेक्ट नहीं किया जा सका.\nअपनी सिस्टम सेटिंग्स का इस्तेमाल करके दोबारा कोशिश करें.</string>
+    <string name="wifi_connectedTo">सही से %1$s से कनेक्ट किया गया</string>
+    <string name="wifi_wifiNotEnabled">ड्रोन से कनेक्ट करने के लिए वाईफाई को एनेबल किया जाना चाहिए.</string>
+    <string name="wifi_actionTryAgain">फिर से कोशिश करें</string>
+    <string name="wifi_actionSettings">सेटिंग्स</string>
+    <string name="wifi_actionEnableWifi">वाईफ़ाई एनेबल करें</string>
+    <string name="wifi_actionConnect">कनेक्ट करें</string>
+    <string name="wifi_actionSave">सेव करें</string>
+    <string name="wifi_actionSkip">छोड़ें</string>
+    <string name="wifi_actionCancel">कैंसल करें</string>
+    <string name="wifi_actionDone">हो गया</string>
+
+    <!-- WiFi Credentials -->
+    <string name="wifi_editWifiPassword">वाईफ़ाई पासवर्ड में बदलाव करें</string>
+    <string name="wifi_customizeWifiPassword">वाईफ़ाई पासवर्ड कस्टमाइज़ करें</string>
+    <string name="wifi_ssidLabel">SSID</string>
+    <string name="wifi_ssidHint">SSID</string>
+    <string name="wifi_passwordLabel">पासवर्ड</string>
+    <string name="wifi_passwordUpdated">पासवर्ड अपडेट किया गया</string>
+    <string name="wifi_passwordUpdatedExisting">मौजूदा पासवर्ड को ही रखा जा रहा है</string>
+    <string name="wifi_passwordHint">पासवर्ड</string>
+    <string name="wifi_generatePassword">ऑटो जेनरेट करें</string>
+    <string name="wifi_passwordLength">पासवर्ड की लंबाई</string>
+    <string name="wifi_confirmSettings">स्वीकार करें</string>
+    <string name="wifi_updateFailedTitle">अपडेट नहीं हो सका</string>
+    <string name="wifi_updateFailedMessage">ड्रोन के वाईफ़ाई क्रेडेंशियल्स को अपडेट नहीं किया जा सका. वाईफ़ाई सेटिंग्स नहीं बदली हैं.</string>
+    <string name="wifi_updateDisconnectedTitle">कनेक्शन खो गया</string>
+    <string name="wifi_updateDisconnectedMessage">कृपया अपने वाहन से दोबारा कनेक्ट करें और फिर से कोशिश करें.</string>
+    <string name="wifi_repairWarning">वाईफ़ाई पासवर्ड बदलने के बाद Skydio बीकंस और कंट्रोलर्स को USB-C केबल के साथ फिर से पेयर करना होगा.</string>
+    <!-- Empty string - any strings after this one are probably unsorted. -->
+    <string name="empty" tools:keep="@string/empty"></string>
+    <string name="camera_zoom_widget_max">मैक्सिमम</string>
+    <string name="camera_zoom_widget_min">मिनिमम</string>
+    <string name="mapList_deleted">डिलीट किया गया</string>
+    <string name="mapList_failed">नहीं हो सका</string>
+
+    <string name="settings_update_device">डिवाइस अपडेट करें</string>
+    <string name="settings_select_update">फ़ाइल अपडेट करना चुनें</string>
+    <string name="gate_action_calibrate_magnetometer">कैलिब्रेट करें</string>
+    <string name="mag_cal_title">हर स्टेप पूरा होने तक डायग्राम को फ़ॉलो करते हुए वाहन को रोटेट करें</string>
+    <string name="mag_cal_title_complete">कैलिब्रेशन पूरा हुआ</string>
+    <string name="mag_cal_rotate">रोटेट करें</string>
+    <string name="mag_cal_failed_title">कैलिब्रेशन नहीं हो सका</string>
+    <string name="mag_cal_failed_msg">कृपया मैग्नेटोमीटर कैलिब्रेशन की दोबारा कोशिश करें.</string>
+    <string name="settings_create_password">पासवर्ड बनाएं</string>
+    <string name="settings_change_password">पासवर्ड बदलें</string>
+    <string name="settings_cloud_media">क्लाउड मीडिया</string>
+    <string name="settings_edit_media">क्लाउड स्कैन</string>
+
+    <!-- Ota -->
+    <string name="done">हो गया</string>
+
+    <!-- Workflow String -->
+    <string name="gimbal">जिम्‍बल</string>
+    <string name="altitude">Alt</string>
+    <string name="cancel">कैंसल करें</string>
+    <string name="exit">बाहर निकलें</string>
+    <string name="review_scan">स्कैन को रिव्यु करें</string>
+
+    <!-- Video Preview -->
+    <string name="preview_video_incomplete">अधूरा</string>
+
+    <!-- Guide -->
+    <string name="skip">छोड़ें</string>
+
+    <!-- Connectivity -->
+    <string name="generic_reachability_message">क्लाउड सर्विस उपलब्ध नहीं है. कृपया इंटरनेट कनेक्शन चेक करें.</string>
+
+    <!-- Live Streaming -->
+    <string name="live_streaming_check_internet">कनेक्टिविटी चेक की जा रही है</string>
+    <string name="live_streaming_action_in_progress">एक्शन पर काम जारी है</string>
+    <string name="live_streaming_start_live_stream">लाइव स्ट्रीम शुरू करें</string>
+    <string name="live_streaming_restart_live_stream">लाइव स्ट्रीम रीस्टार्ट करें</string>
+
+    <string name="live_streaming_warning_title"></string>
+    <string name="live_streaming_warning">अपने लाइव स्ट्रीमिंग अनुभव को ऑप्टिमाइज़ करने के लिए, किसी 2.4 GHz वायरलेस नेटवर्क से कनेक्ट करें\n लाइव स्ट्रीमिंग के लिए 5 GHz वायरलेस नेटवर्क का सुझाव नहीं दिया जाता है</string>
+    <string name="live_streaming_no_network_title">अपने इंटरनेट कनेक्शन को चेक करें</string>
+    <string name="live_streaming_no_network_info">जब आपका इंटरनेट कनेक्शन काम नहीं कर रहा हो तब भी आप वाहन उड़ा सकते हैं लेकिन लाइव स्ट्रीमिंग काम नहीं करेगी. </string>
+
+    <!-- ATAK -->
+    <string name="tak_config_generic_state_enabled">एनेबल किया गया</string>
+    <string name="tak_config_generic_state_disabled">डिसेबल किया गया</string>
+    <string name="atak_unknown_navigation_error">कोई अनजान एरर हुआ</string>
+    <string name="tak_config_input_server_name_hint">सर्वर का नाम</string>
+    <string name="tak_config_input_ip_address_hint">IP एड्रेस</string>
+    <string name="tak_config_input_port_hint">पोर्ट</string>
+    <string name="tak_config_button_add_server">सर्वर जोड़ें</string>
+    <string name="tak_config_add_server_title">कोई सर्वर जोड़ें</string>
+    <string name="tak_config_root_title">ATAK</string>
+    <string name="tak_config_root_button_start">ATAK ऐप स्टार्ट करें</string>
+    <string name="tak_config_link_network_connections_label">नेटवर्क कनेक्शंस</string>
+    <string name="tak_config_ssl_configure_trust_store">Trust Store कॉन्फ़िगर करें</string>
+    <string name="tak_config_ssl_configure_client_certificate">क्लाइंट सर्टिफ़िकेट कॉन्फ़िगर करें</string>
+    <string name="tak_config_link_network_connections_detail">किसी मौजूदा सर्वर से कनेक्ट करें या एक नया बनाएं.</string>
+    <string name="tak_config_link_publish_telemetry_label">टेलीमेट्री पब्लिश करें</string>
+    <string name="tak_config_network_connections_title">नेटवर्क कनेक्शंस</string>
+    <string name="tak_config_link_add_server_label">+ एक और सर्वर जोड़ें</string>
+    <string name="tak_config_label_known_servers">जिन ATAK सर्वर के बारे में पता हो</string>
+    <string name="tak_config_toggle_enable_server">कनेक्शन एनेबल करें</string>
+    <string name="tak_config_label_ip_address">IP एड्रेस</string>
+    <string name="tak_config_label_protocol">प्रोटोकॉल</string>
+    <string name="tak_config_label_port">सर्वर पोर्ट</string>
+    <string name="tak_config_button_delete_server">सर्वर डिलीट करें</string>
+    <string name="tak_config_alert_delete_server_message">क्या इस सर्वर को हमेशा के लिए हटा दिया जाए?</string>
+    <string name="tak_config_alert_delete_server_title">%1$s डिलीट करें</string>
+    <string name="tak_config_alert_delete_server_action">डिलीट करें</string>
+    <string name="tak_config_telemetry_config_title">टेलीमेट्री पब्लिश करें</string>
+    <string name="tak_config_toggle_telemetry_enabled_label">टेलीमेट्री पब्लिश करें</string>
+    <string name="tak_config_toggle_telemetry_enabled_detail">कनेक्टेड TAK सर्वर पर कंट्रोलर और वाहन की टेलीमेट्री पब्लिश करें.</string>
+    <string name="tak_config_input_vehicle_call_sign_hint">वाहन कॉल साइन</string>
+    <string name="tak_config_input_operator_call_sign_hint">ऑपरेटर कॉल साइन</string>
+    <string name="tak_config_link_advanced_options_label">एडवांस्ड ऑप्शंस</string>
+    <string name="tak_config_link_authentication_label">ऑथेंटिकेशन</string>
+    <string name="tak_config_input_username_hint">यूज़र का नाम</string>
+    <string name="tak_config_input_password_hint">पासवर्ड</string>
+    <string name="tak_config_toggle_auth_enabled_label">एनेबल किया गया</string>
+    <string name="tak_client_certificate_name_label">नाम:</string>
+    <string name="tak_client_certificate_password_hint">पासवर्ड</string>
+    <string name="tak_trust_store_name_label">नाम:</string>
+    <string name="tak_trust_store_password_hint">पासवर्ड</string>
+    <string name="tak_server_not_connected">कोई ATAK सर्वर कनेक्शन नहीं</string>
+    <string name="tak_server_connected">"ATAK सर्वर"</string>
+    <string name="tak_server_status">नाम: %1$s\nIP एड्रेस: %2$s:%3$s\nप्रोटोकॉल: %4$s</string>
+    <string name="tak_import_cert_failed">सर्टिफ़िकेट इम्पोर्ट नहीं किया जा सका! कृपया दोबारा कोशिश करें.</string>
+
+    <!-- RTSP -->
+    <string name="rtsp_config_root_title">RTSP स्ट्रीमिंग</string>
+    <string name="rtsp_config_toggle_stream_enabled_label">स्ट्रीम एनेबल करें</string>
+    <string name="rtsp_config_input_stream_name_hint">स्ट्रीम का नाम</string>
+    <string name="rtsp_config_input_ip_address_hint">IP एड्रेस</string>
+    <string name="rtsp_config_input_port_hint">पोर्ट</string>
+    <string name="rtsp_not_connected">कोई स्ट्रीमिंग कनेक्शन नहीं</string>
+    <string name="rtsp_live_streaming_label">लाइव स्ट्रीमिंग</string>
+
+    <!-- Remote Id -->
+    <string name="rid_reg_title">रजिस्ट्रेशन की जानकारी डालें</string>
+    <string name="rid_reg_rid_label">रजिस्ट्रेशन ID</string>
+    <string name="rid_reg_uid_label">यूज़र ID</string>
+    <string name="rid_reg_password_label">पासवर्ड</string>
+    <string name="rid_reg_label_hint">ABCD1234</string>
+    <string name="rid_submit">अगला</string>
+
+    <!-- Remote Id Remote Pilot -->
+    <string name="rid_title">रिमोट ID</string>
+    <string name="rpic_flight_request_title">उड़ान भरने के लिए मंज़ूरी की ज़रूरत है</string>
+    <string name="rpic_flight_request_text">"जैसे ही इस फ़्लाइट के पायलट नीचे दी गई जानकारी को वेरिफ़ाई, मंज़ूर करते हैं, तो बस समझें कि आप उड़ान भरने के लिए तैयार हैं"</string>
+    <string name="rpic_approve_flight_request">मंज़ूर करें</string>
+    <string name="rpic_deny_flight_request">नामंज़ूर करें</string>
+    <string name="rpic_close">बंद करें</string>
+    <string name="rid_inoperative_alert_title">रिमोट ID इनऑपरेटिव है</string>
+    <string name="rid_inoperative_alert_preflight_text">ड्रोन को अपना मौजूदा मिशन शुरू करने के लिए इसकी ज़रुरत होती है.</string>
+    <string name="rid_inoperative_alert_inflight_text">यह ड्रोन को अपने मौजूदा मिशन को पूरा करने से नहीं रोकेगा लेकिन भविष्य में उड़ान भरने के लिए यह ज़रूरी होगा.</string>
+    <string name="rpic_leave_phone_on_alert">उड़ान के दौरान डिवाइस पर ऐप खुला रहने दें</string>
+    <string name="rpic_return_and_land">रिटर्न और लैंड</string>
+    <string name="rpic_return_and_land_warning">इससे वह मिशन रुक जाएगा जो ड्रोन फ़िलहाल कर रहा है.</string>
+    <string name="rpic_accept_return_and_land">स्वीकार करें</string>
+
+    <!-- Scan Library -->
+    <string name="scan_library_title">स्कैन लाइब्रेरी</string>
+    <string name="scan_library_list_title">स्कैन्स</string>
+    <string name="scan_library_import">फ़ाइल से स्कैन इम्पोर्ट करें</string>
+    <string name="scan_details_title">स्कैन की जानकारी</string>
+    <string name="scan_library_2d_gps">2D GPS कैप्चर</string>
+    <string name="scan_library_details_warning">ये अनुमान पिछली उड़ान से हैं. आपके ड्रोन टाइप के आधार पर उड़ानों के बीच समय, GSD और फ़ोटो काउंट अलग हो सकते हैं.</string>
+    <string name="scan_library_import_error_title">अमान्य स्कैन फ़ाइल</string>
+    <string name="scan_library_import_error_message">इम्पोर्ट की गई फ़ाइल की पहचान नहीं हो पा रही है. ऐसा तब हो सकता है जब फ़ाइल टाइप को सपोर्ट हासिल न हो या फ़ाइल करप्ट हो गई हो. कृपया .mission एक्सटेंशन वाली फ़ाइल चुनें, या अपनी फ़ाइल को ओरिजिनल डिवाइस से दोबारा एक्सपोर्ट करने की कोशिश करें.</string>
+    <string name="scan_library_begin">स्कैन शुरू करें</string>
+    <string name="scan_library_not_ready">ड्रोन तैयार नहीं है</string>
+    <string name="scan_library_connect_drone">स्कैन शुरू करने के लिए ड्रोन को कनेक्ट करें</string>
+    <string name="scan_library_switch_mode">शुरू करने के लिए 3D स्कैन पर बदलें</string>
+
+    <string name="disconnected_title">डिस्कनेक्ट किया गया</string>
+    <string name="disconnected_message">अपने पेयर किए गए वाहन को शुरू करें.</string>
+
+    <string name="rid_sync_requesting_title">की का अनुरोध किया जा रहा है</string>
+    <string name="rid_sync_received_title">की मिल गई</string>
+    <string name="rid_sync_request_title">की का अनुरोध किया जा रहा है</string>
+    <string name="rid_sync_received_message">जारी रखने के लिए वापस ड्रोन से कनेक्ट करें</string>
+    <string name="rid_sync_received_message_connect">जारी रखने के लिए अपने ड्रोन से दोबारा कनेक्ट करें</string>
+    <string name="rid_sync_warning">अपने ड्रोन को बंद न करें</string>
+    <string name="rid_sync_connect">कनेक्ट करें</string>
+    <string name="rid_failed_title">मुख्य अनुरोध नाकामयाब रहा</string>
+    <string name="rid_failed_registration_title">रजिस्ट्रेशन नहीं हो सका</string>
+    <string name="rid_post_failed_registration_title">सर्वर पर सेव नहीं किया जा सका</string>
+    <string name="rid_failed_request_message">आपके रजिस्ट्रेशन की जानकारी को वापस पाने में एरर हुआ</string>
+    <string name="rid_failed_registration_message">कंट्रोल करने वाला डिवाइस ड्रोन पर रजिस्ट्रेशन की जानकारी नहीं लिख सका</string>
+    <string name="rid_post_failed_message">कंट्रोल करने वाला डिवाइस सर्वर पर रजिस्ट्रेशन की जानकारी नहीं लिख सका</string>
+    <string name="rid_complete_title">रजिस्ट्रेशन पूरा हो गया</string>
+    <string name="rid_complete_message">आपके रजिस्ट्रेशन की जानकारी ड्रोन की जानकारी स्क्रीन पर होगी.</string>
+    <string name="rid_complete_button">पूरा</string>
+    <string name="rid_connect_button">कनेक्ट करें</string>
+    <string name="rid_complete_retry">दोबारा कोशिश करें</string>
+
+    <!-- Wifi Connectivity-->
+    <string name="wifi_connectivity_title">रजिस्टर करने के लिए, कृपया पता करें:</string>
+    <string name="wifi_connectivity_error_title">इंटरनेट कनेक्शन</string>
+    <string name="wifi_connectivity_error_desc">रजिस्ट्रेशन प्रोसेस को पूरा करने के लिए किसी वाईफ़ाई-नेटवर्क से कनेक्ट करें</string>
+    <string name="wifi_connectivity_button">वाईफ़ाई सेटिंग्स खोलें</string>
+
+    <!-- Network Info -->
+    <string name="network_connections">नेटवर्क कनेक्शंस</string>
+    <string name="network_eth0_info">Eth0 तैयार: %1$b</string>
+    <string name="network_eth1_info">Eth1 तैयार: %1$b</string>
+    <string name="network_bound_info">बाउंड नेटवर्क: %1$s</string>
+    <string name="network_flightdeck_info">फ़्लाइट डेक नेटवर्क: %1$s</string>
+    <string name="network_vehicle_info">वाहन का नेटवर्क: %1$s</string>
+    <string name="network_internet_info">इंटरनेट नेटवर्क: %1$s</string>
+
+    <!-- Streaming Quality Preference -->
+    <string name="streaming_mode_description_viewer">पायलट की तुलना में व्यूअर की लाइव स्ट्रीम क्वालिटी को प्राथमिकता देता है</string>
+    <string name="streaming_mode_description_pilot">व्यूअर की तुलना में पायलट की लाइव स्ट्रीम क्वालिटी को प्राथमिकता देता है</string>
+    <string name="streaming_mode_details_title">क्वालिटी प्रेफ़रेंस</string>
+    <string name="streaming_mode_viewer">व्यूअर</string>
+    <string name="streaming_mode_pilot">पायलट</string>
+    <string name="streaming_mode_viewer_cap">व्यूअर</string>
+    <string name="streaming_mode_pilot_cap">पायलट</string>
+    <string name="streaming_mode_camera_title">कैमरा</string>
+    <string name="streaming_mode_streaming_title">स्ट्रीमिंग</string>
+
+    <string name="actionMenu_delete">डिलीट करें</string>
+    <string name="close">बंद करें</string>
+
+    <string name="enum_list_label">लेबल</string>
+    <string name="enum_list_value">वैल्यू</string>
+
+    <string name="calibrate_magnetometer_button_retry">दोबारा कोशिश करें</string>
+
+    <string name="cockpit_streaming_settings_label_org_name">संगठन का नाम</string>
+    <string name="cockpit_streaming_settings_button_start_text">लाइव स्ट्रीम शुरू करें</string>
+    <string name="cockpit_streaming_settings_button_idle_text">एक्शन पर काम जारी है</string>
+    <string name="cockpit_streaming_settings_button_end_text">लाइव स्ट्रीम समाप्त करें</string>
+
+    <string name="dev_commands_label_cloud_config">क्लाउड कॉन्फ़िगरेशन</string>
+    <string name="dev_commands_label_dev_flags">(डेवलपर फ़्लैग)</string>
+    <string name="dev_commands_label_build_info">(बिल्ड से जुड़ी जानकारी)</string>
+    <string name="dev_commands_label_autonomy_programs">(ऑटोनॉमी प्रोग्राम)</string>
+    <string name="dev_commands_label_current_skill">मौजूदा कौशल</string>
+    <string name="dev_commands_label_set_skill">कौशल सेट करें</string>
+    <string name="dev_commands_check_send_flight_inputs">हमेशा फ़्लाइट इनपुट भेजें</string>
+    <string name="dev_commands_check_use_cockpitx_activity">CockpitX गतिविधि का इस्तेमाल करें</string>
+    <string name="dev_commands_label_presets_tester">प्रीसेट: टेस्टर</string>
+    <string name="dev_commands_label_presets_dev">प्रीसेट: डेवलपर</string>
+    <string name="dev_commands_label_refresh_ncloud_data">रीफ़्रेश करें\nक्लाउड डेटा</string>
+    <string name="dev_commands_label_reset_errors">रीसेट करें\nगड़बड़ियां</string>
+    <string name="dev_commands_label_calibrate_magnetometer">मैग्नेटोमीटर को कैलिब्रेट करें</string>
+    <string name="dev_error_label_filter_level">फ़िल्टर लेवल:</string>
+    <string name="dev_logcat_log_text">हैलो वर्ल्ड</string>
+    <string name="dev_logcat_label_reload">रीलोड करें</string>
+    <string name="dev_logcat_hint_tag">टैग</string>
+    <string name="dev_vehicle_deploy_info">[डिप्लॉयमेंट जानकारी]</string>
+
+    <string name="settings_selection_submit">अगला</string>
+
+    <string name="media_encryption_settings_enabled">एनेबल किया गया</string>
+    <string name="media_encryption_settings_disabled">डिसेबल किया गया</string>
+
+    <string name="item_media_section_title_button">सभी को चुनें</string>
+    <string name="item_media_section_title_default">सेक्शन का शीर्षक</string>
+
+    <string name="app_version_label">ऐप वर्जन</string>
+    <string name="app_version_firmware_label">फ़र्मवेयर का वर्ज़न</string>
+    <string name="app_version_qgc_label">Skydio QGC वर्ज़न</string>
+
+    <string name="abstract_map_toast_not_in_range">वाहन अपने होम पॉइंट की रेंज में नहीं है।</string>
+    <string name="app_tab_page_toast_previews_deleted">सभी प्रीव्यू हटा दिए गए</string>
+    <string name="app_tab_page_toast_previews_delete_error">प्रीव्यू हटाने में कोई गड़बड़ी हुई</string>
+    <string name="app_tab_page_toast_thumbnails_deleted">सभी थंबनेल हटा दिए गए</string>
+    <string name="app_tab_page_toast_thumbnail_delete_error">थंबनेल हटाने में कोई गड़बड़ी हुई</string>
+    <string name="cloud_media_video_not_found">वीडियो नहीं मिला</string>
+    <string name="cockpit_header_label_live">लाइव</string>
+    <string name="code_error_too_short">यह कोड बहुत छोटा है।</string>
+    <string name="controller_tester_msg_exit_via_b">बाहर निकलने के लिए \'B\' को दबाए रखें</string>
+    <string name="edit_mode_button_confirm">कंफ़र्म करें</string>
+    <string name="edit_mode_button_cancel">कैंसल करें</string>
+    <string name="edit_mode_flight_status_title_default">शीर्षक</string>
+    <string name="edit_mode_flight_status_detail_default">ब्यौरा</string>
+    <string name="flight_deck_error_title">फ़्लाइट डेक नहीं खोला जा सका</string>
+    <string name="flight_deck_error_text_connect_to_drone">आप ड्रोन से कनेक्ट नहीं हैं।</string>
+    <string name="ucon_file_queue_status_label_unknown_error">अनजान एरर</string>
+    <string name="ucon_file_queue_status_label_success">हो गया</string>
+    <string name="ucon_file_queue_status_label_skipped">छोडा दिया गया</string>
+    <string name="ucon_file_queue_status_label_no_status">कोई स्टेटस नहीं</string>
+    <string name="interval_photo_view_photo_counter">%2$d में से %1$d फ़ोटो</string>
+    <string name="interval_photo_view_toast_preview_error_vehicle_disconnected">वाहन डिस्कनेक्ट किया गया, इमेज का प्रीव्यू लोड नहीं किया जा सका।</string>
+    <string name="interval_photo_view_toast_error_vehicle_disconnected">वाहन डिस्कनेक्ट किया गया।</string>
+    <string name="interval_photo_view_toast_photo_deleted">हटाई गई फ़ोटो।</string>
+    <string name="interval_photo_view_toast_error_photo_delete_failed">"फ़ोटो नहीं हटाई जा सकी: "</string>
+    <string name="logSync_download_view_toast_not_connected">कनेक्ट नहीं है!</string>
+    <string name="logSync_download_not_attempted">कोशिश नहीं की गई</string>
+    <string name="logSync_flight_not_found_on_vehicle">वाहन पर %1$s फ़्लाइट नहीं मिली</string>
+    <string name="logSync_flight_fetch_failed">फ़्लाइट की जानकारी फ़ेच नहीं की जा सकी: %1$s</string>
+    <string name="logSync_no_client">कोई क्लाइंट नहीं</string>
+    <string name="logSync_already_synced">पहले से ही सिंक किया गया: स्थानीय रिकॉर्ड के हिसाब से अपलोड कर दिया गया है</string>
+    <string name="logSync_already_downloaded">फ़ोन पर डाउनलोड किया जा चुका है</string>
+    <string name="logSync_status_fail">नहीं हो सका</string>
+    <string name="logSync_status_success">हो गया</string>
+    <string name="logSync_status_cancelled">रद्द किया गया</string>
+    <string name="log_list_label_incomplete">अधूरा</string>
+    <string name="ota_error_no_files_found">अपडेट करने के लिए कोई फ़ाइल नहीं मिली</string>
+    <string name="photo_viewer_error_vehicle_disconnected">वाहन डिस्कनेक्ट किया गया।</string>
+    <string name="photo_viewer_deleted_photo">हटाई गई फ़ोटो।</string>
+    <string name="photo_viewer_error_delete_photo">"फ़ोटो नहीं हटाई जा सकी: "</string>
+    <string name="platform_clip_error_play_video">वीडियो चलाने कोई गड़बड़ी हुई</string>
+    <string name="base_map_removed">%1$s को बेस मैप से हटाया गया</string>
+    <string name="base_map_set">%1$s को बेस मैप के रूप में चुना गया</string>
+    <string name="use_as_base_map">बेस मैप के रूप में उपयोग करें</string>
+</resources>

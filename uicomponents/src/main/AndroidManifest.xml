@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skydio.ui.components">
+
+    <application>
+        <activity android:name="com.skydio.ui.demo.DemoActivity" />
+    </application>
+</manifest>

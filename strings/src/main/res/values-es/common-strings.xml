@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Skydio Common</string>
+    <string name="never_synced">Nunca sincronizó</string>
+    <string name="time_seconds">```%1$d seg atrás```</string>
+    <string name="time_minutes">%1$d hace 1 minuto</string>
+    <string name="time_hours">Hace %1$d horas</string>
+    <string name="time_days">Hace %1$d días</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="exit">Salida</string>
+
+    <!-- actions -->
+    <string name="actionMenu_delete">Eliminar</string>
+    <string name="actionMenu_save">Guardar</string>
+    <string name="actionMenu_select">Seleccionar</string>
+    <string name="actionMenu_export">Exportar</string>
+    <string name="actionMenu_sync">Sincronizar</string>
+    <string name="actionMenu_reset">Reiniciar</string>
+    <string name="actionMenu_search">Buscar</string>
+    <string name="actionMenu_searchWithEllipsis">Buscar…</string>
+
+    <!-- Notification Channel/Category names and descriptions -->
+    <string name="notificationChannel_flightHealth_name">Notificaciones de vuelo</string>
+    <string name="notificationChannel_flightHealth_description">Alertas de su dron mientras está en vuelo.</string>
+    <string name="notificationChannel_connectionStatus_name">Estado de la conexión</string>
+    <string name="notificationChannel_connectionStatus_description">Alertas de su dron sobre el estado de la conexión.</string>
+</resources>

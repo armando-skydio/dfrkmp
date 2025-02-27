@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Skydio Common</string>
+    <string name="never_synced">Never synced</string>
+    <string name="time_seconds">%d sec ago</string>
+    <string name="time_minutes">%d min ago</string>
+    <string name="time_hours">%d hours ago</string>
+    <string name="time_days">%d days ago</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+
+    <!-- actions -->
+    <string name="actionMenu_delete">Delete</string>
+    <string name="actionMenu_save">Save</string>
+    <string name="actionMenu_select">Select</string>
+    <string name="actionMenu_export">Export</string>
+    <string name="actionMenu_sync">Sync</string>
+    <string name="actionMenu_reset">Reset</string>
+    <string name="actionMenu_search">Search</string>
+    <string name="actionMenu_searchWithEllipsis">Search…</string>
+
+    <!-- Notification Channel/Category names and descriptions -->
+    <string name="notificationChannel_flightHealth_name">Flight notifications</string>
+    <string name="notificationChannel_flightHealth_description">Alerts from your drone while it is in flight.</string>
+    <string name="notificationChannel_connectionStatus_name">Connection status</string>
+    <string name="notificationChannel_connectionStatus_description">Alerts from your drone about connection status.</string>
+</resources>
