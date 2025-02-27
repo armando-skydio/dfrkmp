@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.playservices)
 }
 
 android {
@@ -47,5 +46,4 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.kotlinx.coroutines.android)
-    implementation("com.google.android.gms:play-services-location:18.0.0")
 }
