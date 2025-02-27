@@ -1,0 +1,23 @@
+query DeviceNetworkTestingResults(
+    $vehicleId: String!
+) {
+  vehicle(vehicleId: $vehicleId) {
+    deviceNetworkTestResults {
+      results {
+        success
+        params {
+          skyperf {
+            sessionDuration
+            sessions {
+              protocol
+            }
+          }
+        }
+        skyperfResult {
+          errorString
+          jsonResult
+        }
+      }
+    } 
+  }
+}

@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+apply plugin: "com.apollographql.apollo3"
+apply plugin: 'kotlin-kapt'
+
+
+apply plugin: 'kotlinx-serialization'
+apply plugin: 'dagger.hilt.android.plugin'
+android {
+    compileSdkVersion project.ext.compileSdk
+    namespace 'com.skydio.graphql'
+    defaultConfig {
+        minSdkVersion project.ext.minSdk
+        targetSdkVersion project.ext.targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField 'String', 'SKYDIO_APP_KEY', '"e181e9c26ac1c98aa478d5716479edd9d75b38dffc50d580fcf10f772c0d0a25"'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_21.toString()
+    }
+}
+
+dependencies {
+    implementation constraintLayout
+    implementation skydioCommon()
+    api project(path: ":skydio:cloud:domain")
+    api project(path: ":skydio:analytics")
+    implementation dependencyInjection
+    kapt dependencyInjectionAnnotationProcessors
+
+    implementation okHttpInterceptor
+    implementation("com.apollographql.apollo3:apollo-normalized-cache:3.6.2")
+
+    implementation kotlinSerialization
+    implementation coroutines
+    implementation graphQl
+    implementation material
+}
+
+apollo {
+    schemaFile.set(file("schema.graphql"))
+    srcDir(file("queries"))
+    packageName.set("com.skydio.graphql")
+}

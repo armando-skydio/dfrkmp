@@ -1,0 +1,31 @@
+query VehicleHeaderQuery(
+    $vehicleId: String!
+) {
+    vehicle(vehicleId: $vehicleId) {
+        id
+        flightPhase
+        vehicleId
+        skydioSerial
+        displayName
+        vehicleType
+        canTeleop
+        isOnline
+        location {
+          latitude
+          longitude
+        }
+        batteryStatus {
+          percentage
+          charging
+        }
+        uuid
+        organizationId
+        remoteStreaming {
+          enabled
+          mobileStreamingState
+          vehicleStreamingState
+          viewerCount
+          maxViewerCount
+        }
+    }
+}

@@ -1,0 +1,13 @@
+mutation DeviceNetworkTestingMutation(
+    $deviceNodeId: ID!,
+    $duration: Int!
+) {
+    requestDeviceNetworkTest(
+      deviceNodeId: $deviceNodeId
+      testRequest: {
+        testSpecs: [{ skyperf: { sessionDuration: $duration, protocols: [TCP] } }]
+      }
+    ) {
+      errors
+    }
+}

@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.playservices)
 }
 
 android {
@@ -35,14 +36,16 @@ android {
         jvmTarget = "1.8"
     }
 }
-
+val abcLocationLib = "com.linecorp.abc:kmm-location:0.2.4"
 dependencies {
     implementation(projects.shared)
     implementation(projects.uicomponents)
     implementation(libs.compose.ui)
+    implementation(abcLocationLib)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.kotlinx.coroutines.android)
+    implementation("com.google.android.gms:play-services-location:18.0.0")
 }

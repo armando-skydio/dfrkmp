@@ -1,0 +1,26 @@
+mutation CreateReadyLinkMutation(
+  $organizationNodeId: ID!,
+  $vehicleId: UUID!,
+  $expiresAt: DateTime!,
+  $name: String!,
+  $startsAt: DateTime!,
+) {
+    createSharedLink(
+      organizationNodeId: $organizationNodeId,
+      sharedResources: {
+        resourceType: LIVESTREAM,
+        resourceUuid: $vehicleId
+      },
+      expiresAt: $expiresAt,
+      name: $name,
+      automated: true,
+      startsAt: $startsAt,
+    ) {
+      sharedLink {
+        name
+        token
+        expiresAt
+      }
+      errors
+    }
+}

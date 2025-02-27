@@ -1,0 +1,6 @@
+query OrganizationQuery($orgid: String!) {
+  organization(uuid:$orgid) {
+    id
+    name
+  }
+}

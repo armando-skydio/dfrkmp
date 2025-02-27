@@ -1,0 +1,27 @@
+mutation SetVehicleDesiredState(
+    $device_id: String
+    $vehicle_node_id: ID!
+    $webrtc_desired: Boolean
+    $video_stream_desired: Boolean
+    $web_tunnel_desired: Boolean
+    $force: Boolean
+) {
+    setVehicleDesiredState(
+        clientId: $device_id
+        vehicleNodeId: $vehicle_node_id
+        webrtcDesired: $webrtc_desired
+        videoStreamDesired: $video_stream_desired
+        webTunnelDesired: $web_tunnel_desired
+        force: $force
+    ) {
+        errors
+        vehicle {
+            remoteStreaming {
+                signalProxyCredentials {
+                    url
+                    token
+                }
+            }
+        }
+    }
+}
