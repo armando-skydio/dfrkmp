@@ -13,18 +13,15 @@ fun LoginView(
 
     Box(modifier = Modifier.fillMaxSize()) {
         when (val state = vm.loginState.value) {
-            LoginState.Code -> {
-
+            LoginState.Code, LoginState.ErrorCode, LoginState.LoadingCode -> {
+                LoginCodeUi(state)
             }
             LoginState.Email, LoginState.ErrorEmail, LoginState.LoadingEmail -> {
                 LoginEmailUi(state)
             }
-            LoginState.Success -> {
-
+            is LoginState.Success -> {
+                LoginSuccess(state.token)
             }
-
-            LoginState.ErrorCode -> TODO()
-            LoginState.LoadingCode -> TODO()
         }
     }
 
