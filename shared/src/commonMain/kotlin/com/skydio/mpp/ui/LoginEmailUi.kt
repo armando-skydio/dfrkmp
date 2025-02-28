@@ -1,4 +1,4 @@
-package com.skydio.mpp.android
+package com.skydio.mpp.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -8,10 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.Button
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
+import androidx.compose.material.Button
+import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.OutlinedTextField
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -20,27 +20,25 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.skydio.ui.components.widget.text.SkydioText
-import com.skydio.ui.designsystem.getAppTheme
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.skydio.mpp.login.LoginViewModel
 
 @Composable
-fun LoginCodeUi(
+fun LoginEmailUi(
     state: LoginState,
     vm: LoginViewModel = viewModel { LoginViewModel() },
 ) {
-    var code by remember { mutableStateOf("") }
+    var email by remember { mutableStateOf("") }
 
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(getAppTheme().colors.appBackgroundColor)
+            .background(Color.White)
     ) {
         Column(
             modifier = Modifier
@@ -48,30 +46,29 @@ fun LoginCodeUi(
                 .padding(vertical = 32.dp, horizontal = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            SkydioText(
+            Text(
                 text = "Login",
                 style = TextStyle.Default.copy(fontSize = 32.sp),
-                color = Color.White,
+                color = Color.Black,
             )
 
             Spacer(modifier = Modifier.size(32.dp))
 
             OutlinedTextField(
-                value = code,
-                onValueChange = { code = it },
-                label = { Text("Login code") },
+                value = email,
+                onValueChange = { email = it },
+                label = { Text("E-mail") },
                 singleLine = true,
                 maxLines = 1,
                 keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Number,
+                    keyboardType = KeyboardType.Email,
                     imeAction = ImeAction.Done
                 )
             )
 
-
-            if (state == LoginState.ErrorCode) {
+            if (state == LoginState.ErrorEmail) {
                 Spacer(modifier = Modifier.size(32.dp))
-                SkydioText(
+                Text(
                     text = "Something went wrong!",
                     style = TextStyle.Default.copy(fontSize = 20.sp),
                     color = Color.Red,
@@ -80,18 +77,16 @@ fun LoginCodeUi(
 
             Spacer(modifier = Modifier.size(32.dp))
 
-            val context = LocalContext.current
-
             Button(
                 onClick = {
-                    if (state != LoginState.LoadingCode) {
-                        vm.verifyLoginCode(code, context)
+                    if (state != LoginState.LoadingEmail) {
+                        vm.requestLoginCode(email)
                     }
                 }
             ) {
-                if (state !== LoginState.LoadingCode) {
-                    SkydioText(
-                        text = "Login",
+                if (state !== LoginState.LoadingEmail) {
+                    Text(
+                        text = "Get login code",
                         style = TextStyle.Default.copy(fontSize = 14.sp),
                         color = Color.White,
                     )

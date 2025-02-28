@@ -1,21 +1,20 @@
-package com.skydio.mpp.android
+package com.skydio.mpp.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.skydio.mpp.login.LoginViewModel
 
 @Composable
 fun LoginView(
     vm: LoginViewModel = viewModel { LoginViewModel() },
 ) {
 
-    val context = LocalContext.current
     LaunchedEffect(Unit) {
-        vm.checkToken(context)
+        vm.checkToken()
     }
 
     Box(modifier = Modifier.fillMaxSize()) {

@@ -1,16 +1,16 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.composeCompiler)
 }
 
 android {
     namespace = "com.skydio.mpp.android"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         applicationId = "com.skydio.mpp.android"
         minSdk = 33
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
     }

@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.skydio.mpp.ui.LoginView
 import com.skydio.ui.demo.DemoViewModel
 
 class MainActivity : ComponentActivity() {
