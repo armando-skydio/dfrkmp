@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.apollo)
+    alias(libs.plugins.kotlinSerialzation)
 }
 val abcLocationLib = "com.linecorp.abc:kmm-location:0.2.4"
 kotlin {
@@ -66,12 +67,15 @@ kotlin {
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.cio)
             implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.protobuf)
             implementation(libs.apollo.client)
             implementation(libs.apollo.normalized.cache)
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
-            implementation(abcLocationLib)
+            implementation(libs.lifecycle.viewmodel.compose)
+            implementation(libs.androidx.datastore)
+            implementation(libs.androidx.datastore.preferences)
         }
 
         commonTest.dependencies {
