@@ -33,6 +33,7 @@
       <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/models/CAAuthResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/models/CAAuthResponse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/ui/LocationView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/ui/LocationView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/skydio/mpp/LocationTracker.ios.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/skydio/mpp/LocationTracker.ios.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/src/main/java/com/skydio/patrol_link/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/src/main/java/com/skydio/patrol_link/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,11 @@
     "git-widget-placeholder": "Merging capacitor-2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.skydio.mpp" />
+    </key>
+  </component>
   <component name="RunManager" selected="Android App.androidApp">
     <configuration name="androidApp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="mpp.androidApp.main" />

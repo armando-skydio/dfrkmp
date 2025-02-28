@@ -73,6 +73,19 @@ class MainActivity : ComponentActivity() {
 
     private fun requestLocationPermission() {
         requestContactPermissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
+            loginViewModel.getToken().collect { token ->
+                if (token.isNotEmpty()) {
+                    startCapacitor(token)
+                }
+            }
+        }
+    }
+
+    fun startCapacitor(token:String) {
+        val intent = Intent()
+        intent.putExtra("token", token)
+        intent.setClassName("com.skydio.patrol_link", "com.skydio.patrol_link.MainActivity")
+        startActivityForResult(intent, 0)
     }
 }
 
