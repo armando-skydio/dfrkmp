@@ -15,6 +15,4 @@ public class MainActivity extends BridgeActivity {
         }
 
     }
-    public void setToken() {
-    }
 }

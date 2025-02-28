@@ -34,3 +34,6 @@ project(":capacitor-camera").projectDir = file("./patrol-link/@capacitor/camera/
 
 include(":capacitor-splash-screen")
 project(":capacitor-splash-screen").projectDir = file("./patrol-link/@capacitor/splash-screen/android")
+
+include(":capacitor-geolocation")
+project(":capacitor-geolocation").projectDir = file("./patrol-link/@capacitor/geolocation/android")

@@ -5,5 +5,8 @@ project(':capacitor-android').projectDir = new File('../@capacitor/android/capac
 include ':capacitor-camera'
 project(':capacitor-camera').projectDir = new File('../@capacitor/camera/android')
 
+include ':capacitor-geolocation'
+project(':capacitor-geolocation').projectDir = new File('../@capacitor/geolocation/android')
+
 include ':capacitor-splash-screen'
 project(':capacitor-splash-screen').projectDir = new File('../@capacitor/splash-screen/android')
