@@ -71,7 +71,7 @@ fun LoginEmailUi(
                 Spacer(modifier = Modifier.size(32.dp))
                 SkydioText(
                     text = "Something went wrong!",
-                    style = TextStyle.Default.copy(fontSize = 32.sp),
+                    style = TextStyle.Default.copy(fontSize = 20.sp),
                     color = Color.Red,
                 )
             }
@@ -92,7 +92,7 @@ fun LoginEmailUi(
                         color = Color.White,
                     )
                 } else {
-                    CircularProgressIndicator(modifier = Modifier.size(40.dp))
+                    CircularProgressIndicator(modifier = Modifier.size(40.dp), color = Color.White)
                 }
             }
 
