@@ -1,5 +1,6 @@
 package com.skydio.mpp.android
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -7,10 +8,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
@@ -53,6 +51,7 @@ class MainActivity : ComponentActivity() {
                 if (it.isNotEmpty()) {
                     isLoggedIn.value = true
                     Log.d("PatrolLink", "Token: $it")
+                    startCapacitor(it)
                 }
             }
         }
@@ -73,25 +72,12 @@ class MainActivity : ComponentActivity() {
 
     private fun requestLocationPermission() {
         requestContactPermissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
-            loginViewModel.getToken().collect { token ->
-                if (token.isNotEmpty()) {
-                    startCapacitor(token)
-                }
-            }
-        }
     }
 
-    fun startCapacitor(token:String) {
+    fun startCapacitor(token: String) {
         val intent = Intent()
         intent.putExtra("token", token)
         intent.setClassName("com.skydio.patrol_link", "com.skydio.patrol_link.MainActivity")
         startActivityForResult(intent, 0)
     }
-}
-
-
-@Preview
-@Composable
-fun Test() {
-    Text("Hello World") // previews work here
 }
