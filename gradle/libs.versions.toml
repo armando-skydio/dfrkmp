@@ -13,6 +13,7 @@ precomposeVersion = "1.5.2"
 google-PlayServicesAndroidLocation = "21.2.0"
 lifecycleViewmodelCompose = "2.8.2"
 datastore = "1.1.3"
+activityKtx = "1.10.1"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -52,6 +53,7 @@ koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compos
 lifecycle-viewmodel-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
 
 
 [plugins]
