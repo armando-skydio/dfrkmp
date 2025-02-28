@@ -14,6 +14,7 @@ fun createDataStore(producePath: () -> String): DataStore<Preferences> =
 
 internal const val dataStoreFileName = "mpp.preferences_pb"
 val AUTH_TOKEN_KEY = stringPreferencesKey("auth_token")
+val AUTH_REFRESH_KEY = stringPreferencesKey("refresh_token")
 
 expect object DataStoreMaker {
     fun make(): DataStore<Preferences>

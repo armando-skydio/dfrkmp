@@ -1,5 +1,6 @@
 package com.skydio.mpp.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -10,7 +11,7 @@ import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
-import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -20,38 +21,30 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.update
 import androidx.compose.ui.unit.sp
 import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
 import com.skydio.mpp.SkyLocationListener
-
-/*fun hasLocationPermission(context: Context): Boolean {
-    val permission = Manifest.permission.ACCESS_FINE_LOCATION
-    val res: Int = context.checkCallingOrSelfPermission(permission)
-    return (res == PackageManager.PERMISSION_GRANTED)
-}*/
+import kotlinx.coroutines.flow.Flow
 
 @Composable
-fun LocationView() {
+fun LocationView(
+    locationPermissionFlow: Flow<Boolean>,
+    onLocationChangeFlow: MutableStateFlow<LocationData?>
+) {
 
-
-    //var hasLocationPermission = hasLocationPermission(LocalContext.current)
-    var hasLocationPermission = false
-
-    /*val permissionLauncher = rememberLauncherForActivityResult(
-        ActivityResultContracts.RequestPermission()
-    ) {
-        hasLocationPermission = true
-    }*/
+    val hasLocationPermission = locationPermissionFlow.collectAsState(false)
 
     val locationTracker by remember { mutableStateOf(LocationTracker()) }
     var location by remember { mutableStateOf<LocationData?>(null) }
     var tracking by remember { mutableStateOf(false) }
 
-
     val locationListener = object : SkyLocationListener {
         override fun onNewLocation(data: LocationData) {
             location = data
+            onLocationChangeFlow.update { data }
         }
     }
 
@@ -67,17 +60,12 @@ fun LocationView() {
         }
     }
 
-
-    LaunchedEffect(key1 = "permission") {
-        //permissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
-    }
-
-    DisposableEffect(hasLocationPermission) {
-        if (hasLocationPermission) {
+    DisposableEffect(hasLocationPermission.value) {
+        if (hasLocationPermission.value) {
             changeTrackingState(true)
         }
         onDispose {
-            if (hasLocationPermission) {
+            if (hasLocationPermission.value) {
                 changeTrackingState(false)
             }
         }
@@ -86,7 +74,8 @@ fun LocationView() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .background(Color.White)
+            .padding(vertical = 48.dp, horizontal = 16.dp)
     ) {
 
         Column(
@@ -97,7 +86,7 @@ fun LocationView() {
             Text(
                 text = location.toString(),
                 style = TextStyle.Default.copy(fontSize = 16.sp),
-                color = Color.White,
+                color = Color.Black,
             )
 
             Spacer(modifier = Modifier.size(56.dp))
