@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99871419-c59e-4557-bbf7-bac5ecf46b57" name="Changes" comment="">
@@ -2545,7 +2545,7 @@
       <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/omap.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/pairs.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/seq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/set.js" beforeDir="false" />
+			      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/set.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/str.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/lib/type/timestamp.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-config/node_modules/js-yaml/package.json" beforeDir="false" />
@@ -24705,6 +24705,13 @@
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
+    <list default="true" id="99871419-c59e-4557-bbf7-bac5ecf46b57" name="Changes" comment="Add location tracker">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iosApp/iosApp/ContentView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp/iosApp/ContentView.swift" afterDir="false" />
+    </list>
+    <list default="true" id="99871419-c59e-4557-bbf7-bac5ecf46b57" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24713,7 +24720,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/armandocontreras/.android/avd/Pixel_7_API_33.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/kislay.kishore/.android/avd/Pixel_3a_API_34.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -24731,6 +24738,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="mpp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mpp" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mpp" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -24766,13 +24784,34 @@
       </variant>
     </executable>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2teI5fsGsYHKpwR7QSFgA7eZMXv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Android App.androidApp.executor": "Run",
     "git-widget-placeholder": "armando/location-wip",
     "last_opened_file_path": "/Users/armandocontreras/skydio/dfrkmp"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "ScreenRecorder.SavePath": "/Users/kislay.kishore",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Location-track",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.skydio.mpp" />
+    </key>
+  </component>
   <component name="RunManager" selected="Android App.androidApp">
     <configuration name="androidApp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="mpp.androidApp.main" />
@@ -24848,7 +24887,24 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99871419-c59e-4557-bbf7-bac5ecf46b57" name="Changes" comment="&#10;Topic: &#10;Relative: &#10;Reviewers: &#10;Branches:&#10;Assignees:kislay-kishore-skydio" />
+      <created>1740705932874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740705932874</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add location tracker">
+      <option name="closed" value="true" />
+      <created>1740712843514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740712843514</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
 </project>

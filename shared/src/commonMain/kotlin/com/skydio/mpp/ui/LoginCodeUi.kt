@@ -1,4 +1,4 @@
-package com.skydio.mpp.android
+package com.skydio.mpp.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -8,10 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.Button
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
+import androidx.compose.material.Button
+import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.OutlinedTextField
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -23,23 +23,22 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.skydio.ui.components.widget.text.SkydioText
-import com.skydio.ui.designsystem.getAppTheme
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.skydio.mpp.login.LoginViewModel
 
 @Composable
-fun LoginEmailUi(
+fun LoginCodeUi(
     state: LoginState,
     vm: LoginViewModel = viewModel { LoginViewModel() },
 ) {
-    var email by remember { mutableStateOf("") }
+    var code by remember { mutableStateOf("") }
 
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(getAppTheme().colors.appBackgroundColor)
+            .background(Color.White)
     ) {
         Column(
             modifier = Modifier
@@ -47,29 +46,30 @@ fun LoginEmailUi(
                 .padding(vertical = 32.dp, horizontal = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            SkydioText(
+            Text(
                 text = "Login",
                 style = TextStyle.Default.copy(fontSize = 32.sp),
-                color = Color.White,
+                color = Color.Black,
             )
 
             Spacer(modifier = Modifier.size(32.dp))
 
             OutlinedTextField(
-                value = email,
-                onValueChange = { email = it },
-                label = { Text("E-mail") },
+                value = code,
+                onValueChange = { code = it },
+                label = { Text("Login code") },
                 singleLine = true,
                 maxLines = 1,
                 keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Email,
+                    keyboardType = KeyboardType.Number,
                     imeAction = ImeAction.Done
                 )
             )
 
-            if (state == LoginState.ErrorEmail) {
+
+            if (state == LoginState.ErrorCode) {
                 Spacer(modifier = Modifier.size(32.dp))
-                SkydioText(
+                Text(
                     text = "Something went wrong!",
                     style = TextStyle.Default.copy(fontSize = 20.sp),
                     color = Color.Red,
@@ -80,14 +80,14 @@ fun LoginEmailUi(
 
             Button(
                 onClick = {
-                    if (state != LoginState.LoadingEmail) {
-                        vm.requestLoginCode(email)
+                    if (state != LoginState.LoadingCode) {
+                        vm.verifyLoginCode(code)
                     }
                 }
             ) {
-                if (state !== LoginState.LoadingEmail) {
-                    SkydioText(
-                        text = "Get login code",
+                if (state !== LoginState.LoadingCode) {
+                    Text(
+                        text = "Login",
                         style = TextStyle.Default.copy(fontSize = 14.sp),
                         color = Color.White,
                     )

@@ -1,4 +1,4 @@
-package com.skydio.mpp.android
+package com.skydio.mpp.ui
 
 object LoginUiState {
 
