@@ -1,0 +1,10 @@
+{
+	"appId": "com.skydio.patrol_link",
+	"appName": "patrol-link",
+	"webDir": "dist",
+	"plugins": {
+		"SplashScreen": {
+			"launchAutoHide": true
+		}
+	}
+}

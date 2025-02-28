@@ -18,8 +18,8 @@ class LoginViewModel : ViewModel() {
 
     val loginState = mutableStateOf<LoginState>(LoginState.Email)
     private var emailId = ""
-
     private lateinit var dataStore: DataStore<Preferences>
+
 
     private fun getDataStore(): DataStore<Preferences> {
         return if (::dataStore.isInitialized) {
@@ -30,6 +30,10 @@ class LoginViewModel : ViewModel() {
             }
         }
     }
+
+    suspend fun getToken() = getDataStore().data.map { preferences ->
+            preferences[AUTH_TOKEN_KEY] ?: ""
+        }
 
     suspend fun checkToken() {
         getDataStore().data.map { preferences ->

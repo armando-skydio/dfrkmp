@@ -7,8 +7,8 @@
 
     <application
         android:name=".KmpApp"
-        android:allowBackup="false"
         android:supportsRtl="true"
+        android:label="Patrol App"
         android:theme="@style/Theme.Skydio">
         <activity
             android:name=".MainActivity"
@@ -17,6 +17,13 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.skydio.patrol_link.MainActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+
         </activity>
     </application>
 </manifest> 

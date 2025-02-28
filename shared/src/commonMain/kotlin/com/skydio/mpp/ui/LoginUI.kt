@@ -26,7 +26,7 @@ fun LoginView(
                 LoginEmailUi(state)
             }
             is LoginState.Success -> {
-                LoginSuccess(state.token)
+                //LoginSuccess(state.token)
             }
         }
     }
