@@ -1,0 +1,5 @@
+query ControllerQuery($serial: String!) {
+  controller(controllerId:$serial) {
+    organizationId
+  }
+}

@@ -1,0 +1,13 @@
+mutation FetchDroneSenseMissions($userId: ID!) {
+  fetchDronesenseMissions(userId: $userId) {
+    dronesenseMissions {
+      missionId
+      name
+    }
+    defaults {
+      missionId
+      callSign
+    }
+    errors
+  }
+}

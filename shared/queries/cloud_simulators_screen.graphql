@@ -1,0 +1,12 @@
+query CloudSimulatorsScreen($branch: String!) {
+  simulatorContainerVersions(branch: $branch, released: true) {
+    edges {
+      node {
+        uuid
+        branch
+        released
+        tag
+      }
+    }
+  }
+}

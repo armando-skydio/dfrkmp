@@ -1,0 +1,27 @@
+query AppMedia($orgid: String!) {
+  organization(uuid:$orgid) {
+    name
+    flights(hasMediaFiles:true) {
+      edges {
+        node {
+          vehicle {
+            displayName
+            isOnline
+          }
+          takeoff
+          dataFiles(kinds:[VEHICLE_VIDEO_PREVIEW]) {
+            edges {
+              node {
+                filename
+                kind
+                downloadUrl
+                thumbnailUrl
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

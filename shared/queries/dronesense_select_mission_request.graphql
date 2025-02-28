@@ -1,0 +1,21 @@
+mutation SendDroneSenseMissionSelect(
+  $userId: ID!,
+  $flightId: String!,
+  $missionId: String!,
+  $callSign: String!,
+  $vehicleId: String!
+) {
+  sendDronesenseMissionSelect(
+    userId: $userId,
+    flightId: $flightId,
+    missionId: $missionId,
+    callSign: $callSign,
+    vehicleId: $vehicleId
+  ) {
+    missionSelection {
+      missionId
+      callSign
+    }
+    errors
+  }
+}

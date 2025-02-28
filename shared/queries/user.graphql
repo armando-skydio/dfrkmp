@@ -1,0 +1,7 @@
+query UserQuery($userUuid: String!) {
+  nodeByUuid(type: "User", uuid: $userUuid) {
+    ... on User {
+      id
+    }
+  }
+}

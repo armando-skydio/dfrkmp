@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/iosApp/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iosApp/iosApp/ContentView.swift" beforeDir="false" afterPath="$PROJECT_DIR$/iosApp/iosApp/ContentView.swift" afterDir="false" />
     </list>
+    <list default="true" id="99871419-c59e-4557-bbf7-bac5ecf46b57" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +99,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Android App.androidApp.executor": "Run",
+    "git-widget-placeholder": "armando/location-wip",
+    "last_opened_file_path": "/Users/armandocontreras/skydio/dfrkmp"
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -207,9 +210,5 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add location tracker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add location tracker" />
   </component>
 </project>

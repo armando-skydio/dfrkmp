@@ -23,7 +23,7 @@ fun LoginSuccess(auth: String) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black)
+            .background(Color.White)
     ) {
         Column(
             modifier = Modifier
@@ -35,7 +35,7 @@ fun LoginSuccess(auth: String) {
             Text(
                 text = "Login success",
                 style = TextStyle.Default.copy(fontSize = 32.sp),
-                color = Color.White,
+                color = Color.Black,
             )
 
             Spacer(modifier = Modifier.size(32.dp))
@@ -43,7 +43,7 @@ fun LoginSuccess(auth: String) {
             Text(
                 text = auth,
                 style = TextStyle.Default.copy(fontSize = 16.sp),
-                color = Color.White,
+                color = Color.Black,
             )
 
         }

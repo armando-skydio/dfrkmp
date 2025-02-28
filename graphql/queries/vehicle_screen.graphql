@@ -1,0 +1,44 @@
+query VehicleScreen($orgid: String!, $lastKnownLocation: Boolean!, $pageSize: Int!, $onlineVehiclesOnly: Boolean!, $after: String) {
+  organization(uuid:$orgid) {
+    id,
+    vehicles(first: $pageSize, isOnline: $onlineVehiclesOnly, after: $after) {
+      totalCount
+      pageInfo {
+        startCursor
+        endCursor
+        hasNextPage
+        hasPreviousPage
+      }
+      edges {
+        node {
+          id,
+          vehicleId,
+          skydioSerial,
+          vehicleType,
+          displayName,
+          flightPhase,
+          isOnline,
+          teleopEnabled,
+          runModeName,
+          skillKey
+          organization{
+            id,
+            name
+          }
+          location(lastKnown: $lastKnownLocation) {
+            latitude
+            longitude
+          }
+          batteryStatus {
+            percentage
+            charging
+          }
+          currentPilot {
+            displayName
+            email
+          }
+        }
+      }
+    }
+  }
+}

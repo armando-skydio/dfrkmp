@@ -1,0 +1,17 @@
+query WaypointMission($orgid: String!) {
+    organization(uuid: $orgid) {
+        id
+        missionTemplates {
+            edges {
+                node {
+                    name,
+                    id,
+                    uuid,
+                    currentSpec {
+                        json
+                    }
+                }
+            }
+        }
+    }
+}

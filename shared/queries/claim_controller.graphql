@@ -1,0 +1,15 @@
+mutation ClaimController(
+  $orgId: ID!,
+  $cid: [String]!,
+) {
+  claimDevices(
+    orgId: $orgId,
+    skydioSerials: $cid
+   ) {
+        errors
+        controllers {
+            id
+            skydioSerial
+        }
+    }
+}

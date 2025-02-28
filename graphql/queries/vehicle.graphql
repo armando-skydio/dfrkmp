@@ -1,0 +1,8 @@
+query vehicleQuery($vehicleId: String!) {
+  vehicle(vehicleId: $vehicleId) {
+    currentPilot {
+      displayName
+      email
+    }
+  }
+}

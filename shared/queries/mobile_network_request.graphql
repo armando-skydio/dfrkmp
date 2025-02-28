@@ -1,0 +1,26 @@
+mutation MobileNetworkTestingMutation(
+  $clientId: String!,
+  $duration: Int!
+) {
+  requestNetworkTest(
+    clientId: $clientId
+    testRequest: {
+        testSpecs: [{ skyperf: { sessionDuration: $duration, protocols: [TCP] } }]
+      }
+  ) {
+    testSuite {
+      tests {
+        skyperf {
+          sessionDuration
+          dumpFolder
+          sessions {
+            protocol
+            hostname
+            port
+          }
+        }
+      }
+    }
+    errors
+  }
+}
