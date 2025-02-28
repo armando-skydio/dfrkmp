@@ -10,12 +10,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/@capacitor/android/capacitor" />
-            <option value="$PROJECT_DIR$/@capacitor/camera/android" />
-            <option value="$PROJECT_DIR$/@capacitor/splash-screen/android" />
-            <option value="$PROJECT_DIR$/android/app" />
-            <option value="$PROJECT_DIR$/android/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/androidApp" />
+            <option value="$PROJECT_DIR$/patrol-link/@capacitor/android/capacitor" />
+            <option value="$PROJECT_DIR$/patrol-link/@capacitor/camera/android" />
+            <option value="$PROJECT_DIR$/patrol-link/@capacitor/splash-screen/android" />
+            <option value="$PROJECT_DIR$/patrol-link/android/app" />
+            <option value="$PROJECT_DIR$/patrol-link/android/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/shared" />
             <option value="$PROJECT_DIR$/strings" />
             <option value="$PROJECT_DIR$/uicomponents" />
