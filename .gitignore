@@ -1,6 +1,6 @@
 *.iml
 .gradle
-.idee
+*.idea
 .kotlin
 .DS_Store
 build
