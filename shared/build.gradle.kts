@@ -8,7 +8,7 @@ plugins {
     alias(libs.plugins.apollo)
     alias(libs.plugins.kotlinSerialzation)
 }
-val abcLocationLib = "com.linecorp.abc:kmm-location:0.2.4"
+
 kotlin {
     androidTarget {
         compilations.all {
@@ -19,15 +19,10 @@ kotlin {
             }
         }
     }
-    ios {
-        binaries
-            .filterIsInstance<Framework>()
-            .forEach {
-                it.baseName = "shared"
-                it.transitiveExport = true
-                it.export(abcLocationLib)
-            }
-    }
+    iosX64()
+    iosArm64()
+    iosSimulatorArm64()
+
 
     cocoapods {
         summary = "Some description for the Shared Module"
@@ -50,7 +45,6 @@ kotlin {
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
-            implementation(abcLocationLib)
         }
         commonMain.dependencies {
             //put your multiplatform dependencies here
@@ -69,17 +63,15 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.protobuf)
-<<<<<<< HEAD
+
             implementation(libs.apollo.client)
             implementation(libs.apollo.normalized.cache)
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
-            implementation(abcLocationLib)
-=======
             implementation(libs.lifecycle.viewmodel.compose)
             implementation(libs.androidx.datastore)
             implementation(libs.androidx.datastore.preferences)
->>>>>>> origin/main
+
         }
 
         commonTest.dependencies {

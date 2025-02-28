@@ -33,7 +33,6 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 ktor-serialization-kotlinx-protobuf = { module = "io.ktor:ktor-serialization-kotlinx-protobuf", version.ref = "ktor" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
-<<<<<<< HEAD
 apollo-client = { module = "com.apollographql.apollo3:apollo-runtime", version.ref = "apollo" }
 apollo-normalized-cache = { group = "com.apollographql.apollo3", name = "apollo-normalized-cache", version.ref = "apollo"}
 google-play-services-android-location = { module = "com.google.android.gms:play-services-location", version.ref = "google-PlayServicesAndroidLocation" }
@@ -49,12 +48,10 @@ koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koinV
 koin-compose = { group = "io.insert-koin", name = "koin-compose", version = "1.0.4" }
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion" }
 koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinVersion" }
-
-=======
 lifecycle-viewmodel-compose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
->>>>>>> origin/main
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -63,9 +60,7 @@ kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-<<<<<<< HEAD
 apollo = { id = "com.apollographql.apollo3", version.ref = "apollo" }
 playservices = { id = "com.google.gms.google-services", version.ref = "google-PlayServicesAndroidLocation" }
-=======
 kotlinSerialzation = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
->>>>>>> origin/main
+

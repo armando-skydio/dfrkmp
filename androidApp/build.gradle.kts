@@ -35,12 +35,10 @@ android {
         jvmTarget = "1.8"
     }
 }
-val abcLocationLib = "com.linecorp.abc:kmm-location:0.2.4"
 dependencies {
     implementation(projects.shared)
     implementation(projects.uicomponents)
     implementation(libs.compose.ui)
-    implementation(abcLocationLib)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.ktor.client.core)
     implementation(libs.compose.material3)
