@@ -5,7 +5,7 @@
       <SelectionState runConfigName="androidApp">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="app.mpp.dfr-patrol">
+      <SelectionState runConfigName="dfr-patrol">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
