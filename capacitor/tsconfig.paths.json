@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/utils/get_asset_url_swizzled": ["./utils/get_asset_url"]
+    }
+  }
+}
