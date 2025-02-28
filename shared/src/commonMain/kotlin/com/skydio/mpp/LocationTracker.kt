@@ -18,6 +18,7 @@ expect class LocationTracker() {
     fun addLocationListener(listener: SkyLocationListener)
     fun removeLocationListener(listener: SkyLocationListener)
     val tracking: Boolean
+    fun hasLocationPermission(): Boolean
 }
 
 interface SkyLocationListener {
