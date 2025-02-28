@@ -1,9 +1,11 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.mpp.Framework
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.apollo)
     alias(libs.plugins.kotlinSerialzation)
 }
 
@@ -21,6 +23,7 @@ kotlin {
     iosArm64()
     iosSimulatorArm64()
 
+
     cocoapods {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
@@ -36,6 +39,9 @@ kotlin {
     sourceSets {
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
+            // Koin
+            implementation(libs.koin.android)
+            implementation(libs.google.play.services.android.location)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
@@ -44,11 +50,23 @@ kotlin {
             //put your multiplatform dependencies here
             implementation(libs.kotlinx.coroutines.core)
 
+            api(libs.precompose.koin)
+
+            // Ktor
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.logging)
+            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.ktor.client.content.negotiation)
+
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.cio)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.protobuf)
+            implementation(libs.apollo.client)
+            implementation(libs.apollo.normalized.cache)
+            implementation(libs.koin.core)
+            implementation(libs.koin.compose)
             implementation(libs.lifecycle.viewmodel.compose)
             implementation(libs.androidx.datastore)
             implementation(libs.androidx.datastore.preferences)
@@ -70,4 +88,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+}
+apollo {
+    schemaFile.set(file("schema.graphql"))
+    srcDir(file("queries"))
+    packageName.set("com.skydio.graphql")
 }

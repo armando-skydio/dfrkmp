@@ -1,0 +1,15 @@
+query AppScan($orgid: String!) {
+  organization(uuid:$orgid) {
+    name
+    scans {
+        edges {
+            node {
+                output {
+                name
+                photoCount
+                }
+            }
+        }
+    }
+  }
+}

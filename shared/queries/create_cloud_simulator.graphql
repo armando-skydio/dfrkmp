@@ -1,0 +1,25 @@
+mutation CreateSimulatorMutation(
+  $name: String!,
+  $orgUuid: String!,
+  $containerVersion: String!,
+  $useCloudNode: Boolean!,
+  $enableFullFlightLogging: Boolean!,
+) {
+  createCloudSimulator(
+    name: $name
+    orgUuid: $orgUuid
+    containerVersion: $containerVersion
+    useCloudNode: $useCloudNode
+    enableFullFlightLogging: $enableFullFlightLogging
+   ) {
+        errors
+        vehicle {
+            id
+            name
+            organizationId
+            skydioSerial
+            vehicleId
+            vehicleType
+        }
+    }
+}

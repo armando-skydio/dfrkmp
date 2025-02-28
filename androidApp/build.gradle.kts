@@ -35,7 +35,6 @@ android {
         jvmTarget = "1.8"
     }
 }
-
 dependencies {
     implementation(projects.shared)
     implementation(projects.uicomponents)
