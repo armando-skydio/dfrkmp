@@ -38,6 +38,8 @@ android {
 dependencies {
     implementation(projects.shared)
     implementation(projects.uicomponents)
+    implementation(projects.dfrPatrol)
+    implementation(projects.capacitorCordovaAndroidPlugins)
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.ktor.client.core)
@@ -47,5 +49,6 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
     implementation(libs.lifecycle.viewmodel.compose)
 }

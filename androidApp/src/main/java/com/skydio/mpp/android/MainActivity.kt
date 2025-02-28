@@ -1,21 +1,21 @@
 package com.skydio.mpp.android
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.lifecycleScope
+import com.skydio.mpp.login.LoginViewModel
 import com.skydio.mpp.ui.LoginView
-
-
-import com.skydio.ui.demo.DemoViewModel
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity()
 {
+
+    private val loginViewModel by viewModels<LoginViewModel>()
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,20 @@ class MainActivity : ComponentActivity()
                 LoginView()
             }
         }
+
+        lifecycleScope.launch {
+            loginViewModel.getToken().collect { token ->
+                if (token.isEmpty()) {
+                    startCapacitor()
+                }
+            }
+        }
     }
 
+    fun startCapacitor() {
+        startActivity(Intent(this, com.skydio.patrol_link.MainActivity::class.java).apply {
+
+        })
+    }
 }
 

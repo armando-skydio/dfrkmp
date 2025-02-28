@@ -7,7 +7,6 @@
 
     <application
         android:name=".KmpApp"
-        android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/Theme.Skydio">
         <activity

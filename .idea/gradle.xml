@@ -14,8 +14,8 @@
             <option value="$PROJECT_DIR$/@capacitor/camera/android" />
             <option value="$PROJECT_DIR$/@capacitor/splash-screen/android" />
             <option value="$PROJECT_DIR$/android/app" />
+            <option value="$PROJECT_DIR$/android/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/androidApp" />
-            <option value="$PROJECT_DIR$/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/shared" />
             <option value="$PROJECT_DIR$/strings" />
             <option value="$PROJECT_DIR$/uicomponents" />

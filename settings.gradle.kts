@@ -23,9 +23,8 @@ include(":strings")
 include(":dfr-patrol")
 project(":dfr-patrol").projectDir = file("./android/app")
 
-
 include(":capacitor-cordova-android-plugins")
-project(":capacitor-cordova-android-plugins").projectDir = file("./capacitor-cordova-android-plugins/")
+project(":capacitor-cordova-android-plugins").projectDir = file("./android/capacitor-cordova-android-plugins/")
 
 include(":capacitor-android")
 project(":capacitor-android").projectDir = file("@capacitor/android/capacitor")
