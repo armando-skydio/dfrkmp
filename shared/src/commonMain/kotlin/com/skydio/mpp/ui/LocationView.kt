@@ -1,5 +1,6 @@
 package com.skydio.mpp.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -20,6 +21,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.update
 import androidx.compose.ui.unit.sp
 import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
@@ -27,7 +30,10 @@ import com.skydio.mpp.SkyLocationListener
 import kotlinx.coroutines.flow.Flow
 
 @Composable
-fun LocationView(locationPermissionFlow: Flow<Boolean>) {
+fun LocationView(
+    locationPermissionFlow: Flow<Boolean>,
+    onLocationChangeFlow: MutableStateFlow<LocationData?>
+) {
 
     val hasLocationPermission = locationPermissionFlow.collectAsState(false)
 
@@ -38,6 +44,7 @@ fun LocationView(locationPermissionFlow: Flow<Boolean>) {
     val locationListener = object : SkyLocationListener {
         override fun onNewLocation(data: LocationData) {
             location = data
+            onLocationChangeFlow.update { data }
         }
     }
 
@@ -67,6 +74,7 @@ fun LocationView(locationPermissionFlow: Flow<Boolean>) {
     Box(
         modifier = Modifier
             .fillMaxSize()
+            .background(Color.White)
             .padding(vertical = 48.dp, horizontal = 16.dp)
     ) {
 
@@ -78,7 +86,7 @@ fun LocationView(locationPermissionFlow: Flow<Boolean>) {
             Text(
                 text = location.toString(),
                 style = TextStyle.Default.copy(fontSize = 16.sp),
-                color = Color.White,
+                color = Color.Black,
             )
 
             Spacer(modifier = Modifier.size(56.dp))

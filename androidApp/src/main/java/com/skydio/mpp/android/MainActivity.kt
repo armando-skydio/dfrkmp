@@ -1,28 +1,34 @@
 package com.skydio.mpp.android
 
-import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.annotation.RequiresApi
+import androidx.activity.viewModels
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.lifecycleScope
+import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
+import com.skydio.mpp.login.LoginViewModel
 import com.skydio.mpp.ui.LocationView
+import com.skydio.mpp.ui.LoginView
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
-    private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
-    private var isSendingUserToAndroidAppSettingsScreen = false
-    var isPermissionsGranted = false
 
-    val hasLocationPermissionFlow = MutableStateFlow(false)
+    private val hasLocationPermissionFlow = MutableStateFlow(false)
+    private val locationDataFlow = MutableStateFlow<LocationData?>(null)
+    private val isLoggedIn = mutableStateOf(false)
+    private val loginViewModel: LoginViewModel by viewModels()
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val tracker = LocationTracker()
@@ -34,8 +40,28 @@ class MainActivity : ComponentActivity() {
         }
         setContent {
             MyApplicationTheme(darkTheme = true) {
-                //LoginView()
-                LocationView(hasLocationPermissionFlow)
+                if (isLoggedIn.value) {
+                    LocationView(hasLocationPermissionFlow, locationDataFlow)
+                } else {
+                    LoginView()
+                }
+            }
+        }
+
+        lifecycleScope.launch {
+            loginViewModel.tokenFlow.collectLatest {
+                if (it.isNotEmpty()) {
+                    isLoggedIn.value = true
+                    Log.d("PatrolLink", "Token: $it")
+                }
+            }
+        }
+
+        lifecycleScope.launch {
+            locationDataFlow.collectLatest {
+                it?.let {
+                    Log.d("PatrolLink", "Location: $it")
+                }
             }
         }
     }
