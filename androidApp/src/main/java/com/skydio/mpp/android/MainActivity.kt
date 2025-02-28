@@ -27,9 +27,6 @@ import com.skydio.ui.demo.DemoViewModel
 
 class MainActivity : ComponentActivity()
 {
-    private lateinit var permissionLauncher: ActivityResultLauncher<Array<String>>
-    private var isSendingUserToAndroidAppSettingsScreen = false
-    var isPermissionsGranted = false
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,16 +34,10 @@ class MainActivity : ComponentActivity()
         setContent {
             MyApplicationTheme(darkTheme = true) {
                 LoginView()
-                //LocationView()
             }
         }
     }
 
 }
 
-@Preview
-@Composable
-fun Test() {
-    Text("Hello World") // previews work here
-}
 

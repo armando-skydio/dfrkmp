@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GradleMigrationSettings" migrationVersion="1" />
-
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -11,7 +10,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/@capacitor/android/capacitor" />
+            <option value="$PROJECT_DIR$/@capacitor/camera/android" />
+            <option value="$PROJECT_DIR$/@capacitor/splash-screen/android" />
+            <option value="$PROJECT_DIR$/android/app" />
             <option value="$PROJECT_DIR$/androidApp" />
+            <option value="$PROJECT_DIR$/capacitor-cordova-android-plugins" />
             <option value="$PROJECT_DIR$/shared" />
             <option value="$PROJECT_DIR$/strings" />
             <option value="$PROJECT_DIR$/uicomponents" />
