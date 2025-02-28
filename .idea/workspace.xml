@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dafa9c81-7abb-40d1-be0f-3ad28a3dabe7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/capacitor.build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/com/skydio/patrol_link/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-hdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-mdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-xhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-xxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-land-xxxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-hdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-mdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-xhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-xxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-port-xxxhdpi/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/xml/file_paths.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/capacitor.settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/variables.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capacitor.settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/capacitor.build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/capacitor.build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+=======
+    <list default="true" id="57b7f119-b8ff-48c3-9794-8b306bad4e47" name="Changes" comment="&#10;Topic: &#10;Relative: &#10;Reviewers: &#10;Branches:&#10;Assignees:kislay-kishore-skydio">
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/models/CARefreshRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/models/CARefreshResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/skydio/mpp/android/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/src/main/java/com/skydio/mpp/android/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/skydio/mpp/LocationTracker.android.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/androidMain/kotlin/com/skydio/mpp/LocationTracker.android.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/DataStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/DataStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/LocationTracker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/LocationTracker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/API.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/API.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/LoginViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/models/CAAuthResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/login/models/CAAuthResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/ui/LocationView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/ui/LocationView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/skydio/mpp/LocationTracker.ios.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/iosMain/kotlin/com/skydio/mpp/LocationTracker.ios.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/src/main/java/com/skydio/patrol_link/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/src/main/java/com/skydio/patrol_link/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/capacitor.settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/capacitor.settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/capacitor.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/ios/App/App/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/ios/App/App/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/ios/App/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/ios/App/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/ios/App/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/ios/App/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=32171FDH2001YR)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/shared">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/patrol-link/android/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/androidApp">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mpp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mpp" type="f1a62948:ProjectNode" />
+                <item name="dfr-patrol" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mpp" type="f1a62948:ProjectNode" />
+                <item name="dfr-patrol" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mpp" type="f1a62948:ProjectNode" />
+                <item name="dfr-patrol" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.androidApp.executor": "Run",
+    "Android App.app.mpp.dfr-patrol.executor": "Run",
+    "Gradle.dfrkmp:androidApp [assembleDebug].executor": "Run",
+    "Gradle.dfrkmp:patrol-link:android:app [assembleDebug].executor": "Run",
+    "Gradle.dfrkmp:patrol-link:android:app [assemble].executor": "Run",
+    "git-widget-placeholder": "armando/capacitorwip"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.skydio.mpp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app.mpp.dfr-patrol">
+    <configuration name="androidApp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="mpp.androidApp.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfr-patrol" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="mpp.dfr-patrol.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfrkmp:androidApp [assembleDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/androidApp" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleDebug" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="dfrkmp:patrol-link:android:app [assembleDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/patrol-link/android/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleDebug" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="dfrkmp:patrol-link:android:app [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/patrol-link/android/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="iosApp" type="KmmRunConfiguration" factoryName="iOS Application" CONFIG_VERSION="1" XCODE_PROJECT="$PROJECT_DIR$/iosApp/iosApp.xcworkspace" XCODE_CONFIGURATION="Debug" XCODE_SCHEME="iosApp">
+      <method v="2">
+        <option name="com.jetbrains.kmm.ios.BuildIOSAppTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.dfrkmp:patrol-link:android:app [assemble]" />
+        <item itemvalue="Gradle.dfrkmp:patrol-link:android:app [assembleDebug]" />
+        <item itemvalue="Gradle.dfrkmp:androidApp [assembleDebug]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;Topic: &#10;Relative: &#10;Reviewers: &#10;Branches:&#10;Assignees:kislay-kishore-skydio" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Topic: &#10;Relative: &#10;Reviewers: &#10;Branches:&#10;Assignees:kislay-kishore-skydio" />
+  </component>
+</project>

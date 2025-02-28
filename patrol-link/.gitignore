@@ -1,0 +1,4 @@
+# Do not commit changes to the `dist/` directory
+dist/
+
+.env.local

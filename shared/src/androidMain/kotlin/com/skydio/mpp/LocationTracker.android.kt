@@ -59,7 +59,7 @@ actual class LocationTracker actual constructor() {
 
     actual fun hasLocationPermission(): Boolean {
         val context = AppContext.get()
-        val permission = Manifest.permission.ACCESS_FINE_LOCATION
+        val permission = Manifest.permission.ACCESS_BACKGROUND_LOCATION
         val res: Int = context.checkCallingOrSelfPermission(permission)
         return (res == PackageManager.PERMISSION_GRANTED)
     }

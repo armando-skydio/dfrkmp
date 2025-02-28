@@ -1,37 +1,48 @@
 {
-  "name": "HelloWorld",
-  "version": "0.0.1",
-  "private": true,
+  "name": "capacitor-app",
+  "version": "1.0.0",
+  "description": "An Amazing Capacitor App",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "lint": "eslint .",
-    "start": "react-native start",
-    "test": "jest"
+    "dev:turbo": "node ./scripts/printTurboMessage.js && NEXT_PUBLIC_TURBO_DEV=true next dev --turbo",
+    "dev": "next dev",
+    "build": "NODE_OPTIONS='--max-old-space-size=12288' next build",
+    "relay": "yarn run relay:compile-default && yarn run relay:compile-dev",
+    "sync": "npx cap sync",
+    "run:ios": "yarn sync && npx cap run ios",
+    "run:android": "yarn sync && npx cap run android"
   },
   "dependencies": {
+    "@capacitor/android": "7.0.1",
+    "@capacitor/camera": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/ios": "7.0.1",
+    "@capacitor/splash-screen": "latest",
+    "@next/bundle-analyzer": "15.1.7",
+    "@skydio/nomad": "workspace:^",
+    "@skydio/shared_ui": "workspace:^",
+    "next": "14.2.3",
+    "next-runtime-env": "3.2.1",
     "react": "18.3.1",
-    "react-native": "0.75.5"
+    "react-dom": "18.3.1",
+    "react-relay": "16.1.0",
+    "relay-runtime": "16.1.0",
+    "tailwind-merge": "2.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@babel/preset-env": "^7.20.0",
-    "@babel/runtime": "^7.20.0",
-    "@react-native/babel-preset": "0.75.5",
-    "@react-native/eslint-config": "0.75.5",
-    "@react-native/metro-config": "0.75.5",
-    "@react-native/typescript-config": "0.75.5",
-    "@types/react": "^18.2.6",
-    "@types/react-test-renderer": "^18.0.0",
-    "babel-jest": "^29.6.3",
-    "eslint": "^8.19.0",
-    "jest": "^29.6.3",
-    "prettier": "2.8.8",
-    "react-test-renderer": "18.3.1",
-    "typescript": "5.0.4"
+    "@babel/core": "7.23.7",
+    "@capacitor/cli": "latest",
+    "copy-webpack-plugin": "12.0.2",
+    "tailwindcss": "3.4.13",
+    "ts-loader": "^6.1.0",
+    "tslib": "2.6.3",
+    "typescript": "5.7.2",
+    "typescript-plugin-css-modules": "^2.3.0",
+    "webpack": "5.74.0"
   },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "author": "",
+  "license": "ISC"
 }
