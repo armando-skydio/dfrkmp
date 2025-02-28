@@ -29,17 +29,17 @@ class MainActivity : ComponentActivity()
         lifecycleScope.launch {
             loginViewModel.getToken().collect { token ->
                 if (token.isNotEmpty()) {
-                    startCapacitor()
+                    startCapacitor(token)
                 }
             }
         }
     }
 
-    fun startCapacitor() {
+    fun startCapacitor(token:String) {
         val intent = Intent()
+        intent.putExtra("token", token)
         intent.setClassName("com.skydio.patrol_link", "com.skydio.patrol_link.MainActivity")
         startActivityForResult(intent, 0)
-
     }
 }
 
