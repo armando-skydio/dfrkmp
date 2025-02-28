@@ -35,7 +35,7 @@ public class CapConfig {
     // Server Config
     private boolean html5mode = true;
     private String serverUrl;
-    private String hostname = "cloud.PatrolLinkHack-etienne-dupont.direct.coder.dev.skyd.io";
+    private String hostname = "localhost";
     private String androidScheme = CAPACITOR_HTTPS_SCHEME;
     private String[] allowNavigation;
 

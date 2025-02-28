@@ -2,4 +2,7 @@ package com.skydio.patrol_link;
 
 import com.getcapacitor.BridgeActivity;
 
-public class MainActivity extends BridgeActivity {}
+public class MainActivity extends BridgeActivity {
+    public void setToken() {
+    }
+}

@@ -2,7 +2,7 @@ import Foundation
 
 public enum InstanceDescriptorDefaults {
     public static let scheme = "capacitor"
-    public static let hostname = "https://cloud.PatrolLinkHack-etienne-dupont.direct.coder.dev.skyd.io"
+    public static let hostname = "localhost"
 }
 
 private extension InstanceLoggingBehavior {
