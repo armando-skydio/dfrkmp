@@ -63,7 +63,6 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.protobuf)
-
             implementation(libs.apollo.client)
             implementation(libs.apollo.normalized.cache)
             implementation(libs.koin.core)
@@ -71,7 +70,6 @@ kotlin {
             implementation(libs.lifecycle.viewmodel.compose)
             implementation(libs.androidx.datastore)
             implementation(libs.androidx.datastore.preferences)
-
         }
 
         commonTest.dependencies {

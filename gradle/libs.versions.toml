@@ -63,4 +63,3 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 apollo = { id = "com.apollographql.apollo3", version.ref = "apollo" }
 playservices = { id = "com.google.gms.google-services", version.ref = "google-PlayServicesAndroidLocation" }
 kotlinSerialzation = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-
