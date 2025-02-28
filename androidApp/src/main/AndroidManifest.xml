@@ -8,6 +8,7 @@
     <application
         android:name=".KmpApp"
         android:supportsRtl="true"
+        android:label="Patrol App"
         android:theme="@style/Theme.Skydio">
         <activity
             android:name=".MainActivity"

@@ -10,14 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dafa9c81-7abb-40d1-be0f-3ad28a3dabe7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/@capacitor/android/capacitor/src/main/java/com/getcapacitor/CapConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/@capacitor/android/capacitor/src/main/java/com/getcapacitor/CapConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/androidApp/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@capacitor/ios/Capacitor/Capacitor/CAPInstanceDescriptor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/@capacitor/ios/Capacitor/Capacitor/CAPInstanceDescriptor.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/androidApp/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-native/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/com/skydio/mpp/android/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/src/main/java/com/skydio/mpp/android/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/@capacitor/android/capacitor/src/main/java/com/getcapacitor/CapConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/@capacitor/android/capacitor/src/main/java/com/getcapacitor/CapConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patrol-link/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patrol-link/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/ui/LoginUI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/com/skydio/mpp/ui/LoginUI.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/armandocontreras/.android/avd/Pixel_7_API_33.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/armandocontreras/.android/avd/Pixel_9_Pro_API_34.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -111,7 +112,7 @@
       <recent name="com.skydio.mpp" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app.mpp.dfr-patrol">
+  <component name="RunManager" selected="Android App.androidApp">
     <configuration name="androidApp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="mpp.androidApp.main" />
       <option name="DEPLOY" value="true" />

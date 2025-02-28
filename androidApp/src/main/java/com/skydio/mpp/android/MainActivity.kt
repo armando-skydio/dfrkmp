@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity()
 
         lifecycleScope.launch {
             loginViewModel.getToken().collect { token ->
-                if (token.isEmpty()) {
+                if (token.isNotEmpty()) {
                     startCapacitor()
                 }
             }
@@ -36,9 +36,10 @@ class MainActivity : ComponentActivity()
     }
 
     fun startCapacitor() {
-        startActivity(Intent(this, com.skydio.patrol_link.MainActivity::class.java).apply {
+        val intent = Intent()
+        intent.setClassName("com.skydio.patrol_link", "com.skydio.patrol_link.MainActivity")
+        startActivityForResult(intent, 0)
 
-        })
     }
 }
 
