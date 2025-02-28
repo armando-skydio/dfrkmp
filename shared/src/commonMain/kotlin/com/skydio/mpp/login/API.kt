@@ -1,5 +1,6 @@
 package com.skydio.mpp.login
 
+import com.skydio.mpp.configureForPlatform
 import com.skydio.mpp.login.models.CAAuthRequest
 import com.skydio.mpp.login.models.CALoginRequest
 import io.ktor.client.HttpClient
@@ -15,16 +16,21 @@ import io.ktor.http.contentType
 import io.ktor.http.path
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
+import io.ktor.client.HttpClientConfig
 
 class API {
 
-    private val client = HttpClient() {
-        install(ContentNegotiation) {
-            json(Json {
-                prettyPrint = true
-                isLenient = true
-                ignoreUnknownKeys = true
-            })
+    internal val client by lazy {
+        HttpClient {
+            configure()
+            install(ContentNegotiation) {
+                json(Json {
+                    prettyPrint = true
+                    isLenient = true
+                    ignoreUnknownKeys = true
+                })
+
+            }
         }
     }
 
@@ -36,7 +42,7 @@ class API {
         val response: HttpResponse = client.post({
             url {
                 protocol = URLProtocol.HTTPS
-                host = "api.skydio.com"
+                host = "api.PatrolLinkHack-etienne-dupont.direct.coder.dev.skyd.io"
                 path("auth/login")
             }
             headers {
@@ -53,7 +59,7 @@ class API {
         val response: HttpResponse = client.post({
             url {
                 protocol = URLProtocol.HTTPS
-                host = "api.skydio.com"
+                host = "api.PatrolLinkHack-etienne-dupont.direct.coder.dev.skyd.io"
                 path("auth/authenticate")
             }
             headers {
@@ -65,4 +71,9 @@ class API {
         println(response.bodyAsText())
         return response
     }
+}
+
+
+fun HttpClientConfig<*>.configure() {
+    configureForPlatform()
 }
