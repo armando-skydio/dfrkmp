@@ -11,7 +11,15 @@ fun createDataStore(): DataStore<Preferences> {
 }
 
 actual object DataStoreMaker {
+
+    private var dataStore: DataStore<Preferences>? = null
+
+    @Synchronized
     actual fun make(): DataStore<Preferences> {
-        return createDataStore()
+        return dataStore ?: run {
+            createDataStore().also {
+                dataStore = it
+            }
+        }
     }
 }

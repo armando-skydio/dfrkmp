@@ -12,38 +12,16 @@ import com.skydio.mpp.DataStoreMaker
 import com.skydio.mpp.login.models.CAAuthRequest
 import com.skydio.mpp.login.models.CAAuthResponse
 import com.skydio.mpp.ui.LoginState
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
-import kotlin.time.Duration.Companion.minutes
 
 class LoginViewModel : ViewModel() {
 
     val loginState = mutableStateOf<LoginState>(LoginState.Email)
     private var emailId = ""
 
-    private lateinit var dataStore: DataStore<Preferences>
-
-    private fun getDataStore(): DataStore<Preferences> {
-        return if (::dataStore.isInitialized) {
-            dataStore
-        } else {
-            DataStoreMaker.make().also {
-                this.dataStore = it
-            }
-        }
-    }
-
-    init {
-        refreshToken()
-    }
-
-    val tokenFlow: Flow<String> = getDataStore().data.map { preferences ->
-        preferences[AUTH_TOKEN_KEY] ?: ""
-    }
+    private fun getDataStore(): DataStore<Preferences>  = DataStoreMaker.make()
 
     suspend fun checkToken() {
         getDataStore().data.map { preferences ->
@@ -94,31 +72,6 @@ class LoginViewModel : ViewModel() {
         ds.edit {
             it[AUTH_TOKEN_KEY] = res.accessToken
             it[AUTH_REFRESH_KEY] = res.refreshToken
-        }
-    }
-
-    private fun refreshToken() = viewModelScope.launch {
-        println("Refreshing token")
-        while (true) {
-            val api = API()
-            val refreshToken = getDataStore().data.map { preferences ->
-                preferences[AUTH_REFRESH_KEY] ?: ""
-            }.first()
-            if (refreshToken.isEmpty()) {
-                continue
-            }
-            val refreshedToken = api.refreshToken(refreshToken)
-            refreshedToken?.let { refreshResponse ->
-                refreshResponse.accessToken
-                val ds = getDataStore()
-                ds.edit {
-                    it[AUTH_TOKEN_KEY] = refreshResponse.accessToken
-                }
-                println(refreshResponse)
-            } ?: kotlin.run {
-                println("Refresh token failed")
-            }
-            delay(5.minutes)
         }
     }
 

@@ -10,59 +10,66 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.lifecycleScope
+import com.skydio.mpp.AUTH_TOKEN_KEY
+import com.skydio.mpp.DataStoreMaker
 import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
 import com.skydio.mpp.login.LoginViewModel
-import com.skydio.mpp.ui.LocationView
 import com.skydio.mpp.ui.LoginView
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 
     private val hasLocationPermissionFlow = MutableStateFlow(false)
-    private val locationDataFlow = MutableStateFlow<LocationData?>(null)
     private val isLoggedIn = mutableStateOf(false)
     private val loginViewModel: LoginViewModel by viewModels()
+    private val locationTracker: LocationTracker = LocationTracker()
+    private val tokenFlow: Flow<String> = DataStoreMaker.make().data.map { preferences ->
+        preferences[AUTH_TOKEN_KEY] ?: ""
+    }
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val tracker = LocationTracker()
-        val hasLocation = tracker.hasLocationPermission()
+        val hasLocation = locationTracker.hasLocationPermission()
+        val intent = Intent(this, BGService::class.java)
+        startService(intent)
+        lifecycleScope.launch {
+            loginViewModel.checkToken()
+        }
         if (hasLocation.not()) {
             requestLocationPermission()
         } else {
+            locationTracker.startTracking()
             hasLocationPermissionFlow.update { true }
         }
         setContent {
             MyApplicationTheme(darkTheme = true) {
                 if (isLoggedIn.value) {
-                    LocationView(hasLocationPermissionFlow, locationDataFlow)
+                    //LocationView(hasLocationPermissionFlow, locationDataFlow)
                 } else {
                     LoginView()
                 }
             }
         }
 
-        lifecycleScope.launch {
-            loginViewModel.tokenFlow.collectLatest {
+
+        GlobalScope.launch {
+            tokenFlow.collect {
                 if (it.isNotEmpty()) {
                     isLoggedIn.value = true
                     Log.d("PatrolLink", "Token: $it")
-                    startCapacitor(it)
+                    startCapacitor(it, null)
                 }
             }
         }
 
-        lifecycleScope.launch {
-            locationDataFlow.collectLatest {
-                it?.let {
-                    Log.d("PatrolLink", "Location: $it")
-                }
-            }
-        }
     }
 
     private val requestContactPermissionLauncher: ActivityResultLauncher<String> =
@@ -72,12 +79,23 @@ class MainActivity : ComponentActivity() {
 
     private fun requestLocationPermission() {
         requestContactPermissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
+        requestContactPermissionLauncher.launch(android.Manifest.permission.ACCESS_BACKGROUND_LOCATION)
     }
 
-    fun startCapacitor(token: String) {
+    private fun startCapacitor(token: String?, locationData: LocationData?) {
         val intent = Intent()
-        intent.putExtra("token", token)
+        token?.let {
+            intent.putExtra("token", token)
+        }
+        locationData?.let {
+            intent.putExtra("latitude", locationData.latitude)
+            intent.putExtra("longitude", locationData.longitude)
+            intent.putExtra("altitude", locationData.altitude)
+            intent.putExtra("speed", locationData.speed)
+            intent.putExtra("bearing", locationData.bearing)
+            intent.putExtra("accuracy", locationData.accuracy)
+        }
         intent.setClassName("com.skydio.patrol_link", "com.skydio.patrol_link.MainActivity")
-        startActivityForResult(intent, 0)
+        startActivity(intent)
     }
 }
