@@ -1,18 +1,13 @@
-package com.skydio.mpp.android
+package com.skydio.mpp.ui
 
-import android.Manifest
-import android.content.Context
-import android.content.pm.PackageManager
-import android.util.Log
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Button
+import androidx.compose.material.Button
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -23,33 +18,31 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
 import com.skydio.mpp.SkyLocationListener
-import com.skydio.ui.components.widget.text.SkydioText
 
-
-fun hasLocationPermission(context: Context): Boolean {
+/*fun hasLocationPermission(context: Context): Boolean {
     val permission = Manifest.permission.ACCESS_FINE_LOCATION
     val res: Int = context.checkCallingOrSelfPermission(permission)
     return (res == PackageManager.PERMISSION_GRANTED)
-}
+}*/
 
 @Composable
 fun LocationView() {
 
 
-    var hasLocationPermission = hasLocationPermission(LocalContext.current)
+    //var hasLocationPermission = hasLocationPermission(LocalContext.current)
+    var hasLocationPermission = false
 
-    val permissionLauncher = rememberLauncherForActivityResult(
+    /*val permissionLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) {
         hasLocationPermission = true
-    }
+    }*/
 
     val locationTracker by remember { mutableStateOf(LocationTracker()) }
     var location by remember { mutableStateOf<LocationData?>(null) }
@@ -59,7 +52,6 @@ fun LocationView() {
     val locationListener = object : SkyLocationListener {
         override fun onNewLocation(data: LocationData) {
             location = data
-            Log.e("chengz", "$data")
         }
     }
 
@@ -77,7 +69,7 @@ fun LocationView() {
 
 
     LaunchedEffect(key1 = "permission") {
-        permissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
+        //permissionLauncher.launch(android.Manifest.permission.ACCESS_FINE_LOCATION)
     }
 
     DisposableEffect(hasLocationPermission) {
@@ -102,7 +94,7 @@ fun LocationView() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
-            SkydioText(
+            Text(
                 text = location.toString(),
                 style = TextStyle.Default.copy(fontSize = 16.sp),
                 color = Color.White,
@@ -115,7 +107,7 @@ fun LocationView() {
                     changeTrackingState(locationTracker.tracking.not())
                 }
             ) {
-                SkydioText(
+                Text(
                     text = if (tracking) "Stop tracking" else "Start tracking",
                     style = TextStyle.Default.copy(fontSize = 14.sp),
                     color = Color.White,
