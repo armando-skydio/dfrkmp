@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./build",
+    "declaration": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true,
+    "sourceMap": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/**/*",
+    "types/**/*",
+    "../../../cloud/web/shared_ui/types/**/*.d.ts",
+    "../../../viz/infrastructure/3d_viewer/lib/types/**/*.d.ts",
+    ".next/types/**/*.ts",
+    "dist/types/**/*.ts"
+  ],
+  "exclude": [
+    "**/.*/",
+    "**/*.stories.*",
+    "**/*.test.*",
+    "**/node_modules"
+  ]
+}
