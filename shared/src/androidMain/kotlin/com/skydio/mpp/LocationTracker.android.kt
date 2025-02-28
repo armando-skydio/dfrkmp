@@ -1,7 +1,9 @@
 package com.skydio.mpp
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context.LOCATION_SERVICE
+import android.content.pm.PackageManager
 import android.location.LocationListener
 import android.location.LocationManager
 
@@ -54,5 +56,12 @@ actual class LocationTracker actual constructor() {
 
     actual val tracking: Boolean
         get() = _tracking
+
+    actual fun hasLocationPermission(): Boolean {
+        val context = AppContext.get()
+        val permission = Manifest.permission.ACCESS_FINE_LOCATION
+        val res: Int = context.checkCallingOrSelfPermission(permission)
+        return (res == PackageManager.PERMISSION_GRANTED)
+    }
 
 }

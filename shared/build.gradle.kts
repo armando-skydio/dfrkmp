@@ -45,6 +45,7 @@ kotlin {
             // Koin
             implementation(libs.koin.android)
             implementation(libs.google.play.services.android.location)
+            implementation(libs.androidx.activity.ktx)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)

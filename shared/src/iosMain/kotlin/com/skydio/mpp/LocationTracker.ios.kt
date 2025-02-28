@@ -15,4 +15,9 @@ actual class LocationTracker actual constructor() {
 
     actual val tracking: Boolean
         get() = false
+
+    actual fun hasLocationPermission(): Boolean {
+        return false
+    }
+
 }
