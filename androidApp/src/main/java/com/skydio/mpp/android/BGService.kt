@@ -19,6 +19,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
+import kotlin.time.Duration.Companion.minutes
 import kotlin.time.Duration.Companion.seconds
 
 class BGService: Service() {
@@ -93,7 +94,7 @@ class BGService: Service() {
                 } ?: kotlin.run {
                     println("Refresh token failed")
                 }
-                delay(5.seconds)
+                delay(5.minutes)
             }
         }
     }
