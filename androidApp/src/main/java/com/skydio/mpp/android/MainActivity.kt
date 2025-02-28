@@ -16,6 +16,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme(darkTheme = true) {
                 LoginView()
+                //LocationView()
             }
         }
     }
