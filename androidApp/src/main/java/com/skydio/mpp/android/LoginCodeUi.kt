@@ -20,6 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -68,21 +69,23 @@ fun LoginCodeUi(
             )
 
 
-            if (state == LoginState.ErrorEmail) {
+            if (state == LoginState.ErrorCode) {
                 Spacer(modifier = Modifier.size(32.dp))
                 SkydioText(
                     text = "Something went wrong!",
-                    style = TextStyle.Default.copy(fontSize = 32.sp),
+                    style = TextStyle.Default.copy(fontSize = 20.sp),
                     color = Color.Red,
                 )
             }
 
             Spacer(modifier = Modifier.size(32.dp))
 
+            val context = LocalContext.current
+
             Button(
                 onClick = {
                     if (state != LoginState.LoadingCode) {
-                        vm.verifyLoginCode(code)
+                        vm.verifyLoginCode(code, context)
                     }
                 }
             ) {
@@ -93,7 +96,7 @@ fun LoginCodeUi(
                         color = Color.White,
                     )
                 } else {
-                    CircularProgressIndicator(modifier = Modifier.size(40.dp))
+                    CircularProgressIndicator(modifier = Modifier.size(40.dp), color = Color.White)
                 }
             }
 

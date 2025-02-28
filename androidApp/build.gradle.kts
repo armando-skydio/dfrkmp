@@ -43,6 +43,8 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.ktor.client.core)
     implementation(libs.compose.material3)
+    implementation(libs.androidx.datastore)
+    implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.activity.compose)
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.kotlinx.coroutines.android)

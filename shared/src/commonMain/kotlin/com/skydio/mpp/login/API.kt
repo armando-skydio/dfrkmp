@@ -1,8 +1,11 @@
 package com.skydio.mpp.login
 
 import com.skydio.mpp.login.models.CAAuthRequest
+import com.skydio.mpp.login.models.CAAuthResponse
+import com.skydio.mpp.login.models.CAAuthResponseWrapper
 import com.skydio.mpp.login.models.CALoginRequest
 import io.ktor.client.HttpClient
+import io.ktor.client.call.body
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.request.headers
 import io.ktor.client.request.post
@@ -49,8 +52,8 @@ class API {
         return response
     }
 
-    suspend fun authenticate(request: CAAuthRequest): HttpResponse {
-        val response: HttpResponse = client.post({
+    suspend fun authenticate(request: CAAuthRequest): CAAuthResponse {
+        val response = client.post({
             url {
                 protocol = URLProtocol.HTTPS
                 host = "api.skydio.com"
@@ -63,6 +66,7 @@ class API {
             setBody(request)
         })
         println(response.bodyAsText())
-        return response
+        val data: CAAuthResponseWrapper = response.body()
+        return data.data
     }
 }
