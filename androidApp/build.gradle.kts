@@ -45,6 +45,9 @@ dependencies {
     implementation(libs.androidx.datastore)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.lifecycle.viewmodel.compose)

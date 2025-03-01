@@ -27,11 +27,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.skydio.mpp.login.LoginViewModel
+import org.koin.compose.koinInject
 
 @Composable
 fun LoginEmailUi(
     state: LoginState,
-    vm: LoginViewModel = viewModel { LoginViewModel() },
+    vm: LoginViewModel = koinInject(),
 ) {
     var email by remember { mutableStateOf("") }
 
