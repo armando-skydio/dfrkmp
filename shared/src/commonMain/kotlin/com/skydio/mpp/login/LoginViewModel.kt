@@ -1,14 +1,13 @@
 package com.skydio.mpp.login
 
 import androidx.compose.runtime.mutableStateOf
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.skydio.mpp.AUTH_REFRESH_KEY
 import com.skydio.mpp.AUTH_TOKEN_KEY
-import com.skydio.mpp.DataStoreMaker
+import com.skydio.mpp.DataStoreSingleton
+import com.skydio.mpp.api.SkydioApi
 import com.skydio.mpp.login.models.CAAuthRequest
 import com.skydio.mpp.login.models.CAAuthResponse
 import com.skydio.mpp.ui.LoginState
@@ -20,33 +19,25 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import kotlin.time.Duration.Companion.minutes
 
-class LoginViewModel : ViewModel() {
+class LoginViewModel(val skydioApi: SkydioApi) : ViewModel() {
 
     val loginState = mutableStateOf<LoginState>(LoginState.Email)
     private var emailId = ""
 
-    private lateinit var dataStore: DataStore<Preferences>
-
-    private fun getDataStore(): DataStore<Preferences> {
-        return if (::dataStore.isInitialized) {
-            dataStore
-        } else {
-            DataStoreMaker.make().also {
-                this.dataStore = it
-            }
+    init {
+        refreshToken()
+        viewModelScope.launch {
+            val apollot = skydioApi.cloudSimulatorQuery("4b30cd79-ba46-41b0-a770-cbe9bbaa01fe").execute()
+            println("apollodata ${apollot.data}")
         }
     }
 
-    init {
-        refreshToken()
-    }
-
-    val tokenFlow: Flow<String> = getDataStore().data.map { preferences ->
+    val tokenFlow: Flow<String> = DataStoreSingleton.getDataStore().data.map { preferences ->
         preferences[AUTH_TOKEN_KEY] ?: ""
     }
 
     suspend fun checkToken() {
-        getDataStore().data.map { preferences ->
+        DataStoreSingleton.getDataStore().data.map { preferences ->
             preferences[AUTH_TOKEN_KEY] ?: ""
         }.collectLatest {
             if (it.isNotEmpty()) {
@@ -95,7 +86,10 @@ class LoginViewModel : ViewModel() {
             it[AUTH_TOKEN_KEY] = res.accessToken
             it[AUTH_REFRESH_KEY] = res.refreshToken
         }
+        skydioApi.waypointMissionQuery("4b30cd79-ba46-41b0-a770-cbe9bbaa01fe")
     }
+
+    private fun getDataStore() = DataStoreSingleton.getDataStore()
 
     private fun refreshToken() = viewModelScope.launch {
         println("Refreshing token")
