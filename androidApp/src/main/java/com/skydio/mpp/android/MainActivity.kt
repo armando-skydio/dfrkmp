@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.skydio.mpp.LocationData
 import com.skydio.mpp.LocationTracker
 import com.skydio.mpp.login.LoginViewModel
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
     private val hasLocationPermissionFlow = MutableStateFlow(false)
     private val locationDataFlow = MutableStateFlow<LocationData?>(null)
     private val isLoggedIn = mutableStateOf(false)
-    private val loginViewModel: LoginViewModel by viewModels()
+    //private val loginViewModel: LoginViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,12 +50,12 @@ class MainActivity : ComponentActivity() {
         }
 
         lifecycleScope.launch {
-            loginViewModel.tokenFlow.collectLatest {
+            /*loginViewModel.tokenFlow.collectLatest {
                 if (it.isNotEmpty()) {
                     isLoggedIn.value = true
                     Log.d("PatrolLink", "Token: $it")
                 }
-            }
+            }*/
         }
 
         lifecycleScope.launch {

@@ -7,10 +7,11 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.skydio.mpp.login.LoginViewModel
+import org.koin.compose.koinInject
 
 @Composable
 fun LoginView(
-    vm: LoginViewModel = viewModel { LoginViewModel() },
+    vm: LoginViewModel = koinInject(),
 ) {
 
     LaunchedEffect(Unit) {

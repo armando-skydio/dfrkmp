@@ -69,8 +69,11 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinx.protobuf)
             implementation(libs.apollo.client)
             implementation(libs.apollo.normalized.cache)
-            implementation(libs.koin.core)
+            api(libs.koin.core)
             implementation(libs.koin.compose)
+            implementation(libs.koin.composevm)
+            // ViewModel support in common code
+            implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.lifecycle.viewmodel.compose)
             implementation(libs.androidx.datastore)
             implementation(libs.androidx.datastore.preferences)
