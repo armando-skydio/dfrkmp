@@ -102,7 +102,7 @@ class API {
 
     companion object {
         const val CLIENT_KEY = "e181e9c26ac1c98aa478d5716479edd9d75b38dffc50d580fcf10f772c0d0a25"
-        const val HOST = "api.PatrolLinkHack-etienne-dupont.direct.coder.dev.skyd.io"
+        const val HOST = "api.skydio.com"
     }
 
 }
