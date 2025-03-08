@@ -24,6 +24,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.runBlocking
+import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.KoinAppDeclaration
 
 suspend fun token(): Flow<String> {
@@ -66,7 +67,7 @@ private val domainModule = module {
 private val vmModule = module {
     single { LoginViewModel(get()) }
 }
-private val sharedModule = listOf(dataModule,  domainModule, vmModule)
+val sharedModule = listOf(dataModule,  domainModule, vmModule)
 
 fun initKoin(appDeclaration: KoinAppDeclaration = {}) =
     startKoin {
