@@ -27,8 +27,8 @@ class LoginViewModel(val skydioApi: SkydioApi) : ViewModel() {
     init {
         refreshToken()
         viewModelScope.launch {
-            val apollot = skydioApi.cloudSimulatorQuery("4b30cd79-ba46-41b0-a770-cbe9bbaa01fe").execute()
-            println("apollodata ${apollot.data}")
+            //val apollot = skydioApi.cloudSimulatorQuery("4b30cd79-ba46-41b0-a770-cbe9bbaa01fe").execute()
+            //println("apollodata ${apollot.data}")
         }
     }
 
@@ -86,7 +86,7 @@ class LoginViewModel(val skydioApi: SkydioApi) : ViewModel() {
             it[AUTH_TOKEN_KEY] = res.accessToken
             it[AUTH_REFRESH_KEY] = res.refreshToken
         }
-        skydioApi.waypointMissionQuery("4b30cd79-ba46-41b0-a770-cbe9bbaa01fe")
+        //skydioApi.waypointMissionQuery("4b30cd79-ba46-41b0-a770-cbe9bbaa01fe")
     }
 
     private fun getDataStore() = DataStoreSingleton.getDataStore()
